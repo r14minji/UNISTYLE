@@ -21,8 +21,6 @@ $mobile :539px;
     margin: 0 auto;
     position: relative;
 
-
-
     .menuWeb{
       width: calc(100% -100px); height: 100%;
       position: relative;
@@ -60,37 +58,53 @@ $mobile :539px;
     }
 
     .btnCall{
-      position: absolute; top: 10px; left: 10px;
-      width: 20px; height: 20px;
-      ::before{
-        content: "";
-        display: block;
-        width: 42px; height: 4px; border-radius: 3px;
-        background: #fff;
-      }
-
-      ::after{
-        content: ""; display: block;
-        width: 42px; height: 4px; border-radius: 3px;
-        background: #fff;
-
-      }
+      position: absolute; top: 50%; left: -60px;
+      width: 25px; height: 25px; border: #fff;
       
+      &::before{
+        content: ""; display: block; width: 100%; height: 2px;
+        background: #fff; border-radius: 4px;
+        position: absolute; bottom: 0; right: 0; transform: translateY(-1px);
+        transition: width 0.3s 0.4s; 
+      }
+      &::after{
+        content: ""; display: block; width: 100%; height: 2px;
+        background: #fff; border-radius: 4px;
+        position: absolute; top: 0; left: 0; transform: translateY(-1px);
+        transition: width 0.3s 0.4s; 
+      }
+
       span{
         display: block; width: 100%;
-        height: 2px;
-        background: #111;
+        position: absolute; top: 50%; left: 0; transform: translateY(-50%);
         text-indent: -9999px;
-        transition: 0.5s;
 
-        ::after{
-          content: ""; display: block;
-          width: 42px; height: 4px; border-radius: 3px;
-          background: #fff;
-          position: absolute; top: 50%; left: 50%;
+        &::before{
+          content: ""; display: block; width: 100%; height: 2px;
+          background: #fff; border-radius: 4px;
+          position: absolute; top: 50%; left: 0; transform: translateY(-50%);
+          transition: transform 0.3s;
+        }
+        &::after{
+          content: ""; display: block; width: 100%; height: 2px;
+          background: #fff; border-radius: 4px;
+          position: absolute; top: 50%; left: 0; transform: translateY(-50%);
+          transition: transform 0.3s;
         }
       }
+
+      &.on::before{ width: 0; }
+      &.on::after{ width: 0; }
+      &.on span::before{
+        transform: rotate(45deg);
+        transition: transform 0.3s 0.8s;
+      }
+      &.on span::after{
+        transform: rotate(-45deg);
+        transition: transform 0.3s 0.8s;
+      }
     }
+    
     .menuMo{
       display: none;
     }
