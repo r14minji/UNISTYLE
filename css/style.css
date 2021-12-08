@@ -128,50 +128,119 @@ table {
 /* ----- section2/history -------------------------------------------*/
 #history {
   width: calc(100% -100px);
-  height: 300px;
+  height: 360px;
   padding-left: 100px;
-  background: #333; }
+  background: #000; }
+  #history .inner {
+    width: calc(1180px -100px);
+    position: relative;
+    margin: 0 auto; }
+    #history .inner ::after {
+      content: "";
+      display: block;
+      clear: both; }
+    #history .inner h1 {
+      font: 700 28px/1.4 'roboto condensed';
+      color: #fff;
+      text-align: right;
+      letter-spacing: 10px;
+      margin: 50px 0 0 196px;
+      float: left;
+      position: absolute; }
+      #history .inner h1::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        bottom: -10px;
+        right: 10px; }
+    #history .inner .hisWrap {
+      position: absolute;
+      top: -135px;
+      right: 0;
+      height: 100px;
+      display: flex;
+      justify-content: flex-end; }
+      #history .inner .hisWrap .hisPic {
+        width: 160px;
+        height: 100px;
+        margin-right: 20px;
+        overflow: hidden; }
+        #history .inner .hisWrap .hisPic:last-child {
+          margin-right: 0; }
+        #history .inner .hisWrap .hisPic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      #history .inner .hisWrap .btnPrev {
+        font-size: 16px;
+        color: #fff;
+        margin-right: 10px;
+        position: absolute;
+        bottom: 0;
+        left: -170px; }
+      #history .inner .hisWrap .btnNext {
+        font-size: 16px;
+        color: #fff;
+        margin-right: 10px;
+        position: absolute;
+        bottom: 0;
+        left: -130px; }
+    #history .inner .hisTxt {
+      width: 450px;
+      float: right;
+      margin-right: 61px; }
+      #history .inner .hisTxt p {
+        font: 300 12px/2 'roboto condensed';
+        color: #aaa;
+        margin-bottom: 20px; }
+      #history .inner .hisTxt a {
+        font: 700 12px/1 'roboto condensed';
+        color: #ccc;
+        letter-spacing: 2px; }
 
 /* ----- section3/theViews -----------------------------------------*/
-#Views {
+#views {
   width: 100%;
   height: 570px; }
-  #Views .inner {
+  #views .inner {
     width: 1180px;
     height: 100%;
     padding: 100px 0 0;
     margin: 0 auto;
     position: relative; }
-    #Views .inner .viewPic {
+    #views .inner .viewPic {
       width: 420px;
       height: 570px;
       position: absolute;
       top: -70px;
       left: 150px;
       z-index: 2; }
-      #Views .inner .viewPic img {
+      #views .inner .viewPic img {
         width: 100%;
         object-fit: cover; }
-    #Views .inner .desMore {
+    #views .inner .desMore {
       width: 400px;
       position: absolute;
       top: 100px;
       left: calc( 150px + 420px + 100px); }
-      #Views .inner .desMore h1 {
+      #views .inner .desMore h1 {
         font: 700 28px/1 'roboto condensed';
         color: #000;
         letter-spacing: 5px;
         margin-bottom: 10px; }
-      #Views .inner .desMore h2 {
+      #views .inner .desMore h2 {
         font: 300 14px/1 'roboto condensed';
         color: #555;
         letter-spacing: 3px;
         margin-bottom: 20px; }
-      #Views .inner .desMore p {
+      #views .inner .desMore p {
         font: 300 12px/2 'roboto condensed';
         color: #555;
         margin-bottom: 20px; }
-      #Views .inner .desMore a {
+      #views .inner .desMore a {
         font: 700 12px/1 'roboto condensed';
         color: #333;
         letter-spacing: 2px; }

@@ -123,12 +123,74 @@ $mobile :539px;
 
 /* ----- section2/history -------------------------------------------*/
 #history{
-  width: calc(100% -100px); height: 300px;
+  width: calc(100% -100px); height: 360px;
   padding-left: 100px;
-  background: #333;
+  background: #000;
+  
+  .inner{
+    width: calc(1180px -100px); 
+    position: relative;
+    margin: 0 auto;
+
+    ::after{content: ""; display: block; clear: both;}
+    h1{
+      font: 700 28px/1.4 'roboto condensed';
+      color: #fff; text-align: right;
+      letter-spacing: 10px;
+      margin: 50px 0 0 196px;
+      float: left;
+      position: absolute;
+
+      &::after{
+        content: ""; display: block;
+        width:30px; height: 2px; background: #fff;
+        position: absolute; bottom: -10px; right: 10px;
+      }
+    }
+    .hisWrap{
+      position: absolute; top:-135px; right: 0;
+      height: 100px; 
+      display: flex; justify-content: flex-end;
+
+      .hisPic{
+        width: 160px; height: 100px;
+        margin-right: 20px;
+        overflow: hidden;
+        &:last-child{margin-right: 0;}
+
+        img{
+          width: 100%; height: 100%;
+          object-fit: cover; 
+        }
+      }
+      .btnPrev{
+        font-size: 16px; color: #fff; margin-right: 10px;
+        position: absolute; bottom: 0; left: -170px;
+      }
+      .btnNext{
+        font-size: 16px; color: #fff; margin-right: 10px;
+        position: absolute; bottom: 0; left: -130px;
+      }
+    }
+    .hisTxt{
+      width: 450px; 
+      float:right; margin-right: 61px;
+
+      p{
+        font: 300 12px/2 'roboto condensed';
+        color: #aaa;
+        margin-bottom: 20px;
+      }
+      a{
+        font: 700 12px/1 'roboto condensed';
+        color: #ccc;
+        letter-spacing: 2px;
+      }
+    }
+  }
 }
 /* ----- section3/theViews -----------------------------------------*/
-#Views{
+#views{
   width: 100%; height: 570px;
 
   .inner{
