@@ -334,6 +334,49 @@ table {
             font-size: 10px; }
 
 /* ----- section8/trip ------------------------------------------------*/
+#trip {
+  width: 100%;
+  height: 570px; }
+  #trip .inner {
+    width: 1180px;
+    height: 100%;
+    padding: 100px 0 0;
+    margin: 0 auto;
+    position: relative; }
+    #trip .inner .tripPic {
+      width: 420px;
+      height: 570px;
+      position: absolute;
+      top: -70px;
+      left: 150px;
+      z-index: 2; }
+      #trip .inner .tripPic img {
+        width: 100%;
+        object-fit: cover; }
+    #trip .inner .desMore {
+      width: 400px;
+      position: absolute;
+      top: 100px;
+      left: calc( 150px + 420px + 100px); }
+      #trip .inner .desMore h1 {
+        font: 700 28px/1 'roboto condensed';
+        color: #000;
+        letter-spacing: 5px;
+        margin-bottom: 10px; }
+      #trip .inner .desMore h2 {
+        font: 300 14px/1 'roboto condensed';
+        color: #555;
+        letter-spacing: 3px;
+        margin-bottom: 20px; }
+      #trip .inner .desMore p {
+        font: 300 12px/2 'roboto condensed';
+        color: #555;
+        margin-bottom: 20px; }
+      #trip .inner .desMore a {
+        font: 700 12px/1 'roboto condensed';
+        color: #333;
+        letter-spacing: 2px; }
+
 /* ----- section9/stories  --------------------------------------------*/
 /* ----- section10/area  ---------------------------------------------*/
 /*
