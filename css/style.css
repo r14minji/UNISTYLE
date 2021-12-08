@@ -380,8 +380,7 @@ table {
 /* ----- section9/stories  --------------------------------------------*/
 #stories {
   width: 100%;
-  height: 370px;
-  background: #444; }
+  height: 370px; }
   #stories .inner {
     width: 1180px;
     margin: 0 auto; }
@@ -399,8 +398,8 @@ table {
       text-align: center; }
   #stories .storyGallery {
     width: 100%;
-    display: flex;
-    margin-bottom: 70px; }
+    position: relative;
+    display: flex; }
     #stories .storyGallery .storyPic {
       width: 240px;
       height: 120px;
@@ -409,6 +408,22 @@ table {
       #stories .storyGallery .storyPic img {
         width: 100%;
         height: 100%; }
+      #stories .storyGallery .storyPic .storyTxt {
+        width: 210px;
+        margin-left: 20px;
+        position: relative; }
+        #stories .storyGallery .storyPic .storyTxt h3 {
+          font: 300 14px/20px 'roboto condensed';
+          color: #fff;
+          position: absolute;
+          bottom: 30px;
+          left: 0; }
+        #stories .storyGallery .storyPic .storyTxt p {
+          font: 300 14px/20px 'roboto condensed';
+          color: #fff;
+          position: absolute;
+          bottom: 10px;
+          left: 0; }
 
 /* ----- section10/area  ---------------------------------------------*/
 #area {
