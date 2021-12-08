@@ -378,14 +378,37 @@ table {
         letter-spacing: 2px; }
 
 /* ----- section9/stories  --------------------------------------------*/
+#stories {
+  width: 100%;
+  height: 370px;
+  background: #444; }
+  #stories .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #stories .inner h1 {
+      font: 700 28px/1 'roboto condensed';
+      color: #000;
+      letter-spacing: 5px;
+      margin-bottom: 10px;
+      text-align: center; }
+    #stories .inner h2 {
+      font: 300 14px/1 'roboto condensed';
+      color: #777;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      text-align: center; }
+  #stories .storyGallery {
+    width: 100%;
+    display: flex; }
+    #stories .storyGallery .storyPic {
+      width: 240px;
+      height: 120px;
+      margin: 20px;
+      overflow: hidden; }
+      #stories .storyGallery .storyPic img {
+        width: 100%;
+        height: 100%; }
+
 /* ----- section10/area  ---------------------------------------------*/
-/*
-  .banner{
-    width: 100%; height: 200px;
-    background: url(../img/banner.jpg) no-repeat top/cover;
-    opacity: 0.1;
-    filter: grayscale(100%);
-  }
-*/
 
 /*# sourceMappingURL=style.css.map */

@@ -295,10 +295,6 @@ $mobile :539px;
     }
 
   }
-
-
-
-
 }
 /* ----- section7/wildLife--------------------------------------------*/
 #wildLife{
@@ -395,13 +391,42 @@ $mobile :539px;
   }
 }
 /* ----- section9/stories  --------------------------------------------*/
+#stories{
+  width: 100%; height: 370px;
+  background: #444;
+
+  .inner{
+    width: 1180px; 
+    margin: 0 auto;
+
+    h1{
+      font: 700 28px/1 'roboto condensed';
+      color: #000;
+      letter-spacing: 5px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    h2{
+      font: 300 14px/1 'roboto condensed';
+      color: #777;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  .storyGallery{
+    width: 100%; 
+    display: flex;
+    .storyPic{
+      width: 240px; height: 120px; 
+      margin: 20px;
+      overflow: hidden;
+
+      img{
+        width: 100%; height: 100%;
+      }
+    }
+  }
+}
 /* ----- section10/area  ---------------------------------------------*/
 
-/*
-  .banner{
-    width: 100%; height: 200px;
-    background: url(../img/banner.jpg) no-repeat top/cover;
-    opacity: 0.1;
-    filter: grayscale(100%);
-  }
-*/
