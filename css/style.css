@@ -40,40 +40,69 @@ table {
     #header .inner .menuWeb {
       width: calc(100% -100px);
       height: 100%;
-      margin: 0 10vw;
-      position: relative; }
+      position: relative;
+      display: flex;
+      justify-content: center;
+      padding: 30px 0; }
       #header .inner .menuWeb h1 {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); }
+        transform: translate(-15px, -50%); }
         #header .inner .menuWeb h1 a {
           font: 400 22px/1 'roboto condensed';
           color: #fff; }
       #header .inner .menuWeb #gnb_left {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%); }
+        padding-right: 100px; }
         #header .inner .menuWeb #gnb_left li {
           float: left;
           margin-right: 30px; }
           #header .inner .menuWeb #gnb_left li a {
             font: 400 14px/1 'roboto condensed';
             color: #aaa; }
-      #header .inner .menuWeb #gnb_right {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%); }
-        #header .inner .menuWeb #gnb_right li {
-          float: left;
-          margin-left: 30px; }
-          #header .inner .menuWeb #gnb_right li a {
-            font: 400 14px/1 'roboto condensed';
-            color: #aaa; }
+      #header .inner .menuWeb #gnb_right li {
+        float: left;
+        margin-left: 30px; }
+        #header .inner .menuWeb #gnb_right li a {
+          font: 400 14px/1 'roboto condensed';
+          color: #aaa; }
     #header .inner .btnCall {
-      display: none; }
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 20px;
+      height: 20px; }
+      #header .inner .btnCall ::before {
+        content: "";
+        display: block;
+        width: 42px;
+        height: 4px;
+        border-radius: 3px;
+        background: #fff; }
+      #header .inner .btnCall ::after {
+        content: "";
+        display: block;
+        width: 42px;
+        height: 4px;
+        border-radius: 3px;
+        background: #fff; }
+      #header .inner .btnCall span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #111;
+        text-indent: -9999px;
+        transition: 0.5s; }
+        #header .inner .btnCall span ::after {
+          content: "";
+          display: block;
+          width: 42px;
+          height: 4px;
+          border-radius: 3px;
+          background: #fff;
+          position: absolute;
+          top: 50%;
+          left: 50%; }
     #header .inner .menuMo {
       display: none; }
 
