@@ -14,7 +14,7 @@ $mobile :539px;
 #header{
   width: calc(100% -100px); height: 80px;
   background: #000;
-  margin-left: 100px;
+  padding-left: 100px;
 
   .inner{
     width: 1080px; height: 100%;
@@ -72,7 +72,7 @@ $mobile :539px;
 /* ----- section1/visual -------------------------------------------*/
 #visual{
   width: calc(100% -100px); height: 100vh;
-  margin-left: 100px;
+  padding-left: 100px;
   background: #777;
 
   
@@ -81,7 +81,7 @@ $mobile :539px;
 /* ----- section2/history -------------------------------------------*/
 #history{
   width: calc(100% -100px); height: 300px;
-  margin-left: 100px;
+  padding-left: 100px;
   background: #333;
 }
 /* ----- section3/theViews -----------------------------------------*/
@@ -131,12 +131,87 @@ $mobile :539px;
   }
 }
 
-
-
 /* ----- section4/vid ------------------------------------------------*/
+#vid{
+  width: 100%; height: 600px;
+
+  .inner{
+    width: 1180px; height: 100%;
+    margin:0 auto;
+    position: relative;
+
+    .vidWrap{
+      width: 1100px; height: 440px;
+      margin:0 auto;
+
+      video{
+        width: 100%; height: 100%;
+        object-fit: cover;
+      }
+    }
+    .desBtn{
+      width: 420px; 
+      background: rgba(0,0,0,0.9);
+      position: absolute; bottom: 76px; left: 150px;
+    
+      h1{
+        font: 700 14px/20px 'roboto condensed'; color: #ccc;
+        letter-spacing: 4px;
+        padding: 15px 30px;
+      }
+      p{
+        font: 400 12px/2 'roboto condensed'; color: #ccc;
+        letter-spacing: 1px;
+        padding: 20px 30px 15px;
+      }
+      ul{
+        position: absolute; top: 5px; right: 30px;
+        li{
+          float: left; padding: 5px;
+          i{
+            color: #fff; font-size: 10px; 
+          }
+        }
+      }
+    }
+  }
+}
 /* ----- section5/landscate-waterfall -------------------------------*/
 /* ----- section6/experience----------------------------------------*/
 /* ----- section7/wildLife--------------------------------------------*/
 /* ----- section8/trip ------------------------------------------------*/
 /* ----- section9/stories  --------------------------------------------*/
 /* ----- section10/area  ---------------------------------------------*/
+
+/*
+  .inner{
+    width: 1180px; height: 600px;
+    margin:0 auto;
+    position: relative;
+
+    .vidWrap{
+      width: 1100px; height: 440px;
+      margin:0 auto;
+
+      video{
+        width: 100%; height: 100%;
+        object-fit: cover;
+      }
+    }
+    .desBtn{
+      width: 420px; height: 80px;
+      background: rgba(0,0,0,0.9);
+      position: absolute; bottom: -40px; left: 150px;
+    
+      h1{
+        font: 400 14px/20px 'roboto condensed'; color: #fff;
+        padding: 10px 20px;
+      }
+      p{
+        font: 400 12px/2 'roboto condensed'; color: #ccc;
+        background: rgba(0,0,0,0.9);
+        padding: 10px 20px;
+      }
+    }
+  }
+*/
