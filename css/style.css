@@ -86,7 +86,44 @@ table {
   width: calc(100% -100px);
   height: 100vh;
   padding-left: 100px;
-  background: #777; }
+  background: #000; }
+  #visual .inner {
+    width: calc(1180px -100px);
+    position: relative;
+    margin: 0 auto; }
+    #visual .inner .openVisual {
+      width: 100%;
+      height: calc(100vh - 80px);
+      background: url(../img/canyon.jpg) no-repeat top/cover;
+      filter: grayscale(60%);
+      padding-top: 250px; }
+      #visual .inner .openVisual h1 {
+        font: 700 76px/1 'roboto condensed';
+        color: #fff;
+        letter-spacing: 30px;
+        margin-bottom: 10px;
+        text-align: center; }
+      #visual .inner .openVisual h2 {
+        font: 400 16px/1 'roboto condensed';
+        color: #fff;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+        text-align: center; }
+      #visual .inner .openVisual a {
+        display: block;
+        text-align: center;
+        font-size: 35px;
+        color: #fff; }
+    #visual .inner .util {
+      position: absolute;
+      top: 50%;
+      left: -50px;
+      transform: translateY(-50%); }
+      #visual .inner .util li {
+        margin-bottom: 40px; }
+        #visual .inner .util li a {
+          font-size: 14px;
+          color: #aaa; }
 
 /* ----- section2/history -------------------------------------------*/
 #history {
