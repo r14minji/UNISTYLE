@@ -94,7 +94,7 @@ $mobile :539px;
     margin:0 auto;
     position: relative;
 
-    .photo{
+    .viewPic{
       width: 420px; height: 570px;
       position: absolute; top: -70px; left: 150px; z-index: 2;
 
@@ -108,24 +108,26 @@ $mobile :539px;
       position: absolute; top: 100px; left: calc( 150px + 420px + 100px);
 
       h1{
-        font: 400 28px/1 'roboto condensed';
+        font: 700 28px/1 'roboto condensed';
         color: #000;
-        letter-spacing: 3px;
+        letter-spacing: 5px;
         margin-bottom: 10px;
       }
       h2{
         font: 300 14px/1 'roboto condensed';
-        color: #999;
+        color: #555;
+        letter-spacing: 3px;
         margin-bottom: 20px;
       }
       p{
-        font: 300 12px/1.4 'roboto condensed';
-        color: #999;
+        font: 300 12px/2 'roboto condensed';
+        color: #555;
         margin-bottom: 20px;
       }
       a{
-        font: 400 12px/1 'roboto condensed';
+        font: 700 12px/1 'roboto condensed';
         color: #333;
+        letter-spacing: 2px;
       }
     }
   }
@@ -137,12 +139,12 @@ $mobile :539px;
 
   .inner{
     width: 1180px; height: 100%;
-    margin:0 auto;
+    margin:0 auto; 
     position: relative;
 
     .vidWrap{
       width: 1100px; height: 440px;
-      margin:0 auto;
+      margin:0 auto; 
 
       video{
         width: 100%; height: 100%;
@@ -177,6 +179,53 @@ $mobile :539px;
   }
 }
 /* ----- section5/landscate-waterfall -------------------------------*/
+#landscape{
+  width: 100%; height: 570px;
+
+  .inner{
+    width: 1180px; height: 100%;
+    padding: 100px 0 0px;
+    margin:0 auto;
+    position: relative;
+
+    .waterPic{
+      width: 420px; height: 570px;
+      position: absolute; bottom: -70px; right: 150px; z-index: 2;
+
+      img{
+        width: 100%; 
+        object-fit: cover;
+      }
+    }
+    .desMore{
+      width: 400px; 
+      position: absolute; top: 170px; right: calc( 150px + 420px + 100px);
+
+      h1{
+        font: 700 28px/1 'roboto condensed';
+        color: #000;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+      }
+      h2{
+        font: 300 14px/1 'roboto condensed';
+        color: #555;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+      }
+      p{
+        font: 300 12px/2 'roboto condensed';
+        color: #555;
+        margin-bottom: 20px;
+      }
+      a{
+        font: 700 12px/1 'roboto condensed';
+        color: #333;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
 /* ----- section6/experience----------------------------------------*/
 /* ----- section7/wildLife--------------------------------------------*/
 /* ----- section8/trip ------------------------------------------------*/

@@ -105,14 +105,14 @@ table {
     padding: 100px 0 0;
     margin: 0 auto;
     position: relative; }
-    #Views .inner .photo {
+    #Views .inner .viewPic {
       width: 420px;
       height: 570px;
       position: absolute;
       top: -70px;
       left: 150px;
       z-index: 2; }
-      #Views .inner .photo img {
+      #Views .inner .viewPic img {
         width: 100%;
         object-fit: cover; }
     #Views .inner .desMore {
@@ -121,21 +121,23 @@ table {
       top: 100px;
       left: calc( 150px + 420px + 100px); }
       #Views .inner .desMore h1 {
-        font: 400 28px/1 'roboto condensed';
+        font: 700 28px/1 'roboto condensed';
         color: #000;
-        letter-spacing: 3px;
+        letter-spacing: 5px;
         margin-bottom: 10px; }
       #Views .inner .desMore h2 {
         font: 300 14px/1 'roboto condensed';
-        color: #999;
+        color: #555;
+        letter-spacing: 3px;
         margin-bottom: 20px; }
       #Views .inner .desMore p {
-        font: 300 12px/1.4 'roboto condensed';
-        color: #999;
+        font: 300 12px/2 'roboto condensed';
+        color: #555;
         margin-bottom: 20px; }
       #Views .inner .desMore a {
-        font: 400 12px/1 'roboto condensed';
-        color: #333; }
+        font: 700 12px/1 'roboto condensed';
+        color: #333;
+        letter-spacing: 2px; }
 
 /* ----- section4/vid ------------------------------------------------*/
 #vid {
@@ -182,6 +184,49 @@ table {
             font-size: 10px; }
 
 /* ----- section5/landscate-waterfall -------------------------------*/
+#landscape {
+  width: 100%;
+  height: 570px; }
+  #landscape .inner {
+    width: 1180px;
+    height: 100%;
+    padding: 100px 0 0px;
+    margin: 0 auto;
+    position: relative; }
+    #landscape .inner .waterPic {
+      width: 420px;
+      height: 570px;
+      position: absolute;
+      bottom: -70px;
+      right: 150px;
+      z-index: 2; }
+      #landscape .inner .waterPic img {
+        width: 100%;
+        object-fit: cover; }
+    #landscape .inner .desMore {
+      width: 400px;
+      position: absolute;
+      top: 170px;
+      right: calc( 150px + 420px + 100px); }
+      #landscape .inner .desMore h1 {
+        font: 700 28px/1 'roboto condensed';
+        color: #000;
+        letter-spacing: 5px;
+        margin-bottom: 10px; }
+      #landscape .inner .desMore h2 {
+        font: 300 14px/1 'roboto condensed';
+        color: #555;
+        letter-spacing: 3px;
+        margin-bottom: 20px; }
+      #landscape .inner .desMore p {
+        font: 300 12px/2 'roboto condensed';
+        color: #555;
+        margin-bottom: 20px; }
+      #landscape .inner .desMore a {
+        font: 700 12px/1 'roboto condensed';
+        color: #333;
+        letter-spacing: 2px; }
+
 /* ----- section6/experience----------------------------------------*/
 /* ----- section7/wildLife--------------------------------------------*/
 /* ----- section8/trip ------------------------------------------------*/
