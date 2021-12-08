@@ -9,3 +9,62 @@ $mobile :539px;
 
 // 서브 페이지
 @import 'reset.scss';
+
+/*----- header -----------------------------------------------------*/
+#header{
+  width: calc(100% -100px); height: 80px;
+  background: #000;
+  margin-left: 100px;
+
+  .inner{
+    width: 1080px; height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+
+
+    .menuWeb{
+      width: calc(100% -100px); height: 100%;
+      margin: 0 10vw;
+      position: relative;
+
+      h1{
+        position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%);
+        
+        a{
+          font: 400 22px/1 'roboto condensed';
+          color: #fff;
+        } 
+      }
+
+      #gnb_left{
+        position: absolute; top: 50%; left: 0; transform: translateY(-50%);
+        li{
+          float:left; margin-right:30px;
+          a{
+            font-size: 16px; font-weight: 400; font-family: 'roboto condensed';
+            color: #aaa;
+          }
+        }
+      }
+
+      #gnb_right{
+        position: absolute; top: 50%; right: 0; transform: translateY(-50%);
+        li{
+          float: left; margin-left:30px;
+          a{
+            font-size: 16px; font-weight: 400; font-family: 'roboto condensed';
+            color: #aaa;
+          }
+        }
+      }
+    }
+
+    .btnCall{
+      display: none;
+    }
+    .menuMo{
+      display: none;
+    }
+  }
+}
