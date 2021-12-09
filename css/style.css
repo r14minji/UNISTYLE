@@ -729,6 +729,61 @@ table {
     #visual .inner .util {
       top: 40%;
       left: 20px;
-      transform: translateY(-50%); } }
+      transform: translateY(-50%); }
+
+  /* ----- section2/history -------------------------------------------*/
+  #history .inner {
+    width: 100%;
+    height: 580px;
+    padding-left: 0px;
+    position: relative;
+    margin: 0 auto; }
+    #history .inner ::after {
+      content: "";
+      display: block;
+      clear: both; }
+    #history .inner h1 {
+      width: 100%;
+      font: 700 28px/1.4 'roboto condensed';
+      text-align: center;
+      margin: 0px 0px 40px;
+      position: relative; }
+      #history .inner h1::after {
+        right: 49%;
+        margin-top: 10px; }
+    #history .inner .hisWrap {
+      position: static;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px; }
+      #history .inner .hisWrap .btnPrev {
+        font-size: 16px;
+        color: #fff;
+        margin-right: 10px;
+        position: absolute;
+        top: 45%;
+        left: 70%; }
+      #history .inner .hisWrap .btnNext {
+        font-size: 16px;
+        color: #fff;
+        margin-right: 10px;
+        position: absolute;
+        top: 45%;
+        left: 73%; }
+    #history .inner .hisTxt {
+      display: block;
+      width: 100%;
+      float: auto;
+      margin: 0 auto; }
+      #history .inner .hisTxt p {
+        display: block;
+        width: 100%;
+        padding: 0px 30px; }
+      #history .inner .hisTxt a {
+        display: block;
+        width: 100%;
+        text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
