@@ -799,46 +799,30 @@ table {
 
   /* ----- section3/theViews -----------------------------------------*/
   #views {
-    width: 100%;
-    height: 570px; }
+    height: 100vh;
+    height: 500px; }
     #views .inner {
-      width: 1180px;
-      height: 100%;
-      padding: 100px 0 0;
-      margin: 0 auto;
-      position: relative; }
+      width: 100%;
+      padding: 0;
+      position: relative;
+      margin: 50px 20px; }
       #views .inner .viewPic {
-        width: 420px;
-        height: 570px;
+        width: 48%;
+        height: 520px;
         position: absolute;
-        top: -70px;
-        left: 150px;
+        top: -100px;
+        left: 0px;
         z-index: 2; }
         #views .inner .viewPic img {
-          width: 100%;
-          object-fit: cover; }
+          height: 100%; }
       #views .inner .desMore {
-        width: 400px;
+        width: 48%;
+        height: 380px;
         position: absolute;
-        top: 100px;
-        left: calc( 150px + 420px + 100px); }
-        #views .inner .desMore h1 {
-          font: 700 28px/1 'roboto condensed';
-          color: #000;
-          letter-spacing: 5px;
-          margin-bottom: 10px; }
+        top: 0px;
+        left: 50%;
+        padding: 0 20px; }
         #views .inner .desMore h2 {
-          font: 300 14px/1 'roboto condensed';
-          color: #555;
-          letter-spacing: 3px;
-          margin-bottom: 20px; }
-        #views .inner .desMore p {
-          font: 300 12px/2 'roboto condensed';
-          color: #555;
-          margin-bottom: 20px; }
-        #views .inner .desMore a {
-          font: 700 12px/1 'roboto condensed';
-          color: #333;
           letter-spacing: 2px; }
 
   /* ----- section4/vid ------------------------------------------------*/
