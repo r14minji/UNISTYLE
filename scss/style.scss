@@ -12,17 +12,18 @@ $mobile :539px;
 
 /*----- header -----------------------------------------------------*/
 #header{
-  width: calc(100% -100px); height: 80px;
+  width: 100%;
   background: #111;
-  padding-left: 100px;
+
 
   .inner{
-    width: 1080px; height: 100%;
+    width: 1180px; height: 80px;
     margin: 0 auto;
     position: relative;
+    padding-left: 100px;
 
     .menuWeb{
-      width: calc(100% -100px); height: 100%;
+      width: 100%; height: 100%;
       position: relative;
       display: flex; justify-content: center;
       padding: 30px 0;
@@ -58,8 +59,9 @@ $mobile :539px;
     }
 
     .btnCall{
-      position: absolute; top: 50%; left: -60px;
-      width: 25px; height: 25px; border: #fff;
+      //display: none;
+      position: absolute; top: 40%; left: 0px;
+      width: 20px; height: 20px; border: #fff;
       
       &::before{
         content: ""; display: block; width: 100%; height: 2px;
@@ -157,12 +159,12 @@ $mobile :539px;
 
 /* ----- section1/visual -------------------------------------------*/
 #visual{
-  width: calc(100% -100px); height: 100vh;
-  padding-left: 100px;
+  width: 100%; 
   background: #111;
 
   .inner{
-    width: calc(1180px -100px); 
+    width: 100%; height: 100vh;
+    padding-left: 100px;
     position: relative;
     margin: 0 auto;
 
@@ -192,7 +194,7 @@ $mobile :539px;
       }
     }
     .util{
-      position: absolute; top: 50%; left: -50px; transform: translateY(-50%);
+      position: absolute; top: 50%; left: 50px; transform: translateY(-50%);
 
       li{
         margin-bottom: 40px;
@@ -206,12 +208,12 @@ $mobile :539px;
 }
 /* ----- section2/history -------------------------------------------*/
 #history{
-  width: calc(100% -100px); height: 360px;
-  padding-left: 100px;
+  width: 100%;
   background: #111;
   
   .inner{
-    width: calc(1180px -100px); 
+    width: 1180px;  height: 360px;
+    padding-left: 100px;
     position: relative;
     margin: 0 auto;
 
@@ -239,7 +241,7 @@ $mobile :539px;
         width: 160px; height: 100px;
         margin-right: 20px;
         overflow: hidden;
-        &:last-child{margin-right: 0;}
+        &:nth-of-type(3){margin-right: 0px;}
 
         img{
           width: 100%; height: 100%;
@@ -720,4 +722,538 @@ $mobile :539px;
       }
     }
   }
+}
+
+
+/* tablet ------------------------------------------------------------*/
+@media screen and (max-width: $tablet){
+/*----- header -----------------------------------------------------*/
+#header{
+  .inner{
+    width: 100%; height: 100%;
+
+    .menuWeb{
+      #gnb_left, #gnb_right {display: none;}
+    }
+
+    .btnCall{
+      display: block;
+      left: 20px;
+    }
+  }
+}
+
+/* ----- section1/visual -------------------------------------------*/
+#visual{
+  .inner{
+    padding-left: 60px;
+    .openVisual{
+      width: 100%; height: calc(100vh - 60px);
+
+      h1{
+        font-size: 2.5rem;
+        letter-spacing: 25px;
+      }
+    }
+    .util{
+      top: 40%; left: 20px; transform: translateY(-50%);
+    }
+  }
+}
+/* ----- section2/history -------------------------------------------*/
+#history{
+  .inner{
+    width: 100%;  height: 580px;
+    padding-left: 0px;
+    position: relative;
+    margin: 0 auto;
+
+    ::after{content: ""; display: block; clear: both;}
+    h1{
+      width: 100%;
+      font: 700 28px/1.4 'roboto condensed';
+      text-align: center; margin: 0px 0px 40px;
+      position: relative;
+
+      &::after{
+        right: 49%;
+        margin-top: 10px; 
+      }
+    }
+    .hisWrap{
+      position:static;
+      width: 100%; height: auto; 
+      display: flex; justify-content: center;
+      margin-bottom: 50px;
+
+
+      .btnPrev{
+        font-size: 16px; color: #fff; margin-right: 10px;
+        position: absolute; top: 45%; left: 70%;
+      }
+      .btnNext{
+        font-size: 16px; color: #fff; margin-right: 10px;
+        position: absolute; top:  45%; left: 73%;
+      }
+    }
+    .hisTxt{
+      display: block;
+      width: 100%; 
+      float:auto; margin: 0 auto;
+
+      p{ display: block;  width: 100%; padding: 0px 30px;}
+      a{display: block;  width: 100%; text-align: center;}
+    }
+  }
+}
+/* ----- section3/theViews -----------------------------------------*/
+#views{
+  width: 100%; height: 570px;
+
+  .inner{
+    width: 1180px; height: 100%;
+    padding: 100px 0 0;
+    margin:0 auto;
+    position: relative;
+
+    .viewPic{
+      width: 420px; height: 570px;
+      position: absolute; top: -70px; left: 150px; z-index: 2;
+
+      img{
+        width: 100%; 
+        object-fit: cover;
+      }
+    }
+    .desMore{
+      width: 400px; 
+      position: absolute; top: 100px; left: calc( 150px + 420px + 100px);
+
+      h1{
+        font: 700 28px/1 'roboto condensed';
+        color: #000;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+      }
+      h2{
+        font: 300 14px/1 'roboto condensed';
+        color: #555;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+      }
+      p{
+        font: 300 12px/2 'roboto condensed';
+        color: #555;
+        margin-bottom: 20px;
+      }
+      a{
+        font: 700 12px/1 'roboto condensed';
+        color: #333;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+/* ----- section4/vid ------------------------------------------------*/
+#vid{
+  width: 100%; height: 600px;
+
+  .inner{
+    width: 1180px; height: 100%;
+    margin:0 auto; 
+    position: relative;
+
+    .vidWrap{
+      width: 1100px; height: 440px;
+      margin:0 auto; 
+
+      video{
+        width: 100%; height: 100%;
+        object-fit: cover;
+      }
+    }
+    .desBtn{
+      width: 420px; 
+      background: rgba(0,0,0,0.9);
+      position: absolute; bottom: 76px; left: 150px;
+    
+      h1{
+        font: 700 14px/20px 'roboto condensed'; color: #ccc;
+        letter-spacing: 4px;
+        padding: 15px 30px;
+      }
+      p{
+        font: 400 12px/2 'roboto condensed'; color: #ccc;
+        letter-spacing: 1px;
+        padding: 20px 30px 15px;
+      }
+      ul{
+        position: absolute; top: 5px; right: 30px;
+        li{
+          float: left; padding: 5px;
+          i{
+            color: #fff; font-size: 10px; 
+          }
+        }
+      }
+    }
+  }
+}
+/* ----- section5/landscate-waterfall -------------------------------*/
+#landscape{
+  width: 100%; height: 570px;
+
+  .inner{
+    width: 1180px; height: 100%;
+    padding: 100px 0 0px;
+    margin:0 auto;
+    position: relative;
+
+    .waterPic{
+      width: 420px; height: 570px;
+      position: absolute; bottom: -70px; right: 150px; z-index: 2;
+
+      img{
+        width: 100%; 
+        object-fit: cover;
+      }
+    }
+    .desMore{
+      width: 400px; 
+      position: absolute; top: 170px; right: calc( 150px + 420px + 100px);
+
+      h1{
+        font: 700 28px/1 'roboto condensed';
+        color: #000;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+      }
+      h2{
+        font: 300 14px/1 'roboto condensed';
+        color: #555;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+      }
+      p{
+        font: 300 12px/2 'roboto condensed';
+        color: #555;
+        margin-bottom: 20px;
+      }
+      a{
+        font: 700 12px/1 'roboto condensed';
+        color: #333;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+/* ----- section6/experience----------------------------------------*/
+#experience{
+  width: 100%; height: 670px;
+  background: url(../img/banner.jpg) no-repeat top/cover;
+
+  .bgWrap{
+    width: 100%; height: 100%;
+    opacity: 0.9;
+    background: #000; 
+    .inner{
+      width: 1180px; height: 570px;
+      margin: 0 auto;
+      padding-top: 200px;     
+      h1{
+        font: 700 28px/1 'roboto condensed';
+        color: #fff;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      h2{
+        font: 300 14px/1 'roboto condensed';
+        color: #ccc;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .wrap{
+        display: flex; justify-content: center;
+        article{
+          width: 280px; margin-right: 30px; 
+          &:last-child{margin-right: 0;}
+        
+          .ExPic{
+            width: 100%; height: 170px; overflow: hidden;
+            margin-bottom: 20px;
+  
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: 0.5s;
+            }
+            &:hover img{
+              transform: scale(1.2);
+            }
+          }
+          h3{
+            font: 700 14px/1 'roboto condensed';
+            color: #fff;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+          }
+          p{
+            font: 400 12px/2 'roboto condensed';
+            color: #ccc;
+            margin-bottom: 10px;
+          }
+          a{
+            font: 700 12px/1 'roboto condensed';
+            color: #fff;
+          }
+        }
+  
+      }
+    }
+
+  }
+}
+/* ----- section7/wildLife--------------------------------------------*/
+#wildLife{
+  width: 100%; height: 672px;
+  background: #000;
+
+  .inner{
+    width: 1180px; height: 100%;
+    margin:0 auto; 
+    position: relative;
+
+    .wildPic{
+      width: 1100px; height: 440px;
+      margin:0 auto; 
+      img{
+        width: 100%; height: 100%;
+        object-fit: cover;
+      }
+    }
+    .desBtn{
+      width: 420px; 
+      background: rgba(0,0,0,0.9);
+      position: absolute; bottom: 76px; right: 150px;
+
+    
+      h1{
+        font: 700 14px/20px 'roboto condensed'; color: #ccc;
+        letter-spacing: 4px;
+        padding: 15px 30px;
+      }
+      p{
+        font: 400 12px/2 'roboto condensed'; color: #ccc;
+        letter-spacing: 1px;
+        padding: 20px 30px 15px;
+      }
+      ul{
+        position: absolute; top: 5px; right: 30px;
+        li{
+          float: left; padding: 5px;
+          i{
+            color: #fff; font-size: 10px; 
+          }
+        }
+      }
+    }
+  }
+}
+/* ----- section8/trip ------------------------------------------------*/
+#trip{
+  width: 100%; height: 570px;
+
+  .inner{
+    width: 1180px; height: 100%;
+    padding: 100px 0 0;
+    margin:0 auto;
+    position: relative;
+
+    .tripPic{
+      width: 420px; height: 570px;
+      position: absolute; top: -70px; left: 150px; z-index: 2;
+
+      img{
+        width: 100%; 
+        object-fit: cover;
+      }
+    }
+    .desMore{
+      width: 400px; 
+      position: absolute; top: 100px; left: calc( 150px + 420px + 100px);
+
+      h1{
+        font: 700 28px/1 'roboto condensed';
+        color: #000;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+      }
+      h2{
+        font: 300 14px/1 'roboto condensed';
+        color: #555;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+      }
+      p{
+        font: 300 12px/2 'roboto condensed';
+        color: #555;
+        margin-bottom: 20px;
+      }
+      a{
+        font: 700 12px/1 'roboto condensed';
+        color: #333;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+/* ----- section9/stories  --------------------------------------------*/
+#stories{
+  width: 100%; height: 370px;
+
+  .inner{
+    width: 1180px; 
+    margin: 0 auto;
+
+    h1{
+      font: 700 28px/1 'roboto condensed';
+      color: #000;
+      letter-spacing: 5px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    h2{
+      font: 300 14px/1 'roboto condensed';
+      color: #777;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .storyGallery{
+      width: 100%; 
+      position: relative;
+      display: flex;
+  
+      .storyPic{
+        width: 240px; height: 120px; 
+        margin: 20px;
+        overflow: hidden;
+  
+        img{
+          width: 100%; height: 100%;
+        }
+        .storyTxt{
+          width: 210px;  margin-left: 20px;
+          position: relative;
+        
+          h3{
+            font: 300 14px/20px 'roboto condensed';
+            color: #fff;
+            position: absolute;  bottom: 30px; left: 0;
+          }
+          p{
+            font: 300 14px/20px 'roboto condensed';
+            color: #fff;
+            position: absolute;  bottom: 10px; left: 0;
+          }
+        }
+      }
+    }
+  }
+
+}
+/* ----- section10/area  ---------------------------------------------*/
+#area{
+  width: 100%; height: 600px;
+
+  .inner{
+    width: 1180px; height: 100%;
+    margin:0 auto; 
+    position: relative;
+
+    .areaPic{
+      width: 1100px; height: 440px;
+      margin:0 auto; 
+
+      img{
+        width: 100%; height: 100%;
+        object-fit: cover;
+      }
+    }
+    .desBtn{
+      width: 420px; 
+      background: rgba(0,0,0,0.9);
+      position: absolute; bottom: 53px; left: 150px;
+    
+      h1{
+        font: 700 14px/20px 'roboto condensed'; color: #ccc;
+        letter-spacing: 4px;
+        padding: 15px 30px;
+      }
+      p{
+        font: 400 12px/2 'roboto condensed'; color: #ccc;
+        letter-spacing: 1px;
+        padding: 20px 30px 15px;
+      }
+      ul{
+        position: absolute; top: 5px; right: 30px;
+        li{
+          float: left; padding: 5px;
+          i{
+            color: #fff; font-size: 10px; 
+          }
+        }
+      }
+    }
+  }
+}
+/*----- footer --------------------------------------------------------*/
+#footer{
+  width: 100%;
+  background: url(../img/banner.jpg) no-repeat top/cover;
+
+  .footerBg{
+    opacity: 0.9;
+    filter: grayscale(100%);
+    background: #000; 
+
+    .inner{
+      width: 1180px; 
+      margin: 0 auto;
+      position: relative;
+      padding: 80px 0 30px;
+  
+      h1{
+        font: 700 20px/1 'roboto condensed';
+        color: #ddd;
+        letter-spacing: 5px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      ul{
+        display: flex; justify-content: center;
+        margin-bottom: 30px;
+
+        li{
+          font: 400 14px/1 'roboto condensed';
+          color: #aaa;
+          margin-right: 30px;
+          &:last-child{margin-right: 0;}
+        }
+      }
+      span{
+        display: block;
+        text-align: center;
+        font: 400 12px/1 'roboto condensed';
+        letter-spacing: 3px;
+        color: #999;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
 }
