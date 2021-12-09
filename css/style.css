@@ -1081,22 +1081,27 @@ table {
           line-height: 1.5; }
 
   /* ----- section6/experience----------------------------------------*/
-  #experience .bgWrap .inner {
-    width: 100%;
-    height: 570px;
-    padding-top: 180px; }
-    #experience .bgWrap .inner .wrap {
-      display: flex;
-      justify-content: space-around; }
-      #experience .bgWrap .inner .wrap article {
-        width: calc(100% / 3);
-        margin-right: 0px; }
-        #experience .bgWrap .inner .wrap article h3 {
-          padding: 0 5px; }
-        #experience .bgWrap .inner .wrap article p {
-          padding: 0 5px; }
-        #experience .bgWrap .inner .wrap article a {
-          padding: 0 5px; }
+  #experience {
+    height: 1200px; }
+    #experience .bgWrap .inner {
+      width: 100%;
+      padding-top: 100px; }
+      #experience .bgWrap .inner .wrap {
+        display: block;
+        margin: 0 auto; }
+        #experience .bgWrap .inner .wrap article {
+          width: 100%;
+          max-width: 340px;
+          margin: 0 auto;
+          padding-bottom: 20px; }
+          #experience .bgWrap .inner .wrap article:last-child {
+            margin: 0 auto; }
+          #experience .bgWrap .inner .wrap article h3 {
+            padding: 0 10px; }
+          #experience .bgWrap .inner .wrap article p {
+            padding: 0 10px; }
+          #experience .bgWrap .inner .wrap article a {
+            padding: 0 10px; }
 
   /* ----- section7/wildLife--------------------------------------------*/
   #wildLife {
@@ -1104,40 +1109,44 @@ table {
     #wildLife .inner {
       width: 100%; }
       #wildLife .inner .wildPic {
-        width: 100%;
-        padding: 50px 0; }
+        width: 100%; }
       #wildLife .inner .desBtn {
-        width: 420px;
-        position: absolute;
-        bottom: 104px;
-        right: 5%; }
+        width: 100%;
+        position: static; }
+        #wildLife .inner .desBtn h1 {
+          padding: 5px 10px; }
+        #wildLife .inner .desBtn p {
+          padding: 5px 10px; }
+        #wildLife .inner .desBtn ul {
+          position: absolute;
+          top: 73%;
+          right: 30px; }
 
   /* ----- section8/trip ------------------------------------------------*/
   #trip {
-    height: 500px; }
+    height: 830px; }
     #trip .inner {
-      width: 100%;
-      padding: 0;
-      position: relative;
-      margin: 50px 20px; }
+      margin: 0 auto; }
       #trip .inner .tripPic {
-        width: 48%;
+        width: 100%;
+        max-width: 340px;
         height: 520px;
-        position: absolute;
-        top: -100px;
-        left: 10px;
-        z-index: 2; }
+        position: static;
+        padding-top: 40px;
+        margin: 0 auto; }
         #trip .inner .tripPic img {
+          width: 100%;
           height: 100%; }
       #trip .inner .desMore {
-        width: 48%;
+        width: 100%;
         height: 380px;
-        position: absolute;
-        top: 0px;
-        left: 50%;
-        padding: 0 20px; }
+        position: static;
+        padding: 20px 20px;
+        text-align: center; }
         #trip .inner .desMore h2 {
           letter-spacing: 2px; }
+        #trip .inner .desMore p {
+          line-height: 1.5; }
 
   /* ----- section9/stories  --------------------------------------------*/
   #stories {
