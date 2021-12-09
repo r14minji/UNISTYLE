@@ -804,7 +804,7 @@ $mobile :539px;
   }
   /* ----- section3/theViews -----------------------------------------*/
   #views{
-    height: 100vh; height: 500px;
+    height: 500px;
 
     .inner{
       width:100%; 
@@ -814,7 +814,7 @@ $mobile :539px;
 
       .viewPic{
         width: 48%; height: 520px;
-        position: absolute; top: -100px; left: 0px; z-index: 2;
+        position: absolute; top: -100px; left: 10px; z-index: 2;
         img{
           height: 100%; 
         }
@@ -833,7 +833,7 @@ $mobile :539px;
     height: 600px;
 
     .inner{
-      width: 100%;  margin: 50px 0;
+      width: 100%;  margin: 50px 0 0;
 
       .vidWrap{ width: 100%; }
       .desBtn{
@@ -844,49 +844,26 @@ $mobile :539px;
   }
   /* ----- section5/landscate-waterfall -------------------------------*/
   #landscape{
-    width: 100%; height: 570px;
+    height: 500px;
 
     .inner{
-      width: 1180px; height: 100%;
-      padding: 100px 0 0px;
-      margin:0 auto;
+      width:100%; 
+      padding: 0;
       position: relative;
+      margin: 0px 20px;
 
       .waterPic{
-        width: 420px; height: 570px;
-        position: absolute; bottom: -70px; right: 150px; z-index: 2;
+        width: 47%; height: 520px;
+        position: absolute; bottom: -100px; right: 20px; z-index: 2;
 
-        img{
-          width: 100%; 
-          object-fit: cover;
-        }
+        img{ height: 100%; }
       }
       .desMore{
-        width: 400px; 
-        position: absolute; top: 170px; right: calc( 150px + 420px + 100px);
+        width: 48%; height: auto;
+        position: absolute; top: auto; bottom: 50px; right: 50%;
+        padding: 0 20px 0 0;
 
-        h1{
-          font: 700 28px/1 'roboto condensed';
-          color: #000;
-          letter-spacing: 5px;
-          margin-bottom: 10px;
-        }
-        h2{
-          font: 300 14px/1 'roboto condensed';
-          color: #555;
-          letter-spacing: 3px;
-          margin-bottom: 20px;
-        }
-        p{
-          font: 300 12px/2 'roboto condensed';
-          color: #555;
-          margin-bottom: 20px;
-        }
-        a{
-          font: 700 12px/1 'roboto condensed';
-          color: #333;
-          letter-spacing: 2px;
-        }
+        h2{  letter-spacing: 2px;}
       }
     }
   }
