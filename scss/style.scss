@@ -938,19 +938,22 @@ $mobile :539px;
   }
   /* ----- section9/stories  --------------------------------------------*/
   #stories{
-    width: 100%; height: 520px;
+    width: 100%; height: 70vh;
 
     .inner{
       width: 100%;
-      padding: 50px 0;
+      h1{
+        margin-top: 50px;
+      }
 
       .storyGallery{
         width: 100%; 
         position: relative;
-        display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
-    
+        display: flex; flex-wrap: wrap; justify-content: center; 
+
         .storyPic{
-          width: calc(100% / 4); height: 15vw;
+          width: calc(30%); height: 15vw;
+          margin: 10px;
         }
       }
     }
@@ -958,46 +961,16 @@ $mobile :539px;
   }
   /* ----- section10/area  ---------------------------------------------*/
   #area{
-    width: 100%; height: 600px;
-
     .inner{
-      width: 1180px; height: 100%;
-      margin:0 auto; 
-      position: relative;
+      height: 600px;
+      margin: 150px 0;
 
       .areaPic{
-        width: 1100px; height: 440px;
-        margin:0 auto; 
-
-        img{
-          width: 100%; height: 100%;
-          object-fit: cover;
-        }
+        width: 100%; 
       }
       .desBtn{
         width: 420px; 
-        background: rgba(0,0,0,0.9);
-        position: absolute; bottom: 53px; left: 150px;
-      
-        h1{
-          font: 700 14px/20px 'roboto condensed'; color: #ccc;
-          letter-spacing: 4px;
-          padding: 15px 30px;
-        }
-        p{
-          font: 400 12px/2 'roboto condensed'; color: #ccc;
-          letter-spacing: 1px;
-          padding: 20px 30px 15px;
-        }
-        ul{
-          position: absolute; top: 5px; right: 30px;
-          li{
-            float: left; padding: 5px;
-            i{
-              color: #fff; font-size: 10px; 
-            }
-          }
-        }
+        position: absolute; bottom: 53px; left: 5%;
       }
     }
   }
@@ -1012,7 +985,7 @@ $mobile :539px;
       background: #000; 
 
       .inner{
-        width: 1180px; 
+        width: 100%; 
         margin: 0 auto;
         position: relative;
         padding: 80px 0 30px;
