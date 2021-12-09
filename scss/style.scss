@@ -163,13 +163,13 @@ $mobile :539px;
   background: #111;
 
   .inner{
-    width: 100%; height: 100vh;
+    width: 100%; height: 80vh;
     padding-left: 100px;
     position: relative;
     margin: 0 auto;
 
     .openVisual{
-      width: 100%; height: calc(100vh - 80px);
+      width: 100%; height: 80vh;
       background: url(../img/canyon.jpg) no-repeat top/cover;
       filter: grayscale(60%);
       padding-top: 250px;
@@ -212,28 +212,26 @@ $mobile :539px;
   background: #111;
   
   .inner{
-    width: 1180px;  height: 360px;
+    width: 1180px; height: 450px;
     padding-left: 100px;
     position: relative;
     margin: 0 auto;
 
     ::after{content: ""; display: block; clear: both;}
     h1{
-      font: 700 28px/1.4 'roboto condensed';
-      color: #fff; text-align: right;
-      letter-spacing: 10px;
-      margin: 50px 0 0 196px;
-      float: left;
-      position: absolute;
+      float: left; width: 50%;
+      margin: 120px 0; 
+      padding-right: 60px; font: 700 28px/1.4 'roboto condensed';
+      color: #fff; text-align: right; letter-spacing: 10px;
 
       &::after{
         content: ""; display: block;
-        width:30px; height: 2px; background: #fff;
-        position: absolute; bottom: -10px; right: 10px;
+        width:30px; height: 2px; background: #eee;
+        position: absolute; top: 59%; left: 46%;
       }
     }
     .hisWrap{
-      position: absolute; top:-135px; right: 0;
+      position: absolute; top:-60px; right: 0;
       height: 100px; 
       display: flex; justify-content: flex-end;
 
@@ -248,18 +246,23 @@ $mobile :539px;
           object-fit: cover; 
         }
       }
+    }
+    .hisBtn{
+      display: flex;
+      position: absolute; top: 8px; left: 41%;
       .btnPrev{
-        font-size: 16px; color: #fff; margin-right: 10px;
-        position: absolute; bottom: 0; left: -170px;
+        display: inline-block; width: 30px; height: 30px; border-radius: 50%; border: 1px solid #aaa; text-align: center;
+        font-size: 12px; line-height: 30px; color: #aaa; margin-right: 30px;
+
       }
       .btnNext{
-        font-size: 16px; color: #fff; margin-right: 10px;
-        position: absolute; bottom: 0; left: -130px;
+        display: inline-block; width: 30px; height: 30px; border-radius: 50%; border: 1px solid #aaa; text-align: center;
+        font-size: 12px; line-height: 30px;  color: #aaa;
       }
     }
     .hisTxt{
-      width: 450px; 
-      float:right; margin-right: 61px;
+      float:right; width: 50%; 
+      margin: 120px 0;
 
       p{
         font: 300 12px/2 'roboto condensed';
@@ -730,7 +733,8 @@ $mobile :539px;
   /*----- header -----------------------------------------------------*/
   #header{
     .inner{
-      width: 100%; height: 100%;
+      width: 100%; height: 60px;
+      padding-left: 60px;
 
       .menuWeb{
         #gnb_left, #gnb_right {display: none;}
@@ -748,7 +752,7 @@ $mobile :539px;
     .inner{
       padding-left: 60px;
       .openVisual{
-        width: 100%; height: calc(100vh - 60px);
+        width: 100%; height: 100%; 
 
         h1{
           font-size: 2.5rem;
@@ -785,16 +789,19 @@ $mobile :539px;
         position:static;
         width: 100%; height: auto; 
         display: flex; justify-content: center;
-        margin-bottom: 50px;
-
-
+        margin-bottom: 60px;
+      }
+      .hisBtn{
+        display: flex;
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
         .btnPrev{
-          font-size: 16px; color: #fff; margin-right: 10px;
-          position: absolute; top: 45%; left: 70%;
+          display: inline-block;
+          font-size: 16px; color: #aaa; margin-right: 30px;
+  
         }
         .btnNext{
-          font-size: 16px; color: #fff; margin-right: 10px;
-          position: absolute; top:  45%; left: 73%;
+          display: inline-block;
+          font-size: 16px; color: #aaa;
         }
       }
       .hisTxt{
@@ -807,5 +814,453 @@ $mobile :539px;
       }
     }
   }
+  /* ----- section3/theViews -----------------------------------------*/
+  #views{
+    width: 100%; height: 570px;
 
+    .inner{
+      width: 1180px; height: 100%;
+      padding: 100px 0 0;
+      margin:0 auto;
+      position: relative;
+
+      .viewPic{
+        width: 420px; height: 570px;
+        position: absolute; top: -70px; left: 150px; z-index: 2;
+
+        img{
+          width: 100%; 
+          object-fit: cover;
+        }
+      }
+      .desMore{
+        width: 400px; 
+        position: absolute; top: 100px; left: calc( 150px + 420px + 100px);
+
+        h1{
+          font: 700 28px/1 'roboto condensed';
+          color: #000;
+          letter-spacing: 5px;
+          margin-bottom: 10px;
+        }
+        h2{
+          font: 300 14px/1 'roboto condensed';
+          color: #555;
+          letter-spacing: 3px;
+          margin-bottom: 20px;
+        }
+        p{
+          font: 300 12px/2 'roboto condensed';
+          color: #555;
+          margin-bottom: 20px;
+        }
+        a{
+          font: 700 12px/1 'roboto condensed';
+          color: #333;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+  /* ----- section4/vid ------------------------------------------------*/
+  #vid{
+    width: 100%; height: 600px;
+
+    .inner{
+      width: 1180px; height: 100%;
+      margin:0 auto; 
+      position: relative;
+
+      .vidWrap{
+        width: 1100px; height: 440px;
+        margin:0 auto; 
+
+        video{
+          width: 100%; height: 100%;
+          object-fit: cover;
+        }
+      }
+      .desBtn{
+        width: 420px; 
+        background: rgba(0,0,0,0.9);
+        position: absolute; bottom: 76px; left: 150px;
+      
+        h1{
+          font: 700 14px/20px 'roboto condensed'; color: #ccc;
+          letter-spacing: 4px;
+          padding: 15px 30px;
+        }
+        p{
+          font: 400 12px/2 'roboto condensed'; color: #ccc;
+          letter-spacing: 1px;
+          padding: 20px 30px 15px;
+        }
+        ul{
+          position: absolute; top: 5px; right: 30px;
+          li{
+            float: left; padding: 5px;
+            i{
+              color: #fff; font-size: 10px; 
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ----- section5/landscate-waterfall -------------------------------*/
+  #landscape{
+    width: 100%; height: 570px;
+
+    .inner{
+      width: 1180px; height: 100%;
+      padding: 100px 0 0px;
+      margin:0 auto;
+      position: relative;
+
+      .waterPic{
+        width: 420px; height: 570px;
+        position: absolute; bottom: -70px; right: 150px; z-index: 2;
+
+        img{
+          width: 100%; 
+          object-fit: cover;
+        }
+      }
+      .desMore{
+        width: 400px; 
+        position: absolute; top: 170px; right: calc( 150px + 420px + 100px);
+
+        h1{
+          font: 700 28px/1 'roboto condensed';
+          color: #000;
+          letter-spacing: 5px;
+          margin-bottom: 10px;
+        }
+        h2{
+          font: 300 14px/1 'roboto condensed';
+          color: #555;
+          letter-spacing: 3px;
+          margin-bottom: 20px;
+        }
+        p{
+          font: 300 12px/2 'roboto condensed';
+          color: #555;
+          margin-bottom: 20px;
+        }
+        a{
+          font: 700 12px/1 'roboto condensed';
+          color: #333;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+  /* ----- section6/experience----------------------------------------*/
+  #experience{
+    width: 100%; height: 670px;
+    background: url(../img/banner.jpg) no-repeat top/cover;
+
+    .bgWrap{
+      width: 100%; height: 100%;
+      opacity: 0.9;
+      background: #000; 
+      .inner{
+        width: 1180px; height: 570px;
+        margin: 0 auto;
+        padding-top: 200px;     
+        h1{
+          font: 700 28px/1 'roboto condensed';
+          color: #fff;
+          letter-spacing: 5px;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+        h2{
+          font: 300 14px/1 'roboto condensed';
+          color: #ccc;
+          letter-spacing: 3px;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        .wrap{
+          display: flex; justify-content: center;
+          article{
+            width: 280px; margin-right: 30px; 
+            &:last-child{margin-right: 0;}
+          
+            .ExPic{
+              width: 100%; height: 170px; overflow: hidden;
+              margin-bottom: 20px;
+    
+              img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 0.5s;
+              }
+              &:hover img{
+                transform: scale(1.2);
+              }
+            }
+            h3{
+              font: 700 14px/1 'roboto condensed';
+              color: #fff;
+              letter-spacing: 3px;
+              margin-bottom: 10px;
+            }
+            p{
+              font: 400 12px/2 'roboto condensed';
+              color: #ccc;
+              margin-bottom: 10px;
+            }
+            a{
+              font: 700 12px/1 'roboto condensed';
+              color: #fff;
+            }
+          }
+    
+        }
+      }
+
+    }
+  }
+  /* ----- section7/wildLife--------------------------------------------*/
+  #wildLife{
+    width: 100%; height: 672px;
+    background: #000;
+
+    .inner{
+      width: 1180px; height: 100%;
+      margin:0 auto; 
+      position: relative;
+
+      .wildPic{
+        width: 1100px; height: 440px;
+        margin:0 auto; 
+        img{
+          width: 100%; height: 100%;
+          object-fit: cover;
+        }
+      }
+      .desBtn{
+        width: 420px; 
+        background: rgba(0,0,0,0.9);
+        position: absolute; bottom: 76px; right: 150px;
+
+      
+        h1{
+          font: 700 14px/20px 'roboto condensed'; color: #ccc;
+          letter-spacing: 4px;
+          padding: 15px 30px;
+        }
+        p{
+          font: 400 12px/2 'roboto condensed'; color: #ccc;
+          letter-spacing: 1px;
+          padding: 20px 30px 15px;
+        }
+        ul{
+          position: absolute; top: 5px; right: 30px;
+          li{
+            float: left; padding: 5px;
+            i{
+              color: #fff; font-size: 10px; 
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ----- section8/trip ------------------------------------------------*/
+  #trip{
+    width: 100%; height: 570px;
+
+    .inner{
+      width: 1180px; height: 100%;
+      padding: 100px 0 0;
+      margin:0 auto;
+      position: relative;
+
+      .tripPic{
+        width: 420px; height: 570px;
+        position: absolute; top: -70px; left: 150px; z-index: 2;
+
+        img{
+          width: 100%; 
+          object-fit: cover;
+        }
+      }
+      .desMore{
+        width: 400px; 
+        position: absolute; top: 100px; left: calc( 150px + 420px + 100px);
+
+        h1{
+          font: 700 28px/1 'roboto condensed';
+          color: #000;
+          letter-spacing: 5px;
+          margin-bottom: 10px;
+        }
+        h2{
+          font: 300 14px/1 'roboto condensed';
+          color: #555;
+          letter-spacing: 3px;
+          margin-bottom: 20px;
+        }
+        p{
+          font: 300 12px/2 'roboto condensed';
+          color: #555;
+          margin-bottom: 20px;
+        }
+        a{
+          font: 700 12px/1 'roboto condensed';
+          color: #333;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+  /* ----- section9/stories  --------------------------------------------*/
+  #stories{
+    width: 100%; height: 370px;
+
+    .inner{
+      width: 1180px; 
+      margin: 0 auto;
+
+      h1{
+        font: 700 28px/1 'roboto condensed';
+        color: #000;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      h2{
+        font: 300 14px/1 'roboto condensed';
+        color: #777;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .storyGallery{
+        width: 100%; 
+        position: relative;
+        display: flex;
+    
+        .storyPic{
+          width: 240px; height: 120px; 
+          margin: 20px;
+          overflow: hidden;
+    
+          img{
+            width: 100%; height: 100%;
+          }
+          .storyTxt{
+            width: 210px;  margin-left: 20px;
+            position: relative;
+          
+            h3{
+              font: 300 14px/20px 'roboto condensed';
+              color: #fff;
+              position: absolute;  bottom: 30px; left: 0;
+            }
+            p{
+              font: 300 14px/20px 'roboto condensed';
+              color: #fff;
+              position: absolute;  bottom: 10px; left: 0;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  /* ----- section10/area  ---------------------------------------------*/
+  #area{
+    width: 100%; height: 600px;
+
+    .inner{
+      width: 1180px; height: 100%;
+      margin:0 auto; 
+      position: relative;
+
+      .areaPic{
+        width: 1100px; height: 440px;
+        margin:0 auto; 
+
+        img{
+          width: 100%; height: 100%;
+          object-fit: cover;
+        }
+      }
+      .desBtn{
+        width: 420px; 
+        background: rgba(0,0,0,0.9);
+        position: absolute; bottom: 53px; left: 150px;
+      
+        h1{
+          font: 700 14px/20px 'roboto condensed'; color: #ccc;
+          letter-spacing: 4px;
+          padding: 15px 30px;
+        }
+        p{
+          font: 400 12px/2 'roboto condensed'; color: #ccc;
+          letter-spacing: 1px;
+          padding: 20px 30px 15px;
+        }
+        ul{
+          position: absolute; top: 5px; right: 30px;
+          li{
+            float: left; padding: 5px;
+            i{
+              color: #fff; font-size: 10px; 
+            }
+          }
+        }
+      }
+    }
+  }
+  /*----- footer --------------------------------------------------------*/
+  #footer{
+    width: 100%;
+    background: url(../img/banner.jpg) no-repeat top/cover;
+
+    .footerBg{
+      opacity: 0.9;
+      filter: grayscale(100%);
+      background: #000; 
+
+      .inner{
+        width: 1180px; 
+        margin: 0 auto;
+        position: relative;
+        padding: 80px 0 30px;
+    
+        h1{
+          font: 700 20px/1 'roboto condensed';
+          color: #ddd;
+          letter-spacing: 5px;
+          margin-bottom: 40px;
+          text-align: center;
+        }
+        ul{
+          display: flex; justify-content: center;
+          margin-bottom: 30px;
+
+          li{
+            font: 400 14px/1 'roboto condensed';
+            color: #aaa;
+            margin-right: 30px;
+            &:last-child{margin-right: 0;}
+          }
+        }
+        span{
+          display: block;
+          text-align: center;
+          font: 400 12px/1 'roboto condensed';
+          letter-spacing: 3px;
+          color: #999;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
 }
