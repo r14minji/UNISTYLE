@@ -981,6 +981,263 @@ $mobile :539px;
 
       .inner{
         width: 100%; 
+
+      }
+    }
+  }
+}
+
+/* tablet ------------------------------------------------------------*/
+@media screen and (max-width: $mobile){
+  /*----- header -----------------------------------------------------*/
+  #header{
+    .inner{
+      width: 100%; height: 60px;
+      padding-left: 60px;
+
+      .menuWeb{
+        #gnb_left, #gnb_right {display: none;}
+      }
+
+      .btnCall{
+        display: block;
+        left: 20px;
+      }
+    }
+  }
+
+  /* ----- section1/visual -------------------------------------------*/
+  #visual{
+    .inner{
+      padding-left: 60px;
+      .openVisual{
+        h1{
+          font-size: 1.5rem;
+          letter-spacing: 15px;
+        }
+      }
+      .util{
+        top: 50%; left: 20px; transform: translateY(-50%);
+      }
+    }
+  }
+
+  /* ----- section2/history -------------------------------------------*/
+  #history{
+    .inner{
+      height: 850px;
+      padding-top: 80px;
+
+      h1{
+        font: 700 20px/1.3 'roboto condensed';
+
+        &::after{
+          width: 30px; 
+          top: 114%; left: 50%; transform: translateX(-51%);
+        }
+      }
+      .hisWrap{
+        display: block;
+        margin: 0 auto;
+
+        .hisPic{
+          margin: 0 auto;
+          &:nth-of-type(3){margin: 0 auto;}
+          padding-bottom: 10px;
+        }
+      }
+      .hisBtn{ position: absolute; top: 60%; left: 50%;}
+      .hisTxt{ padding: 30px 0 0; }
+    }
+  }
+  /* ----- section3/theViews -----------------------------------------*/
+  #views{
+    height: 900px;
+
+    .inner{  
+      margin: 0 auto;
+
+      .viewPic{
+        width: 100%; max-width: 340px; height: 520px;
+        position: static;
+        padding-top: 40px;
+        margin: 0 auto;
+
+        img{
+          width: 100%; height: 100%; 
+        }
+      }
+      .desMore{
+        width: 100%; height: 380px;
+        position: static;
+        padding: 20px 20px;
+        text-align: center;
+
+        h2{  letter-spacing: 2px;}
+        p{ line-height: 1.5;}
+      }
+    }
+  }
+  /* ----- section4/vid ------------------------------------------------*/
+  #vid{
+    height: 600px;
+
+    .inner{
+      width: 100%;  margin: 50px 0 0;
+
+      .vidWrap{ width: 100%; }
+      .desBtn{
+        width: 100%; 
+        position: static;
+        h1{ padding: 5px 10px;}
+        p{ padding: 5px 10px;}
+        ul{
+          position: absolute; top: 73%; right: 30px;
+        }
+      }
+    }
+  }
+  /* ----- section5/landscate-waterfall -------------------------------*/
+  #landscape{
+    height: 900px;
+
+    .inner{
+      margin: 0 auto;
+
+
+      .waterPic{
+        width: 100%; max-width: 340px; height: 520px;
+        position: static;
+        padding-top: 40px;
+        margin: 0 auto;
+
+        img{ height: 100%; }
+      }
+      .desMore{
+        width: 100%; height: 380px;
+        position: static;
+        padding: 20px 20px;
+        text-align: center;
+
+        h2{  letter-spacing: 2px;}
+        p{ line-height: 1.5;}
+      }
+    }
+  }
+  /* ----- section6/experience----------------------------------------*/
+  #experience{
+    .bgWrap{
+      .inner{
+        width: 100%; height: 570px;
+        padding-top: 180px;     
+
+        .wrap{
+          display: flex; justify-content: space-around;
+          article{
+            width: calc(100% / 3) ; margin-right: 0px; 
+          
+            h3{
+              padding: 0 5px;
+            }
+            p{
+              padding: 0 5px;
+            }
+            a{
+              padding: 0 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ----- section7/wildLife--------------------------------------------*/
+  #wildLife{
+    height: 650px;
+
+    .inner{
+      width: 100%; 
+
+      .wildPic{
+        width: 100%;
+        padding: 50px 0;
+      }
+      .desBtn{
+        width: 420px; 
+        position: absolute; bottom: 104px; right: 5%;
+      }
+    }
+  }
+  /* ----- section8/trip ------------------------------------------------*/
+  #trip{
+    height: 500px;
+
+    .inner{
+      width:100%; 
+      padding: 0;
+      position: relative;
+      margin: 50px 20px;
+
+      .tripPic{
+        width: 48%; height: 520px;
+        position: absolute; top: -100px; left: 10px; z-index: 2;
+        img{
+          height: 100%; 
+        }
+      }
+      .desMore{
+        width: 48%; height: 380px;
+        position: absolute; top: 0px; left: 50%; 
+        padding: 0 20px;
+
+        h2{  letter-spacing: 2px;}
+      }
+    }
+  }
+  /* ----- section9/stories  --------------------------------------------*/
+  #stories{
+    width: 100%; height: 70vh;
+
+    .inner{
+      width: 100%;
+      h1{
+        margin-top: 50px;
+      }
+
+      .storyGallery{
+        width: 100%; 
+        position: relative;
+        display: flex; flex-wrap: wrap; justify-content: center; 
+
+        .storyPic{
+          width: calc(30%); height: 15vw;
+          margin: 10px;
+        }
+      }
+    }
+
+  }
+  /* ----- section10/area  ---------------------------------------------*/
+  #area{
+    .inner{
+      height: 600px;
+      margin: 150px 0;
+
+      .areaPic{
+        width: 100%; 
+      }
+      .desBtn{
+        width: 420px; 
+        position: absolute; bottom: 53px; left: 5%;
+      }
+    }
+  }
+  /*----- footer --------------------------------------------------------*/
+  #footer{
+
+    .footerBg{
+
+      .inner{
+        width: 100%; 
         
       }
     }
