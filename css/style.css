@@ -140,15 +140,41 @@ table {
         transform: rotate(-45deg);
         transition: transform 0.3s 0.8s; }
     #header .inner .menuMo {
+      display: none;
       position: fixed;
       top: 0;
-      left: 0;
+      right: 0;
       width: 270px;
       height: 100vh;
-      background: #555;
+      background: #787586;
       transition: 0.5s;
       padding: 35px 30px;
       z-index: 10; }
+      #header .inner .menuMo.on {
+        right: 0px; }
+      #header .inner .menuMo h1 {
+        padding-bottom: 20px; }
+        #header .inner .menuMo h1 a {
+          display: block;
+          font: 700 24px/1 'roboto condensed';
+          color: #F2ECFF;
+          text-align: center;
+          letter-spacing: 5px; }
+    #header .inner #gnbMo > li > a {
+      display: block;
+      width: 100%;
+      padding: 20px 0;
+      border-bottom: 1px solid #ddd;
+      font: 700 14px/1 "roboto condensed";
+      color: #ddd;
+      text-align: center; }
+    #header .inner #gnbMo > li .sub ul li a {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+      font: 300 12px/1 "roboto condensed";
+      color: #fff;
+      text-align: center; }
 
 /* ----- section1/visual -------------------------------------------*/
 #visual {
