@@ -1,7 +1,7 @@
 /*----- header_sub -----------------------------------------------------*/
 #header_sub{
   width: 100%;
-  position: absolute; top: 0; left: 0;
+  position: absolute; top: 0; left: 0; z-index: 2;
 
   &:hover{
     background: $green;
@@ -160,7 +160,7 @@
   .sub_visual{
     width: 100%;
     height: 500px;
-    background: #bbb;
+    background: #000;
     margin-bottom: 100px;
   }
 

@@ -1,7 +1,9 @@
 .department{
 
   .sub_visual{
-    background: url(../img/sub1.jpg) no-repeat bottom/cover fixed;
-    
+    background: url(../img/sub1.jpg) no-repeat center/cover fixed;
+    background-position: 0/60%;
+    opacity: 0.9;
+    filter: contrast(140%);
   }
 }
