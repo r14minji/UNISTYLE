@@ -191,9 +191,9 @@ table {
     margin: 0 auto; }
     #visual .inner .openVisual {
       width: 100%;
-      height: 80vh;
+      height: 79vh;
       background: url(../img/openViaul.jpg) no-repeat top/cover;
-      padding-top: 250px;
+      padding-top: 220px;
       filter: grayscale(20%); }
       #visual .inner .openVisual h1 {
         font: normal 76px/1 'Monoton';
@@ -405,45 +405,45 @@ table {
             font-size: 10px; }
 
 /* ----- section5/landscate-waterfall -------------------------------*/
-#landscape {
+#lifestyle {
   width: 100%;
   height: 570px; }
-  #landscape .inner {
+  #lifestyle .inner {
     width: 1180px;
     height: 100%;
     padding: 100px 0 0px;
     margin: 0 auto;
     position: relative; }
-    #landscape .inner .waterPic {
+    #lifestyle .inner .waterPic {
       width: 420px;
       height: 570px;
       position: absolute;
       bottom: -70px;
       right: 150px;
       z-index: 2; }
-      #landscape .inner .waterPic img {
+      #lifestyle .inner .waterPic img {
         width: 100%;
         object-fit: cover; }
-    #landscape .inner .desMore {
+    #lifestyle .inner .desMore {
       width: 400px;
       position: absolute;
       top: 170px;
       right: calc( 150px + 420px + 100px); }
-      #landscape .inner .desMore h1 {
+      #lifestyle .inner .desMore h1 {
         font: 700 28px/1 'roboto condensed';
         color: #000;
         letter-spacing: 5px;
         margin-bottom: 10px; }
-      #landscape .inner .desMore h2 {
+      #lifestyle .inner .desMore h2 {
         font: 300 14px/1 'roboto condensed';
         color: #555;
         letter-spacing: 3px;
         margin-bottom: 20px; }
-      #landscape .inner .desMore p {
+      #lifestyle .inner .desMore p {
         font: 300 12px/2 'roboto condensed';
         color: #555;
         margin-bottom: 20px; }
-      #landscape .inner .desMore a {
+      #lifestyle .inner .desMore a {
         font: 700 12px/1 'roboto condensed';
         color: #333;
         letter-spacing: 2px; }
@@ -507,43 +507,47 @@ table {
             color: #fff; }
 
 /* ----- section7/wildLife--------------------------------------------*/
-#wildLife {
+#bathroom {
   width: 100%;
   height: 672px;
   background: #101820; }
-  #wildLife .inner {
-    width: 100%;
+  #bathroom .inner {
+    width: 1180px;
     height: 100%;
     margin: 0 auto;
     position: relative; }
-    #wildLife .inner .wildPic {
+    #bathroom .inner .bathPic {
       width: 100%;
-      height: 440px;
-      background: url(../img/bathroom.jpg) no-repeat center/cover; }
-    #wildLife .inner .desBtn {
+      height: 440px; }
+      #bathroom .inner .bathPic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-position: fixed; }
+    #bathroom .inner .desBtn {
       width: 420px;
       background: rgba(0, 0, 0, 0.9);
       position: absolute;
       bottom: 76px;
       right: 150px; }
-      #wildLife .inner .desBtn h1 {
+      #bathroom .inner .desBtn h1 {
         font: 700 14px/20px 'roboto condensed';
         color: #ccc;
         letter-spacing: 4px;
         padding: 15px 30px; }
-      #wildLife .inner .desBtn p {
+      #bathroom .inner .desBtn p {
         font: 400 12px/2 'roboto condensed';
         color: #ccc;
         letter-spacing: 1px;
         padding: 20px 30px 15px; }
-      #wildLife .inner .desBtn ul {
+      #bathroom .inner .desBtn ul {
         position: absolute;
         top: 5px;
         right: 30px; }
-        #wildLife .inner .desBtn ul li {
+        #bathroom .inner .desBtn ul li {
           float: left;
           padding: 5px; }
-          #wildLife .inner .desBtn ul li i {
+          #bathroom .inner .desBtn ul li i {
             color: #fff;
             font-size: 10px; }
 
@@ -840,22 +844,22 @@ table {
         left: 5%; }
 
   /* ----- section5/landscate-waterfall -------------------------------*/
-  #landscape {
+  #lifestyle {
     height: 500px; }
-    #landscape .inner {
+    #lifestyle .inner {
       width: 100%;
       padding: 0;
       position: relative; }
-      #landscape .inner .waterPic {
+      #lifestyle .inner .waterPic {
         width: 47%;
         height: 520px;
         position: absolute;
         bottom: -100px;
         right: 3%;
         z-index: 2; }
-        #landscape .inner .waterPic img {
+        #lifestyle .inner .waterPic img {
           height: 100%; }
-      #landscape .inner .desMore {
+      #lifestyle .inner .desMore {
         width: 48%;
         height: auto;
         position: absolute;
@@ -863,7 +867,7 @@ table {
         bottom: 50px;
         right: 50%;
         padding: 80px 20px; }
-        #landscape .inner .desMore h2 {
+        #lifestyle .inner .desMore h2 {
           letter-spacing: 2px; }
 
   /* ----- section6/experience----------------------------------------*/
@@ -888,15 +892,15 @@ table {
           padding: 0 5px; }
 
   /* ----- section7/wildLife--------------------------------------------*/
-  #wildLife {
+  #bathroom {
     height: 709px; }
-    #wildLife .inner {
+    #bathroom .inner {
       width: 100%; }
-      #wildLife .inner .wildPic {
+      #bathroom .inner .bathPic {
         width: 100%;
         height: 500px;
         padding: 50px 0; }
-      #wildLife .inner .desBtn {
+      #bathroom .inner .desBtn {
         width: 420px;
         position: absolute;
         bottom: 104px;
@@ -1060,28 +1064,28 @@ table {
           right: 30px; }
 
   /* ----- section5/landscate-waterfall -------------------------------*/
-  #landscape {
+  #lifestyle {
     height: 900px; }
-    #landscape .inner {
+    #lifestyle .inner {
       margin: 0 auto; }
-      #landscape .inner .waterPic {
+      #lifestyle .inner .waterPic {
         width: 100%;
         max-width: 340px;
         height: 520px;
         position: static;
         padding-top: 40px;
         margin: 0 auto; }
-        #landscape .inner .waterPic img {
+        #lifestyle .inner .waterPic img {
           height: 100%; }
-      #landscape .inner .desMore {
+      #lifestyle .inner .desMore {
         width: 100%;
         height: 380px;
         position: static;
         padding: 50px 20px;
         text-align: center; }
-        #landscape .inner .desMore h2 {
+        #lifestyle .inner .desMore h2 {
           letter-spacing: 2px; }
-        #landscape .inner .desMore p {
+        #lifestyle .inner .desMore p {
           line-height: 1.5; }
 
   /* ----- section6/experience----------------------------------------*/
@@ -1109,20 +1113,20 @@ table {
               padding: 0 10px; }
 
   /* ----- section7/wildLife--------------------------------------------*/
-  #wildLife {
+  #bathroom {
     height: 650px; }
-    #wildLife .inner {
+    #bathroom .inner {
       width: 100%; }
-      #wildLife .inner .wildPic {
+      #bathroom .inner .bathPic {
         width: 100%; }
-      #wildLife .inner .desBtn {
+      #bathroom .inner .desBtn {
         width: 100%;
         position: static; }
-        #wildLife .inner .desBtn h1 {
+        #bathroom .inner .desBtn h1 {
           padding: 5px 10px; }
-        #wildLife .inner .desBtn p {
+        #bathroom .inner .desBtn p {
           padding: 5px 10px; }
-        #wildLife .inner .desBtn ul {
+        #bathroom .inner .desBtn ul {
           position: absolute;
           top: 73%;
           right: 30px; }
