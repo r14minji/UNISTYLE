@@ -7,3 +7,20 @@
     filter: contrast(140%);
   }
 }
+
+.value{
+  width: 100%; 
+
+  .inner{
+    width: 1180px; 
+    margin: 0 auto; 
+    position: relative;
+
+    h1{
+      font:700 40px/100px 'Roboto Condensed'; 
+      letter-spacing: 2px;
+      color:$green; 
+      margin-bottom:60px; 
+    }
+  }
+}

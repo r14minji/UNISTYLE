@@ -171,20 +171,10 @@
     display: block; width: 700px; height: 80px;
     text-align: center;
     h1{
-      font:normal 50px/80px 'Roboto Condensed'; 
+      font: 700 50px/100px 'Roboto Condensed'; 
+      letter-spacing: 5px;
       color:$green; 
       margin-bottom:60px; 
-    
-    span{
-      font:normal 20px/80px "맑은 고딕"; 
-      color:#aaa; 
-
-      &::before{
-        content:'/'; 
-        margin-right:20px; 
-        margin-left:10px; 
-      }
-    }
     }
   }
 
@@ -193,8 +183,6 @@
     margin: 0 auto;
     min-height:500px;
     position: relative;
-
-
   }
 }
 
