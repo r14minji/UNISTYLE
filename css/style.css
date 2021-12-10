@@ -40,8 +40,6 @@ table {
       width: 100%;
       height: 100%;
       position: relative;
-      display: flex;
-      justify-content: center;
       padding: 30px 0; }
       #header .inner .menuWeb h1 {
         position: absolute;
@@ -51,21 +49,26 @@ table {
         #header .inner .menuWeb h1 a {
           font: 400 22px/1 'roboto condensed';
           color: #fff; }
-      #header .inner .menuWeb #gnb_left {
-        padding-right: 100px; }
-        #header .inner .menuWeb #gnb_left li {
+      #header .inner .menuWeb .gnbWrap {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        #header .inner .menuWeb .gnbWrap #gnb_left {
+          margin-right: 100px; }
+          #header .inner .menuWeb .gnbWrap #gnb_left li {
+            float: left;
+            padding-right: 30px; }
+            #header .inner .menuWeb .gnbWrap #gnb_left li a {
+              font: 400 14px/1 'roboto condensed';
+              color: #aaa; }
+        #header .inner .menuWeb .gnbWrap #gnb_right li {
           float: left;
-          margin-right: 30px; }
-          #header .inner .menuWeb #gnb_left li a {
+          margin-left: 30px; }
+          #header .inner .menuWeb .gnbWrap #gnb_right li a {
             font: 400 14px/1 'roboto condensed';
             color: #aaa; }
-      #header .inner .menuWeb #gnb_right li {
-        float: left;
-        margin-left: 30px; }
-        #header .inner .menuWeb #gnb_right li a {
-          font: 400 14px/1 'roboto condensed';
-          color: #aaa; }
     #header .inner .btnCall {
+      display: none;
       position: absolute;
       top: 40%;
       left: 0px;
@@ -725,7 +728,7 @@ table {
     width: 100%;
     height: 60px;
     padding-left: 60px; }
-    #header .inner .menuWeb #gnb_left, #header .inner .menuWeb #gnb_right {
+    #header .inner .menuWeb .gnbWrap {
       display: none; }
     #header .inner .btnCall {
       display: block;
