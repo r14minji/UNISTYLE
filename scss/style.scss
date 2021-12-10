@@ -11,6 +11,7 @@ $beige : #FFE9CF;
 
 // 서브 페이지
 @import 'reset.scss';
+@import 'subpage.scss';
 
 /*----- header -----------------------------------------------------*/
 #header{
@@ -21,7 +22,6 @@ $beige : #FFE9CF;
     width: 1180px; height: 80px;
     margin: 0 auto;
     position: relative;
-    padding-left: 100px;
 
     .menuWeb{
       width: 100%; height: 100%;
@@ -43,7 +43,7 @@ $beige : #FFE9CF;
         #gnb_left{
           margin-right: 100px;
           li{
-            float:left; padding-right: 50px;
+            float:left; padding-right: 55px;
             a{
               font: 400 14px/1 'roboto condensed';
               color: #ddd;
@@ -694,48 +694,42 @@ $beige : #FFE9CF;
 /*----- footer --------------------------------------------------------*/
 #footer{
   width: 100%;
-  background: url(../img/banner.jpg) no-repeat top/cover;
+  background: $green;
 
-  .footerBg{
-    filter: grayscale(100%);
-    background: $green; 
+  .inner{
+    width: 1180px; 
+    margin: 0 auto;
+    position: relative;
+    padding: 80px 0 30px;
 
-    .inner{
-      width: 1180px; 
-      margin: 0 auto;
-      position: relative;
-      padding: 80px 0 30px;
-  
-      h1{
-        font: 700 20px/1 'roboto condensed';
-        color: #ddd;
-        letter-spacing: 5px;
-        margin-bottom: 40px;
-        text-align: center;
-      }
-      ul{
-        display: flex; justify-content: center;
-        margin-bottom: 30px;
+    h1{
+      font: 700 20px/1 'roboto condensed';
+      color: #ddd;
+      letter-spacing: 5px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    ul{
+      display: flex; justify-content: center;
+      margin-bottom: 30px;
 
-        li{
-          font: 400 14px/1 'roboto condensed';
-          color: #aaa;
-          margin-right: 30px;
-          &:last-child{margin-right: 0;}
-        }
+      li{
+        font: 400 14px/1 'roboto condensed';
+        color: #aaa;
+        margin-right: 30px;
+        &:last-child{margin-right: 0;}
       }
-      span{
-        display: block;
-        text-align: center;
-        font: 400 12px/1 'roboto condensed';
-        letter-spacing: 3px;
-        color: #999;
-        margin-bottom: 30px;
-      }
+    }
+    span{
+      display: block;
+      text-align: center;
+      font: 400 12px/1 'roboto condensed';
+      letter-spacing: 3px;
+      color: #999;
+      margin-bottom: 30px;
     }
   }
 }
-
 
 /* tablet ------------------------------------------------------------*/
 @media screen and (max-width: $tablet){
@@ -990,10 +984,8 @@ $beige : #FFE9CF;
   }
   /*----- footer --------------------------------------------------------*/
   #footer{
-    .footerBg{
-      .inner{
-        width: 100%; 
-      }
+    .inner{
+      width: 100%; 
     }
   }
 }
@@ -1263,31 +1255,27 @@ $beige : #FFE9CF;
   }
   /*----- footer --------------------------------------------------------*/
   #footer{
-
-    .footerBg{
-
-      .inner{
-        width: 100%; 
+    .inner{
+      width: 100%; 
+      margin: 0 auto;
+      h1{   margin-bottom: 20px; }
+      ul{
+        display: block; width: 280px;
         margin: 0 auto;
-        h1{   margin-bottom: 20px; }
-        ul{
-          display: block; width: 280px;
-          margin: 0 auto;
-  
-          li{
-            font-size: 12px;
-            display: inline-block; width: 30%;
-            text-align: center;
-            margin-right: 0px;
-            padding: 5px 10px;
-          }
-        }
 
-        span{
-          margin-bottom: 10px;
-          margin-top: 30px;
-          padding: 2px 5px;
+        li{
+          font-size: 12px;
+          display: inline-block; width: 30%;
+          text-align: center;
+          margin-right: 0px;
+          padding: 5px 10px;
         }
+      }
+
+      span{
+        margin-bottom: 10px;
+        margin-top: 30px;
+        padding: 2px 5px;
       }
     }
   }
