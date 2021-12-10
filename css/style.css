@@ -404,7 +404,7 @@ table {
             color: #fff;
             font-size: 10px; }
 
-/* ----- section5/landscate-waterfall -------------------------------*/
+/* ----- section5/lifestyle-------------------------------*/
 #lifestyle {
   width: 100%;
   height: 570px; }
@@ -414,14 +414,14 @@ table {
     padding: 100px 0 0px;
     margin: 0 auto;
     position: relative; }
-    #lifestyle .inner .waterPic {
+    #lifestyle .inner .lifePic {
       width: 420px;
       height: 570px;
       position: absolute;
       bottom: -70px;
       right: 150px;
       z-index: 2; }
-      #lifestyle .inner .waterPic img {
+      #lifestyle .inner .lifePic img {
         width: 100%;
         object-fit: cover; }
     #lifestyle .inner .desMore {
@@ -554,46 +554,37 @@ table {
 /* ----- section8/trip ------------------------------------------------*/
 #trip {
   width: 100%;
-  height: 570px; }
-  #trip .inner {
-    width: 1180px;
+  height: 600px; }
+  #trip article {
+    float: left;
     height: 100%;
-    padding: 100px 0 0;
-    margin: 0 auto;
-    position: relative; }
-    #trip .inner .tripPic {
-      width: 420px;
-      height: 570px;
-      position: absolute;
-      top: -70px;
-      left: 150px;
-      z-index: 2; }
-      #trip .inner .tripPic img {
-        width: 100%;
-        object-fit: cover; }
-    #trip .inner .desMore {
-      width: 400px;
-      position: absolute;
-      top: 100px;
-      left: calc( 150px + 420px + 100px); }
-      #trip .inner .desMore h1 {
-        font: 700 28px/1 'roboto condensed';
-        color: #000;
-        letter-spacing: 5px;
-        margin-bottom: 10px; }
-      #trip .inner .desMore h2 {
-        font: 300 14px/1 'roboto condensed';
-        color: #555;
-        letter-spacing: 3px;
-        margin-bottom: 20px; }
-      #trip .inner .desMore p {
-        font: 300 12px/2 'roboto condensed';
-        color: #555;
-        margin-bottom: 20px; }
-      #trip .inner .desMore a {
-        font: 700 12px/1 'roboto condensed';
-        color: #333;
-        letter-spacing: 2px; }
+    margin: 80px 0; }
+    #trip article:nth-of-type(1) {
+      width: 30%;
+      border-right: 6px solid #101820; }
+    #trip article:nth-of-type(2) {
+      width: 40%; }
+    #trip article:nth-of-type(3) {
+      width: 30%;
+      border-left: 6px solid #101820; }
+    #trip article img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    #trip article:nth-of-type(2) {
+      width: 40%;
+      background: #101820; }
+      #trip article:nth-of-type(2) .inner {
+        padding: 0px 50px; }
+        #trip article:nth-of-type(2) .inner h1 {
+          font: 700 28px/1 'roboto condensed';
+          color: #FFE9CF;
+          letter-spacing: 5px;
+          margin-bottom: 10px;
+          text-align: center; }
+        #trip article:nth-of-type(2) .inner p {
+          font: 300 14px/20px 'roboto condensed';
+          color: #fff; }
 
 /* ----- section9/stories  --------------------------------------------*/
 #stories {
@@ -850,14 +841,14 @@ table {
       width: 100%;
       padding: 0;
       position: relative; }
-      #lifestyle .inner .waterPic {
+      #lifestyle .inner .lifePic {
         width: 47%;
         height: 520px;
         position: absolute;
         bottom: -100px;
         right: 3%;
         z-index: 2; }
-        #lifestyle .inner .waterPic img {
+        #lifestyle .inner .lifePic img {
           height: 100%; }
       #lifestyle .inner .desMore {
         width: 48%;
@@ -1068,14 +1059,14 @@ table {
     height: 900px; }
     #lifestyle .inner {
       margin: 0 auto; }
-      #lifestyle .inner .waterPic {
+      #lifestyle .inner .lifePic {
         width: 100%;
         max-width: 340px;
         height: 520px;
         position: static;
         padding-top: 40px;
         margin: 0 auto; }
-        #lifestyle .inner .waterPic img {
+        #lifestyle .inner .lifePic img {
           height: 100%; }
       #lifestyle .inner .desMore {
         width: 100%;
