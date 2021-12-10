@@ -1,5 +1,5 @@
 @charset 'utf-8';
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 //반응형 setting
 $tablet :1179px;
@@ -32,7 +32,8 @@ $beige : #FFE9CF;
       h1{
         position: absolute; top: 50%; left: 50%; transform: translate(-15px , -50%);
         a{
-          font: 400 22px/1 'roboto condensed';
+          font: normal 22px/1 'Monoton';
+          letter-spacing: 2px;
           color: $beige;
         } 
       }
@@ -43,7 +44,7 @@ $beige : #FFE9CF;
         #gnb_left{
           margin-right: 100px;
           li{
-            float:left; padding-right:30px;
+            float:left; padding-right: 50px;
             a{
               font: 400 14px/1 'roboto condensed';
               color: #ddd;
@@ -178,9 +179,10 @@ $beige : #FFE9CF;
       width: 100%; height: 80vh;
       background: url(../img/openViaul.jpg) no-repeat top/cover;
       padding-top: 250px;
+      filter: grayscale(20%);
 
       h1{
-        font: 700 76px/1 'roboto condensed';
+        font: normal 76px/1 'Monoton';
         color: $beige;
         letter-spacing: 30px;
         margin-bottom: 10px;
@@ -250,6 +252,7 @@ $beige : #FFE9CF;
           width: 100%; height: 100%;
           object-fit: cover; 
           filter: grayscale(50%);
+          border: 6px solid  $beige;
         }
       }
     }
@@ -427,11 +430,11 @@ $beige : #FFE9CF;
 /* ----- section6/experience----------------------------------------*/
 #experience{
   width: 100%; height: 670px;
-  background: url(../img/banner.jpg) no-repeat top/cover;
-
+  
   .bgWrap{
     width: 100%; height: 100%;
     background: $green; 
+
     .inner{
       width: 1180px; height: 570px;
       margin: 0 auto;
@@ -506,12 +509,13 @@ $beige : #FFE9CF;
 
     .wildPic{
       width: 100%; height: 440px;
-      margin:0 auto; 
+      background: url(../img/bathroom.jpg) no-repeat center/cover ;
 
-      img{
-        width: 100%; height: 100%;
-        object-fit: cover;
-      }
+      // img{
+      //   width: 100%; height: 100%;
+      //   object-fit: cover;
+      //   background-position: fixed;
+      // }
     }
     .desBtn{
       width: 420px; 
@@ -599,7 +603,7 @@ $beige : #FFE9CF;
 
     h1{
       font: 700 28px/1 'roboto condensed';
-      color: #000;
+      color: $green;
       letter-spacing: 5px;
       margin-bottom: 10px;
       text-align: center;
@@ -695,9 +699,8 @@ $beige : #FFE9CF;
   background: url(../img/banner.jpg) no-repeat top/cover;
 
   .footerBg{
-    opacity: 0.9;
     filter: grayscale(100%);
-    background: #000; 
+    background: $green; 
 
     .inner{
       width: 1180px; 
