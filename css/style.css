@@ -29,7 +29,7 @@ table {
 /*----- header -----------------------------------------------------*/
 #header {
   width: 100%;
-  background: #111; }
+  background: #101820; }
   #header .inner {
     width: 1180px;
     height: 80px;
@@ -48,7 +48,7 @@ table {
         transform: translate(-15px, -50%); }
         #header .inner .menuWeb h1 a {
           font: 400 22px/1 'roboto condensed';
-          color: #fff; }
+          color: #FFE9CF; }
       #header .inner .menuWeb .gnbWrap {
         width: 100%;
         display: flex;
@@ -60,13 +60,13 @@ table {
             padding-right: 30px; }
             #header .inner .menuWeb .gnbWrap #gnb_left li a {
               font: 400 14px/1 'roboto condensed';
-              color: #aaa; }
+              color: #ddd; }
         #header .inner .menuWeb .gnbWrap #gnb_right li {
           float: left;
           margin-left: 30px; }
           #header .inner .menuWeb .gnbWrap #gnb_right li a {
             font: 400 14px/1 'roboto condensed';
-            color: #aaa; }
+            color: #ddd; }
     #header .inner .btnCall {
       display: none;
       position: absolute;
@@ -166,9 +166,9 @@ table {
       display: block;
       width: 100%;
       padding: 20px 0;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #aaa;
       font: 700 14px/1 "roboto condensed";
-      color: #ddd;
+      color: #aaa;
       text-align: center; }
     #header .inner #gnbMo > li .sub ul li a {
       display: block;
@@ -181,7 +181,7 @@ table {
 /* ----- section1/visual -------------------------------------------*/
 #visual {
   width: 100%;
-  background: #111; }
+  background: #101820; }
   #visual .inner {
     width: 100%;
     height: 80vh;
@@ -191,18 +191,18 @@ table {
     #visual .inner .openVisual {
       width: 100%;
       height: 80vh;
-      background: url(../img/canyon.jpg) no-repeat top/cover;
-      filter: grayscale(60%);
+      background: url(../img/openViaul.jpg) no-repeat top/cover;
       padding-top: 250px; }
       #visual .inner .openVisual h1 {
         font: 700 76px/1 'roboto condensed';
-        color: #fff;
+        color: #FFE9CF;
         letter-spacing: 30px;
         margin-bottom: 10px;
         text-align: center; }
       #visual .inner .openVisual h2 {
         font: 400 16px/1 'roboto condensed';
-        color: #fff;
+        color: #FFE9CF;
+        opacity: 0.7;
         letter-spacing: 5px;
         margin-bottom: 10px;
         text-align: center; }
@@ -210,7 +210,8 @@ table {
         display: block;
         text-align: center;
         font-size: 35px;
-        color: #fff; }
+        color: #FFE9CF;
+        opacity: 0.7; }
     #visual .inner .util {
       position: absolute;
       top: 50%;
@@ -225,7 +226,7 @@ table {
 /* ----- section2/history -------------------------------------------*/
 #history {
   width: 100%;
-  background: #111; }
+  background: #101820; }
   #history .inner {
     width: 1180px;
     height: 450px;
@@ -271,7 +272,8 @@ table {
         #history .inner .hisWrap .hisPic img {
           width: 100%;
           height: 100%;
-          object-fit: cover; }
+          object-fit: cover;
+          filter: grayscale(50%); }
     #history .inner .hisBtn {
       display: flex;
       position: absolute;
@@ -365,7 +367,7 @@ table {
     margin: 0 auto;
     position: relative; }
     #vid .inner .vidWrap {
-      width: 1100px;
+      width: 100%;
       height: 440px;
       margin: 0 auto; }
       #vid .inner .vidWrap video {
@@ -451,8 +453,7 @@ table {
   #experience .bgWrap {
     width: 100%;
     height: 100%;
-    opacity: 0.9;
-    background: #000; }
+    background: #101820; }
     #experience .bgWrap .inner {
       width: 1180px;
       height: 570px;
@@ -507,14 +508,14 @@ table {
 #wildLife {
   width: 100%;
   height: 672px;
-  background: #000; }
+  background: #101820; }
   #wildLife .inner {
-    width: 1180px;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     position: relative; }
     #wildLife .inner .wildPic {
-      width: 1100px;
+      width: 100%;
       height: 440px;
       margin: 0 auto; }
       #wildLife .inner .wildPic img {
