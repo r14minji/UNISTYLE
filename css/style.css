@@ -363,7 +363,7 @@ table {
 /* ----- section4/vid ------------------------------------------------*/
 #vid {
   width: 100%;
-  height: 600px; }
+  height: 700px; }
   #vid .inner {
     width: 1180px;
     height: 100%;
@@ -371,7 +371,7 @@ table {
     position: relative; }
     #vid .inner .vidWrap {
       width: 100%;
-      height: 440px;
+      height: 540px;
       margin: 0 auto; }
       #vid .inner .vidWrap video {
         width: 100%;
@@ -528,7 +528,7 @@ table {
       width: 420px;
       background: rgba(0, 0, 0, 0.9);
       position: absolute;
-      bottom: 76px;
+      bottom: 101px;
       right: 150px; }
       #bathroom .inner .desBtn h1 {
         font: 700 14px/20px 'roboto condensed';
@@ -554,44 +554,53 @@ table {
 /* ----- section8/trip ------------------------------------------------*/
 #trip {
   width: 100%;
-  height: 600px; }
-  #trip article {
-    float: left;
+  height: 570px; }
+  #trip .inner {
+    width: 1180px;
     height: 100%;
-    margin: 80px 0; }
-    #trip article:nth-of-type(1) {
-      width: 30%;
-      border-right: 6px solid #101820; }
-    #trip article:nth-of-type(2) {
-      width: 40%; }
-    #trip article:nth-of-type(3) {
-      width: 30%;
-      border-left: 6px solid #101820; }
-    #trip article img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-    #trip article:nth-of-type(2) {
-      width: 40%;
-      background: #101820; }
-      #trip article:nth-of-type(2) .inner {
-        padding: 0px 50px; }
-        #trip article:nth-of-type(2) .inner h1 {
-          font: 700 28px/1 'roboto condensed';
-          color: #FFE9CF;
-          letter-spacing: 5px;
-          margin-bottom: 10px;
-          text-align: center; }
-        #trip article:nth-of-type(2) .inner p {
-          font: 300 14px/20px 'roboto condensed';
-          color: #fff; }
+    padding: 100px 0 0;
+    margin: 0 auto;
+    position: relative; }
+    #trip .inner .tripPic {
+      width: 420px;
+      height: 570px;
+      position: absolute;
+      top: -70px;
+      left: 150px;
+      z-index: 2; }
+      #trip .inner .tripPic img {
+        width: 100%;
+        object-fit: cover; }
+    #trip .inner .desMore {
+      width: 400px;
+      position: absolute;
+      top: 100px;
+      left: calc( 150px + 420px + 100px); }
+      #trip .inner .desMore h1 {
+        font: 700 28px/1 'roboto condensed';
+        color: #000;
+        letter-spacing: 5px;
+        margin-bottom: 10px; }
+      #trip .inner .desMore h2 {
+        font: 300 14px/1 'roboto condensed';
+        color: #555;
+        letter-spacing: 3px;
+        margin-bottom: 20px; }
+      #trip .inner .desMore p {
+        font: 300 12px/2 'roboto condensed';
+        color: #555;
+        margin-bottom: 20px; }
+      #trip .inner .desMore a {
+        font: 700 12px/1 'roboto condensed';
+        color: #333;
+        letter-spacing: 2px; }
 
 /* ----- section9/stories  --------------------------------------------*/
 #stories {
   width: 100%;
   height: 360px; }
   #stories .inner {
-    width: 1180px;
+    width: 100%;
     margin: 0 auto; }
     #stories .inner h1 {
       font: 700 28px/1 'roboto condensed';
@@ -610,9 +619,9 @@ table {
       position: relative;
       display: flex; }
       #stories .inner .storyGallery .storyPic {
-        width: 240px;
-        height: 120px;
-        margin: 20px;
+        width: 23%;
+        height: 150px;
+        margin: 1%;
         overflow: hidden; }
         #stories .inner .storyGallery .storyPic img {
           width: 100%;
