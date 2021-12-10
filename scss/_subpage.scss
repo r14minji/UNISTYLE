@@ -3,6 +3,10 @@
   width: 100%;
   position: absolute; top: 0; left: 0;
 
+  &:hover{
+    background: $green;
+  }
+
   .inner{
     width: 1180px; height: 80px;
     margin: 0 auto;
