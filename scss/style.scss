@@ -1,5 +1,5 @@
 @charset 'utf-8';
-@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;500&display=swap');
 
 //반응형 setting
 $tablet :1179px;
@@ -8,6 +8,7 @@ $mobile :539px;
 // 색상
 $green: #101820; //#02343F;
 $beige : #FFE9CF;
+$red: #852132;
 
 // 서브 페이지
 @import 'reset.scss';
