@@ -46,8 +46,7 @@
       dt{
         width: 20%;
         float:left;
-        display: none;
-        &.on {display: block;}
+        &.on {background: $gold;}
 
         border: 1px solid green;
 
@@ -61,6 +60,69 @@
         &.on {display: block;}
 
         border: 1px solid purple;
+
+      /*fisrt board-FAQ*/
+      #FAQ{
+        width: 100%;
+      }
+      /*second board-NOTICE*/
+      #notice{
+        table{
+          width: 100%;
+          margin-bottom: 50px;
+          border-collapse: collapse;
+    
+          tr{
+            th{
+              padding: 30px 15px;
+              background: $green; color: #fff;          
+            }
+    
+            &:nth-of-type(1) { width: 10%;}
+            &:nth-of-type(3) { width: 15%;}
+            &:nth-of-type(4) { width: 15%;}
+          
+            td{
+              padding: 30px 15px; opacity: 0.7;
+              border-bottom: 1px solid #ddd;
+              text-align: center; color:$beige ;
+              &:nth-of-type(2){
+                text-align: left;
+                a{
+                  text-align: left; color: $beige; 
+                  font: normal 16px/1 'noto sans';
+                }
+              }
+              &:nth-of-type(3) {font-family: 'noto sans kr';}          
+            }
+    
+            &:hover td{ opacity: 1; background: #eee;}
+          }
+        }
+    
+        .pagnation{
+          width: 100%;
+          display: flex; justify-content: space-between; align-items: center;
+          >a{
+            display: inline-block;
+            width: 30px; height: 30px; 
+            font: normal 20px/30px 'noto sans'; color: $beige; opacity: 0.7;
+          }
+          .numbers{
+            display: flex; justify-content: space-around; align-items: center;
+    
+            >a{
+              display: inline-block;
+              width: 30px; height: 30px; 
+              font: normal 20px/30px 'noto sans'; color: $beige; text-align: center;
+              opacity: 0.7;
+              &.on{ border-bottom: 1px solid #000; opacity: 1;}
+            }
+            
+          }
+          
+        }
+      }
 
       }
     }

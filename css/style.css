@@ -1028,17 +1028,78 @@ table {
       #tab_community .inner dl dt {
         width: 20%;
         float: left;
-        display: none;
         border: 1px solid green; }
         #tab_community .inner dl dt.on {
-          display: block; }
+          background: #D1AC8F; }
       #tab_community .inner dl dd {
         width: 80%;
         float: right;
         display: none;
-        border: 1px solid purple; }
+        border: 1px solid purple;
+        /*fisrt board-FAQ*/
+        /*second board-NOTICE*/ }
         #tab_community .inner dl dd.on {
           display: block; }
+        #tab_community .inner dl dd #FAQ {
+          width: 100%; }
+        #tab_community .inner dl dd #notice table {
+          width: 100%;
+          margin-bottom: 50px;
+          border-collapse: collapse; }
+          #tab_community .inner dl dd #notice table tr th {
+            padding: 30px 15px;
+            background: #101820;
+            color: #fff; }
+          #tab_community .inner dl dd #notice table tr:nth-of-type(1) {
+            width: 10%; }
+          #tab_community .inner dl dd #notice table tr:nth-of-type(3) {
+            width: 15%; }
+          #tab_community .inner dl dd #notice table tr:nth-of-type(4) {
+            width: 15%; }
+          #tab_community .inner dl dd #notice table tr td {
+            padding: 30px 15px;
+            opacity: 0.7;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            color: #FFE9CF; }
+            #tab_community .inner dl dd #notice table tr td:nth-of-type(2) {
+              text-align: left; }
+              #tab_community .inner dl dd #notice table tr td:nth-of-type(2) a {
+                text-align: left;
+                color: #FFE9CF;
+                font: normal 16px/1 'noto sans'; }
+            #tab_community .inner dl dd #notice table tr td:nth-of-type(3) {
+              font-family: 'noto sans kr'; }
+          #tab_community .inner dl dd #notice table tr:hover td {
+            opacity: 1;
+            background: #eee; }
+        #tab_community .inner dl dd #notice .pagnation {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          #tab_community .inner dl dd #notice .pagnation > a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            font: normal 20px/30px 'noto sans';
+            color: #FFE9CF;
+            opacity: 0.7; }
+          #tab_community .inner dl dd #notice .pagnation .numbers {
+            display: flex;
+            justify-content: space-around;
+            align-items: center; }
+            #tab_community .inner dl dd #notice .pagnation .numbers > a {
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+              font: normal 20px/30px 'noto sans';
+              color: #FFE9CF;
+              text-align: center;
+              opacity: 0.7; }
+              #tab_community .inner dl dd #notice .pagnation .numbers > a.on {
+                border-bottom: 1px solid #000;
+                opacity: 1; }
 
 /*----- header -----------------------------------------------------*/
 #header {
