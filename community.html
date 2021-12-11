@@ -109,17 +109,10 @@
     </div>
   </section>
 
-  <aside id="tab_community">
-    <dl>
-      <dt class="on"><a href="#FAQ">FAQ</a></dt>
-      <dt class="on"><a href="#notice">NOTICE</a></dt>
-      <dt class="on"><a href="#review">REVIEW</a></dt>
-    </dl>
-  </aside>
-
-  <article id="question">
+  <!-- answers by category -->
+  <section id="searchQstn">
     <div class="inner">
-      <div class="searchQstn">
+      <div class="qstn">
         <p>ANY QUESTIONS?<br>
           WE’VE GOT THE ANSWERS</p>
         <input type="text" name="search" id="output">
@@ -155,11 +148,13 @@
         </ul>
       </div>
     </div>
-  </article>
+  </section>
 
-  <section id="board">
-    <dl>
-      <dd>
+  <section id="tab_community">
+    <div class="inner">
+      <dl>
+        <!-- fisrt board -->
+        <dt class="on"><a href="#FAQ">FAQ</a></dt>
         <div id="FAQ">
           <h1>FAQ</h1>
           <select name="category" id="category">
@@ -206,19 +201,28 @@
             </ul>
           </div>
         </div>
-      </dd>
-      <!-- 두번째 dd -->
-      <dd>
-        <div id="notice">
 
+
+        <!-- second board -->
+        <dt class="on"><a href="#notice">NOTICE</a></dt>
+        <dd>
+          <div id="notice">
+  
+          </div>
+        </dd>
+
+
+        <!-- third board -->
+        <dt class="on"><a href="#review">REVIEW</a></dt>
+        <div id="review">
+  
         </div>
-      </dd>
-      <!-- 세번째 dd -->
-      <div id="review">
-        
-      </div>
-    </dl>
+  
+      </dl>
+    </div>
   </section>
+
+
 
 
 
