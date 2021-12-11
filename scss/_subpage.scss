@@ -174,15 +174,7 @@
       font: 700 50px/100px 'Roboto Condensed'; 
       letter-spacing: 5px;
       color:$green; 
-      margin-bottom:60px; 
     }
-  }
-
-  .inner{
-    width: 1180px;
-    margin: 0 auto;
-    min-height:500px;
-    position: relative;
   }
 }
 
@@ -234,6 +226,7 @@
 @media screen and (max-width: $tablet){
   /*----- header -----------------------------------------------------*/
   #header_sub{
+    background: $green;
     .inner{
       width: 100%; height: 60px;
       padding-left: 60px;
@@ -256,13 +249,22 @@
 
   /* content --------------------------------------- */
   .content{
+    width: 100%;
     padding: 0 0 100px;
 
-    .sub_visual{ height: 200px; }
+    .sub_visual{
+      height: 300px;
+      background: #000;
+      margin-bottom: 80px;
+    }
 
-    .inner{
-      width: 100%;
-      padding: 0 30px;
+    .titleWrap{
+      position:absolute; top: 260px;
+      width: 480px; height: 60px;
+      h1{
+        font: 700 46px/80px 'Roboto Condensed'; 
+        letter-spacing: 4px;
+      }
     }
   }
 
@@ -292,48 +294,50 @@
     }
   }
 
-    /* content --------------------------------------- */
-    .content{
-      padding: 0 0 80px;
-  
-      .sub_visual{ height: 150px; }
-  
-      .inner{
-        h1{
-          font: normal 42px/1 'arial';
-          span{
-            display:block; 
-            margin-top:10px; 
-          }
-        } 
-  
-      }
+  /* content --------------------------------------- */
+  .content{
+    width: 100%;
+    padding: 0 0 80px;
+
+    .sub_visual{
+      height: 260px;
+      margin-bottom: 80px;
     }
 
-    /*----- footer --------------------------------------------------------*/
-    #footer_sub{
-      .inner{
-        width: 100%; 
-        margin: 0 auto;
-        h1{   margin-bottom: 20px; }
-        ul{
-          display: block; width: 280px;
-          margin: 0 auto;
-  
-          li{
-            font-size: 12px;
-            display: inline-block; width: 30%;
-            text-align: center;
-            margin-right: 0px;
-            padding: 5px 10px;
-          }
-        }
-  
-        span{
-          margin-bottom: 10px;
-          margin-top: 30px;
-          padding: 2px 5px;
-        }
+    .titleWrap{
+      position:absolute; top: 230px;
+      width: 240px; height: 40px;
+      h1{
+        font: 700 40px/80px 'Roboto Condensed'; 
+        letter-spacing: 3px;
       }
     }
+  }
+
+  /*----- footer --------------------------------------------------------*/
+  #footer_sub{
+    .inner{
+      width: 100%; 
+      margin: 0 auto;
+      h1{   margin-bottom: 20px; }
+      ul{
+        display: block; width: 280px;
+        margin: 0 auto;
+
+        li{
+          font-size: 12px;
+          display: inline-block; width: 30%;
+          text-align: center;
+          margin-right: 0px;
+          padding: 5px 10px;
+        }
+      }
+
+      span{
+        margin-bottom: 10px;
+        margin-top: 30px;
+        padding: 2px 5px;
+      }
+    }
+  }
 }

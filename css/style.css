@@ -205,13 +205,7 @@ table {
     .content .titleWrap h1 {
       font: 700 50px/100px 'Roboto Condensed';
       letter-spacing: 5px;
-      color: #101820;
-      margin-bottom: 60px; }
-  .content .inner {
-    width: 1180px;
-    margin: 0 auto;
-    min-height: 500px;
-    position: relative; }
+      color: #101820; }
 
 /*----- footer --------------------------------------------------------*/
 #footer_sub {
@@ -249,29 +243,39 @@ table {
 /*----- tablet -----------------------------------------------------*/
 @media screen and (max-width: 1179px) {
   /*----- header -----------------------------------------------------*/
-  #header_sub .inner {
-    width: 100%;
-    height: 60px;
-    padding-left: 60px; }
-    #header_sub .inner .menuWeb h1 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-    #header_sub .inner .menuWeb .gnbWrap {
-      display: none; }
-    #header_sub .inner .btnCall {
-      display: block;
-      left: 20px; }
+  #header_sub {
+    background: #101820; }
+    #header_sub .inner {
+      width: 100%;
+      height: 60px;
+      padding-left: 60px; }
+      #header_sub .inner .menuWeb h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      #header_sub .inner .menuWeb .gnbWrap {
+        display: none; }
+      #header_sub .inner .btnCall {
+        display: block;
+        left: 20px; }
 
   /* content --------------------------------------- */
   .content {
+    width: 100%;
     padding: 0 0 100px; }
     .content .sub_visual {
-      height: 200px; }
-    .content .inner {
-      width: 100%;
-      padding: 0 30px; }
+      height: 300px;
+      background: #000;
+      margin-bottom: 80px; }
+    .content .titleWrap {
+      position: absolute;
+      top: 260px;
+      width: 480px;
+      height: 60px; }
+      .content .titleWrap h1 {
+        font: 700 46px/80px 'Roboto Condensed';
+        letter-spacing: 4px; }
 
   #footer_sub .inner {
     width: 100%; } }
@@ -290,14 +294,19 @@ table {
 
   /* content --------------------------------------- */
   .content {
+    width: 100%;
     padding: 0 0 80px; }
     .content .sub_visual {
-      height: 150px; }
-    .content .inner h1 {
-      font: normal 42px/1 'arial'; }
-      .content .inner h1 span {
-        display: block;
-        margin-top: 10px; }
+      height: 260px;
+      margin-bottom: 80px; }
+    .content .titleWrap {
+      position: absolute;
+      top: 230px;
+      width: 240px;
+      height: 40px; }
+      .content .titleWrap h1 {
+        font: 700 40px/80px 'Roboto Condensed';
+        letter-spacing: 3px; }
 
   /*----- footer --------------------------------------------------------*/
   #footer_sub .inner {
@@ -326,6 +335,7 @@ table {
   opacity: 0.9;
   filter: contrast(140%); }
 
+/*----- section1/value ------------------------------------------*/
 .value {
   width: 100%;
   margin-bottom: 180px; }
@@ -422,6 +432,7 @@ table {
                 left: 50%;
                 transform: translate(-50%, -50%); }
 
+/*----- section2/business --------------------------------------*/
 .business {
   width: 100%;
   margin: 50px 0 180px; }
@@ -479,6 +490,7 @@ table {
           height: 100%;
           object-fit: cover; }
 
+/*----- section3/innovation -------------------------- ---------*/
 .innovation {
   width: 100%;
   margin: 50px 0 180px; }
@@ -534,6 +546,7 @@ table {
             text-align: center;
             margin-bottom: 20px; }
 
+/*----- section4/members -----------  ------------------------*/
 .members {
   width: 100%;
   margin: 50px 0 0px;
@@ -631,6 +644,317 @@ table {
                 font-size: 16px;
                 color: #000; }
 
+/* tablet -------------------*/
+@media screen and (max-width: 1179px) {
+  /*----- section1/value ------------------------------------------*/
+  .value {
+    width: 100%;
+    margin-bottom: 180px; }
+    .value .inner {
+      width: 100%;
+      margin: 0 auto;
+      position: relative; }
+      .value .inner h1 {
+        font: 700 36px/1 'Roboto Condensed';
+        letter-spacing: 2px;
+        color: #101820;
+        margin-bottom: 100px; }
+      .value .inner .wrap {
+        width: 100%;
+        height: 500px; }
+        .value .inner .wrap #tab_value {
+          width: 100%;
+          height: 100%; }
+          .value .inner .wrap #tab_value .list {
+            width: 30%;
+            height: 100%;
+            float: right;
+            position: relative; }
+            .value .inner .wrap #tab_value .list #btns {
+              width: 80%;
+              margin-left: 40px; }
+              .value .inner .wrap #tab_value .list #btns li {
+                padding: 20px 10px;
+                border-bottom: 1px solid  #ddd; }
+                .value .inner .wrap #tab_value .list #btns li a {
+                  display: block; }
+                  .value .inner .wrap #tab_value .list #btns li a strong {
+                    display: block;
+                    width: 60px;
+                    font: 300 50px/1 'roboto';
+                    color: #ccc;
+                    padding-right: 20px;
+                    float: left; }
+                  .value .inner .wrap #tab_value .list #btns li a p {
+                    display: block;
+                    font: 500 16px/1.5 'roboto';
+                    color: #ccc; }
+                  .value .inner .wrap #tab_value .list #btns li a span {
+                    display: block;
+                    font: 500 14px/1.5 'roboto';
+                    color: #ccc; }
+                .value .inner .wrap #tab_value .list #btns li:hover strong, .value .inner .wrap #tab_value .list #btns li:hover span {
+                  color: #222; }
+                .value .inner .wrap #tab_value .list #btns li:hover p {
+                  color: #852132; }
+                .value .inner .wrap #tab_value .list #btns li.on strong, .value .inner .wrap #tab_value .list #btns li.on span {
+                  color: #222; }
+                .value .inner .wrap #tab_value .list #btns li.on p {
+                  color: #852132; }
+          .value .inner .wrap #tab_value .content {
+            width: 70%;
+            height: 500px;
+            position: relative;
+            float: left; }
+            .value .inner .wrap #tab_value .content > div {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              z-index: 1;
+              opacity: 0;
+              transition: opacity 1.5s; }
+              .value .inner .wrap #tab_value .content > div.on {
+                z-index: 2;
+                opacity: 1; }
+              .value .inner .wrap #tab_value .content > div .title {
+                width: 40%;
+                padding: 10px 20px;
+                float: left;
+                border-top: 6px solid #D1AC8F;
+                border-left: 6px solid #D1AC8F; }
+                .value .inner .wrap #tab_value .content > div .title h2 {
+                  font: 300 40px/1.2 'roboto';
+                  color: #852132; }
+                .value .inner .wrap #tab_value .content > div .title p {
+                  font: 300 14px/1.3 'roboto'; }
+              .value .inner .wrap #tab_value .content > div .circle {
+                width: 60%;
+                height: 500px;
+                float: left;
+                background: url(../img/circle.png) no-repeat center/cover;
+                transform: scale(1.4); }
+                .value .inner .wrap #tab_value .content > div .circle i {
+                  font-size: 120px;
+                  color: #02343F;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%); }
+
+  /*----- section2/business --------------------------------------*/
+  .business {
+    width: 100%;
+    margin: 50px 0 180px; }
+    .business .inner {
+      width: 1180px;
+      height: 740px;
+      margin: 0 auto;
+      position: relative; }
+      .business .inner h1 {
+        font: 700 36px/1 'Roboto Condensed';
+        letter-spacing: 2px;
+        color: #101820;
+        margin-bottom: 100px; }
+      .business .inner .wrap ::after {
+        content: "";
+        display: block;
+        float: left; }
+      .business .inner .wrap .txt {
+        width: 30%;
+        height: 600px;
+        float: left;
+        margin-top: 80px;
+        padding: 20px 40px; }
+        .business .inner .wrap .txt h2 {
+          font: 500 40px/1.2 'roboto';
+          color: #852132;
+          margin-bottom: 40px; }
+        .business .inner .wrap .txt p {
+          font: 300 14px/1.4 'roboto';
+          margin-bottom: 20px; }
+        .business .inner .wrap .txt a {
+          display: block;
+          font: 300 14px/1.3 'roboto';
+          letter-spacing: 2px;
+          color: #000; }
+      .business .inner .wrap .pic {
+        width: 70%;
+        height: 600px;
+        float: left; }
+        .business .inner .wrap .pic .bigPhoto {
+          width: 50%;
+          float: left;
+          height: 100%; }
+          .business .inner .wrap .pic .bigPhoto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        .business .inner .wrap .pic .smallPhoto {
+          width: 50%;
+          float: right;
+          height: 50%;
+          font-size: 0; }
+          .business .inner .wrap .pic .smallPhoto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+
+  /*----- section3/innovation -------------------------- ---------*/
+  .innovation {
+    width: 100%;
+    margin: 50px 0 180px; }
+    .innovation .inner {
+      width: 1180px;
+      margin: 0 auto;
+      position: relative; }
+      .innovation .inner h1 {
+        font: 700 36px/1 'Roboto Condensed';
+        letter-spacing: 2px;
+        color: #101820;
+        margin-bottom: 100px; }
+      .innovation .inner .wrap {
+        width: 100%; }
+        .innovation .inner .wrap ul ::after {
+          content: "";
+          display: block;
+          clear: both; }
+        .innovation .inner .wrap ul li {
+          float: left;
+          margin-right: 30px; }
+          .innovation .inner .wrap ul li:last-child {
+            margin-right: 0; }
+          .innovation .inner .wrap ul li .ideas {
+            width: 212px;
+            height: 350px; }
+            .innovation .inner .wrap ul li .ideas .icon {
+              width: 100%;
+              height: 212px;
+              border-radius: 50%;
+              background: #FFEACE;
+              position: relative;
+              margin-bottom: 30px; }
+              .innovation .inner .wrap ul li .ideas .icon i {
+                font-size: 80px;
+                color: #101820;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); }
+            .innovation .inner .wrap ul li .ideas span {
+              display: block;
+              font: 500 36px/1.4 'roboto';
+              color: #852132;
+              text-align: center;
+              margin-bottom: 10px; }
+              .innovation .inner .wrap ul li .ideas span strong {
+                margin-left: 20px;
+                color: #852132;
+                font: 500 24px/1 'roboto'; }
+            .innovation .inner .wrap ul li .ideas p {
+              font: 300 18px/1.2 'roboto';
+              text-align: center;
+              margin-bottom: 20px; }
+
+  /*----- section4/members -----------  ------------------------*/
+  .members {
+    width: 100%;
+    margin: 50px 0 0px;
+    padding: 50px 0 30px;
+    background: url(../img/texture.jpg) no-repeat center/cover; }
+    .members .inner {
+      width: 1180px;
+      margin: 0 auto;
+      position: relative; }
+      .members .inner h1 {
+        font: 700 36px/1 'Roboto Condensed';
+        letter-spacing: 2px;
+        color: #101820;
+        margin-bottom: 100px; }
+      .members .inner .wrap {
+        width: 100%;
+        position: relative; }
+        .members .inner .wrap ::after {
+          content: "";
+          display: block;
+          clear: both; }
+        .members .inner .wrap .profile {
+          float: left;
+          width: 295px;
+          height: 600px;
+          position: relative;
+          transform: translateY(50px);
+          transition: 1s; }
+          .members .inner .wrap .profile:nth-of-type(2n) {
+            transform: translateY(30px); }
+          .members .inner .wrap .profile:hover {
+            transform: translateY(0px);
+            z-index: 2; }
+            .members .inner .wrap .profile:hover .person img {
+              filter: grayscale(0%);
+              transform: scale(1.1); }
+            .members .inner .wrap .profile:hover .txtWrap {
+              opacity: 1; }
+          .members .inner .wrap .profile .person {
+            width: 100%;
+            height: 360px; }
+            .members .inner .wrap .profile .person img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              filter: grayscale(100%);
+              transition: 1s; }
+          .members .inner .wrap .profile .txtWrap {
+            width: 90%;
+            height: 90%;
+            padding: 10px 15px;
+            border: 4px solid #852132;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 1s;
+            opacity: 0; }
+            .members .inner .wrap .profile .txtWrap .txt {
+              width: 100%;
+              margin-top: 350px; }
+              .members .inner .wrap .profile .txtWrap .txt h2 {
+                font: 500 22px/1 'Roboto';
+                letter-spacing: 2px;
+                color: #101820;
+                margin-bottom: 10px; }
+              .members .inner .wrap .profile .txtWrap .txt p {
+                font: 300 17px/1 'Roboto';
+                color: #101820;
+                margin-bottom: 20px; }
+                .members .inner .wrap .profile .txtWrap .txt p ::before {
+                  content: "";
+                  display: block;
+                  margin: 10px 0;
+                  width: 30px;
+                  height: 2px;
+                  background: #101820; }
+              .members .inner .wrap .profile .txtWrap .txt strong {
+                display: block;
+                margin-bottom: 5px; }
+                .members .inner .wrap .profile .txtWrap .txt strong a {
+                  color: #000;
+                  font: 500 15px/1 'Roboto'; }
+              .members .inner .wrap .profile .txtWrap .txt span {
+                display: block;
+                margin-bottom: 20px; }
+                .members .inner .wrap .profile .txtWrap .txt span a {
+                  color: #000;
+                  font: 300 15px/1 'Roboto'; }
+              .members .inner .wrap .profile .txtWrap .txt ul li {
+                float: left;
+                margin-right: 15px; }
+                .members .inner .wrap .profile .txtWrap .txt ul li a {
+                  display: inline;
+                  font-size: 16px;
+                  color: #000; } }
+/* mobile -------------------*/
 /*----- header -----------------------------------------------------*/
 #header {
   width: 100%;
