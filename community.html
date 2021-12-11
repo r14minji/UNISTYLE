@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
 </head>
+
 <body>
   <!-- header  -->
   <header id="header_sub">
@@ -22,7 +24,7 @@
             <li><a href="youtube.html">YOUTUBE</a></li>
             <li><a href="community.html">COMMUNITY</a></li>
           </ul>
-  
+
           <ul id="gnb_right">
             <li><a href="gallery.html">GALLERY</a></li>
             <li><a href="location.html">LOCATION</a></li>
@@ -110,12 +112,14 @@
   <aside id="tab_community">
     <dl>
       <dt class="on"><a href="#FAQ">FAQ</a></dt>
+      <dt class="on"><a href="#notice">NOTICE</a></dt>
+      <dt class="on"><a href="#review">REVIEW</a></dt>
     </dl>
   </aside>
 
   <article id="question">
     <div class="inner">
-      <div class="searchFAQ">
+      <div class="searchQstn">
         <p>ANY QUESTIONS?<br>
           WE’VE GOT THE ANSWERS</p>
         <input type="text" name="search" id="output">
@@ -146,11 +150,77 @@
             <div class="pic">
               <img src="" alt="">
             </div>
-            <a href="#">RETURNS</li>
+            <a href="#">RETURNS
+          </li>
         </ul>
       </div>
     </div>
   </article>
+
+  <section id="board">
+    <dl>
+      <dd>
+        <div id="FAQ">
+          <h1>FAQ</h1>
+          <select name="category" id="category">
+            <option value="">전체</option>
+            <option value="product&material">product&material</option>
+            <option value="shipping&delivery">shipping&delivery</option>
+            <option value="ordering&payment">ordering&payment</option>
+            <option value="returns">returns</option>
+          </select>
+  
+          <div class="container">
+            <ul class="accordion">
+              <li class="item">
+                <h2 class="accordionTitle">London <span class="accIcon"></span></h2>
+                <div class="text">London is the capital and largest city of England, the United Kingdom, and the European
+                  Union. Standing on the River Thames in southeastern England, at the head of its 50-mile (80 km) estuary
+                  leading to the North Sea, London has been a major settlement for two millennia. </div>
+              </li>
+              <li class="item">
+                <h2 class="accordionTitle">Madrid <span class="accIcon"></span></h2>
+                <div class="text">Madrid is the capital of Spain and the largest municipality in both the Community of
+                  Madrid and Spain as a whole. The city has almost 3.2 million inhabitants and a metropolitan area
+                  population of approximately 6.5 million.</div>
+              </li>
+              <li class="item">
+                <h2 class="accordionTitle">Paris <span class="accIcon"></span></h2>
+                <div class="text">Paris is the capital and most populous city of France, with an area of 105 square
+                  kilometres (41 square miles) and a population of 2,206,488. Since the 17th century, Paris has been one
+                  of Europe's major centres of finance, commerce, fashion, science, and the arts.</div>
+              </li>
+              <li class="item">
+                <h2 class="accordionTitle">Barcelona <span class="accIcon"></span></h2>
+                <div class="text">Barcelona is a city in Spain. It is the capital and largest city of Catalonia, as well
+                  as the second most populous municipality of Spain. With a population of 1.6 million within city limits,
+                  its urban area extends to numerous neighbouring municipalities within the Province of Barcelona and is
+                  home to around 4.8 million people.</div>
+              </li>
+              <li class="item">
+                <h2 class="accordionTitle">Milan <span class="accIcon"></span></h2>
+                <div class="text">Milan is a city in northern Italy, capital of Lombardy, and the second-most populous
+                  city in Italy after Rome, with the city proper having a population of 1,372,810 while its metropolitan
+                  area has a population of 3,242,820.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </dd>
+      <!-- 두번째 dd -->
+      <dd>
+        <div id="notice">
+
+        </div>
+      </dd>
+      <!-- 세번째 dd -->
+      <div id="review">
+        
+      </div>
+    </dl>
+  </section>
+
+
 
 
   <!-- footer -->
@@ -180,4 +250,5 @@
 
 
 </body>
+
 </html>
