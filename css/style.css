@@ -888,61 +888,44 @@ table {
 
   /*----- section2/business --------------------------------------*/
   .business {
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    height: 1320px; }
     .business .inner {
       padding: 0 20px; }
       .business .inner h1 {
         font-size: 24px;
         margin-bottom: 40px; }
       .business .inner .wrap .txt {
-        width: 100%;
-        height: 280px;
-        float: none;
-        margin-top: 0px;
-        padding: 20px 40px; }
+        height: auto;
+        padding: 10px 10px; }
         .business .inner .wrap .txt h2 {
-          font-size: 32px;
-          margin-bottom: 20px; }
+          font-size: 24px;
+          margin-bottom: 10px; }
         .business .inner .wrap .txt p {
-          font-size: 13px;
-          margin-bottom: 20px; }
+          font-size: 12px;
+          margin-bottom: 10px; }
         .business .inner .wrap .txt a {
-          margin-bottom: 40px; }
+          margin-bottom: 30px; }
       .business .inner .wrap .pic {
         width: 100%;
-        height: 600px;
-        float: none; }
+        height: auto; }
         .business .inner .wrap .pic .bigPhoto {
           width: 100%;
-          float: none;
-          height: 45vw;
-          min-height: 300px;
-          font-size: 0; }
-          .business .inner .wrap .pic .bigPhoto img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; }
+          height: 300px;
+          height: 300px; }
         .business .inner .wrap .pic .smallPhoto {
           width: 100%;
-          float: none;
-          height: 300px;
-          display: flex;
-          font-size: 0; }
-          .business .inner .wrap .pic .smallPhoto img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; }
+          height: 330px;
+          display: block; }
 
   /*----- section3/innovation -------------------------- ---------*/
   .innovation {
-    margin: 50px 0 100px; }
+    margin-bottom: 60px; }
     .innovation .inner {
-      width: 100%;
-      height: auto;
-      padding: 0 30px; }
+      padding: 0 20px; }
       .innovation .inner h1 {
-        font-size: 32px;
-        margin-bottom: 80px; }
+        font-size: 24px;
+        margin-bottom: 40px; }
       .innovation .inner .wrap ul {
         display: flex;
         justify-content: center;
