@@ -336,7 +336,7 @@ table {
     .value .inner h1 {
       font: 700 36px/1 'Roboto Condensed';
       letter-spacing: 2px;
-      color: #852132;
+      color: #101820;
       margin-bottom: 100px; }
     .value .inner .wrap {
       width: 100%;
@@ -394,8 +394,8 @@ table {
               width: 40%;
               padding: 10px 20px;
               float: left;
-              border-top: 6px solid #101820;
-              border-left: 6px solid #101820; }
+              border-top: 6px solid #D1AC8F;
+              border-left: 6px solid #D1AC8F; }
               .value .inner .wrap #tab_value .content > div .title h2 {
                 font: 300 40px/1.2 'roboto';
                 color: #852132; }
@@ -426,7 +426,7 @@ table {
     .business .inner h1 {
       font: 700 36px/1 'Roboto Condensed';
       letter-spacing: 2px;
-      color: #852132;
+      color: #101820;
       margin-bottom: 100px; }
     .business .inner .wrap ::after {
       content: "";
@@ -482,7 +482,7 @@ table {
     .innovation .inner h1 {
       font: 700 36px/1 'Roboto Condensed';
       letter-spacing: 2px;
-      color: #852132;
+      color: #101820;
       margin-bottom: 100px; }
     .innovation .inner .wrap {
       width: 100%; }
@@ -502,7 +502,7 @@ table {
             width: 100%;
             height: 212px;
             border-radius: 50%;
-            background: #eee;
+            background: #FFEACE;
             position: relative;
             margin-bottom: 30px; }
             .innovation .inner .wrap ul li .ideas .icon i {
@@ -537,7 +537,7 @@ table {
     .members .inner h1 {
       font: 700 36px/1 'Roboto Condensed';
       letter-spacing: 2px;
-      color: #852132;
+      color: #101820;
       margin-bottom: 100px; }
     .members .inner .wrap {
       width: 100%;
