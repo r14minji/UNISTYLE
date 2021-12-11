@@ -527,6 +527,94 @@ table {
             text-align: center;
             margin-bottom: 20px; }
 
+.members {
+  width: 100%;
+  margin: 50px 0 100px; }
+  .members .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    .members .inner h1 {
+      font: 700 40px/1 'Roboto Condensed';
+      letter-spacing: 2px;
+      color: #101820;
+      margin-bottom: 100px;
+      text-align: center; }
+    .members .inner .wrap {
+      width: 100%;
+      position: relative; }
+      .members .inner .wrap ::after {
+        content: "";
+        display: block;
+        clear: both; }
+      .members .inner .wrap .profile {
+        float: left;
+        width: 295px;
+        height: 600px;
+        position: relative;
+        transition: 1s; }
+        .members .inner .wrap .profile:hover .person img {
+          filter: grayscale(0%); }
+        .members .inner .wrap .profile:hover .txtWrap {
+          display: block; }
+        .members .inner .wrap .profile .person {
+          width: 100%;
+          height: 360px; }
+          .members .inner .wrap .profile .person img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%); }
+        .members .inner .wrap .profile .txtWrap {
+          width: 90%;
+          height: 90%;
+          padding: 10px 15px;
+          border: 4px solid #852132;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: 1s;
+          display: none; }
+          .members .inner .wrap .profile .txtWrap .txt {
+            width: 100%;
+            margin-top: 330px; }
+            .members .inner .wrap .profile .txtWrap .txt h2 {
+              font: 500 22px/1 'Roboto';
+              letter-spacing: 2px;
+              color: #101820;
+              margin-bottom: 10px; }
+            .members .inner .wrap .profile .txtWrap .txt p {
+              font: 300 17px/1 'Roboto';
+              color: #101820;
+              margin-bottom: 20px; }
+              .members .inner .wrap .profile .txtWrap .txt p ::before {
+                content: "";
+                display: block;
+                margin: 10px 0;
+                width: 30px;
+                height: 2px;
+                background: #101820; }
+            .members .inner .wrap .profile .txtWrap .txt strong {
+              display: block;
+              margin-bottom: 5px; }
+              .members .inner .wrap .profile .txtWrap .txt strong a {
+                color: #000;
+                font: 500 15px/1 'Roboto'; }
+            .members .inner .wrap .profile .txtWrap .txt span {
+              display: block;
+              margin-bottom: 20px; }
+              .members .inner .wrap .profile .txtWrap .txt span a {
+                color: #000;
+                font: 300 15px/1 'Roboto'; }
+            .members .inner .wrap .profile .txtWrap .txt ul li {
+              float: left;
+              margin-right: 15px; }
+              .members .inner .wrap .profile .txtWrap .txt ul li a {
+                display: inline;
+                font-size: 16px;
+                color: #000; }
+
 /*----- header -----------------------------------------------------*/
 #header {
   width: 100%;
