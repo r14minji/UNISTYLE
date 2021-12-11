@@ -927,39 +927,37 @@ table {
         font-size: 24px;
         margin-bottom: 40px; }
       .innovation .inner .wrap ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-grow: 1; }
+        display: block;
+        width: 280px; }
         .innovation .inner .wrap ul li {
-          float: none;
-          margin: 3%;
-          width: 25%; }
+          margin: 10px 10px;
+          width: 100%; }
           .innovation .inner .wrap ul li:last-child {
-            margin-right: 0; }
+            margin-right: 10px; }
           .innovation .inner .wrap ul li .ideas {
             width: 100%;
-            height: 250px;
-            margin: 0 auto; }
+            height: 150px; }
             .innovation .inner .wrap ul li .ideas .icon {
-              width: 80%;
-              max-width: 170px;
-              height: 60%;
-              margin: 0 auto; }
-              .innovation .inner .wrap ul li .ideas .icon i {
-                font-size: 50px; }
+              width: 150px;
+              height: 150px;
+              float: left; }
             .innovation .inner .wrap ul li .ideas span {
-              font-size: 30px;
-              line-height: 1.2;
-              margin: 10px 0; }
-              .innovation .inner .wrap ul li .ideas span strong {
-                margin-left: 10px;
-                font-size: 20px; }
+              float: right;
+              display: block;
+              width: 130px;
+              max-width: 130px;
+              height: 75px;
+              line-height: 100px;
+              margin: 10px 0;
+              text-align: center; }
             .innovation .inner .wrap ul li .ideas p {
-              font-size: 16px;
-              text-align: center;
-              line-height: 1;
-              margin-bottom: 0px; }
+              float: right;
+              display: block;
+              width: 130px;
+              max-width: 130px;
+              height: 75px;
+              margin: 10px 0;
+              text-align: center; }
 
   /*----- section4/members -----------  ------------------------*/
   .members {
