@@ -992,6 +992,12 @@ table {
             height: 340px; }
           .members .inner .wrap .profile .txtWrap .txt {
             margin-top: 330px; } }
+.community .sub_visual {
+  background: url(../img/sub3.jpg) no-repeat center/cover fixed;
+  background-position: 0/60%;
+  opacity: 0.9;
+  filter: contrast(140%); }
+
 /*----- header -----------------------------------------------------*/
 #header {
   width: 100%;
