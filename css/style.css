@@ -473,6 +473,60 @@ table {
         letter-spacing: 2px;
         color: #000; }
 
+.innovation {
+  width: 100%;
+  margin: 50px 0 100px; }
+  .innovation .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    .innovation .inner h1 {
+      font: 700 40px/1 'Roboto Condensed';
+      letter-spacing: 2px;
+      color: #101820;
+      margin-bottom: 100px;
+      text-align: center; }
+    .innovation .inner .wrap {
+      width: 100%; }
+      .innovation .inner .wrap ul ::after {
+        content: "";
+        display: block;
+        clear: both; }
+      .innovation .inner .wrap ul li {
+        float: left;
+        margin-right: 30px; }
+        .innovation .inner .wrap ul li:last-child {
+          margin-right: 0; }
+        .innovation .inner .wrap ul li .ideas {
+          width: 212px;
+          height: 350px; }
+          .innovation .inner .wrap ul li .ideas .icon {
+            width: 100%;
+            height: 212px;
+            border-radius: 50%;
+            background: #eee;
+            position: relative;
+            margin-bottom: 30px; }
+            .innovation .inner .wrap ul li .ideas .icon i {
+              font-size: 80px;
+              color: #101820;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%); }
+          .innovation .inner .wrap ul li .ideas span {
+            display: block;
+            font: 500 36px/1.4 'roboto';
+            text-align: center;
+            margin-bottom: 10px; }
+            .innovation .inner .wrap ul li .ideas span strong {
+              margin-left: 20px;
+              font: 500 24px/1 'roboto'; }
+          .innovation .inner .wrap ul li .ideas p {
+            font: 300 18px/1.2 'roboto';
+            text-align: center;
+            margin-bottom: 20px; }
+
 /*----- header -----------------------------------------------------*/
 #header {
   width: 100%;
