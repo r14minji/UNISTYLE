@@ -40,14 +40,28 @@
     position: relative;
 
     dl{
-      width: 100%;
+      width: 100%; 
+      ::after{content: ""; display:block; clear: both;}
 
       dt{
+        width: 20%;
+        float:left;
+        display: none;
+        &.on {display: block;}
+
+        border: 1px solid green;
+
 
       }
 
       dd{
-        
+        width: 80%; 
+        float:right;
+        display: none;
+        &.on {display: block;}
+
+        border: 1px solid purple;
+
       }
     }
   }

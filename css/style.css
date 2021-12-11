@@ -1021,6 +1021,24 @@ table {
     position: relative; }
     #tab_community .inner dl {
       width: 100%; }
+      #tab_community .inner dl ::after {
+        content: "";
+        display: block;
+        clear: both; }
+      #tab_community .inner dl dt {
+        width: 20%;
+        float: left;
+        display: none;
+        border: 1px solid green; }
+        #tab_community .inner dl dt.on {
+          display: block; }
+      #tab_community .inner dl dd {
+        width: 80%;
+        float: right;
+        display: none;
+        border: 1px solid purple; }
+        #tab_community .inner dl dd.on {
+          display: block; }
 
 /*----- header -----------------------------------------------------*/
 #header {
