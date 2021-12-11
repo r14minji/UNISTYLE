@@ -373,6 +373,12 @@
 
 /* tablet -------------------*/
 @media screen and (max-width: $tablet){
+  .department{
+
+    .sub_visual{
+      background-position: bottom 200px right 50%;
+    }
+  }
   /*----- section1/value ------------------------------------------*/
   .value{
     margin-bottom: 100px;
