@@ -305,8 +305,8 @@ table {
       width: 240px;
       height: 40px; }
       .content .titleWrap h1 {
-        font: 700 40px/80px 'Roboto Condensed';
-        letter-spacing: 3px; }
+        font: 700 32px/70px 'Roboto Condensed';
+        letter-spacing: 2px; }
 
   /*----- footer --------------------------------------------------------*/
   #footer_sub .inner {
@@ -846,6 +846,164 @@ table {
           .members .inner .wrap .profile .txtWrap .txt {
             margin-top: 330px; } }
 /* mobile -------------------*/
+@media screen and (max-width: 539px) {
+  /*----- section1/value ------------------------------------------*/
+  .value {
+    margin-bottom: 60px; }
+    .value .inner {
+      padding: 0 20px; }
+      .value .inner h1 {
+        font-size: 24px;
+        margin-bottom: 40px; }
+      .value .inner .wrap {
+        width: 100%;
+        height: auto; }
+        .value .inner .wrap #tab_value .list {
+          width: 100%;
+          height: 80px; }
+          .value .inner .wrap #tab_value .list #btns li {
+            padding: 10px 5px; }
+            .value .inner .wrap #tab_value .list #btns li a strong {
+              font: 300 30px/1 'roboto'; }
+            .value .inner .wrap #tab_value .list #btns li a p {
+              font: 500 12px/1.5 'roboto'; }
+        .value .inner .wrap #tab_value .content {
+          width: 100%;
+          height: 400px;
+          position: relative;
+          float: none; }
+          .value .inner .wrap #tab_value .content > div {
+            width: 100%;
+            height: 100%;
+            padding: 10px; }
+            .value .inner .wrap #tab_value .content > div .title {
+              width: 100%;
+              height: 145px; }
+            .value .inner .wrap #tab_value .content > div .circle {
+              width: 100%;
+              height: 300px;
+              transform: scale(1); }
+              .value .inner .wrap #tab_value .content > div .circle i {
+                font-size: 80px; }
+
+  /*----- section2/business --------------------------------------*/
+  .business {
+    margin-bottom: 60px; }
+    .business .inner {
+      padding: 0 20px; }
+      .business .inner h1 {
+        font-size: 24px;
+        margin-bottom: 40px; }
+      .business .inner .wrap .txt {
+        width: 100%;
+        height: 280px;
+        float: none;
+        margin-top: 0px;
+        padding: 20px 40px; }
+        .business .inner .wrap .txt h2 {
+          font-size: 32px;
+          margin-bottom: 20px; }
+        .business .inner .wrap .txt p {
+          font-size: 13px;
+          margin-bottom: 20px; }
+        .business .inner .wrap .txt a {
+          margin-bottom: 40px; }
+      .business .inner .wrap .pic {
+        width: 100%;
+        height: 600px;
+        float: none; }
+        .business .inner .wrap .pic .bigPhoto {
+          width: 100%;
+          float: none;
+          height: 45vw;
+          min-height: 300px;
+          font-size: 0; }
+          .business .inner .wrap .pic .bigPhoto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        .business .inner .wrap .pic .smallPhoto {
+          width: 100%;
+          float: none;
+          height: 300px;
+          display: flex;
+          font-size: 0; }
+          .business .inner .wrap .pic .smallPhoto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+
+  /*----- section3/innovation -------------------------- ---------*/
+  .innovation {
+    margin: 50px 0 100px; }
+    .innovation .inner {
+      width: 100%;
+      height: auto;
+      padding: 0 30px; }
+      .innovation .inner h1 {
+        font-size: 32px;
+        margin-bottom: 80px; }
+      .innovation .inner .wrap ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-grow: 1; }
+        .innovation .inner .wrap ul li {
+          float: none;
+          margin: 3%;
+          width: 25%; }
+          .innovation .inner .wrap ul li:last-child {
+            margin-right: 0; }
+          .innovation .inner .wrap ul li .ideas {
+            width: 100%;
+            height: 250px;
+            margin: 0 auto; }
+            .innovation .inner .wrap ul li .ideas .icon {
+              width: 80%;
+              max-width: 170px;
+              height: 60%;
+              margin: 0 auto; }
+              .innovation .inner .wrap ul li .ideas .icon i {
+                font-size: 50px; }
+            .innovation .inner .wrap ul li .ideas span {
+              font-size: 30px;
+              line-height: 1.2;
+              margin: 10px 0; }
+              .innovation .inner .wrap ul li .ideas span strong {
+                margin-left: 10px;
+                font-size: 20px; }
+            .innovation .inner .wrap ul li .ideas p {
+              font-size: 16px;
+              text-align: center;
+              line-height: 1;
+              margin-bottom: 0px; }
+
+  /*----- section4/members -----------  ------------------------*/
+  .members {
+    margin: 50px 0 100px; }
+    .members .inner {
+      width: 100%;
+      height: auto;
+      padding: 0 30px; }
+      .members .inner h1 {
+        font-size: 32px;
+        margin-bottom: 80px; }
+      .members .inner .wrap {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; }
+        .members .inner .wrap .profile {
+          float: none;
+          width: 24%;
+          min-width: 220px;
+          height: 620px; }
+          .members .inner .wrap .profile .person {
+            width: 100%;
+            height: 340px; }
+          .members .inner .wrap .profile .txtWrap .txt {
+            margin-top: 330px; } }
 /*----- header -----------------------------------------------------*/
 #header {
   width: 100%;
