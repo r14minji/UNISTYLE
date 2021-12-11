@@ -999,14 +999,28 @@ table {
 
 #searchQstn {
   width: 80%;
-  margin-left: 20%;
-  height: 200px;
-  background: skyblue; }
+  margin-left: 20%; }
+  #searchQstn .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #000; }
+    #searchQstn .inner .qstn {
+      width: 50%;
+      border: 1px solid red; }
+    #searchQstn .inner .answersBy {
+      width: 50%;
+      border: 1px solid blue; }
 
 #tab_community {
   width: 100%;
-  height: 100vh;
   background: pink; }
+  #tab_community .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    #tab_community .inner dl {
+      width: 100%; }
 
 /*----- header -----------------------------------------------------*/
 #header {
