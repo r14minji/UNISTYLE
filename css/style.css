@@ -334,7 +334,7 @@ table {
     margin: 0 auto;
     position: relative; }
     .value .inner h1 {
-      font: 700 60px/1 'Roboto Condensed';
+      font: 700 36px/1 'Roboto Condensed';
       letter-spacing: 2px;
       color: #852132;
       margin-bottom: 100px; }
@@ -424,9 +424,9 @@ table {
     margin: 0 auto;
     position: relative; }
     .business .inner h1 {
-      font: 700 60px/1 'Roboto Condensed';
+      font: 700 36px/1 'Roboto Condensed';
       letter-spacing: 2px;
-      color: #101820;
+      color: #852132;
       margin-bottom: 100px; }
     .business .inner .wrap ::after {
       content: "";
@@ -480,9 +480,9 @@ table {
     margin: 0 auto;
     position: relative; }
     .innovation .inner h1 {
-      font: 700 40px/1 'Roboto Condensed';
+      font: 700 36px/1 'Roboto Condensed';
       letter-spacing: 2px;
-      color: #101820;
+      color: #852132;
       margin-bottom: 100px; }
     .innovation .inner .wrap {
       width: 100%; }
@@ -535,10 +535,10 @@ table {
     margin: 0 auto;
     position: relative; }
     .members .inner h1 {
-      font: 700 40px/1 'Roboto Condensed';
+      font: 700 36px/1 'Roboto Condensed';
       letter-spacing: 2px;
-      color: #101820;
-      margin-bottom: 50px; }
+      color: #852132;
+      margin-bottom: 100px; }
     .members .inner .wrap {
       width: 100%;
       position: relative; }
