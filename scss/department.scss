@@ -247,7 +247,8 @@
 .members{
   width: 100%;
   margin: 50px 0 100px;
-
+  padding: 50px 0 30px;
+  background: url(../img/texture.jpg) no-repeat center/cover;
 
   .inner{
     width: 1180px; 
@@ -258,7 +259,7 @@
       font:700 40px/1 'Roboto Condensed'; 
       letter-spacing: 2px;
       color:$green; 
-      margin-bottom:100px; 
+      margin-bottom:50px; 
       text-align: center;
     }
 
@@ -266,15 +267,23 @@
       width: 100%;
       position: relative;
 
+
       ::after{content:""; display: block; clear: both;}
       .profile{
         float:left;
         width: 295px; height: 600px;
         position: relative;
+        transform: translateY(50px);
         transition: 1s;
+
+        &:nth-of-type(2n){
+          transform: translateY(30px);
+        }
+
         &:hover{
-          .person img{filter: grayscale(0%)}
-          .txtWrap {display: block;}
+          transform: translateY(0px); z-index: 2;
+          .person img{filter: grayscale(0%); transform:scale(1.1)}
+          .txtWrap {opacity: 1;}
         }
         .person{
           width: 100%; height: 360px;
@@ -282,6 +291,7 @@
             width: 100%; height: 100%; 
             object-fit: cover;
             filter: grayscale(100%);
+            transition: 1s;
           }
         }
         .txtWrap{
@@ -290,11 +300,11 @@
           position: absolute; top: 50%;left:50%; 
           transform: translate(-50%, -50%);
           transition: 1s;
-          display: none;
+          opacity: 0;
 
           .txt{
             width: 100%;
-            margin-top: 330px;
+            margin-top: 350px;
             h2{
               font: 500 22px/1 'Roboto'; 
               letter-spacing: 2px;

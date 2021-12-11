@@ -529,7 +529,9 @@ table {
 
 .members {
   width: 100%;
-  margin: 50px 0 100px; }
+  margin: 50px 0 100px;
+  padding: 50px 0 30px;
+  background: url(../img/texture.jpg) no-repeat center/cover; }
   .members .inner {
     width: 1180px;
     margin: 0 auto;
@@ -538,7 +540,7 @@ table {
       font: 700 40px/1 'Roboto Condensed';
       letter-spacing: 2px;
       color: #101820;
-      margin-bottom: 100px;
+      margin-bottom: 50px;
       text-align: center; }
     .members .inner .wrap {
       width: 100%;
@@ -552,11 +554,18 @@ table {
         width: 295px;
         height: 600px;
         position: relative;
+        transform: translateY(50px);
         transition: 1s; }
-        .members .inner .wrap .profile:hover .person img {
-          filter: grayscale(0%); }
-        .members .inner .wrap .profile:hover .txtWrap {
-          display: block; }
+        .members .inner .wrap .profile:nth-of-type(2n) {
+          transform: translateY(30px); }
+        .members .inner .wrap .profile:hover {
+          transform: translateY(0px);
+          z-index: 2; }
+          .members .inner .wrap .profile:hover .person img {
+            filter: grayscale(0%);
+            transform: scale(1.1); }
+          .members .inner .wrap .profile:hover .txtWrap {
+            opacity: 1; }
         .members .inner .wrap .profile .person {
           width: 100%;
           height: 360px; }
@@ -564,7 +573,8 @@ table {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: grayscale(100%); }
+            filter: grayscale(100%);
+            transition: 1s; }
         .members .inner .wrap .profile .txtWrap {
           width: 90%;
           height: 90%;
@@ -575,10 +585,10 @@ table {
           left: 50%;
           transform: translate(-50%, -50%);
           transition: 1s;
-          display: none; }
+          opacity: 0; }
           .members .inner .wrap .profile .txtWrap .txt {
             width: 100%;
-            margin-top: 330px; }
+            margin-top: 350px; }
             .members .inner .wrap .profile .txtWrap .txt h2 {
               font: 500 22px/1 'Roboto';
               letter-spacing: 2px;
