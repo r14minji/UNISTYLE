@@ -331,7 +331,7 @@ table {
       padding: 2px 5px; } }
 .department .sub_visual {
   background: url(../img/sub1.jpg) no-repeat center/cover fixed;
-  background-position: 0/60%;
+  background-position: right 50% bottom 40%;
   opacity: 0.9;
   filter: contrast(140%); }
 
@@ -993,10 +993,9 @@ table {
           .members .inner .wrap .profile .txtWrap .txt {
             margin-top: 330px; } }
 .community .sub_visual {
-  background: url(../img/sub3.jpg) no-repeat center/cover fixed;
-  background-position: 0/60%;
-  opacity: 0.9;
-  filter: contrast(140%); }
+  background: url(../img/sub3.jpg) no-repeat bottom/cover fixed;
+  background-position: right 50% bottom 0%;
+  filter: contrast(120%); }
 
 /*----- header -----------------------------------------------------*/
 #header {
