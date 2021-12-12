@@ -7,7 +7,7 @@
   }
 }
 
-
+/*----- tab ------*/
 #tab_community{
   width: 100%; height: auto;
   //background: pink;
@@ -72,6 +72,7 @@
               }
               >input{
                 width: 90%; height: 50px;
+                padding: 5px 10px;
                 float: left;
               }
               >button{
@@ -323,4 +324,187 @@
   }
 }
 
+/*tablet ------*/
+@media screen and (max-width: $tablet){
+  #tab_community{
 
+    .inner{
+      width: 100%;
+
+      dl{
+        height: 1400px;  
+
+        dt{
+          position: absolute; top: 0; left: 0;
+          &:nth-of-type(2){ top: 0px; left: 80px;}
+          &:nth-of-type(3){ top: 0px; left: 160px;}
+          width: 80px; height: 40px;
+          border-left: none;
+        }
+  
+        dd{
+          width: 100%; float:left;
+          position: absolute; top: 40px; left:  0;
+          display: none;
+          &.on {display: block;}
+          padding: 30px 20px;
+  
+          /*fisrt board-FAQ*/
+          #faq{
+            width: 100%;
+
+            #searchQstn{
+              width: 100%;   
+              margin-bottom: 40px;
+  
+              .qstn{
+                width: 100%; float: left; 
+                padding: 30px 20px;
+                height: 210px;
+                
+                >h1{
+                  font-size: 20px;
+                  color: $green;
+                }
+                >span{
+                  margin: 5px; 
+                }
+              }
+          
+              .answersBy{
+                width: 100%; float:left;
+
+                >ul{          
+                  li{
+                    float:left; display: block; width: 24%; height: 96px;
+                    a{
+                      .pic{
+                        i{  color: $gold;  }
+                      }
+                      span{  color: $gold; }
+                    }
+                  }
+                }
+              }
+            }
+  
+            h1{
+              font:500 24px/1 'Roboto'; 
+            }
+            select{
+              position: absolute; top: 474px; right: 20px; 
+            }
+  
+            .container{
+              width: 100%; height: auto;
+              position: relative;
+            
+              >ul{
+                .item{
+                  position: relative;
+                  /*title*/
+                  .accordionTitle{
+                    font-size: 16px; line-height: 30px;
+                    padding: 20px;
+
+                    &:hover{
+                      padding-left: 20px;
+                    }
+                    strong{  display: none;  }
+                  }
+                  /* Text Content */
+                  .text{ font-size: 14px; }
+                }
+              }
+            }
+          }
+  
+          /*second board-NOTICE*/
+          #notice{
+            width: 100%;
+            position: relative;
+            h1{
+              font:500 24px/1 'Roboto'; 
+              letter-spacing: 2px;
+              color:$green; 
+              margin-bottom:20px; 
+            }
+            table{
+              width: 100%;
+              margin-bottom: 50px;
+              border-collapse: collapse;
+        
+              tr{
+                th{
+                  padding: 10px 15px;
+                  background: $gold; color: #fff;      
+  
+                  &:nth-of-type(1) { width: 10%;}
+                  &:nth-of-type(3) { width: 15%;}
+                  &:nth-of-type(4) { width: 15%;}    
+                }
+        
+                td{
+                  padding: 20px 15px; 
+                  border-bottom: 1px solid #ddd;
+                  text-align: center; color:$darkblue; 
+                  font: 300 15px/1 'roboto';
+  
+                  &:nth-of-type(2){
+                    text-align: left;
+                    a{
+                      text-align: left; color: $darkblue; 
+                    }
+                  }       
+                }
+        
+                &:hover td{ background: rgba(255, 233, 207, 0.5);}
+              }
+            }
+        
+            .pagnation{
+              width: 100%;
+              display: flex; justify-content: space-between; align-items: center;
+              >a{
+                display: inline-block;
+                width: 30px; height: 30px; 
+                font: normal 20px/30px 'noto sans'; color: $gold; opacity: 0.7;
+              }
+              .numbers{
+                display: flex; justify-content: space-around; align-items: center;
+        
+                >a{
+                  display: inline-block;
+                  width: 30px; height: 30px; 
+                  font: normal 20px/30px 'noto sans'; color: $darkblue; text-align: center;
+                  opacity: 0.7;
+                  &.on{ background: $gold; color: #fff; opacity: 1;}
+                }
+              }
+            }
+          }
+  
+          /*third board-REVIEW*/
+          #review{
+            width: 100%;
+            position: relative;
+            h1{
+              font:500 24px/1 'Roboto'; 
+              letter-spacing: 2px;
+              color:$green; 
+              margin-bottom:20px; 
+            }
+  
+  
+  
+          }
+        }
+      }
+    }
+  }
+}
+
+/*mobile ------*/
+@media screen and (max-width: $mobile){
+
+}

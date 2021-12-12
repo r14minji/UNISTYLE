@@ -30,7 +30,7 @@ function activationTab(items, index){
 }
 
 //accordion
-const boardFAQ = document.querySelector("#FAQ");
+const boardFAQ = document.querySelector("#faq");
 const accordionBtn = boardFAQ.querySelectorAll(".accordionTitle");
 const allTexts = boardFAQ.querySelectorAll(".text");
 const accIcon = document.querySelectorAll(".accIcon");
