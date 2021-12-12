@@ -110,67 +110,71 @@
     </div>
   </section>
 
-  <!-- answers by category -->
-  <section id="searchQstn">
-    <div class="inner">
-      <div class="qstn">
-        <h1>ANY QUESTIONS?<br>
-          WE’VE GOT THE ANSWERS</h1>
-        <input type="text" name="search" id="output">
-        <button type="submit" class="btn_output"><i class="fas fa-search"></i></button>
-        <h2>HELP DESK</h2>
-        <span>
-          <i class="fas fa-phone-alt"></i> Free call: 1800 033 431<br>
-          <i class="fas fa-store"></i>Monday to Friday 7:30am to 6:00pm EST  <br>
-        </span>
-      </div>
-      <div class="answersBy">
-        <h3>BROWSE ANSWERS BY CATEGORY</h3>
-        <ul>
-          <li>
-            <a href="#">
-              <div class="pic">
-                <i class="fas fa-chair"></i>
-              </div>
-              <span>PRODUCTS & MATERIAL</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="pic">
-                <i class="fas fa-shipping-fast"></i>
-              </div>
-              <span>SHIPPING & DELIVERY</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="pic">
-                <i class="far fa-credit-card"></i>
-              </div>
-              <span>ORDERING & PAYMENT</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <div class="pic">
-                <i class="fas fa-exchange-alt"></i>
-              </div>
-              <span>RETURNS</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+
 
   <!-- tab -->
   <section id="tab_community">
     <div class="inner">
+
       <dl>
         <!-- fisrt board -->
-        <dt ><a href="#FAQ">FAQ</a></dt>
-        <dd >
-          <div id="FAQ">
+        <dt class="on"><a href="#faq">FAQ</a></dt>
+        <dd class="on">
+          <div id="faq">
+
+
+            <!-- answers by category -->
+            <article id="searchQstn">
+              <div class="qstn">
+                <h1>ANY QUESTIONS?<br>
+                  WE’VE GOT THE ANSWERS</h1>
+                <input type="text" name="search" id="output">
+                <button type="submit" class="btn_output"><i class="fas fa-search"></i></button>
+                <h2>HELP DESK</h2>
+                <span>
+                  <i class="fas fa-phone-alt"></i> Free call: 1800 033 431<br>
+                  <i class="fas fa-store"></i>Monday to Friday 7:30am to 6:00pm EST  <br>
+                </span>
+              </div>
+              <div class="answersBy">
+                <h3>BROWSE ANSWERS BY CATEGORY</h3>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="pic">
+                        <i class="fas fa-chair"></i>
+                      </div>
+                      <span>PRODUCTS & MATERIAL</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pic">
+                        <i class="fas fa-shipping-fast"></i>
+                      </div>
+                      <span>SHIPPING & DELIVERY</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pic">
+                        <i class="far fa-credit-card"></i>
+                      </div>
+                      <span>ORDERING & PAYMENT</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pic">
+                        <i class="fas fa-exchange-alt"></i>
+                      </div>
+                      <span>RETURNS</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+
             <h1>FAQ</h1>
             <select name="category" id="category">
               <option value="">전체</option>
@@ -179,7 +183,9 @@
               <option value="ordering&payment">ordering&payment</option>
               <option value="returns">returns</option>
             </select>
-    
+
+
+            <!--  게시글 -->
             <div class="container">
               <ul class="accordion">
                 <li class="item">
@@ -213,14 +219,18 @@
                 </li>
               </ul>
             </div>
+
+
+
+
           </div>
         </dd>
 
 
 
         <!-- second board -->
-        <dt class="on"><a href="#notice">NOTICE</a></dt>
-        <dd class="on">
+        <dt ><a href="#notice">NOTICE</a></dt>
+        <dd >
           <div id="notice">
             <h1>NOTICE</h1>
             <table>
@@ -326,9 +336,9 @@
         <!-- third board -->
         <dt><a href="#review">REVIEW</a></dt>
         <dd>
-          <h1>REVIEW</h1>
           <div id="review">
-  
+            <h1>REVIEW</h1>
+
           </div>
         </dd>
 

@@ -997,107 +997,29 @@ table {
   background-position: right 50% bottom 0%;
   filter: contrast(120%); }
 
-#searchQstn {
-  width: 100%; }
-  #searchQstn .inner {
-    width: 1180px;
-    margin: 0 auto;
-    position: relative;
-    padding-left: 236px; }
-    #searchQstn .inner ::after {
-      content: '';
-      display: block;
-      clear: both; }
-    #searchQstn .inner .qstn {
-      width: 50%;
-      float: left;
-      padding: 30px 20px 30px;
-      background: #eee;
-      height: 264px; }
-      #searchQstn .inner .qstn h1 {
-        font: 500 30px/1.2 'roboto';
-        color: #101820;
-        float: left;
-        margin-bottom: 10px; }
-      #searchQstn .inner .qstn input {
-        width: 90%;
-        height: 50px;
-        float: left; }
-      #searchQstn .inner .qstn button {
-        width: 10%;
-        height: 50px;
-        float: right;
-        border: none;
-        background: #101820;
-        text-align: center;
-        cursor: pointer; }
-        #searchQstn .inner .qstn button i {
-          color: #eee;
-          font-size: 20px; }
-      #searchQstn .inner .qstn h2 {
-        margin: 10px 5px 5px;
-        float: left;
-        width: 100%;
-        font: 500 12px/1.2 'roboto'; }
-      #searchQstn .inner .qstn span {
-        margin-left: 5px;
-        float: left;
-        font: 300 14px/1.4 'roboto'; }
-        #searchQstn .inner .qstn span i {
-          padding-right: 10px; }
-    #searchQstn .inner .answersBy {
-      width: 50%;
-      float: right;
-      padding: 30px 20px;
-      background: #eee;
-      margin: 0 auto; }
-      #searchQstn .inner .answersBy h3 {
-        font: 500 20px/1.2 'roboto';
-        color: #101820;
-        margin-bottom: 10px; }
-      #searchQstn .inner .answersBy ul li {
-        float: left;
-        display: block;
-        width: 49%;
-        padding: 5px 10px;
-        border: 1px solid #eee;
-        background: #fff; }
-        #searchQstn .inner .answersBy ul li:hover a .pic i, #searchQstn .inner .answersBy ul li:hover span {
-          color: #D1AC8F; }
-        #searchQstn .inner .answersBy ul li a {
-          display: block; }
-          #searchQstn .inner .answersBy ul li a .pic {
-            width: 100%;
-            height: 50px;
-            text-align: center;
-            padding-top: 20px; }
-            #searchQstn .inner .answersBy ul li a .pic i {
-              font-size: 20px;
-              color: #000; }
-          #searchQstn .inner .answersBy ul li a span {
-            display: block;
-            width: 100%;
-            font: 500 12px/1 'roboto';
-            color: #101820;
-            float: left;
-            padding: 5px;
-            text-align: center; }
-
 #tab_community {
-  width: 100%; }
+  width: 100%;
+  height: auto; }
   #tab_community .inner {
     width: 1180px;
     margin: 0 auto;
     position: relative; }
     #tab_community .inner dl {
       width: 100%;
-      height: 900px;
+      height: 1000px;
       position: relative; }
       #tab_community .inner dl dt {
         display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 236px;
         height: 40px;
         border-left: 4px solid #D1AC8F; }
+        #tab_community .inner dl dt:nth-of-type(2) {
+          top: 40px; }
+        #tab_community .inner dl dt:nth-of-type(3) {
+          top: 80px; }
         #tab_community .inner dl dt a {
           display: block;
           width: 100%;
@@ -1109,7 +1031,7 @@ table {
           color: #D1AC8F; }
       #tab_community .inner dl dd {
         width: 944px;
-        padding: 40px 0px;
+        height: auto;
         position: absolute;
         top: 0;
         right: 0;
@@ -1119,36 +1041,122 @@ table {
         /*third board-REVIEW*/ }
         #tab_community .inner dl dd.on {
           display: block; }
-        #tab_community .inner dl dd #FAQ {
+        #tab_community .inner dl dd #faq {
           width: 100%; }
-          #tab_community .inner dl dd #FAQ h1 {
+          #tab_community .inner dl dd #faq ::after {
+            content: '';
+            display: block;
+            clear: both; }
+          #tab_community .inner dl dd #faq #searchQstn {
+            width: 100%;
+            margin-bottom: 40px; }
+            #tab_community .inner dl dd #faq #searchQstn ::after {
+              content: '';
+              display: block;
+              clear: both; }
+            #tab_community .inner dl dd #faq #searchQstn .qstn {
+              width: 50%;
+              float: left;
+              padding: 20px 30px;
+              background: #eee;
+              height: 264px; }
+              #tab_community .inner dl dd #faq #searchQstn .qstn > h1 {
+                font: 500 30px/1.2 'roboto';
+                color: #101820;
+                float: left;
+                margin-bottom: 10px; }
+              #tab_community .inner dl dd #faq #searchQstn .qstn > input {
+                width: 90%;
+                height: 50px;
+                float: left; }
+              #tab_community .inner dl dd #faq #searchQstn .qstn > button {
+                width: 10%;
+                height: 50px;
+                float: right;
+                border: none;
+                background: #101820;
+                text-align: center;
+                cursor: pointer; }
+                #tab_community .inner dl dd #faq #searchQstn .qstn > button i {
+                  color: #eee;
+                  font-size: 20px; }
+              #tab_community .inner dl dd #faq #searchQstn .qstn > h2 {
+                margin: 10px 5px 5px;
+                float: left;
+                width: 100%;
+                font: 500 12px/1.2 'roboto'; }
+              #tab_community .inner dl dd #faq #searchQstn .qstn > span {
+                margin-left: 5px;
+                float: left;
+                font: 300 14px/1.4 'roboto'; }
+                #tab_community .inner dl dd #faq #searchQstn .qstn > span i {
+                  padding-right: 10px; }
+            #tab_community .inner dl dd #faq #searchQstn .answersBy {
+              width: 50%;
+              float: right;
+              padding: 30px 20px;
+              background: #eee;
+              margin: 0 auto; }
+              #tab_community .inner dl dd #faq #searchQstn .answersBy h3 {
+                font: 500 20px/1.2 'roboto';
+                color: #101820;
+                margin-bottom: 10px; }
+              #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li {
+                float: left;
+                display: block;
+                width: 49%;
+                padding: 5px 10px;
+                border: 1px solid #eee;
+                background: #fff; }
+                #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li:hover a .pic i, #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li:hover span {
+                  color: #D1AC8F; }
+                #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li a {
+                  display: block; }
+                  #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li a .pic {
+                    width: 100%;
+                    height: 50px;
+                    text-align: center;
+                    padding-top: 20px; }
+                    #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li a .pic i {
+                      font-size: 20px;
+                      color: #000; }
+                  #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li a span {
+                    display: block;
+                    width: 100%;
+                    font: 500 12px/1 'roboto';
+                    color: #101820;
+                    float: left;
+                    padding: 5px;
+                    text-align: center; }
+          #tab_community .inner dl dd #faq h1 {
             font: 500 24px/1 'Roboto';
             letter-spacing: 2px;
             color: #101820;
             margin-bottom: 40px; }
-          #tab_community .inner dl dd #FAQ select {
+          #tab_community .inner dl dd #faq select {
             position: absolute;
-            top: 43px;
+            top: 310px;
             right: 0;
             z-index: 2;
             width: 140px;
             background: #fff;
             border: none;
             font: 300 14px/1 'roboto'; }
-            #tab_community .inner dl dd #FAQ select option {
+            #tab_community .inner dl dd #faq select option {
               font: 300 14px/1 'roboto';
               color: #52616b; }
-          #tab_community .inner dl dd #FAQ .container {
+          #tab_community .inner dl dd #faq .container {
             width: 100%;
+            height: auto;
             position: relative; }
-            #tab_community .inner dl dd #FAQ .container ul {
+            #tab_community .inner dl dd #faq .container > ul {
               background: #fff;
               border-radius: 3px; }
-              #tab_community .inner dl dd #FAQ .container ul .item {
+              #tab_community .inner dl dd #faq .container > ul .item {
                 position: relative;
                 /*title*/
                 /* Text Content */ }
-                #tab_community .inner dl dd #FAQ .container ul .item .accordionTitle {
+                #tab_community .inner dl dd #faq .container > ul .item .accordionTitle {
                   padding: 20px 20px 20px 150px;
                   position: relative;
                   font: 500 18px/1 'roboto';
@@ -1156,11 +1164,11 @@ table {
                   transition: ease-in-out 0.2s all;
                   border-top: 1px solid #BFD9EB;
                   cursor: pointer; }
-                  #tab_community .inner dl dd #FAQ .container ul .item .accordionTitle:hover {
+                  #tab_community .inner dl dd #faq .container > ul .item .accordionTitle:hover {
                     padding-left: 175px; }
-                    #tab_community .inner dl dd #FAQ .container ul .item .accordionTitle:hover .accIcon::before, #tab_community .inner dl dd #FAQ .container ul .item .accordionTitle:hover .accIcon::after {
+                    #tab_community .inner dl dd #faq .container > ul .item .accordionTitle:hover .accIcon::before, #tab_community .inner dl dd #faq .container > ul .item .accordionTitle:hover .accIcon::after {
                       background-color: #52616b; }
-                  #tab_community .inner dl dd #FAQ .container ul .item .accordionTitle strong {
+                  #tab_community .inner dl dd #faq .container > ul .item .accordionTitle strong {
                     display: inline-block;
                     position: absolute;
                     top: 25px;
@@ -1168,7 +1176,7 @@ table {
                     width: 140px;
                     font: 500 11px/1 'roboto';
                     color: #101820; }
-                  #tab_community .inner dl dd #FAQ .container ul .item .accordionTitle .accIcon {
+                  #tab_community .inner dl dd #faq .container > ul .item .accordionTitle .accIcon {
                     float: right;
                     width: 30px;
                     height: 30px;
@@ -1176,22 +1184,22 @@ table {
                     justify-content: center;
                     align-items: center;
                     margin-top: -3px; }
-                    #tab_community .inner dl dd #FAQ .container ul .item .accordionTitle .accIcon::before, #tab_community .inner dl dd #FAQ .container ul .item .accordionTitle .accIcon::after {
+                    #tab_community .inner dl dd #faq .container > ul .item .accordionTitle .accIcon::before, #tab_community .inner dl dd #faq .container > ul .item .accordionTitle .accIcon::after {
                       content: "";
                       display: block;
                       position: absolute;
                       border-radius: 50px;
                       background: #c9d6df;
                       transition: ease 0.3s all; }
-                    #tab_community .inner dl dd #FAQ .container ul .item .accordionTitle .accIcon::before {
+                    #tab_community .inner dl dd #faq .container > ul .item .accordionTitle .accIcon::before {
                       width: 2px;
                       height: 20px; }
-                    #tab_community .inner dl dd #FAQ .container ul .item .accordionTitle .accIcon::after {
+                    #tab_community .inner dl dd #faq .container > ul .item .accordionTitle .accIcon::after {
                       width: 20px;
                       height: 2px; }
-                    #tab_community .inner dl dd #FAQ .container ul .item .accordionTitle .accIcon.anime.accIcon::before {
+                    #tab_community .inner dl dd #faq .container > ul .item .accordionTitle .accIcon.anime.accIcon::before {
                       transform: rotate(90deg); }
-                #tab_community .inner dl dd #FAQ .container ul .item .text {
+                #tab_community .inner dl dd #faq .container > ul .item .text {
                   font: 300 16px/24px 'roboto';
                   letter-spacing: 0.5px;
                   background-color: #f0f5f9;
@@ -1201,7 +1209,7 @@ table {
                   opacity: 0;
                   height: 0;
                   transition: all 0.6s cubic-bezier(0.42, 0.2, 0.08, 1); }
-                  #tab_community .inner dl dd #FAQ .container ul .item .text.show {
+                  #tab_community .inner dl dd #faq .container > ul .item .text.show {
                     opacity: 1;
                     height: auto;
                     padding: 25px 20px;
