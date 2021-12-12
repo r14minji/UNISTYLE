@@ -1475,6 +1475,9 @@ table {
           display: none; }
         #tab_community .inner dl dd #review h1 {
           font: 500 24px/1 'Roboto'; } }
+.login .sub_visual {
+  background: url(../img/sub6.jpg) no-repeat top/cover; }
+
 /*----- header -----------------------------------------------------*/
 #header {
   width: 100%;
