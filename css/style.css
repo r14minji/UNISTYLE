@@ -1077,29 +1077,30 @@ table {
           text-align: center; }
 
 #tab_community {
-  width: 100%;
-  background: pink; }
+  width: 100%; }
   #tab_community .inner {
     width: 1180px;
     margin: 0 auto;
     position: relative; }
     #tab_community .inner dl {
-      width: 100%; }
-      #tab_community .inner dl ::after {
-        content: "";
-        display: block;
-        clear: both; }
+      width: 100%;
+      height: 800px; }
       #tab_community .inner dl dt {
-        width: 20%;
-        float: left;
+        width: 236px;
+        display: block;
+        position: fixed;
+        top: 700px;
+        left: 0;
+        z-index: 2;
         border: 1px solid green; }
         #tab_community .inner dl dt.on {
           background: #D1AC8F; }
       #tab_community .inner dl dd {
-        width: 80%;
+        width: 944px;
         padding: 40px 0px;
-        float: right;
-        position: relative;
+        position: absolute;
+        top: 0;
+        right: 0;
         display: none;
         border: 1px solid purple;
         /*fisrt board-FAQ*/
@@ -1182,64 +1183,72 @@ table {
                     position: relative;
                     z-index: 0;
                     border-radius: 0px 0px 3px 3px; }
-        #tab_community .inner dl dd #notice table {
+        #tab_community .inner dl dd #notice {
           width: 100%;
-          margin-bottom: 50px;
-          border-collapse: collapse; }
-          #tab_community .inner dl dd #notice table tr th {
-            padding: 30px 15px;
-            background: #101820;
-            color: #fff; }
-          #tab_community .inner dl dd #notice table tr:nth-of-type(1) {
-            width: 10%; }
-          #tab_community .inner dl dd #notice table tr:nth-of-type(3) {
-            width: 15%; }
-          #tab_community .inner dl dd #notice table tr:nth-of-type(4) {
-            width: 15%; }
-          #tab_community .inner dl dd #notice table tr td {
-            padding: 30px 15px;
-            opacity: 0.7;
-            border-bottom: 1px solid #ddd;
-            text-align: center;
-            color: #FFE9CF; }
-            #tab_community .inner dl dd #notice table tr td:nth-of-type(2) {
-              text-align: left; }
-              #tab_community .inner dl dd #notice table tr td:nth-of-type(2) a {
-                text-align: left;
-                color: #FFE9CF;
-                font: normal 16px/1 'noto sans'; }
-            #tab_community .inner dl dd #notice table tr td:nth-of-type(3) {
-              font-family: 'noto sans kr'; }
-          #tab_community .inner dl dd #notice table tr:hover td {
-            opacity: 1;
-            background: #eee; }
-        #tab_community .inner dl dd #notice .pagnation {
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          align-items: center; }
-          #tab_community .inner dl dd #notice .pagnation > a {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            font: normal 20px/30px 'noto sans';
-            color: #FFE9CF;
-            opacity: 0.7; }
-          #tab_community .inner dl dd #notice .pagnation .numbers {
+          position: relative; }
+          #tab_community .inner dl dd #notice h1 {
+            font: 500 24px/1 'Roboto';
+            letter-spacing: 2px;
+            color: #101820;
+            margin-bottom: 20px; }
+          #tab_community .inner dl dd #notice table {
+            width: 100%;
+            margin-bottom: 50px;
+            border-collapse: collapse; }
+            #tab_community .inner dl dd #notice table tr th {
+              padding: 30px 15px;
+              background: #101820;
+              color: #fff; }
+            #tab_community .inner dl dd #notice table tr:nth-of-type(1) {
+              width: 10%; }
+            #tab_community .inner dl dd #notice table tr:nth-of-type(3) {
+              width: 15%; }
+            #tab_community .inner dl dd #notice table tr:nth-of-type(4) {
+              width: 15%; }
+            #tab_community .inner dl dd #notice table tr td {
+              padding: 30px 15px;
+              opacity: 0.7;
+              border-bottom: 1px solid #ddd;
+              text-align: center;
+              color: #FFE9CF; }
+              #tab_community .inner dl dd #notice table tr td:nth-of-type(2) {
+                text-align: left; }
+                #tab_community .inner dl dd #notice table tr td:nth-of-type(2) a {
+                  text-align: left;
+                  color: #FFE9CF;
+                  font: normal 16px/1 'noto sans'; }
+              #tab_community .inner dl dd #notice table tr td:nth-of-type(3) {
+                font-family: 'noto sans kr'; }
+            #tab_community .inner dl dd #notice table tr:hover td {
+              opacity: 1;
+              background: #eee; }
+          #tab_community .inner dl dd #notice .pagnation {
+            width: 100%;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center; }
-            #tab_community .inner dl dd #notice .pagnation .numbers > a {
+            #tab_community .inner dl dd #notice .pagnation > a {
               display: inline-block;
               width: 30px;
               height: 30px;
               font: normal 20px/30px 'noto sans';
               color: #FFE9CF;
-              text-align: center;
               opacity: 0.7; }
-              #tab_community .inner dl dd #notice .pagnation .numbers > a.on {
-                border-bottom: 1px solid #000;
-                opacity: 1; }
+            #tab_community .inner dl dd #notice .pagnation .numbers {
+              display: flex;
+              justify-content: space-around;
+              align-items: center; }
+              #tab_community .inner dl dd #notice .pagnation .numbers > a {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                font: normal 20px/30px 'noto sans';
+                color: #FFE9CF;
+                text-align: center;
+                opacity: 0.7; }
+                #tab_community .inner dl dd #notice .pagnation .numbers > a.on {
+                  border-bottom: 1px solid #000;
+                  opacity: 1; }
 
 /*----- header -----------------------------------------------------*/
 #header {

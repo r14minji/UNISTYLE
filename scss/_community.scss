@@ -95,7 +95,7 @@
 
 #tab_community{
   width: 100%;
-  background: pink;
+  //background: pink;
 
   .inner{
     width: 1180px;
@@ -104,11 +104,12 @@
 
     dl{
       width: 100%; 
-      ::after{content: ""; display:block; clear: both;}
+      height: 800px;
 
       dt{
-        width: 20%;
-        float:left;
+        width: 236px;
+        display: block;
+        position: fixed; top: 700px;left: 0; z-index: 2;
         &.on {background: $gold;}
 
         border: 1px solid green;
@@ -117,10 +118,10 @@
       }
 
       dd{
-        width: 80%; 
+        width: 944px; 
         padding: 40px 0px;
-        float:right; 
-        position: relative;
+        
+        position: absolute; top: 0;right: 0;
         display: none;
         &.on {display: block;}
 
@@ -218,8 +219,19 @@
         }
 
       }
+
       /*second board-NOTICE*/
       #notice{
+        width: 100%;
+        position: relative;
+
+        h1{
+          font:500 24px/1 'Roboto'; 
+          letter-spacing: 2px;
+          color:$green; 
+          margin-bottom:20px; 
+        }
+
         table{
           width: 100%;
           margin-bottom: 50px;

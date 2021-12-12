@@ -16,8 +16,8 @@ dts.forEach((el, index) =>{
 
 dt_btn.forEach((el, index) => {
   el.addEventListener("focusin", e => {
-    activation(dts, index);
-    activation(dds, index);
+    activationTab(dts, index);
+    activationTab(dds, index);
   })
 })
 
