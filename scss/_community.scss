@@ -421,8 +421,6 @@
   
           /*second board-NOTICE*/
           #notice{
-            width: 100%;
-            position: relative;
             h1{
               font:500 24px/1 'Roboto'; 
             }
@@ -438,7 +436,7 @@
                 }
               }
             }
-        
+
             .paignation{
               .numbers{
                 a{
@@ -450,21 +448,12 @@
             }
           }
 
-          
-  
           /*third board-REVIEW*/
           #review{
-            width: 100%;
-            position: relative;
             h1{
               font:500 24px/1 'Roboto'; 
-              letter-spacing: 2px;
-              color:$green; 
-              margin-bottom:20px; 
             }
-  
-  
-  
+ 
           }
         }
       }
@@ -474,5 +463,119 @@
 
 /*mobile ------*/
 @media screen and (max-width: $mobile){
+  #tab_community{
 
+    .inner{
+      width: 100%;
+
+      dl{
+        height: 1400px;  
+
+        dt{
+          position: absolute; top: 0; left: 0;
+          &:nth-of-type(2){ top: 0px; left: 80px;}
+          &:nth-of-type(3){ top: 0px; left: 160px;}
+          width: 80px; height: 40px;
+          border-left: none;
+        }
+  
+        dd{
+          width: 100%; float:left;
+          position: absolute; top: 40px; left:  0;
+          display: none;
+          &.on {display: block;}
+          padding: 20px 0px;
+  
+          /*fisrt board-FAQ*/
+          #faq{
+
+
+            #searchQstn{
+              .qstn{
+                >h1{ font-size: 18px; }
+              }
+
+              .answersBy{
+                h3{font-size: 16px;}
+                >ul{          
+                  li{
+                    padding: 0;
+                    a{   
+                      span{ font-size: 10px; }     
+                    }
+                  }
+                }
+              }
+            }
+  
+            h1{
+              padding-left: 10px;
+            }
+            select{
+              position: absolute; top: 459px; right: 10px; 
+            }
+  
+            .container{
+              padding: 0 10px;
+              >ul{
+                .item{
+                  /*title*/
+                  .accordionTitle{
+                    font-size: 14px; line-height: 20px;
+                    padding: 10px;
+
+                    &:hover{
+                      padding-left: 10px;
+                    }
+                  }
+                  /* Text Content */
+                  .text{ 
+                    font-size: 14px; line-height: 14px;
+                    padding: 0px 10px;
+                  }
+                }
+              }
+            }
+          }
+  
+          /*second board-NOTICE*/
+          #notice{
+            h1{
+              font:500 24px/1 'Roboto'; 
+            }
+            table{
+              tr{
+                th{
+                  &:nth-of-type(1){ width: 15%;}
+                  &:nth-of-type(3){ width: 17%;}
+                  &:nth-of-type(4){ width: 0%; display: none;}
+                }
+                td{
+                  &:nth-of-type(4){ width: 0%; display: none;}
+                }
+              }
+            }
+
+            .paignation{
+              .numbers{
+                a{
+                  @for $i from 6 through 10{
+                    &:nth-of-type(#{$i}){display: none;}
+                  }
+                }
+              }
+            }
+          }
+
+          /*third board-REVIEW*/
+          #review{
+            h1{
+              font:500 24px/1 'Roboto'; 
+            }
+ 
+          }
+        }
+      }
+    }
+  }
 }
