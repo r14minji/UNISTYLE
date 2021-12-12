@@ -1230,7 +1230,7 @@ table {
             border-collapse: collapse; }
             #tab_community .inner dl dd #notice table tr th {
               padding: 10px 15px;
-              background: #52616b;
+              background: #D1AC8F;
               color: #fff; }
               #tab_community .inner dl dd #notice table tr th:nth-of-type(1) {
                 width: 10%; }
@@ -1243,7 +1243,6 @@ table {
               border-bottom: 1px solid #ddd;
               text-align: center;
               color: #52616b;
-              opacity: 0.7;
               font: 300 15px/1 'roboto'; }
               #tab_community .inner dl dd #notice table tr td:nth-of-type(2) {
                 text-align: left; }
@@ -1251,8 +1250,7 @@ table {
                   text-align: left;
                   color: #52616b; }
             #tab_community .inner dl dd #notice table tr:hover td {
-              opacity: 1;
-              background: #f0f5f9; }
+              background: rgba(255, 233, 207, 0.5); }
           #tab_community .inner dl dd #notice .pagnation {
             width: 100%;
             display: flex;
@@ -1263,7 +1261,7 @@ table {
               width: 30px;
               height: 30px;
               font: normal 20px/30px 'noto sans';
-              color: #52616b;
+              color: #D1AC8F;
               opacity: 0.7; }
             #tab_community .inner dl dd #notice .pagnation .numbers {
               display: flex;
@@ -1278,7 +1276,7 @@ table {
                 text-align: center;
                 opacity: 0.7; }
                 #tab_community .inner dl dd #notice .pagnation .numbers > a.on {
-                  background: #52616b;
+                  background: #D1AC8F;
                   color: #fff;
                   opacity: 1; }
         #tab_community .inner dl dd #review {
