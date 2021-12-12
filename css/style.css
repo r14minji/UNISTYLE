@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;500&display=swap");
 * {
   margin: 0px;
@@ -1607,6 +1608,72 @@ table {
   background: url(../img/sub7.jpg) no-repeat center/cover fixed;
   background-position: right 50% bottom 32%;
   filter: contrast(80%); }
+
+#joinForm {
+  width: 100%;
+  margin-bottom: 100px; }
+  #joinForm .inner {
+    width: 1180px;
+    position: relative;
+    margin: 0 auto;
+    /*Cancel, Submit Button */ }
+    #joinForm .inner h1, #joinForm .inner h2 {
+      font: 500 30px/1 'roboto';
+      margin-bottom: 30px; }
+    #joinForm .inner table {
+      width: 100%;
+      border-top: 2px solid #333;
+      border-bottom: 2px solid #333;
+      margin-bottom: 60px; }
+      #joinForm .inner table th, #joinForm .inner table td {
+        border-bottom: 1px solid #ddd;
+        padding: 15px 25px; }
+      #joinForm .inner table th {
+        width: 20%; }
+      #joinForm .inner table td input[type=text], #joinForm .inner table td input[type=password] {
+        width: 60%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px; }
+        #joinForm .inner table td input[type=text]:focus, #joinForm .inner table td input[type=password]:focus {
+          outline: none;
+          border: 2px solid rgba(209, 172, 143, 0.4);
+          box-shadow: 0 0 0 4px rgba(209, 172, 143, 0.1); }
+      #joinForm .inner table td input[type=checkbox] {
+        display: inline-block;
+        margin: 0 10px 0 30px; }
+      #joinForm .inner table td select {
+        width: 10%;
+        padding: 10px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px; }
+      #joinForm .inner table td label {
+        font: 300 16px/1 'roboto';
+        position: relative;
+        top: -2px;
+        margin: 10px; }
+      #joinForm .inner table td p {
+        font: 11px/1 "맑은 고딕";
+        color: hotpink;
+        margin-top: 5px; }
+    #joinForm .inner .btns {
+      margin: 0 auto;
+      position: relative;
+      left: 50%;
+      transform: translateX(-30%); }
+      #joinForm .inner .btns input[type=reset], #joinForm .inner .btns input[type=submit] {
+        width: 30%;
+        height: 40px;
+        border: 1px solid #333;
+        margin: 10px;
+        font: bold 14px/40px 'arial';
+        color: #555;
+        cursor: pointer;
+        transition: 0.5s; }
+        #joinForm .inner .btns input[type=reset]:hover, #joinForm .inner .btns input[type=submit]:hover {
+          background: #333;
+          color: #fff; }
 
 /*----- header -----------------------------------------------------*/
 #header {

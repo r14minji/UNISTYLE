@@ -6,3 +6,85 @@
   }
 }
 
+#joinForm{
+  width: 100%;
+  margin-bottom: 100px;
+
+  .inner{
+    width: 1180px;
+    position: relative;
+    margin: 0 auto;
+
+    h1, h2{
+      font: 500 30px/1 'roboto';
+      margin-bottom: 30px;
+    }
+    table{
+      width: 100%;
+      border-top: 2px solid #333;
+      border-bottom: 2px solid #333;
+      margin-bottom: 60px;
+
+      th, td{
+        border-bottom: 1px solid #ddd;
+        padding: 15px 25px;
+      }
+      th{
+        width: 20%;
+      }
+      td{
+        input[type=text], input[type=password]{
+          width: 60%; padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          &:focus{
+            outline: none;
+            border: 2px solid rgba(209, 172, 143, 0.4);
+            box-shadow: 0 0 0 4px rgba(209, 172, 143, 0.1);
+          }
+        }
+        input[type=checkbox]{
+          display: inline-block;
+          margin: 0 10px 0 30px;
+        }
+        select{
+          width: 10%; padding: 10px;
+          margin-right: 10px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+        }
+        label{
+          font: 300 16px/1 'roboto';
+          position: relative; top: -2px;
+          margin: 10px;
+        }
+
+        //error message style
+        p{
+          font: 11px/1 "맑은 고딕";
+          color: hotpink;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    /*Cancel, Submit Button */
+    .btns{
+      margin: 0 auto;
+      position: relative; left: 50%; transform: translateX(-30%);
+
+      input[type=reset], input[type=submit]{
+        width: 30%; height: 40px;
+        border: 1px solid #333;
+        margin: 10px;
+        font: bold 14px/40px 'arial'; 
+        color: #555;
+        cursor: pointer; transition: 0.5s;
+  
+        &:hover{
+          background: #333; color: #fff;
+        }
+      }
+    }
+  }
+}
