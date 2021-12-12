@@ -107,12 +107,103 @@
     </div>
   </section>
 
+  <section id="joinForm">
+    <div class="inner">
+      
+      <form action="result.html" method="get" id="member">
+        <legend class="hidden">form of join information</legend>
+        
+        <!-- Personal Information -->
+        <h1>Personal Information (Mandatory Items)</h1>
+        <table class="personalInfo">
+          <caption class="hidden">table for writting mandatory  information of name, userid, password, email address</caption>
+          
+          <tbody>
+            <!-- userid -->
+            <tr>
+              <th scope="row"><label for="userid">ID</label></th>
+                <td>
+                  <input type="text" name="userid" id="userid" placeholder="id">
+                </td>
+            </tr>
+            <!-- password -->
+            <tr>
+              <th scope="row"><lebel for="pwd1">Password</lebel></th>
+              <td>
+                <input type="password" name="pwd1" id="pwd1" placeholder="password">
+              </td>
+            </tr>
+            <!-- repassword -->
+            <tr>
+              <th scope="row"><label for="pwd2">Re Password</label></th>
+              <td>
+                <input type="password" name="pwd2" id="pwd2" placeholder="password">
+              </td>
+            </tr>
+            <!-- name -->
+            <tr>
+              <th scope="row"><label for="userName">Name</label></th>
+                <td>
+                  <input type="text" name="userName" id="userName" placeholder="name">
+                </td>
+            </tr>
+            <!-- email -->
+            <tr>
+              <th scope="row"><label for="email">E-mail</label></th>
+              <td>
+                <input type="text" name="email" id="email" placeholder="Email address">
+              </td>
+            </tr>
+            <!-- phone number -->
+            <tr>
+              <th scope="row"><label for="phoneNum">Phone Number</label></th>
+                <td>
+                  <input type="text" name="phoneNum" id="phoneNum" placeholder="Phone Number">
+                  <input type="checkbox" name="marketing" id="marketing">
+                  <label for="marketing">Agree to receive SMS for marketing</label>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+        
 
+        <!-- Additional Information -->
+        <h2>Additional Information (Optional Items)</h2>
+        <table class="optionalInfo">
+          <caption class="hidden">table for writting optional information of gender, birthday</caption>
 
-
-
-
-
+          <tbody>
+            <!-- gender -->
+            <tr>
+              <th scope="row">Gender</th>
+              <td>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+              </td>
+            </tr>
+            <!-- birth -->
+            <tr>
+              <th scope="row"><label for="edu">Date Of Birth</label></th>
+              <td>
+                <select name="mm" id="month"></select>
+                <select name="dd" id="day"></select>th
+                <select name="yy" id="year"></select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <!-- cancel, submit button -->
+        <div class="btns">
+          <input type="reset" value="cancel">
+          <input type="submit" value="submit">
+        </div>
+      </form>
+    </div>
+  </section>
 
 
   <!-- footer -->
