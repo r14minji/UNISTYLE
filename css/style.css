@@ -997,7 +997,7 @@ table {
   background-position: right 50% bottom 0%;
   filter: contrast(120%); }
 
-/*----- tab ------*/
+/*----- Web_tab_contents ------*/
 #tab_community {
   width: 100%;
   height: auto; }
@@ -1161,7 +1161,7 @@ table {
                 #tab_community .inner dl dd #faq .container > ul .item .accordionTitle {
                   padding: 20px 20px 20px 150px;
                   position: relative;
-                  font: 500 18px/1 'roboto';
+                  font: 500 18px/30px 'roboto';
                   color: #52616b;
                   transition: ease-in-out 0.2s all;
                   border-top: 1px solid #BFD9EB;
@@ -1176,7 +1176,7 @@ table {
                     top: 25px;
                     left: 10px;
                     width: 140px;
-                    font: 500 11px/1 'roboto';
+                    font: 500 11px/30px 'roboto';
                     color: #101820; }
                   #tab_community .inner dl dd #faq .container > ul .item .accordionTitle .accIcon {
                     float: right;
@@ -1308,7 +1308,7 @@ table {
           left: 80px; }
         #tab_community .inner dl dt:nth-of-type(3) {
           top: 0px;
-          left: 160px; }
+          left: 180px; }
       #tab_community .inner dl dd {
         width: 100%;
         float: left;
