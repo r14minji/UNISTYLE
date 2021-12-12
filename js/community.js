@@ -2,6 +2,7 @@
 const tab = document.querySelector("#tab_community");
 const dts = tab.querySelectorAll("dt");
 const dds = tab.querySelectorAll("dd");
+console
 const dt_btn = document.querySelectorAll("dt>a");
 
 dts.forEach((el, index) =>{

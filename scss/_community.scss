@@ -41,26 +41,29 @@
         border: none;
         background: $green;
         text-align: center;
+        cursor: pointer;
         i{ color: #eee; font-size: 20px;}
       }
-      p{
-        margin: 10px 0 5px; 
+      h2{
+        margin: 10px 5px 5px; 
         float: left; width: 100%;
-        font: 500 15px/1.2 'roboto';
+        font: 500 12px/1.2 'roboto';
       }
       span{
+        margin-left: 5px;
         float: left;
         font: 300 14px/1.4 'roboto';
         i{ padding-right: 10px;}
       }
     }
+
     .answersBy{
       width: 50%; float:right;
       padding: 30px 20px;
       background: #eee;
       margin: 0 auto;
 
-      h2{
+      h3{
         font: 500 20px/1.2 'roboto';
         color: $green;
         margin-bottom: 10px;
@@ -72,20 +75,27 @@
           border: 1px solid #eee;
           background: #fff;
 
-          .pic{
-            width: 100%; height: 50px;
-            text-align: center; padding-top: 20px;
-            i{
-              font-size: 20px; 
-            }
+          &:hover a .pic i, &:hover span{
+            color: $gold;
           }
           a{
-            display: block; width: 100%;
-            font: 500 12px/1 'roboto';
-            color: $green;
-            float:left;
-            padding: 5px;
-            text-align: center;
+            display: block; 
+            .pic{
+              width: 100%; height: 50px;
+              text-align: center; padding-top: 20px;
+              i{
+                font-size: 20px; 
+                color: #000;
+              }
+            }
+            span{
+              display: block; width: 100%;
+              font: 500 12px/1 'roboto';
+              color: $green;
+              float:left;
+              padding: 5px;
+              text-align: center;
+            }
           }
         }
       }
@@ -104,28 +114,33 @@
 
     dl{
       width: 100%; 
-      height: 800px;
+      height: 800px;  
+      position: relative;
 
       dt{
-        width: 236px;
-        display: block;
-        position: fixed; top: 700px;left: 0; z-index: 2;
-        &.on {background: $gold;}
+        display: block; 
+        width: 236px; height: 40px;
+        border-left: 4px solid $gold;
 
-        border: 1px solid green;
+        a{
+          display: block; width: 100%; 
+          font: 300 16px/40px 'roboto';
+          margin-left: 30px;
+          color: #555;
+        }
 
-
+        &.on a{
+          font-weight: 500;
+          color: $gold;
+        }
       }
 
       dd{
         width: 944px; 
         padding: 40px 0px;
-        
         position: absolute; top: 0;right: 0;
         display: none;
         &.on {display: block;}
-
-        border: 1px solid purple;
 
       /*fisrt board-FAQ*/
       #FAQ{
@@ -135,13 +150,17 @@
           font:500 24px/1 'Roboto'; 
           letter-spacing: 2px;
           color:$green; 
-          margin-bottom:20px; 
+          margin-bottom:40px; 
         }
         select{
-          position: absolute; top: 0; right: 0;
-          width: 120px; background: #eee;
+          position: absolute; top: 43px; right: 0; z-index: 2;
+          width: 140px; background: #fff;
           border: none;
           font: 300 14px/1 'roboto';
+          option{
+            font: 300 14px/1 'roboto';
+            color: #52616b;
+          }
         }
 
         .container{
@@ -153,21 +172,31 @@
             border-radius: 3px;
 
             .item{
+              position: relative;
               /*title*/
               .accordionTitle{
-                padding: 20px; 
+                padding: 20px 20px 20px 150px;
                 position: relative;
                 font: 500 18px/1 'roboto'; 
                 color: #52616b;
                 transition: ease-in-out 0.2s all;
+                border-top: 1px solid #BFD9EB;
                 cursor: pointer;
   
                 &:hover{
-                  padding-left: 25px;
+                  padding-left: 175px;
   
                   .accIcon::before, .accIcon::after{
                     background-color: #52616b;
                   }
+                }
+
+                strong{
+                  display: inline-block; 
+                  position: absolute; top: 25px; left: 10px;
+                  width: 140px;
+                  font: 500 11px/1 'roboto'; 
+                  color: $green; //#52616b;
                 }
   
                 // + - icon
@@ -187,11 +216,7 @@
                   &::after{
                     width: 20px;height: 2px;
                   }
-                  &.anime{
-                    .accIcon::before{
-                      transform: rotate(90deg);
-                    }
-                  }
+                  &.anime.accIcon::before{ transform: rotate(90deg);}
                 }
               }
               /* Text Content */
