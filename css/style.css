@@ -2169,46 +2169,46 @@ table {
             color: #fff;
             font-size: 10px; }
 
-/* ----- section5/lifestyle-------------------------------*/
-#lifestyle {
+/* ----- section5/museum-------------------------------*/
+#museum {
   width: 100%;
   height: 570px; }
-  #lifestyle .inner {
+  #museum .inner {
     width: 1180px;
     height: 100%;
     padding: 100px 0 0px;
     margin: 0 auto;
     position: relative; }
-    #lifestyle .inner .lifePic {
+    #museum .inner .lifePic {
       width: 420px;
       height: 570px;
       position: absolute;
       bottom: -70px;
       right: 150px;
       z-index: 2; }
-      #lifestyle .inner .lifePic img {
+      #museum .inner .lifePic img {
         width: 100%;
         object-fit: cover; }
-    #lifestyle .inner .desMore {
+    #museum .inner .desMore {
       width: 400px;
       position: absolute;
       top: 170px;
       right: calc( 150px + 420px + 100px); }
-      #lifestyle .inner .desMore h1 {
+      #museum .inner .desMore h1 {
         font: 700 28px/1 'roboto condensed';
         color: #000;
         letter-spacing: 5px;
         margin-bottom: 10px; }
-      #lifestyle .inner .desMore h2 {
+      #museum .inner .desMore h2 {
         font: 300 14px/1 'roboto condensed';
         color: #555;
         letter-spacing: 3px;
         margin-bottom: 20px; }
-      #lifestyle .inner .desMore p {
+      #museum .inner .desMore p {
         font: 300 12px/2 'roboto condensed';
         color: #555;
         margin-bottom: 20px; }
-      #lifestyle .inner .desMore a {
+      #museum .inner .desMore a {
         font: 700 12px/1 'roboto condensed';
         color: #333;
         letter-spacing: 2px; }
@@ -2608,22 +2608,22 @@ table {
         left: 5%; }
 
   /* ----- section5/landscate-waterfall -------------------------------*/
-  #lifestyle {
+  #museum {
     height: 500px; }
-    #lifestyle .inner {
+    #museum .inner {
       width: 100%;
       padding: 0;
       position: relative; }
-      #lifestyle .inner .lifePic {
+      #museum .inner .lifePic {
         width: 47%;
         height: 520px;
         position: absolute;
         bottom: -100px;
         right: 3%;
         z-index: 2; }
-        #lifestyle .inner .lifePic img {
+        #museum .inner .lifePic img {
           height: 100%; }
-      #lifestyle .inner .desMore {
+      #museum .inner .desMore {
         width: 48%;
         height: auto;
         position: absolute;
@@ -2631,7 +2631,7 @@ table {
         bottom: 50px;
         right: 50%;
         padding: 80px 20px; }
-        #lifestyle .inner .desMore h2 {
+        #museum .inner .desMore h2 {
           letter-spacing: 2px; }
 
   /* ----- section6/experience----------------------------------------*/
@@ -2828,28 +2828,28 @@ table {
           right: 30px; }
 
   /* ----- section5/landscate-waterfall -------------------------------*/
-  #lifestyle {
+  #museum {
     height: 900px; }
-    #lifestyle .inner {
+    #museum .inner {
       margin: 0 auto; }
-      #lifestyle .inner .lifePic {
+      #museum .inner .lifePic {
         width: 100%;
         max-width: 340px;
         height: 520px;
         position: static;
         padding-top: 40px;
         margin: 0 auto; }
-        #lifestyle .inner .lifePic img {
+        #museum .inner .lifePic img {
           height: 100%; }
-      #lifestyle .inner .desMore {
+      #museum .inner .desMore {
         width: 100%;
         height: 380px;
         position: static;
         padding: 50px 20px;
         text-align: center; }
-        #lifestyle .inner .desMore h2 {
+        #museum .inner .desMore h2 {
           letter-spacing: 2px; }
-        #lifestyle .inner .desMore p {
+        #museum .inner .desMore p {
           line-height: 1.5; }
 
   /* ----- section6/experience----------------------------------------*/
