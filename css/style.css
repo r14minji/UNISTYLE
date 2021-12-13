@@ -233,6 +233,8 @@ table {
         margin-right: 30px; }
         #footer_sub .inner ul li:last-child {
           margin-right: 0; }
+      #footer_sub .inner ul.sns li a {
+        color: #bbb; }
     #footer_sub .inner span {
       display: block;
       text-align: center;
@@ -2463,6 +2465,8 @@ table {
         margin-right: 30px; }
         #footer .inner ul li:last-child {
           margin-right: 0; }
+      #footer .inner ul.sns li a {
+        color: #bbb; }
     #footer .inner span {
       display: block;
       text-align: center;

@@ -206,6 +206,10 @@
         margin-right: 30px;
         &:last-child{margin-right: 0;}
       }
+
+      &.sns{
+        li a {color: #bbb;}
+      }
     }
     span{
       display: block;
