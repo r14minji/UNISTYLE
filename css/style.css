@@ -283,26 +283,30 @@ table {
 /*----- mobile -----------------------------------------------------*/
 @media screen and (max-width: 539px) {
   /*----- header -----------------------------------------------------*/
-  #header_sub .inner {
-    width: 100%;
-    height: 60px;
-    padding-left: 0px; }
-    #header_sub .inner .menuWeb #gnb_left, #header_sub .inner .menuWeb #gnb_right {
-      display: none; }
-    #header_sub .inner .btnCall {
-      display: block;
-      left: 20px; }
+  #header_sub {
+    margin-bottom: 80px;
+    position: relative; }
+    #header_sub .inner {
+      width: 100%;
+      height: 80px;
+      padding-left: 0px; }
+      #header_sub .inner .menuWeb #gnb_left, #header_sub .inner .menuWeb #gnb_right {
+        display: none; }
+      #header_sub .inner .btnCall {
+        display: block;
+        left: 20px; }
 
   /* content --------------------------------------- */
   .content {
     width: 100%;
-    padding: 0 0 80px; }
+    padding: 0 0 60px; }
     .content .sub_visual {
-      height: 260px;
-      margin-bottom: 80px; }
+      display: none; }
     .content .titleWrap {
       position: absolute;
-      top: 230px;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
       width: 240px;
       height: 40px; }
       .content .titleWrap h1 {
