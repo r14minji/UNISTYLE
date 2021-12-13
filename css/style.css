@@ -999,7 +999,7 @@ table {
           .members .inner .wrap .profile .txtWrap .txt {
             margin-top: 330px; } }
 .community .sub_visual {
-  background: url(../img/sub9.jpg) no-repeat center/cover fixed;
+  background: url(../img/sub3.jpg) no-repeat center/cover fixed;
   filter: contrast(90%); }
 
 /*----- Web_tab_contents ------*/
@@ -1481,7 +1481,7 @@ table {
         #tab_community .inner dl dd #review h1 {
           font: 500 24px/1 'Roboto'; } }
 .login .sub_visual {
-  background: url(../img/sub12.jpg) no-repeat bottom/cover;
+  background: url(../img/sub6.jpg) no-repeat bottom/cover;
   filter: contrast(140%);
   background-position: left 50% bottom 10px; }
 
@@ -1670,7 +1670,9 @@ table {
         width: 100%;
         float: left; } }
 .join .sub_visual {
-  background: url(../img/sub11.jpg) no-repeat bottom/cover fixed; }
+  background: url(../img/sub7.jpg) no-repeat bottom/cover fixed;
+  background-position: left 50% bottom 197px;
+  filter: contrast(120%); }
 
 /*----- joinform --------------------------------------------------*/
 #joinForm {
@@ -1747,7 +1749,7 @@ table {
 /*tablet*/
 @media screen and (max-width: 1179px) {
   .join .sub_visual {
-    background-position: left 50% top -158px; }
+    background-position: left 50% bottom 210px; }
 
   /*----- joinform --------------------------------------------------*/
   #joinForm {

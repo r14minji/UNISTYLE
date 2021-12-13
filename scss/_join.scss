@@ -1,6 +1,8 @@
 .join{
   .sub_visual{
-    background: url(../img/sub11.jpg) no-repeat bottom/cover fixed;
+    background: url(../img/sub7.jpg) no-repeat bottom/cover fixed;
+    background-position: left 50% bottom 197px;
+    filter: contrast(120%);
   }
 }
 
@@ -103,7 +105,7 @@
 @media screen and (max-width:$tablet){
   .join{
     .sub_visual{
-      background-position: left 50% top -158px;
+      background-position: left 50% bottom 210px;
     }
   }
   
