@@ -1840,7 +1840,7 @@ table {
     #visual .inner .openVisual {
       width: 100%;
       height: 79vh;
-      background: url(../img/openViaul.jpg) no-repeat top/cover;
+      background: url(../img/relax.jpg) no-repeat center/cover;
       padding-top: 220px; }
       #visual .inner .openVisual h1 {
         font: normal 76px/1 'Monoton';
@@ -1982,6 +1982,7 @@ table {
       z-index: 2; }
       #views .inner .viewPic img {
         width: 100%;
+        height: 100%;
         object-fit: cover; }
     #views .inner .desMore {
       width: 400px;
@@ -2217,7 +2218,9 @@ table {
       z-index: 2; }
       #trip .inner .tripPic img {
         width: 100%;
-        object-fit: cover; }
+        height: 100%;
+        object-fit: cover;
+        object-position: center bottom; }
     #trip .inner .desMore {
       width: 400px;
       position: absolute;
