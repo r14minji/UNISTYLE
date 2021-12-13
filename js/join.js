@@ -6,7 +6,7 @@ submitBtn.addEventListener("click", e => {
   if(!isTxt("lastName", 1, "Last Name")) e.preventDefault();
   if(!isTxt("userid", 6, "ID using 6 or more characters")) e.preventDefault();
   if(!isPwd("pwd1", "pwd2", 8)) e.preventDefault();
-  //if(!isEmail("email", 5)) e.preventDefault();
+  if(!isEmail("email", 5)) e.preventDefault();
 })
 
 //text input 인증 함수 
@@ -66,7 +66,7 @@ function isEmail(name, len){
   const input = form.querySelector(`[name=${name}]`);
   const input_value = input.value;
 
-  if(input_value >= len && /@/.test(input_value)){
+  if(input_value.length >= len && /@/.test(input_value)){
     const errMsgs = input.closest("td").querySelectorAll("p");
     if(errMsgs.length > 0 )  input.closest("td").querySelector("p").remove();
 
