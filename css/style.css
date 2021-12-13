@@ -2032,7 +2032,7 @@ table {
       justify-content: flex-end; }
       #history .inner .hisWrap .hisPic {
         width: 160px;
-        height: 100px;
+        height: 130px;
         margin-right: 20px;
         overflow: hidden; }
         #history .inner .hisWrap .hisPic:nth-of-type(3) {
@@ -2179,15 +2179,16 @@ table {
     padding: 100px 0 0px;
     margin: 0 auto;
     position: relative; }
-    #museum .inner .lifePic {
+    #museum .inner .museumPic {
       width: 420px;
       height: 570px;
       position: absolute;
       bottom: -70px;
       right: 150px;
       z-index: 2; }
-      #museum .inner .lifePic img {
+      #museum .inner .museumPic img {
         width: 100%;
+        height: 100%;
         object-fit: cover; }
     #museum .inner .desMore {
       width: 400px;
@@ -2614,14 +2615,14 @@ table {
       width: 100%;
       padding: 0;
       position: relative; }
-      #museum .inner .lifePic {
+      #museum .inner .museumPic {
         width: 47%;
         height: 520px;
         position: absolute;
         bottom: -100px;
         right: 3%;
         z-index: 2; }
-        #museum .inner .lifePic img {
+        #museum .inner .museumPic img {
           height: 100%; }
       #museum .inner .desMore {
         width: 48%;
@@ -2832,14 +2833,14 @@ table {
     height: 900px; }
     #museum .inner {
       margin: 0 auto; }
-      #museum .inner .lifePic {
+      #museum .inner .museumPic {
         width: 100%;
         max-width: 340px;
         height: 520px;
         position: static;
         padding-top: 40px;
         margin: 0 auto; }
-        #museum .inner .lifePic img {
+        #museum .inner .museumPic img {
           height: 100%; }
       #museum .inner .desMore {
         width: 100%;
