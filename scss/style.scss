@@ -376,15 +376,6 @@ $sky: #BFD9EB;
         letter-spacing: 1px;
         padding: 20px 30px 15px;
       }
-      ul{
-        position: absolute; top: 5px; right: 30px;
-        li{
-          float: left; padding: 5px;
-          i{
-            color: #fff; font-size: 10px; 
-          }
-        }
-      }
     }
   }
 }
@@ -498,6 +489,7 @@ $sky: #BFD9EB;
             a{
               font: 700 12px/1 'roboto condensed';
               color: #fff;
+              i{margin-left: 10px;}
             }
           }
         }
@@ -506,7 +498,7 @@ $sky: #BFD9EB;
 
   }
 }
-/* ----- section7/wildLife--------------------------------------------*/
+/* ----- section7/bathroom--------------------------------------------*/
 #bathroom{
   width: 100%; height: 672px;
   background: $green;
@@ -541,20 +533,11 @@ $sky: #BFD9EB;
         letter-spacing: 1px;
         padding: 20px 30px 15px;
       }
-      ul{
-        position: absolute; top: 5px; right: 30px;
-        li{
-          float: left; padding: 5px;
-          i{
-            color: #fff; font-size: 10px; 
-          }
-        }
-      }
     }
   }
 }
-/* ----- section8/trip ------------------------------------------------*/
-#trip{
+/* ----- section8/home ------------------------------------------------*/
+#home{
   width: 100%; height: 570px;
 
   .inner{
@@ -563,7 +546,7 @@ $sky: #BFD9EB;
     margin:0 auto;
     position: relative;
 
-    .tripPic{
+    .homePic{
       width: 420px; height: 570px;
       position: absolute; top: -70px; left: 150px; z-index: 2;
 
@@ -630,12 +613,12 @@ $sky: #BFD9EB;
       display: flex;
 
       .storyPic{
-        width: 23%; height: 150px; 
+        width: 23%; height: 180px; 
         margin: 1%;
         overflow: hidden;
   
         img{
-          width: 100%; height: 100%;
+          width: 100%; height: 100%; object-fit: cover;
         }
         .storyTxt{
           width: 210px;  margin-left: 20px;
@@ -751,6 +734,7 @@ $sky: #BFD9EB;
       padding-left: 60px;
 
       .menuWeb{
+        h1{transform: translate(-50%, -50%);}
         .gnbWrap{
           display: none;
         }
@@ -783,7 +767,7 @@ $sky: #BFD9EB;
   /* ----- section2/history -------------------------------------------*/
   #history{
     .inner{
-      width: 100%;  height: 700px;
+      width: 100%;  height: 730px;
       padding-left: 0px; padding-top: 50px;
 
       h1{
@@ -815,7 +799,7 @@ $sky: #BFD9EB;
         margin: 0 auto;
 
         p{ display: block;  width: 100%; padding: 0px 30px;}
-        a{display: block;  width: 100%; text-align: center;}
+        a{display: block;  width: 100%; padding: 0px 30px; text-align: left;}
       }
     }
   }
@@ -855,12 +839,13 @@ $sky: #BFD9EB;
       .vidWrap{ width: 100%; }
       .desBtn{
         width: 420px; 
-        position: absolute; bottom: 76px; left: 5%;
+        position: absolute; bottom: -23px; left: 5%;
       }
     }
   }
-  /* ----- section5/landscate-waterfall -------------------------------*/
+  /* ----- section5/museum -------------------------------*/
   #museum{
+    margin-top: 30px;
     height: 500px;
 
     .inner{
@@ -881,6 +866,9 @@ $sky: #BFD9EB;
         padding: 80px 20px;
 
         h2{  letter-spacing: 2px;}
+        p{
+          height: 170px; overflow: hidden;
+        }
       }
     }
   }
@@ -913,7 +901,7 @@ $sky: #BFD9EB;
       }
     }
   }
-  /* ----- section7/wildLife--------------------------------------------*/
+  /* ----- section7/bathroom--------------------------------------------*/
   #bathroom{
     height: 709px;
 
@@ -926,12 +914,16 @@ $sky: #BFD9EB;
       }
       .desBtn{
         width: 420px; 
-        position: absolute; bottom: 104px; right: 5%;
+        position: absolute; bottom: 164px; right: 5%;
+
+        p{
+          height: 95px; overflow: hidden;  padding: 15px 30px;
+        }
       }
     }
   }
-  /* ----- section8/trip ------------------------------------------------*/
-  #trip{
+  /* ----- section8/home ------------------------------------------------*/
+  #home{
     height: 500px;
 
     .inner{
@@ -939,7 +931,7 @@ $sky: #BFD9EB;
       padding: 0;
       position: relative;
 
-      .tripPic{
+      .homePic{
         width: 48%; height: 520px;
         position: absolute; top: -100px; left: 10px; z-index: 2;
         img{
@@ -957,7 +949,8 @@ $sky: #BFD9EB;
   }
   /* ----- section9/stories  --------------------------------------------*/
   #stories{
-    width: 100%; height: 620px;
+    width: 100%; height: auto;
+    margin-bottom: 20px;
 
     .inner{
       width: 100%;
@@ -971,7 +964,7 @@ $sky: #BFD9EB;
         display: flex; flex-wrap: wrap; justify-content: center; 
 
         .storyPic{
-          width: calc(30%); min-width: 230px; height: 15vw; min-height: 120px;
+          width: calc(30%); min-width: 230px; height: 16vw; min-height: 120px;
           margin: 10px;
         }
       }
@@ -1006,7 +999,7 @@ $sky: #BFD9EB;
   /*----- header -----------------------------------------------------*/
   #header{
     .inner{
-      width: 100%; height: 60px;
+      width: 100%; height: 80px;
       padding-left: 0px;
 
       .menuWeb{
@@ -1058,8 +1051,10 @@ $sky: #BFD9EB;
           padding-bottom: 10px;
         }
       }
-      .hisBtn{ position: absolute; top: 60%; left: 50%;}
-      .hisTxt{ padding: 30px 0 0; }
+      .hisBtn{ position: absolute; top: 70%; left: 50%;}
+      .hisTxt{ padding: 30px 0 0;  
+        p{  overflow: hidden; height: 150px;}
+      }
     }
   }
   /* ----- section3/theViews -----------------------------------------*/
@@ -1102,15 +1097,13 @@ $sky: #BFD9EB;
         width: 100%; 
         position: static;
         h1{ padding: 5px 10px;}
-        p{ padding: 5px 10px;}
-        ul{
-          position: absolute; top: 73%; right: 30px;
-        }
+        p{ padding: 5px 10px; height: 58px;  overflow: hidden;}
       }
     }
   }
-  /* ----- section5/landscate-waterfall -------------------------------*/
+  /* ----- section5/museum -------------------------------*/
   #museum{
+    margin-top: 30px;
     height: 900px;
 
     .inner{
@@ -1132,7 +1125,7 @@ $sky: #BFD9EB;
         text-align: center;
 
         h2{  letter-spacing: 2px;}
-        p{ line-height: 1.5;}
+        p{ line-height: 1.5; height: 108px; overflow: hidden;}
       }
     }
   }
@@ -1142,7 +1135,7 @@ $sky: #BFD9EB;
     .bgWrap{
       .inner{
         width: 100%; 
-        padding-top: 100px;     
+        padding-top: 60px;     
 
         .wrap{
           display: block; margin: 0 auto;
@@ -1169,36 +1162,34 @@ $sky: #BFD9EB;
       }
     }
   }
-  /* ----- section7/wildLife--------------------------------------------*/
+  /* ----- section7/bathroom--------------------------------------------*/
   #bathroom{
-    height: 650px;
+    height: 614px;
 
     .inner{
       width: 100%; 
 
       .bathPic{
         width: 100%;
+        padding: 0 0;
       }
       .desBtn{
         width: 100%;
         position: static;
 
         h1{ padding: 5px 10px;}
-        p{ padding: 5px 10px;}
-        ul{
-          position: absolute; top: 73%; right: 30px;
-        }
+        p{ padding: 5px 10px; height: 82px; overflow: hidden;}
       }
     }
   }
-  /* ----- section8/trip ------------------------------------------------*/
-  #trip{
-    height: 900px;
+  /* ----- section8/home ------------------------------------------------*/
+  #home{
+    height: auto;
 
     .inner{
       margin: 0 auto;
 
-      .tripPic{
+      .homePic{
         width: 100%; max-width: 340px; height: 520px;
         position: static;
         padding-top: 40px;
@@ -1209,13 +1200,13 @@ $sky: #BFD9EB;
         }
       }
       .desMore{
-        width: 100%; height: 380px;
+        width: 100%; height: 300px;
         position: static;
         padding: 50px 20px;
         text-align: center;
 
         h2{  letter-spacing: 2px;}
-        p{ line-height: 1.5;}
+        p{ line-height: 1.5; height: 72px; overflow: hidden;}
       }
     }
   }
@@ -1246,7 +1237,7 @@ $sky: #BFD9EB;
   }
   /* ----- section10/area  ---------------------------------------------*/
   #area{
-    height: 552px;
+    height: auto;
     .inner{
       width: 100%;  margin: 50px 0 0;
 
@@ -1257,10 +1248,7 @@ $sky: #BFD9EB;
         width: 100%; 
         position: static;
         h1{ padding: 5px 10px;}
-        p{ padding: 5px 10px;}
-        ul{
-          position: absolute; top: 73%; right: 30px;
-        }
+        p{ padding: 5px 10px; height: 58px; overflow: hidden;}
       }
     }
   }

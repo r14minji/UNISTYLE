@@ -2158,16 +2158,6 @@ table {
         color: #ccc;
         letter-spacing: 1px;
         padding: 20px 30px 15px; }
-      #vid .inner .desBtn ul {
-        position: absolute;
-        top: 5px;
-        right: 30px; }
-        #vid .inner .desBtn ul li {
-          float: left;
-          padding: 5px; }
-          #vid .inner .desBtn ul li i {
-            color: #fff;
-            font-size: 10px; }
 
 /* ----- section5/museum-------------------------------*/
 #museum {
@@ -2271,8 +2261,10 @@ table {
           #experience .bgWrap .inner .wrap article .ExTxt a {
             font: 700 12px/1 'roboto condensed';
             color: #fff; }
+            #experience .bgWrap .inner .wrap article .ExTxt a i {
+              margin-left: 10px; }
 
-/* ----- section7/wildLife--------------------------------------------*/
+/* ----- section7/bathroom--------------------------------------------*/
 #bathroom {
   width: 100%;
   height: 672px;
@@ -2306,59 +2298,49 @@ table {
         color: #ccc;
         letter-spacing: 1px;
         padding: 20px 30px 15px; }
-      #bathroom .inner .desBtn ul {
-        position: absolute;
-        top: 5px;
-        right: 30px; }
-        #bathroom .inner .desBtn ul li {
-          float: left;
-          padding: 5px; }
-          #bathroom .inner .desBtn ul li i {
-            color: #fff;
-            font-size: 10px; }
 
-/* ----- section8/trip ------------------------------------------------*/
-#trip {
+/* ----- section8/home ------------------------------------------------*/
+#home {
   width: 100%;
   height: 570px; }
-  #trip .inner {
+  #home .inner {
     width: 1180px;
     height: 100%;
     padding: 100px 0 0;
     margin: 0 auto;
     position: relative; }
-    #trip .inner .tripPic {
+    #home .inner .homePic {
       width: 420px;
       height: 570px;
       position: absolute;
       top: -70px;
       left: 150px;
       z-index: 2; }
-      #trip .inner .tripPic img {
+      #home .inner .homePic img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center bottom; }
-    #trip .inner .desMore {
+    #home .inner .desMore {
       width: 400px;
       position: absolute;
       top: 100px;
       left: calc( 150px + 420px + 100px); }
-      #trip .inner .desMore h1 {
+      #home .inner .desMore h1 {
         font: 700 28px/1 'roboto condensed';
         color: #000;
         letter-spacing: 5px;
         margin-bottom: 10px; }
-      #trip .inner .desMore h2 {
+      #home .inner .desMore h2 {
         font: 300 14px/1 'roboto condensed';
         color: #555;
         letter-spacing: 3px;
         margin-bottom: 20px; }
-      #trip .inner .desMore p {
+      #home .inner .desMore p {
         font: 300 12px/2 'roboto condensed';
         color: #555;
         margin-bottom: 20px; }
-      #trip .inner .desMore a {
+      #home .inner .desMore a {
         font: 700 12px/1 'roboto condensed';
         color: #333;
         letter-spacing: 2px; }
@@ -2388,12 +2370,13 @@ table {
       display: flex; }
       #stories .inner .storyGallery .storyPic {
         width: 23%;
-        height: 150px;
+        height: 180px;
         margin: 1%;
         overflow: hidden; }
         #stories .inner .storyGallery .storyPic img {
           width: 100%;
-          height: 100%; }
+          height: 100%;
+          object-fit: cover; }
         #stories .inner .storyGallery .storyPic .storyTxt {
           width: 210px;
           margin-left: 20px;
@@ -2495,6 +2478,8 @@ table {
     width: 100%;
     height: 60px;
     padding-left: 60px; }
+    #header .inner .menuWeb h1 {
+      transform: translate(-50%, -50%); }
     #header .inner .menuWeb .gnbWrap {
       display: none; }
     #header .inner .btnCall {
@@ -2516,7 +2501,7 @@ table {
   /* ----- section2/history -------------------------------------------*/
   #history .inner {
     width: 100%;
-    height: 700px;
+    height: 730px;
     padding-left: 0px;
     padding-top: 50px; }
     #history .inner h1 {
@@ -2566,7 +2551,8 @@ table {
       #history .inner .hisTxt a {
         display: block;
         width: 100%;
-        text-align: center; }
+        padding: 0px 30px;
+        text-align: left; }
 
   /* ----- section3/theViews -----------------------------------------*/
   #views {
@@ -2605,11 +2591,12 @@ table {
       #vid .inner .desBtn {
         width: 420px;
         position: absolute;
-        bottom: 76px;
+        bottom: -23px;
         left: 5%; }
 
-  /* ----- section5/landscate-waterfall -------------------------------*/
+  /* ----- section5/museum -------------------------------*/
   #museum {
+    margin-top: 30px;
     height: 500px; }
     #museum .inner {
       width: 100%;
@@ -2634,6 +2621,9 @@ table {
         padding: 80px 20px; }
         #museum .inner .desMore h2 {
           letter-spacing: 2px; }
+        #museum .inner .desMore p {
+          height: 170px;
+          overflow: hidden; }
 
   /* ----- section6/experience----------------------------------------*/
   #experience .bgWrap .inner {
@@ -2656,7 +2646,7 @@ table {
         #experience .bgWrap .inner .wrap article .ExTxt a {
           padding: 0 5px; }
 
-  /* ----- section7/wildLife--------------------------------------------*/
+  /* ----- section7/bathroom--------------------------------------------*/
   #bathroom {
     height: 709px; }
     #bathroom .inner {
@@ -2668,39 +2658,44 @@ table {
       #bathroom .inner .desBtn {
         width: 420px;
         position: absolute;
-        bottom: 104px;
+        bottom: 164px;
         right: 5%; }
+        #bathroom .inner .desBtn p {
+          height: 95px;
+          overflow: hidden;
+          padding: 15px 30px; }
 
-  /* ----- section8/trip ------------------------------------------------*/
-  #trip {
+  /* ----- section8/home ------------------------------------------------*/
+  #home {
     height: 500px; }
-    #trip .inner {
+    #home .inner {
       width: 100%;
       padding: 0;
       position: relative; }
-      #trip .inner .tripPic {
+      #home .inner .homePic {
         width: 48%;
         height: 520px;
         position: absolute;
         top: -100px;
         left: 10px;
         z-index: 2; }
-        #trip .inner .tripPic img {
+        #home .inner .homePic img {
           height: 100%; }
-      #trip .inner .desMore {
+      #home .inner .desMore {
         width: 48%;
         height: 380px;
         position: absolute;
         top: 0px;
         left: 50%;
         padding: 50px 20px; }
-        #trip .inner .desMore h2 {
+        #home .inner .desMore h2 {
           letter-spacing: 2px; }
 
   /* ----- section9/stories  --------------------------------------------*/
   #stories {
     width: 100%;
-    height: 620px; }
+    height: auto;
+    margin-bottom: 20px; }
     #stories .inner {
       width: 100%; }
       #stories .inner h1 {
@@ -2714,7 +2709,7 @@ table {
         #stories .inner .storyGallery .storyPic {
           width: calc(30%);
           min-width: 230px;
-          height: 15vw;
+          height: 16vw;
           min-height: 120px;
           margin: 10px; }
 
@@ -2739,7 +2734,7 @@ table {
   /*----- header -----------------------------------------------------*/
   #header .inner {
     width: 100%;
-    height: 60px;
+    height: 80px;
     padding-left: 0px; }
     #header .inner .menuWeb #gnb_left, #header .inner .menuWeb #gnb_right {
       display: none; }
@@ -2777,10 +2772,13 @@ table {
           margin: 0 auto; }
     #history .inner .hisBtn {
       position: absolute;
-      top: 60%;
+      top: 70%;
       left: 50%; }
     #history .inner .hisTxt {
       padding: 30px 0 0; }
+      #history .inner .hisTxt p {
+        overflow: hidden;
+        height: 150px; }
 
   /* ----- section3/theViews -----------------------------------------*/
   #views {
@@ -2822,14 +2820,13 @@ table {
         #vid .inner .desBtn h1 {
           padding: 5px 10px; }
         #vid .inner .desBtn p {
-          padding: 5px 10px; }
-        #vid .inner .desBtn ul {
-          position: absolute;
-          top: 73%;
-          right: 30px; }
+          padding: 5px 10px;
+          height: 58px;
+          overflow: hidden; }
 
-  /* ----- section5/landscate-waterfall -------------------------------*/
+  /* ----- section5/museum -------------------------------*/
   #museum {
+    margin-top: 30px;
     height: 900px; }
     #museum .inner {
       margin: 0 auto; }
@@ -2851,14 +2848,16 @@ table {
         #museum .inner .desMore h2 {
           letter-spacing: 2px; }
         #museum .inner .desMore p {
-          line-height: 1.5; }
+          line-height: 1.5;
+          height: 108px;
+          overflow: hidden; }
 
   /* ----- section6/experience----------------------------------------*/
   #experience {
     height: 1200px; }
     #experience .bgWrap .inner {
       width: 100%;
-      padding-top: 100px; }
+      padding-top: 60px; }
       #experience .bgWrap .inner .wrap {
         display: block;
         margin: 0 auto; }
@@ -2877,50 +2876,51 @@ table {
             #experience .bgWrap .inner .wrap article .ExTxt a {
               padding: 0 10px; }
 
-  /* ----- section7/wildLife--------------------------------------------*/
+  /* ----- section7/bathroom--------------------------------------------*/
   #bathroom {
-    height: 650px; }
+    height: 614px; }
     #bathroom .inner {
       width: 100%; }
       #bathroom .inner .bathPic {
-        width: 100%; }
+        width: 100%;
+        padding: 0 0; }
       #bathroom .inner .desBtn {
         width: 100%;
         position: static; }
         #bathroom .inner .desBtn h1 {
           padding: 5px 10px; }
         #bathroom .inner .desBtn p {
-          padding: 5px 10px; }
-        #bathroom .inner .desBtn ul {
-          position: absolute;
-          top: 73%;
-          right: 30px; }
+          padding: 5px 10px;
+          height: 82px;
+          overflow: hidden; }
 
-  /* ----- section8/trip ------------------------------------------------*/
-  #trip {
-    height: 900px; }
-    #trip .inner {
+  /* ----- section8/home ------------------------------------------------*/
+  #home {
+    height: auto; }
+    #home .inner {
       margin: 0 auto; }
-      #trip .inner .tripPic {
+      #home .inner .homePic {
         width: 100%;
         max-width: 340px;
         height: 520px;
         position: static;
         padding-top: 40px;
         margin: 0 auto; }
-        #trip .inner .tripPic img {
+        #home .inner .homePic img {
           width: 100%;
           height: 100%; }
-      #trip .inner .desMore {
+      #home .inner .desMore {
         width: 100%;
-        height: 380px;
+        height: 300px;
         position: static;
         padding: 50px 20px;
         text-align: center; }
-        #trip .inner .desMore h2 {
+        #home .inner .desMore h2 {
           letter-spacing: 2px; }
-        #trip .inner .desMore p {
-          line-height: 1.5; }
+        #home .inner .desMore p {
+          line-height: 1.5;
+          height: 72px;
+          overflow: hidden; }
 
   /* ----- section9/stories  --------------------------------------------*/
   #stories {
@@ -2943,7 +2943,7 @@ table {
 
   /* ----- section10/area  ---------------------------------------------*/
   #area {
-    height: 552px; }
+    height: auto; }
     #area .inner {
       width: 100%;
       margin: 50px 0 0; }
@@ -2955,11 +2955,9 @@ table {
         #area .inner .desBtn h1 {
           padding: 5px 10px; }
         #area .inner .desBtn p {
-          padding: 5px 10px; }
-        #area .inner .desBtn ul {
-          position: absolute;
-          top: 73%;
-          right: 30px; }
+          padding: 5px 10px;
+          height: 58px;
+          overflow: hidden; }
 
   /*----- footer --------------------------------------------------------*/
   #footer .inner {
