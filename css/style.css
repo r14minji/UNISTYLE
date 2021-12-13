@@ -1674,6 +1674,11 @@ table {
             background: #333;
             color: #fff; }
 
+#result {
+  font: 700 30px/1 'roboto condensed';
+  text-align: center;
+  margin-bottom: 100px; }
+
 /*tablet*/
 @media screen and (max-width: 1179px) {
   .join .sub_visual {

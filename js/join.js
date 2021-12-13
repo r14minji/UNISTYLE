@@ -6,7 +6,7 @@ submitBtn.addEventListener("click", e => {
   if(!isTxt("lastName", 1, "Last Name")) e.preventDefault();
   if(!isTxt("userid", 6, "ID using 6 or more characters")) e.preventDefault();
   if(!isPwd("pwd1", "pwd2", 8)) e.preventDefault();
-  if(!isEmail("email", 5)) e.preventDefault();
+  //if(!isEmail("email", 5)) e.preventDefault();
 })
 
 //text input 인증 함수 
