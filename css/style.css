@@ -1479,29 +1479,30 @@ table {
   filter: contrast(140%);
   background-position: left 50% bottom 10px; }
 
-#signIn {
+/*----- loginPage_section ----------------------------------*/
+#loginPage {
   width: 100%;
   margin-bottom: 80px; }
-  #signIn ::after {
+  #loginPage ::after {
     content: '';
     display: block;
     clear: both; }
-  #signIn .inner {
+  #loginPage .inner {
     width: 1180px;
     position: relative;
     margin: 0 auto; }
-    #signIn .inner ::after {
+    #loginPage .inner ::after {
       content: '';
       display: block;
       clear: both; }
-    #signIn .inner .loginCheck {
+    #loginPage .inner .loginCheck {
       width: 50%;
       float: left;
       padding: 20px 30px; }
-      #signIn .inner .loginCheck h1 {
+      #loginPage .inner .loginCheck h1 {
         font: 500 36px/1 'roboto';
         margin-bottom: 40px; }
-      #signIn .inner .loginCheck input[type=text], #signIn .inner .loginCheck input[type=password] {
+      #loginPage .inner .loginCheck input[type=text], #loginPage .inner .loginCheck input[type=password] {
         width: 100%;
         height: 50px;
         font: 300 18px/1 'roboto';
@@ -1509,19 +1510,19 @@ table {
         border: none;
         border-bottom: 1px solid #ccc;
         margin-bottom: 30px; }
-        #signIn .inner .loginCheck input[type=text]:focus, #signIn .inner .loginCheck input[type=password]:focus {
+        #loginPage .inner .loginCheck input[type=text]:focus, #loginPage .inner .loginCheck input[type=password]:focus {
           outline: none;
           border-bottom: 1px solid #000; }
-      #signIn .inner .loginCheck input[type=checkbox] {
+      #loginPage .inner .loginCheck input[type=checkbox] {
         width: 20px;
         height: 20px;
         border: 1px solid #ddd;
         margin: 10px 10px 30px 0; }
-      #signIn .inner .loginCheck label[for=loggedIn] {
+      #loginPage .inner .loginCheck label[for=loggedIn] {
         position: relative;
         top: -5px;
         font: 300 16px/20px 'roboto'; }
-      #signIn .inner .loginCheck input[type=submit] {
+      #loginPage .inner .loginCheck input[type=submit] {
         width: 100%;
         height: 80px;
         background: #333;
@@ -1531,18 +1532,18 @@ table {
         border: none;
         cursor: pointer;
         margin-bottom: 30px; }
-      #signIn .inner .loginCheck .snsLogin {
+      #loginPage .inner .loginCheck .snsLogin {
         width: 100%; }
-        #signIn .inner .loginCheck .snsLogin ::after {
+        #loginPage .inner .loginCheck .snsLogin ::after {
           content: '';
           display: block;
           clear: both; }
-        #signIn .inner .loginCheck .snsLogin span {
+        #loginPage .inner .loginCheck .snsLogin span {
           font: 500 24px/40px 'roboto';
           float: left; }
-        #signIn .inner .loginCheck .snsLogin ul {
+        #loginPage .inner .loginCheck .snsLogin ul {
           float: right; }
-          #signIn .inner .loginCheck .snsLogin ul li {
+          #loginPage .inner .loginCheck .snsLogin ul li {
             width: 40px;
             height: 40px;
             border: 1px solid #ddd;
@@ -1550,32 +1551,32 @@ table {
             text-align: center;
             float: left;
             margin-right: 10px; }
-            #signIn .inner .loginCheck .snsLogin ul li:nth-of-type(1) {
+            #loginPage .inner .loginCheck .snsLogin ul li:nth-of-type(1) {
               color: rgba(6, 6, 155, 0.973); }
-            #signIn .inner .loginCheck .snsLogin ul li:nth-of-type(2) {
+            #loginPage .inner .loginCheck .snsLogin ul li:nth-of-type(2) {
               color: #BFD9EB; }
-            #signIn .inner .loginCheck .snsLogin ul li:nth-of-type(3) {
+            #loginPage .inner .loginCheck .snsLogin ul li:nth-of-type(3) {
               color: #e0b218;
               margin-right: 0; }
-    #signIn .inner .goToJoin {
+    #loginPage .inner .goToJoin {
       width: 50%;
       float: right;
       padding: 20px 30px; }
-      #signIn .inner .goToJoin h2 {
+      #loginPage .inner .goToJoin h2 {
         font: 500 36px/1 'roboto';
         margin-bottom: 20px; }
-      #signIn .inner .goToJoin p {
+      #loginPage .inner .goToJoin p {
         font: 500 22px/1 'roboto';
         margin-bottom: 20px; }
-      #signIn .inner .goToJoin ul {
+      #loginPage .inner .goToJoin ul {
         width: 100%;
         margin-bottom: 47px; }
-        #signIn .inner .goToJoin ul li {
+        #loginPage .inner .goToJoin ul li {
           font: 300 18px/1.2 'roboto';
           margin: 0 0 10px 20px;
           list-style-type: square;
           list-style-position: inside; }
-      #signIn .inner .goToJoin > a {
+      #loginPage .inner .goToJoin > a {
         display: block;
         width: 100%;
         height: 80px;
@@ -1584,15 +1585,15 @@ table {
         color: #fff;
         font: 500 28px/80px 'roboto';
         margin-bottom: 30px; }
-      #signIn .inner .goToJoin .find {
+      #loginPage .inner .goToJoin .find {
         width: 100%; }
-        #signIn .inner .goToJoin .find span {
+        #loginPage .inner .goToJoin .find span {
           float: left;
           height: 40px;
           font: 500 24px/40px 'roboto'; }
-        #signIn .inner .goToJoin .find .findBtn {
+        #loginPage .inner .goToJoin .find .findBtn {
           float: right; }
-          #signIn .inner .goToJoin .find .findBtn > a {
+          #loginPage .inner .goToJoin .find .findBtn > a {
             display: inline-block;
             width: 120px;
             height: 40px;
@@ -1601,9 +1602,50 @@ table {
             text-align: center;
             color: #333;
             border: 1px solid #52616b; }
-            #signIn .inner .goToJoin .find .findBtn > a:nth-of-type(2) {
+            #loginPage .inner .goToJoin .find .findBtn > a:nth-of-type(2) {
               margin-right: 0; }
 
+/*tablet*/
+@media screen and (max-width: 1179px) {
+  /*loginPage_section */
+  #loginPage .inner {
+    width: 100%; }
+    #loginPage .inner .loginCheck {
+      width: 100%;
+      float: left;
+      margin-bottom: 40px; }
+      #loginPage .inner .loginCheck h1 {
+        font-size: 28px; }
+      #loginPage .inner .loginCheck input[type=submit] {
+        width: 100%;
+        height: 60px;
+        font-size: 24px;
+        line-height: 60px; }
+      #loginPage .inner .loginCheck .snsLogin span {
+        font-size: 20px;
+        line-height: 30px; }
+      #loginPage .inner .loginCheck .snsLogin ul li {
+        width: 30px;
+        height: 30px;
+        font-size: 20px; }
+    #loginPage .inner .goToJoin {
+      width: 100%;
+      float: left; }
+      #loginPage .inner .goToJoin h2 {
+        font-size: 28px; }
+      #loginPage .inner .goToJoin p {
+        font-size: 20px;
+        margin-bottom: 20px; }
+      #loginPage .inner .goToJoin ul li {
+        font-size: 18px; }
+      #loginPage .inner .goToJoin > a {
+        width: 100%;
+        height: 60px;
+        font-size: 24px;
+        line-height: 60px; }
+      #loginPage .inner .goToJoin .find span {
+        font-size: 20px;
+        line-height: 40px; } }
 .join .sub_visual {
   background: url(../img/sub11.jpg) no-repeat bottom/cover fixed; }
 
