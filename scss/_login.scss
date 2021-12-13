@@ -197,3 +197,37 @@
   }
 }
 
+
+/*mobile*/
+@media screen and (max-width: $mobile){
+  /*loginPage_section */
+  #loginPage{
+    .inner{
+      width: 100%;
+
+      .loginCheck{
+        padding: 10px 10px;
+      }
+      .goToJoin{
+        padding: 10px 10px;
+        ul{
+          li{
+            font-size: 16px;
+            margin: 0 0 10px 5px;
+          }
+        }
+
+        .find{
+
+          span{
+            margin-bottom: 20px;
+          }
+          .findBtn{
+            width: 100%;
+            float:left;
+          }
+        }
+      }
+    }
+  }
+}
