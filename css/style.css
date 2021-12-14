@@ -462,14 +462,14 @@ table {
       float: left;
       margin-top: 80px;
       padding: 20px 40px; }
-      .business .inner .wrap .txt h2 {
+      .business .inner .wrap .txt > h2 {
         font: 500 40px/1.2 'roboto';
         color: #852132;
         margin-bottom: 40px; }
-      .business .inner .wrap .txt p {
+      .business .inner .wrap .txt > p {
         font: 300 14px/1.4 'roboto';
         margin-bottom: 20px; }
-      .business .inner .wrap .txt a {
+      .business .inner .wrap .txt > a {
         display: block;
         font: 300 14px/1.3 'roboto';
         letter-spacing: 2px;
@@ -478,20 +478,17 @@ table {
       width: 70%;
       height: 600px;
       float: left; }
-      .business .inner .wrap .pic .bigPhoto {
+      .business .inner .wrap .pic div:nth-of-type(1) {
         width: 50%;
         float: left;
         height: 100%; }
-        .business .inner .wrap .pic .bigPhoto img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover; }
-      .business .inner .wrap .pic .smallPhoto {
+      .business .inner .wrap .pic div:nth-of-type(2) {
         width: 50%;
-        float: right;
-        height: 50%;
+        float: left;
+        height: 50%; }
+      .business .inner .wrap .pic .bigPhoto, .business .inner .wrap .pic .smallPhoto {
         font-size: 0; }
-        .business .inner .wrap .pic .smallPhoto img {
+        .business .inner .wrap .pic .bigPhoto img, .business .inner .wrap .pic .smallPhoto img {
           width: 100%;
           height: 100%;
           object-fit: cover; }
