@@ -292,40 +292,6 @@
         display: block;
         left: 20px;
       }
-
-      .menuMo{
-        position: fixed;
-        top:0;
-        left: -270px; 
-        width: 270px;
-        height: 100vh;
-        background: #000; 
-        transition: 0.5s;
-        padding: 25px 30px;
-        z-index: 5;
-  
-        &.on{ left: 0px;}
-  
-        h1{
-          padding-bottom: 20px;
-          a{
-            display: block; font: normal 20px/1 'Monoton';
-            color:$beige; text-align: center; letter-spacing: 2px;
-          }
-        }
-        #gnbMo>li{
-          >a{
-            display: block;
-            width: 100%;
-            padding: 20px 0;
-            border-bottom: 1px solid #ccc;
-            font: 500 14px/1 "roboto";
-            color: #ccc;
-            text-align: center;
-          }
-          >img{ display: none;}
-        }
-      }
     }
   }
 
