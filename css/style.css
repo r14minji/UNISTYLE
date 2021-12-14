@@ -1819,22 +1819,45 @@ table {
         width: 100%;
         display: flex;
         justify-content: center; }
-        #header .inner .menuWeb .gnbWrap ul li .sub {
-          display: none; }
         #header .inner .menuWeb .gnbWrap #gnb_left {
           margin-right: 136px; }
-          #header .inner .menuWeb .gnbWrap #gnb_left li {
+          #header .inner .menuWeb .gnbWrap #gnb_left > li {
             float: left;
             padding-right: 55px; }
-            #header .inner .menuWeb .gnbWrap #gnb_left li a {
+            #header .inner .menuWeb .gnbWrap #gnb_left > li:hover > a {
+              text-shadow: #FC0 1px 0 10px; }
+            #header .inner .menuWeb .gnbWrap #gnb_left > li > a {
               font: 400 14px/1 'roboto condensed';
               color: #ddd; }
-        #header .inner .menuWeb .gnbWrap #gnb_right li {
+        #header .inner .menuWeb .gnbWrap #gnb_right > li {
           float: left;
           margin-left: 30px; }
-          #header .inner .menuWeb .gnbWrap #gnb_right li a {
+          #header .inner .menuWeb .gnbWrap #gnb_right > li:hover > a {
+            text-shadow: #FC0 1px 0 10px; }
+          #header .inner .menuWeb .gnbWrap #gnb_right > li > a {
             font: 400 14px/1 'roboto condensed';
             color: #ddd; }
+        #header .inner .menuWeb .gnbWrap ul li .sub {
+          width: 1180px;
+          height: 300px;
+          background: #101820;
+          position: absolute;
+          right: 0;
+          top: 60px;
+          z-index: 6;
+          padding: 30px; }
+          #header .inner .menuWeb .gnbWrap ul li .sub > ul a {
+            position: relative;
+            z-index: 6;
+            color: #fff;
+            display: inline-block;
+            font: bold 12px/1.2 "roboto condensed";
+            width: 200px;
+            height: 10px;
+            padding: 10px;
+            border: 1px solid #FFF; }
+          #header .inner .menuWeb .gnbWrap ul li .sub:nth-of-type(1) {
+            padding: 10px; }
     #header .inner .btnCall {
       display: none;
       position: absolute;
