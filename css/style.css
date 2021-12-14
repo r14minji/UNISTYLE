@@ -59,22 +59,83 @@ table {
         width: 100%;
         display: flex;
         justify-content: center; }
-        #header_sub .inner .menuWeb .gnbWrap ul li .sub {
-          display: none; }
         #header_sub .inner .menuWeb .gnbWrap #gnb_left {
           margin-right: 136px; }
-          #header_sub .inner .menuWeb .gnbWrap #gnb_left li {
+          #header_sub .inner .menuWeb .gnbWrap #gnb_left > li {
             float: left;
             padding-right: 55px; }
-            #header_sub .inner .menuWeb .gnbWrap #gnb_left li a {
+            #header_sub .inner .menuWeb .gnbWrap #gnb_left > li > a {
               font: 400 14px/1 'roboto condensed';
-              color: #ddd; }
-        #header_sub .inner .menuWeb .gnbWrap #gnb_right li {
+              color: #ddd;
+              position: relative; }
+              #header_sub .inner .menuWeb .gnbWrap #gnb_left > li > a::after {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                width: 0px;
+                height: 3px;
+                transition: all 250ms ease-in-out;
+                opacity: 0;
+                background: #d1ac8f; }
+              #header_sub .inner .menuWeb .gnbWrap #gnb_left > li > a:hover::after {
+                width: 100%;
+                opacity: 1; }
+              #header_sub .inner .menuWeb .gnbWrap #gnb_left > li > a.on::after {
+                width: 100%;
+                opacity: 1; }
+        #header_sub .inner .menuWeb .gnbWrap #gnb_right > li {
           float: left;
           margin-left: 30px; }
-          #header_sub .inner .menuWeb .gnbWrap #gnb_right li a {
+          #header_sub .inner .menuWeb .gnbWrap #gnb_right > li > a {
             font: 400 14px/1 'roboto condensed';
+            position: relative;
             color: #ddd; }
+            #header_sub .inner .menuWeb .gnbWrap #gnb_right > li > a::after {
+              content: '';
+              display: block;
+              position: absolute;
+              bottom: -10px;
+              left: 0;
+              width: 0px;
+              height: 3px;
+              transition: all 250ms ease-in-out;
+              opacity: 0;
+              background: #d1ac8f; }
+            #header_sub .inner .menuWeb .gnbWrap #gnb_right > li > a:hover::after {
+              width: 100%;
+              opacity: 1; }
+            #header_sub .inner .menuWeb .gnbWrap #gnb_right > li > a.on::after {
+              width: 100%;
+              opacity: 1; }
+        #header_sub .inner .menuWeb .gnbWrap ul li .sub {
+          display: none;
+          width: 1180px;
+          height: 300px;
+          background: #101820;
+          position: absolute;
+          right: 0;
+          top: 80px;
+          z-index: 6;
+          padding: 30px; }
+          #header_sub .inner .menuWeb .gnbWrap ul li .sub > ul {
+            width: 200px;
+            padding: 30px 20px;
+            border: 1px solid #FFF; }
+            #header_sub .inner .menuWeb .gnbWrap ul li .sub > ul > li {
+              width: 100%; }
+              #header_sub .inner .menuWeb .gnbWrap ul li .sub > ul > li a {
+                position: relative;
+                z-index: 6;
+                color: #fff;
+                display: inline-block;
+                font: normal 12px/1.2 "roboto condensed";
+                width: 150px;
+                height: 10px;
+                padding: 10px; }
+          #header_sub .inner .menuWeb .gnbWrap ul li .sub:nth-of-type(1) {
+            padding: 0px; }
     #header_sub .inner .btnCall {
       display: none;
       position: absolute;
@@ -178,8 +239,8 @@ table {
         font: 500 14px/1 "roboto";
         color: #ccc;
         text-align: center; }
-      #header_sub .inner .menuMo #gnbMo > li > img {
-        display: none; }
+        #header_sub .inner .menuMo #gnbMo > li > a > img {
+          display: none; }
 
 /*----- content section -------------------------------------------------*/
 .content {
@@ -1826,19 +1887,49 @@ table {
             padding-right: 55px; }
             #header .inner .menuWeb .gnbWrap #gnb_left > li > a {
               font: 400 14px/1 'roboto condensed';
-              color: #ddd; }
-              #header .inner .menuWeb .gnbWrap #gnb_left > li > a.on {
-                text-shadow: #FC0 1px 0 10px; }
+              color: #ddd;
+              position: relative; }
+              #header .inner .menuWeb .gnbWrap #gnb_left > li > a::after {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                width: 0px;
+                height: 3px;
+                transition: all 250ms ease-in-out;
+                opacity: 0;
+                background: #d1ac8f; }
+              #header .inner .menuWeb .gnbWrap #gnb_left > li > a:hover::after {
+                width: 100%;
+                opacity: 1; }
+              #header .inner .menuWeb .gnbWrap #gnb_left > li > a.on::after {
+                width: 100%;
+                opacity: 1; }
         #header .inner .menuWeb .gnbWrap #gnb_right > li {
           float: left;
           margin-left: 30px; }
           #header .inner .menuWeb .gnbWrap #gnb_right > li > a {
             font: 400 14px/1 'roboto condensed';
+            position: relative;
             color: #ddd; }
-            #header .inner .menuWeb .gnbWrap #gnb_right > li > a:hover {
-              text-shadow: #FC0 1px 0 10px; }
-            #header .inner .menuWeb .gnbWrap #gnb_right > li > a.on {
-              text-shadow: #FC0 1px 0 10px; }
+            #header .inner .menuWeb .gnbWrap #gnb_right > li > a::after {
+              content: '';
+              display: block;
+              position: absolute;
+              bottom: -10px;
+              left: 0;
+              width: 0px;
+              height: 3px;
+              transition: all 250ms ease-in-out;
+              opacity: 0;
+              background: #d1ac8f; }
+            #header .inner .menuWeb .gnbWrap #gnb_right > li > a:hover::after {
+              width: 100%;
+              opacity: 1; }
+            #header .inner .menuWeb .gnbWrap #gnb_right > li > a.on::after {
+              width: 100%;
+              opacity: 1; }
         #header .inner .menuWeb .gnbWrap ul li .sub {
           display: none;
           width: 1180px;
@@ -1846,7 +1937,7 @@ table {
           background: #101820;
           position: absolute;
           right: 0;
-          top: 60px;
+          top: 80px;
           z-index: 6;
           padding: 30px; }
           #header .inner .menuWeb .gnbWrap ul li .sub > ul {
