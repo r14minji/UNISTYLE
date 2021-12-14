@@ -138,6 +138,7 @@
           color: #ccc;
           text-align: center;
         }
+        >img{display: none;}
       }
     }
     
@@ -293,7 +294,6 @@
       }
 
       .menuMo{
-        display: none;
         position: fixed;
         top:0;
         left: -270px; 
@@ -323,6 +323,7 @@
             color: #ccc;
             text-align: center;
           }
+          >img{ display: none;}
         }
       }
     }
