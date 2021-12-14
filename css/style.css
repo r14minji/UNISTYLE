@@ -576,18 +576,18 @@ table {
         width: 295px;
         height: 600px;
         position: relative;
-        transform: translateY(50px);
         transition: 1s; }
-        .members .inner .wrap .profile:nth-of-type(2n) {
+        .members .inner .wrap .profile:nth-of-type(2n-1) {
           transform: translateY(30px); }
         .members .inner .wrap .profile:hover {
           transform: translateY(0px);
           z-index: 2; }
           .members .inner .wrap .profile:hover .person img {
             filter: grayscale(0%);
-            transform: scale(1.1); }
+            transform: scale(1.05); }
           .members .inner .wrap .profile:hover .txtWrap {
-            opacity: 1; }
+            opacity: 1;
+            transform: scale3d(1, 1, 1); }
         .members .inner .wrap .profile .person {
           width: 100%;
           height: 360px; }
@@ -601,13 +601,13 @@ table {
           width: 90%;
           height: 90%;
           padding: 10px 15px;
-          border: 4px solid #852132;
+          border: 4px solid rgba(133, 33, 50, 0.8);
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          transition: 1s;
-          opacity: 0; }
+          top: 10px;
+          left: 15px;
+          transform: scale3d(0.9, 0.9, 1);
+          opacity: 0;
+          transition: transform 0.3s, opacity 0.3s; }
           .members .inner .wrap .profile .txtWrap .txt {
             width: 100%;
             margin-top: 350px; }

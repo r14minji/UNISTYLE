@@ -279,17 +279,20 @@
         float:left;
         width: 295px; height: 600px;
         position: relative;
-        transform: translateY(50px); 
+        //transform: translateY(50px); 
         transition: 1s;
 
-        &:nth-of-type(2n){
+        &:nth-of-type(2n-1){
           transform: translateY(30px);
         }
 
         &:hover{
           transform: translateY(0px); z-index: 2;
-          .person img{filter: grayscale(0%); transform:scale(1.1)}
-          .txtWrap {opacity: 1;}
+          .person img{filter: grayscale(0%); transform:scale(1.05)}
+          .txtWrap {
+            opacity: 1;
+            transform: scale3d(1,1,1);
+          }
         }
         .person{
           width: 100%; height: 360px;
@@ -302,11 +305,11 @@
         }
         .txtWrap{
           width: 90%; height: 90%; padding: 10px 15px;
-          border: 4px solid $red;
-          position: absolute; top: 50%;left:50%; 
-          transform: translate(-50%, -50%);
-          transition: 1s;
+          border: 4px solid rgba(133, 33, 50, 0.8);
+          position: absolute; top: 10px; left: 15px;
+          transform: scale3d(0.9,0.9,1);
           opacity: 0;
+          transition: transform 0.3s, opacity 0.3s;
 
           .txt{
             width: 100%;
