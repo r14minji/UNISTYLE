@@ -2077,9 +2077,26 @@ table {
         color: #aaa;
         margin-bottom: 20px; }
       #history .inner .hisTxt a {
-        font: 700 12px/1 'roboto condensed';
+        display: block;
+        width: 120px;
+        height: 30px;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        font: 700 12px/20px 'roboto condensed';
         color: #ccc;
-        letter-spacing: 2px; }
+        letter-spacing: 2px;
+        transition: all 0.3s;
+        text-align: center; }
+        #history .inner .hisTxt a i {
+          transform: translateX(20px);
+          opacity: 0;
+          transition: transform 0.3s; }
+        #history .inner .hisTxt a:hover {
+          background: #ccc;
+          color: #101820; }
+          #history .inner .hisTxt a:hover i {
+            opacity: 1;
+            transform: translateX(10px); }
 
 /* ----- section3/theViews -----------------------------------------*/
 #views {
@@ -2122,9 +2139,27 @@ table {
         color: #555;
         margin-bottom: 20px; }
       #views .inner .desMore a {
-        font: 700 12px/1 'roboto condensed';
-        color: #333;
-        letter-spacing: 2px; }
+        display: block;
+        width: 120px;
+        height: 30px;
+        padding: 5px 10px;
+        border: 1px solid #101820;
+        font: 700 12px/20px 'roboto condensed';
+        background: #101820;
+        color: #fff;
+        letter-spacing: 2px;
+        transition: all 0.3s;
+        text-align: center; }
+        #views .inner .desMore a i {
+          transform: translateX(20px);
+          opacity: 0;
+          transition: transform 0.3s; }
+        #views .inner .desMore a:hover {
+          background: #fff;
+          color: #101820; }
+          #views .inner .desMore a:hover i {
+            opacity: 1;
+            transform: translateX(10px); }
 
 /* ----- section4/vid ------------------------------------------------*/
 #vid {
@@ -2201,9 +2236,26 @@ table {
         color: #555;
         margin-bottom: 20px; }
       #museum .inner .desMore a {
-        font: 700 12px/1 'roboto condensed';
-        color: #333;
-        letter-spacing: 2px; }
+        display: block;
+        width: 120px;
+        height: 30px;
+        padding: 5px 10px;
+        border: 1px solid #aaa;
+        font: 700 12px/20px 'roboto condensed';
+        color: #aaa;
+        letter-spacing: 2px;
+        transition: all 0.3s;
+        text-align: center; }
+        #museum .inner .desMore a i {
+          transform: translateX(20px);
+          opacity: 0;
+          transition: transform 0.3s; }
+        #museum .inner .desMore a:hover {
+          background: #101820;
+          color: #fff; }
+          #museum .inner .desMore a:hover i {
+            opacity: 1;
+            transform: translateX(10px); }
 
 /* ----- section6/experience----------------------------------------*/
 #experience {
@@ -2342,9 +2394,27 @@ table {
         color: #555;
         margin-bottom: 20px; }
       #home .inner .desMore a {
-        font: 700 12px/1 'roboto condensed';
-        color: #333;
-        letter-spacing: 2px; }
+        display: block;
+        width: 120px;
+        height: 30px;
+        padding: 5px 10px;
+        border: 1px solid #101820;
+        font: 700 12px/20px 'roboto condensed';
+        background: #101820;
+        color: #fff;
+        letter-spacing: 2px;
+        transition: all 0.3s;
+        text-align: center; }
+        #home .inner .desMore a i {
+          transform: translateX(20px);
+          opacity: 0;
+          transition: transform 0.3s; }
+        #home .inner .desMore a:hover {
+          background: #fff;
+          color: #101820; }
+          #home .inner .desMore a:hover i {
+            opacity: 1;
+            transform: translateX(10px); }
 
 /* ----- section9/stories  --------------------------------------------*/
 #stories {
@@ -2599,9 +2669,23 @@ table {
         padding: 0px 30px; }
       #history .inner .hisTxt a {
         display: block;
-        width: 100%;
-        padding: 0px 30px;
+        margin: 0 30px;
+        border: none;
+        padding: 0px 0px;
+        color: #ccc;
+        letter-spacing: 2px;
+        transition: all 0s;
         text-align: left; }
+        #history .inner .hisTxt a i {
+          transform: translateX(10px);
+          opacity: 1;
+          transition: transform 0s; }
+        #history .inner .hisTxt a:hover {
+          background: #101820;
+          color: #ccc; }
+          #history .inner .hisTxt a:hover i {
+            opacity: 1;
+            transform: translateX(10px); }
 
   /* ----- section3/theViews -----------------------------------------*/
   #views {
@@ -2863,6 +2947,8 @@ table {
           letter-spacing: 2px; }
         #views .inner .desMore p {
           line-height: 1.5; }
+        #views .inner .desMore a {
+          margin: 0 auto; }
 
   /* ----- section4/vid ------------------------------------------------*/
   #vid {
@@ -2909,6 +2995,8 @@ table {
           line-height: 1.5;
           height: 108px;
           overflow: hidden; }
+        #museum .inner .desMore a {
+          margin: 0 auto; }
 
   /* ----- section6/experience----------------------------------------*/
   #experience {
@@ -2979,6 +3067,8 @@ table {
           line-height: 1.5;
           height: 72px;
           overflow: hidden; }
+        #home .inner .desMore a {
+          margin: 0 auto; }
 
   /* ----- section9/stories  --------------------------------------------*/
   #stories {

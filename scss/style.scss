@@ -288,9 +288,27 @@ $sky: #BFD9EB;
         margin-bottom: 20px;
       }
       a{
-        font: 700 12px/1 'roboto condensed';
+        display: block; width: 120px; height: 30px;
+        padding: 5px 10px; border: 1px solid #ccc;
+        font: 700 12px/20px 'roboto condensed';
         color: #ccc;
         letter-spacing: 2px;
+        transition: all 0.3s;
+        text-align: center;
+
+        i{
+          transform: translateX(20px); opacity: 0;
+          transition:  transform 0.3s;
+        }
+
+        &:hover{
+          background: #ccc;
+          color: $green;
+
+          i{
+            opacity: 1; transform: translateX(10px);
+          }
+        }
       }
     }
   }
@@ -336,9 +354,28 @@ $sky: #BFD9EB;
         margin-bottom: 20px;
       }
       a{
-        font: 700 12px/1 'roboto condensed';
-        color: #333;
+        display: block; width: 120px; height: 30px;
+        padding: 5px 10px; border: 1px solid $green;
+        font: 700 12px/20px 'roboto condensed';
+        background: $green;
+        color: #fff;
         letter-spacing: 2px;
+        transition: all 0.3s;
+        text-align: center;
+
+        i{
+          transform: translateX(20px); opacity: 0;
+          transition:  transform 0.3s;
+        }
+
+        &:hover{
+          background: #fff;
+          color: $green;
+
+          i{
+            opacity: 1; transform: translateX(10px);
+          }
+        }
       }
     }
   }
@@ -420,9 +457,27 @@ $sky: #BFD9EB;
         margin-bottom: 20px;
       }
       a{
-        font: 700 12px/1 'roboto condensed';
-        color: #333;
+        display: block; width: 120px; height: 30px;
+        padding: 5px 10px; border: 1px solid #aaa;
+        font: 700 12px/20px 'roboto condensed';
+        color: #aaa;
         letter-spacing: 2px;
+        transition: all 0.3s;
+        text-align: center;
+
+        i{
+          transform: translateX(20px); opacity: 0;
+          transition:  transform 0.3s;
+        }
+
+        &:hover{
+          background: $green;
+          color: #fff;
+
+          i{
+            opacity: 1; transform: translateX(10px);
+          }
+        }
       }
     }
   }
@@ -578,9 +633,28 @@ $sky: #BFD9EB;
         margin-bottom: 20px;
       }
       a{
-        font: 700 12px/1 'roboto condensed';
-        color: #333;
+        display: block; width: 120px; height: 30px;
+        padding: 5px 10px; border: 1px solid $green;
+        font: 700 12px/20px 'roboto condensed';
+        background: $green;
+        color: #fff;
         letter-spacing: 2px;
+        transition: all 0.3s;
+        text-align: center;
+
+        i{
+          transform: translateX(20px); opacity: 0;
+          transition:  transform 0.3s;
+        }
+
+        &:hover{
+          background: #fff;
+          color: $green;
+
+          i{
+            opacity: 1; transform: translateX(10px);
+          }
+        }
       }
     }
   }
@@ -854,7 +928,27 @@ $sky: #BFD9EB;
         margin: 0 auto;
 
         p{ display: block;  width: 100%; padding: 0px 30px;}
-        a{display: block;  width: 100%; padding: 0px 30px; text-align: left;}
+        a{
+          display: block;  margin: 0 30px;
+          border: none;
+          padding: 0px 0px; 
+          color: #ccc;
+          letter-spacing: 2px;
+          transition: all 0s;
+          text-align: left;
+  
+          i{
+            transform: translateX(10px); opacity: 1;
+            transition:  transform 0s;
+          }
+          &:hover{
+            background: $green;
+            color: #ccc;
+            i{
+              opacity: 1; transform: translateX(10px);
+            }
+          }
+        }
       }
     }
   }
@@ -1153,6 +1247,7 @@ $sky: #BFD9EB;
 
         h2{  letter-spacing: 2px;}
         p{ line-height: 1.5;}
+        a{  margin:0 auto;  }
       }
     }
   }
@@ -1197,6 +1292,7 @@ $sky: #BFD9EB;
 
         h2{  letter-spacing: 2px;}
         p{ line-height: 1.5; height: 108px; overflow: hidden;}
+        a{  margin:0 auto;  }
       }
     }
   }
@@ -1278,6 +1374,7 @@ $sky: #BFD9EB;
 
         h2{  letter-spacing: 2px;}
         p{ line-height: 1.5; height: 72px; overflow: hidden;}
+        a{  margin:0 auto;  }
       }
     }
   }
