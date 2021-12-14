@@ -361,13 +361,13 @@ table {
         width: 100%;
         height: 100%; }
         .value .inner .wrap #tab_value .list {
-          width: 30%;
+          width: 35%;
           height: 100%;
           float: right;
           position: relative; }
           .value .inner .wrap #tab_value .list #btns {
             width: 80%;
-            margin-left: 40px; }
+            margin: 0 0px 0 60px; }
             .value .inner .wrap #tab_value .list #btns li {
               padding: 20px 10px;
               border-bottom: 1px solid  #ddd; }
@@ -397,7 +397,7 @@ table {
               .value .inner .wrap #tab_value .list #btns li.on p {
                 color: #852132; }
         .value .inner .wrap #tab_value .content {
-          width: 70%;
+          width: 65%;
           height: 500px;
           position: relative;
           float: left; }

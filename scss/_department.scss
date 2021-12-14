@@ -30,12 +30,12 @@
         width: 100%; height: 100%;
         
         .list{
-          width: 30%; height: 100%;
+          width: 35%; height: 100%;
           float: right; position: relative;
 
           #btns{
             width: 80%;
-            margin-left: 40px;
+            margin: 0 0px 0 60px;
             li{
               padding: 20px 10px;
               border-bottom: 1px solid  #ddd;
@@ -73,7 +73,7 @@
           }
         }
         .content{
-          width: 70%; height: 500px;
+          width: 65%; height: 500px;
           position: relative;
           float: left; 
 
