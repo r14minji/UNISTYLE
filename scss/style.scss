@@ -622,17 +622,64 @@ $sky: #BFD9EB;
         }
         .storyTxt{
           width: 210px;  margin-left: 20px;
-          position: relative;
-        
+          position: relative; 
+          transform: translateY(0px);
+          transition : transform 0.35s;
+
           h3{
             font: 300 14px/20px 'roboto condensed';
             color: #fff;
             position: absolute;  bottom: 30px; left: 0;
           }
-          p{
+          >p{
             font: 300 14px/20px 'roboto condensed';
             color: #fff;
             position: absolute;  bottom: 10px; left: 0;
+          }
+        }
+        figcaption{
+          padding: 10px;
+          color: #555;
+          text-transform: uppercase;
+          font-size:  12px;
+          top: auto;
+          bottom: 0;
+          height: 30%;
+          background: #fff;
+          color: $darkblue;
+          transition: 0.5s;
+          opacity: 0;
+
+          >p{
+            float:left;   line-height: 30px;
+            position: absolute;
+            span{ font-weight: blod;}
+          }
+          >ul{
+            display: flex; justify-content: flex-end; align-items: center;
+            li{
+              margin: 5px; height: auto;
+              transition: transform 0.35s;
+              transform: translate3d(0,200%,0);
+            }
+          }
+        }
+
+        &:hover .storyTxt{
+          transform: translateY(-120px);
+        }
+        &:hover figcaption{
+          color: #fff; opacity: 1;
+          position: relative; bottom: 30%;
+          background: rgba(0,0,0,0.8);
+
+          li{
+            transform: translate3d(0,0,0);
+            color: #ffff;
+          
+            &:nth-of-type(1){transition-delay: 0.1s;}
+            &:nth-of-type(2){transition-delay: 0.15s;}
+            &:nth-of-type(3){transition-delay: 0.2s;}
           }
         }
       }
@@ -729,6 +776,9 @@ $sky: #BFD9EB;
     }
   }
 }
+
+
+
 
 /* tablet ------------------------------------------------------------*/
 @media screen and (max-width: $tablet){
@@ -969,9 +1019,23 @@ $sky: #BFD9EB;
         display: flex; flex-wrap: wrap; justify-content: center; 
 
         .storyPic{
-          width: calc(30%); min-width: 230px; height: 16vw; min-height: 120px;
+          width: calc(30%); min-width: 230px; height: 30vw; min-height: 120px;
           margin: 10px;
+
+          .storyTxt{
+            transition: 0s;
+          }
+          figcaption{
+            display: none;
+          }
+          &:hover .storyTxt{
+            top: 0px; transition: 0s;
+          }
+          &:hover figcaption{
+            display: none;
+          }
         }
+
       }
     }
 
@@ -998,6 +1062,8 @@ $sky: #BFD9EB;
     }
   }
 }
+
+
 
 /* mobile------------------------------------------------------------*/
 @media screen and (max-width: $mobile){
