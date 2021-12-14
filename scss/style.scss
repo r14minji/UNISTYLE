@@ -51,6 +51,9 @@ $sky: #BFD9EB;
       .gnbWrap{
         width: 100%; 
         display: flex; justify-content: center;
+        ul li .sub{
+          display: none;
+        }
         #gnb_left{
           margin-right: 136px;
           li{
@@ -77,7 +80,7 @@ $sky: #BFD9EB;
 
     .btnCall{
       display: none;
-      position: absolute; top: 40%; left: 0px;
+      position: absolute; top: 40%; left: 0px; z-index: 6;
       width: 20px; height: 20px; border: #fff;
       
       &::before{
@@ -125,52 +128,37 @@ $sky: #BFD9EB;
     }
 
     .menuMo{
-      display: none;
       position: fixed;
       top:0;
-      right: 0; //left: -270px; 
+      left: -270px; 
       width: 270px;
       height: 100vh;
-      background: #2E3135;
+      background: #000; 
       transition: 0.5s;
-      padding: 35px 30px;
-      z-index: 10;
+      padding: 25px 30px;
+      z-index: 5;
 
-      &.on{ right: 0px;}
+      &.on{ left: 0px;}
 
       h1{
-        //border-bottom: 1px solid #ddd;
         padding-bottom: 20px;
         a{
-          display: block; font: 700 24px/1 'roboto condensed';
-          color:#F1F1F1; text-align: center; letter-spacing: 5px;
+          display: block; font: normal 20px/1 'Monoton';
+          color:$beige; text-align: center; letter-spacing: 2px;
         }
       }
-    }
-
-    #gnbMo>li{
-      >a{
-        display: block;
-        width: 100%;
-        padding: 20px 0;
-        border-bottom: 1px solid #aaa;
-        font: 700 14px/1 "roboto condensed";
-        color: #aaa;
-        text-align: center;
-      }
-      .sub{
-        ul li a{
+      #gnbMo>li{
+        >a{
           display: block;
           width: 100%;
-          padding: 10px 0;
-          font: 300 12px/1 "roboto condensed";
-          color: #fff;
+          padding: 20px 0;
+          border-bottom: 1px solid #ccc;
+          font: 500 14px/1 "roboto";
+          color: #ccc;
           text-align: center;
         }
       }
     }
-    
-
   }
 }
 
@@ -1174,6 +1162,40 @@ $sky: #BFD9EB;
       .btnCall{
         display: block;
         left: 20px;
+      }
+
+      .menuMo{
+        display: none;
+        position: fixed;
+        top:0;
+        left: -270px; 
+        width: 270px;
+        height: 100vh;
+        background: #000; 
+        transition: 0.5s;
+        padding: 25px 30px;
+        z-index: 5;
+  
+        &.on{ left: 0px;}
+  
+        h1{
+          padding-bottom: 20px;
+          a{
+            display: block; font: normal 20px/1 'Monoton';
+            color:$beige; text-align: center; letter-spacing: 2px;
+          }
+        }
+        #gnbMo>li{
+          >a{
+            display: block;
+            width: 100%;
+            padding: 20px 0;
+            border-bottom: 1px solid #ccc;
+            font: 500 14px/1 "roboto";
+            color: #ccc;
+            text-align: center;
+          }
+        }
       }
     }
   }

@@ -59,6 +59,8 @@ table {
         width: 100%;
         display: flex;
         justify-content: center; }
+        #header_sub .inner .menuWeb .gnbWrap ul li .sub {
+          display: none; }
         #header_sub .inner .menuWeb .gnbWrap #gnb_left {
           margin-right: 136px; }
           #header_sub .inner .menuWeb .gnbWrap #gnb_left li {
@@ -78,6 +80,7 @@ table {
       position: absolute;
       top: 40%;
       left: 0px;
+      z-index: 6;
       width: 20px;
       height: 20px;
       border: #fff; }
@@ -148,41 +151,33 @@ table {
         transform: rotate(-45deg);
         transition: transform 0.3s 0.8s; }
     #header_sub .inner .menuMo {
-      display: none;
       position: fixed;
       top: 0;
-      right: 0;
+      left: -270px;
       width: 270px;
       height: 100vh;
-      background: #2E3135;
+      background: #000;
       transition: 0.5s;
-      padding: 35px 30px;
-      z-index: 10; }
+      padding: 25px 30px;
+      z-index: 5; }
       #header_sub .inner .menuMo.on {
-        right: 0px; }
+        left: 0px; }
       #header_sub .inner .menuMo h1 {
         padding-bottom: 20px; }
         #header_sub .inner .menuMo h1 a {
           display: block;
-          font: 700 24px/1 'roboto condensed';
-          color: #F1F1F1;
+          font: normal 20px/1 'Monoton';
+          color: #FFE9CF;
           text-align: center;
-          letter-spacing: 5px; }
-    #header_sub .inner #gnbMo > li > a {
-      display: block;
-      width: 100%;
-      padding: 20px 0;
-      border-bottom: 1px solid #aaa;
-      font: 700 14px/1 "roboto condensed";
-      color: #aaa;
-      text-align: center; }
-    #header_sub .inner #gnbMo > li .sub ul li a {
-      display: block;
-      width: 100%;
-      padding: 10px 0;
-      font: 300 12px/1 "roboto condensed";
-      color: #fff;
-      text-align: center; }
+          letter-spacing: 2px; }
+      #header_sub .inner .menuMo #gnbMo > li > a {
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid #ccc;
+        font: 500 14px/1 "roboto";
+        color: #ccc;
+        text-align: center; }
 
 /*----- content section -------------------------------------------------*/
 .content {
@@ -297,6 +292,35 @@ table {
       #header_sub .inner .btnCall {
         display: block;
         left: 20px; }
+      #header_sub .inner .menuMo {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: -270px;
+        width: 270px;
+        height: 100vh;
+        background: #000;
+        transition: 0.5s;
+        padding: 25px 30px;
+        z-index: 5; }
+        #header_sub .inner .menuMo.on {
+          left: 0px; }
+        #header_sub .inner .menuMo h1 {
+          padding-bottom: 20px; }
+          #header_sub .inner .menuMo h1 a {
+            display: block;
+            font: normal 20px/1 'Monoton';
+            color: #FFE9CF;
+            text-align: center;
+            letter-spacing: 2px; }
+        #header_sub .inner .menuMo #gnbMo > li > a {
+          display: block;
+          width: 100%;
+          padding: 20px 0;
+          border-bottom: 1px solid #ccc;
+          font: 500 14px/1 "roboto";
+          color: #ccc;
+          text-align: center; }
 
   /* content --------------------------------------- */
   .content {
@@ -1822,6 +1846,8 @@ table {
         width: 100%;
         display: flex;
         justify-content: center; }
+        #header .inner .menuWeb .gnbWrap ul li .sub {
+          display: none; }
         #header .inner .menuWeb .gnbWrap #gnb_left {
           margin-right: 136px; }
           #header .inner .menuWeb .gnbWrap #gnb_left li {
@@ -1841,6 +1867,7 @@ table {
       position: absolute;
       top: 40%;
       left: 0px;
+      z-index: 6;
       width: 20px;
       height: 20px;
       border: #fff; }
@@ -1911,41 +1938,33 @@ table {
         transform: rotate(-45deg);
         transition: transform 0.3s 0.8s; }
     #header .inner .menuMo {
-      display: none;
       position: fixed;
       top: 0;
-      right: 0;
+      left: -270px;
       width: 270px;
       height: 100vh;
-      background: #2E3135;
+      background: #000;
       transition: 0.5s;
-      padding: 35px 30px;
-      z-index: 10; }
+      padding: 25px 30px;
+      z-index: 5; }
       #header .inner .menuMo.on {
-        right: 0px; }
+        left: 0px; }
       #header .inner .menuMo h1 {
         padding-bottom: 20px; }
         #header .inner .menuMo h1 a {
           display: block;
-          font: 700 24px/1 'roboto condensed';
-          color: #F1F1F1;
+          font: normal 20px/1 'Monoton';
+          color: #FFE9CF;
           text-align: center;
-          letter-spacing: 5px; }
-    #header .inner #gnbMo > li > a {
-      display: block;
-      width: 100%;
-      padding: 20px 0;
-      border-bottom: 1px solid #aaa;
-      font: 700 14px/1 "roboto condensed";
-      color: #aaa;
-      text-align: center; }
-    #header .inner #gnbMo > li .sub ul li a {
-      display: block;
-      width: 100%;
-      padding: 10px 0;
-      font: 300 12px/1 "roboto condensed";
-      color: #fff;
-      text-align: center; }
+          letter-spacing: 2px; }
+      #header .inner .menuMo #gnbMo > li > a {
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid #ccc;
+        font: 500 14px/1 "roboto";
+        color: #ccc;
+        text-align: center; }
 
 /* ----- section1/visual -------------------------------------------*/
 #visual {
@@ -2883,6 +2902,35 @@ table {
     #header .inner .btnCall {
       display: block;
       left: 20px; }
+    #header .inner .menuMo {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: -270px;
+      width: 270px;
+      height: 100vh;
+      background: #000;
+      transition: 0.5s;
+      padding: 25px 30px;
+      z-index: 5; }
+      #header .inner .menuMo.on {
+        left: 0px; }
+      #header .inner .menuMo h1 {
+        padding-bottom: 20px; }
+        #header .inner .menuMo h1 a {
+          display: block;
+          font: normal 20px/1 'Monoton';
+          color: #FFE9CF;
+          text-align: center;
+          letter-spacing: 2px; }
+      #header .inner .menuMo #gnbMo > li > a {
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid #ccc;
+        font: 500 14px/1 "roboto";
+        color: #ccc;
+        text-align: center; }
 
   /* ----- section1/visual -------------------------------------------*/
   #visual .inner {
