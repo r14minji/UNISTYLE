@@ -72,6 +72,7 @@ $sky: #BFD9EB;
             >a{
               font: 400 14px/1 'roboto condensed';
               color: #ddd;
+              &:hover {text-shadow:#FC0 1px 0 10px;}
               &.on { text-shadow:#FC0 1px 0 10px;}
             }
           }
@@ -87,18 +88,23 @@ $sky: #BFD9EB;
           padding: 30px;
 
           >ul{
+            width: 200px; 
+            padding: 30px 20px;
+            border: 1px solid #FFF;
 
-            a{
-              position: relative; z-index: 6;
-              color: #fff;
-              display: inline-block;
-              font: bold 12px/1.2 "roboto condensed";
-              width: 200px; height: 10px; padding: 10px;
-              border: 1px solid #FFF;
+            >li{
+              width: 100%;
+              a{
+                position: relative; z-index: 6;
+                color: #fff;
+                display: inline-block;
+                font: normal 12px/1.2 "roboto condensed";
+                width: 150px; height: 10px; padding: 10px;
+              }
             }
           }
 
-          &:nth-of-type(1){ padding: 10px;}
+          &:nth-of-type(1){ padding: 0px;}
         }
       }
 

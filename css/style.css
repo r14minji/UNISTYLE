@@ -1835,6 +1835,8 @@ table {
           #header .inner .menuWeb .gnbWrap #gnb_right > li > a {
             font: 400 14px/1 'roboto condensed';
             color: #ddd; }
+            #header .inner .menuWeb .gnbWrap #gnb_right > li > a:hover {
+              text-shadow: #FC0 1px 0 10px; }
             #header .inner .menuWeb .gnbWrap #gnb_right > li > a.on {
               text-shadow: #FC0 1px 0 10px; }
         #header .inner .menuWeb .gnbWrap ul li .sub {
@@ -1847,18 +1849,23 @@ table {
           top: 60px;
           z-index: 6;
           padding: 30px; }
-          #header .inner .menuWeb .gnbWrap ul li .sub > ul a {
-            position: relative;
-            z-index: 6;
-            color: #fff;
-            display: inline-block;
-            font: bold 12px/1.2 "roboto condensed";
+          #header .inner .menuWeb .gnbWrap ul li .sub > ul {
             width: 200px;
-            height: 10px;
-            padding: 10px;
+            padding: 30px 20px;
             border: 1px solid #FFF; }
+            #header .inner .menuWeb .gnbWrap ul li .sub > ul > li {
+              width: 100%; }
+              #header .inner .menuWeb .gnbWrap ul li .sub > ul > li a {
+                position: relative;
+                z-index: 6;
+                color: #fff;
+                display: inline-block;
+                font: normal 12px/1.2 "roboto condensed";
+                width: 150px;
+                height: 10px;
+                padding: 10px; }
           #header .inner .menuWeb .gnbWrap ul li .sub:nth-of-type(1) {
-            padding: 10px; }
+            padding: 0px; }
     #header .inner .btnCall {
       display: none;
       position: absolute;

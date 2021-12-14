@@ -13,31 +13,26 @@ btnCall.addEventListener("click", e =>{
 //2depth 
 gnb_lis.forEach( li=>{
   li.addEventListener("mouseenter", e=>{
-
     const sub = e.currentTarget.querySelector(".sub");
     if(sub !=null){
       sub.style.display = "block";
     }
-
 
     const depth1 = e.currentTarget.querySelector("a");
     depth1.classList.add("on");
   })
 
   li.addEventListener("mouseleave", e=>{
-
     const sub = e.currentTarget.querySelector(".sub");
     if(sub !=null){
       sub.style.display = "none";
     }
-
 
     const depth1 = e.currentTarget.querySelector("a");
     depth1.classList.remove("on");
   })
 
   li.addEventListener("focusin", e=>{
-
     const sub = e.currentTarget.querySelector(".sub");
     if(sub !=null){
       sub.style.display = "block";
@@ -45,8 +40,10 @@ gnb_lis.forEach( li=>{
   })
 
   const sub = li.querySelector(".sub ul");
-  const lastEl = sub.lastElementChild;
-  lastEl.addEventListener("focusout", e => {
-    e.currentTarget.closest(".sub").style.display = "none";
-  })
+  if(sub != null) {
+    const lastEl = sub.lastElementChild;
+    lastEl.addEventListener("focusout", e => {
+      e.currentTarget.closest(".sub").style.display = "none";
+    })
+  }
 })
