@@ -1549,26 +1549,12 @@ table {
           display: none; }
         #tab_community .inner dl dd #review h1 {
           font: 500 24px/1 'Roboto'; } }
-.heaerLogin_sub {
-  background: #101820; }
-
 .login {
-  padding: 0 0 200px;
-  position: relative; }
+  padding: 0 0 100px; }
   .login .sub_visual {
     background: url(../img/sub6.jpg) no-repeat bottom/cover;
     filter: contrast(120%);
     background-position: left 50% bottom 10px; }
-  .login .titleWrap {
-    position: absolute;
-    top: 80px;
-    background: #fff;
-    display: block;
-    text-align: center; }
-    .login .titleWrap h1 {
-      font: 700 30px/100px 'Roboto Condensed';
-      letter-spacing: 5px;
-      color: #101820; }
 
 /*----- loginPage_section ----------------------------------*/
 #loginPage {
@@ -1589,7 +1575,7 @@ table {
     #loginPage .inner .loginCheck {
       width: 50%;
       float: left;
-      padding: 20px 60px; }
+      padding: 20px 30px; }
       #loginPage .inner .loginCheck h1 {
         font: 500 36px/1 'roboto';
         margin-bottom: 40px; }
@@ -1652,7 +1638,7 @@ table {
     #loginPage .inner .goToJoin {
       width: 50%;
       float: right;
-      padding: 20px 60px; }
+      padding: 20px 30px; }
       #loginPage .inner .goToJoin h2 {
         font: 500 36px/1 'roboto';
         margin-bottom: 20px; }
@@ -1704,7 +1690,7 @@ table {
     display: block;
     clear: both; }
   #shortInfo .inner {
-    width: 1180px;
+    width: 100%;
     position: relative;
     margin: 0 auto;
     padding: 20px 20px 60px; }

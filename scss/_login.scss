@@ -1,27 +1,10 @@
-.heaerLogin_sub{
-  background: $green;
-}
-
 .login{
-  padding: 0 0 200px;
-  position: relative;
+  padding: 0 0 100px;
+
   .sub_visual{
-    //display: none;
     background: url(../img/sub6.jpg) no-repeat bottom/cover;
     filter: contrast(120%) ;
     background-position: left 50% bottom 10px;
-  }
-
-  .titleWrap{
-    position: absolute; top: 80px;
-    background: #fff;
-    display: block; 
-    text-align: center;
-    h1{
-      font: 700 30px/100px 'Roboto Condensed'; 
-      letter-spacing: 5px;
-      color:$green; 
-    }
   }
 }
 
@@ -40,7 +23,7 @@
 
     .loginCheck{
       width: 50%; float:left;
-      padding: 20px 60px;
+      padding: 20px 30px;
 
       h1{
         font: 500 36px/1 'roboto';
@@ -100,7 +83,7 @@
 
     .goToJoin{
       width: 50%; float: right;
-      padding: 20px 60px;
+      padding: 20px 30px;
 
       h2{
         font: 500 36px/1 'roboto';
@@ -160,7 +143,7 @@
   ::after{ content:''; display: block; clear:both;}
 
   .inner{
-    width: 1180px; 
+    width: 100%; 
     position: relative;
     margin: 0 auto;
     padding: 20px 20px 60px;
