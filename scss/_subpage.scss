@@ -188,6 +188,8 @@
   }
 }
 
+
+
 /*----- content section -------------------------------------------------*/
 .content{
   width: 100%;
@@ -198,6 +200,14 @@
     height: 500px;
     background: #000;
     margin-bottom: 100px;
+
+    &::after{
+      content: ""; display: block;
+      width: inherit; height: inherit;
+      background-position: inherit;
+      background: #000; 
+      animation : imageAnime  5s ; opacity: 0.2;
+    }
   }
 
   
@@ -211,6 +221,15 @@
       letter-spacing: 5px;
       color:$green; 
     }
+  }
+}
+
+@keyframes imageAnime{
+  0%{
+    opacity: 0.8;
+  }
+  100%{
+    opacity: 0.2;
   }
 }
 

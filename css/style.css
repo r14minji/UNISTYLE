@@ -251,6 +251,15 @@ table {
     height: 500px;
     background: #000;
     margin-bottom: 100px; }
+    .content .sub_visual::after {
+      content: "";
+      display: block;
+      width: inherit;
+      height: inherit;
+      background-position: inherit;
+      background: #000;
+      animation: imageAnime 5s;
+      opacity: 0.2; }
   .content .titleWrap {
     position: absolute;
     top: 460px;
@@ -266,6 +275,11 @@ table {
       letter-spacing: 5px;
       color: #101820; }
 
+@keyframes imageAnime {
+  0% {
+    opacity: 0.8; }
+  100% {
+    opacity: 0.2; } }
 /*----- footer --------------------------------------------------------*/
 #footer_sub {
   width: 100%;
