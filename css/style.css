@@ -1549,15 +1549,31 @@ table {
           display: none; }
         #tab_community .inner dl dd #review h1 {
           font: 500 24px/1 'Roboto'; } }
-.login .sub_visual {
-  background: url(../img/sub6.jpg) no-repeat bottom/cover;
-  filter: contrast(140%);
-  background-position: left 50% bottom 10px; }
+.heaerLogin_sub {
+  background: #101820; }
+
+.login {
+  padding: 0 0 200px;
+  position: relative; }
+  .login .sub_visual {
+    background: url(../img/sub6.jpg) no-repeat bottom/cover;
+    filter: contrast(120%);
+    background-position: left 50% bottom 10px; }
+  .login .titleWrap {
+    position: absolute;
+    top: 80px;
+    background: #fff;
+    display: block;
+    text-align: center; }
+    .login .titleWrap h1 {
+      font: 700 30px/100px 'Roboto Condensed';
+      letter-spacing: 5px;
+      color: #101820; }
 
 /*----- loginPage_section ----------------------------------*/
 #loginPage {
   width: 100%;
-  margin-bottom: 80px; }
+  margin-bottom: 150px; }
   #loginPage ::after {
     content: '';
     display: block;
@@ -1573,7 +1589,7 @@ table {
     #loginPage .inner .loginCheck {
       width: 50%;
       float: left;
-      padding: 20px 30px; }
+      padding: 20px 60px; }
       #loginPage .inner .loginCheck h1 {
         font: 500 36px/1 'roboto';
         margin-bottom: 40px; }
@@ -1636,7 +1652,7 @@ table {
     #loginPage .inner .goToJoin {
       width: 50%;
       float: right;
-      padding: 20px 30px; }
+      padding: 20px 60px; }
       #loginPage .inner .goToJoin h2 {
         font: 500 36px/1 'roboto';
         margin-bottom: 20px; }
@@ -1679,6 +1695,73 @@ table {
             border: 1px solid #52616b; }
             #loginPage .inner .goToJoin .find .findBtn > a:nth-of-type(2) {
               margin-right: 0; }
+
+#shortInfo {
+  width: 100%;
+  margin-bottom: 40px; }
+  #shortInfo ::after {
+    content: '';
+    display: block;
+    clear: both; }
+  #shortInfo .inner {
+    width: 1180px;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 20px 60px; }
+    #shortInfo .inner .newsInfo {
+      float: left;
+      width: 550px; }
+      #shortInfo .inner .newsInfo h1 {
+        font: 500 21px/1 'roboto';
+        margin-bottom: 20px; }
+      #shortInfo .inner .newsInfo ul {
+        width: 100%; }
+        #shortInfo .inner .newsInfo ul li {
+          width: 100%;
+          padding: 15px 0;
+          border-bottom: 1px solid #ccc; }
+          #shortInfo .inner .newsInfo ul li:nth-of-type(1) {
+            border-top: 1px solid #ccc; }
+          #shortInfo .inner .newsInfo ul li a {
+            display: block;
+            width: 100%; }
+            #shortInfo .inner .newsInfo ul li a .title {
+              font: 300 14px/1 'roboto';
+              color: #333;
+              float: left; }
+            #shortInfo .inner .newsInfo ul li a .date {
+              font: 300 12px/1 'roboto';
+              color: #555;
+              float: right; }
+    #shortInfo .inner .noticeInfo {
+      float: right;
+      width: 50%; }
+      #shortInfo .inner .noticeInfo ul {
+        float: right; }
+        #shortInfo .inner .noticeInfo ul li {
+          float: left;
+          width: 120px;
+          height: 132px;
+          border-right: 1px solid #ccc;
+          margin-top: 41px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          cursor: pointer; }
+          #shortInfo .inner .noticeInfo ul li:nth-of-type(4) {
+            border-right: none; }
+          #shortInfo .inner .noticeInfo ul li a {
+            display: block;
+            width: 100%;
+            text-align: center; }
+            #shortInfo .inner .noticeInfo ul li a i {
+              font-size: 36px;
+              color: #555; }
+            #shortInfo .inner .noticeInfo ul li a p {
+              margin-top: 20px;
+              font: 500 16px/1 'roboto';
+              color: #555; }
 
 /*tablet*/
 @media screen and (max-width: 1179px) {
