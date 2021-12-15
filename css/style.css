@@ -1682,6 +1682,7 @@ table {
             #loginPage .inner .goToJoin .find .findBtn > a:nth-of-type(2) {
               margin-right: 0; }
 
+/*----- aside - shortInfo ------------------------------------*/
 #shortInfo {
   width: 100%;
   margin-bottom: 40px; }
@@ -1751,7 +1752,7 @@ table {
 
 /*tablet*/
 @media screen and (max-width: 1179px) {
-  /*loginPage_section */
+  /*----- loginPage_section -------------------------------------*/
   #loginPage .inner {
     width: 100%; }
     #loginPage .inner .loginCheck {
@@ -1789,7 +1790,48 @@ table {
         line-height: 60px; }
       #loginPage .inner .goToJoin .find span {
         font-size: 20px;
-        line-height: 40px; } }
+        line-height: 40px; }
+
+  /*----- aside - shortInfo ------------------------------------*/
+  #shortInfo {
+    width: 100%;
+    margin-bottom: 40px; }
+    #shortInfo .inner {
+      width: 100%;
+      padding: 20px 20px 20px; }
+      #shortInfo .inner .newsInfo {
+        float: left;
+        width: 100%; }
+        #shortInfo .inner .newsInfo h1 {
+          font-size: 21px;
+          margin-bottom: 20px; }
+        #shortInfo .inner .newsInfo ul {
+          width: 100%; }
+          #shortInfo .inner .newsInfo ul li {
+            width: 100%;
+            padding: 15px 0; }
+            #shortInfo .inner .newsInfo ul li a {
+              display: block;
+              width: 100%; }
+              #shortInfo .inner .newsInfo ul li a .title {
+                font-size: 14px; }
+              #shortInfo .inner .newsInfo ul li a .date {
+                font-size: 12px; }
+      #shortInfo .inner .noticeInfo {
+        float: left;
+        width: 100%; }
+        #shortInfo .inner .noticeInfo ul {
+          float: left;
+          width: 100%; }
+          #shortInfo .inner .noticeInfo ul li {
+            float: left;
+            width: 25%;
+            height: 80px;
+            margin-top: 40px; }
+            #shortInfo .inner .noticeInfo ul li a i {
+              font-size: 36px; }
+            #shortInfo .inner .noticeInfo ul li a p {
+              font-size: 16px; } }
 /*mobile*/
 @media screen and (max-width: 539px) {
   /*loginPage_section */
@@ -1806,7 +1848,24 @@ table {
         margin-bottom: 20px; }
       #loginPage .inner .goToJoin .find .findBtn {
         width: 100%;
-        float: left; } }
+        float: left; }
+
+  /*----- aside - shortInfo ------------------------------------*/
+  #shortInfo .inner {
+    width: 100%;
+    padding: 20px; }
+    #shortInfo .inner .newsInfo h1 {
+      font-size: 18px; }
+    #shortInfo .inner .newsInfo ul li {
+      padding: 10px 0; }
+      #shortInfo .inner .newsInfo ul li a .title {
+        font-size: 12px; }
+      #shortInfo .inner .newsInfo ul li a .date {
+        font-size: 10px; }
+    #shortInfo .inner .noticeInfo ul li a i {
+      font-size: 28px; }
+    #shortInfo .inner .noticeInfo ul li a p {
+      font-size: 13px; } }
 .join .sub_visual {
   background: url(../img/sub7.jpg) no-repeat bottom/cover fixed;
   background-position: left 50% bottom 197px;

@@ -136,7 +136,7 @@
   }
 }
 
-
+  /*----- aside - shortInfo ------------------------------------*/
 #shortInfo{
   width: 100%;
   margin-bottom: 40px;
@@ -215,9 +215,10 @@
   }
 }
 
+
 /*tablet*/
 @media screen and (max-width: $tablet){
-  /*loginPage_section */
+  /*----- loginPage_section -------------------------------------*/
   #loginPage{
     .inner{
       width: 100%;
@@ -277,6 +278,66 @@
       }
     }
   }
+
+  /*----- aside - shortInfo ------------------------------------*/
+  #shortInfo{
+    width: 100%;
+    margin-bottom: 40px;
+
+  
+    .inner{
+      width: 100%; 
+      padding: 20px 20px 20px;
+  
+      .newsInfo{
+        float: left; width: 100%;
+  
+        h1{
+          font-size: 21px;
+          margin-bottom: 20px;
+        }
+        ul{
+          width: 100%;
+  
+          li{
+            width: 100%;
+            padding: 15px 0;
+            a{
+              display: block; width: 100%;
+              .title{
+                font-size: 14px;
+              }
+              .date{
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+  
+      .noticeInfo{
+        float: left; width: 100%;
+        ul{
+          float: left; width: 100%;
+  
+          li{
+            float: left; width: 25%;
+            height: 80px;
+            margin-top: 40px;
+
+            a{
+              i{
+                font-size: 36px;
+              }
+              p{
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -312,4 +373,47 @@
       }
     }
   }
+  
+    /*----- aside - shortInfo ------------------------------------*/
+    #shortInfo{
+
+      .inner{
+        width: 100%; 
+        padding: 20px;
+    
+        .newsInfo{
+
+          h1{
+            font-size: 18px;
+          }
+          ul{
+            li{
+              padding: 10px 0;
+              a{
+
+                .title{
+                  font-size: 12px;
+                }
+                .date{
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+    
+        .noticeInfo{
+
+          ul{
+            li{
+              a{
+                i{  font-size: 28px;}
+                p{  font-size: 13px; }
+              }
+            }
+          }
+        }
+      }
+    }
+  
 }
