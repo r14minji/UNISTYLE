@@ -1694,7 +1694,7 @@ table {
     width: 100%;
     position: relative;
     margin: 0 auto;
-    padding: 20px 20px 60px; }
+    padding: 20px 80px 60px; }
     #shortInfo .inner .newsInfo {
       float: left;
       width: 550px; }
@@ -1917,7 +1917,7 @@ table {
         top: -2px;
         margin: 10px; }
       #joinForm .inner table td p {
-        font: 11px/1 "맑은 고딕";
+        font: 14px/1 "맑은 고딕";
         color: hotpink;
         margin-top: 5px; }
     #joinForm .inner .formBtns {
