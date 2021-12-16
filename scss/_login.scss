@@ -5,7 +5,7 @@
 /*----- login section -------------------------------------------------*/
 .login{
   width: 100%;
-  padding: 150px 0 80px;
+  padding: 0px 0 60px;
   .sub_visual{
     display: none;
   }
@@ -14,12 +14,13 @@
   .titleWrap_login{
     width: 1180px;
     margin: 0 auto;
+
     h1{
-      display: none;
-      font: 700 30px/1 'Roboto Condensed'; 
+      font: 700 60px/1 'Roboto Condensed'; 
       letter-spacing: 3px;
       color:$green; 
-      text-align: center;
+      text-align: left;
+      padding: 0 30px;
       margin-top: 180px;
     }
   }
