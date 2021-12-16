@@ -400,8 +400,7 @@ table {
       padding: 2px 5px; } }
 /*----- department sub_visual  section ------------------*/
 .department .sub_visual {
-  background: url(../img/sub1.jpg) no-repeat center/cover;
-  filter: contrast(110%); }
+  background: url(../img/sub1.jpg) no-repeat center/cover; }
 
 /*----- section1/value ------------------------------------------*/
 .value {
@@ -1060,7 +1059,7 @@ table {
 /*----- community sub_visual  section ------------------*/
 .community .sub_visual {
   background: url(../img/sub3.jpg) no-repeat center/cover;
-  filter: contrast(110%); }
+  filter: brightness(100%); }
 
 /*----- Web_tab_contents ------*/
 #tab_community {
@@ -1545,8 +1544,7 @@ table {
   width: 100%;
   margin-bottom: 150px; }
   .login .sub_visual {
-    background: url(../img/sub6.jpg) no-repeat bottom/cover;
-    filter: contrast(110%); }
+    background: url(../img/sub6.jpg) no-repeat bottom/cover; }
 
 /*----- loginPage_section ----------------------------------*/
 #loginPage {
