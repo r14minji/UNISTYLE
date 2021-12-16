@@ -257,7 +257,7 @@ table {
       height: inherit;
       background-position: inherit;
       background: #000;
-      opacity: 0.5; }
+      opacity: 0.7; }
   .content .inner {
     width: 1180px;
     margin: 0 auto;
@@ -400,7 +400,7 @@ table {
       padding: 2px 5px; } }
 /*----- department sub_visual  section ------------------*/
 .department .sub_visual {
-  background: url(../img/sub1.jpg) no-repeat center/cover; }
+  background: url(../img/sub10.jpg) no-repeat center/cover; }
 
 /*----- section1/value ------------------------------------------*/
 .value {
@@ -1543,7 +1543,7 @@ table {
   width: 100%;
   margin-bottom: 150px; }
   .login .sub_visual {
-    background: url(../img/sub6.jpg) no-repeat bottom/cover; }
+    background: url(../img/sub6.jpg) no-repeat center/cover; }
 
 /*----- loginPage_section ----------------------------------*/
 #loginPage {
@@ -1860,8 +1860,7 @@ table {
   width: 100%;
   margin-bottom: 150px; }
   .join .sub_visual {
-    background: url(../img/sub7.jpg) no-repeat center/cover;
-    filter: contrast(110%); }
+    background: url(../img/sub7.jpg) no-repeat bottom/cover; }
 
 /*----- joinform --------------------------------------------------*/
 #joinForm {
@@ -1996,8 +1995,7 @@ table {
           font-size: 12px; } }
 /*----- youtube sub_visual  section ------------------*/
 .youtube .sub_visual {
-  background: url(../img/sub2.jpg) no-repeat center/cover;
-  background-position: left 0 bottom -250px;
+  background: url(../img/sub2.jpg) no-repeat bottom/cover;
   filter: contrast(120%); }
 
 /*----- ------*/
@@ -2008,7 +2006,8 @@ table {
 /*----- ------*/
 /*----- location sub_visual  section ------------------*/
 .location .sub_visual {
-  background: url(../img/sub5.jpg) no-repeat center/cover; }
+  background: url(../img/sub5.jpg) no-repeat center/cover;
+  filter: contrast(80%); }
 
 /*----- ------*/
 /*----- header -----------------------------------------------------*/
