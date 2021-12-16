@@ -1556,7 +1556,7 @@ table {
 /*----- login section -------------------------------------------------*/
 .login {
   width: 100%;
-  padding: 150px 0 40px; }
+  padding: 150px 0 80px; }
   .login .sub_visual {
     display: none; }
   .login .titleWrap_login {
@@ -1880,10 +1880,25 @@ table {
       font-size: 28px; }
     #shortInfo .inner .noticeInfo ul li a p {
       font-size: 13px; } }
-.join .sub_visual {
-  background: url(../img/sub7.jpg) no-repeat bottom/cover fixed;
-  background-position: left 50% bottom 197px;
-  filter: contrast(120%); }
+/*----- header_sub -----------------------------------------------------*/
+#header_sub {
+  background: #101820; }
+
+/*----- join section -------------------------------------------------*/
+.join {
+  width: 100%;
+  padding: 0px 0 80px; }
+  .join .sub_visual {
+    display: none; }
+  .join .titleWrap_join {
+    width: 1180px;
+    margin: 0 auto; }
+    .join .titleWrap_join h1 {
+      font: 700 60px/1 'Roboto Condensed';
+      letter-spacing: 3px;
+      color: #101820;
+      text-align: left;
+      margin-top: 180px; }
 
 /*----- joinform --------------------------------------------------*/
 #joinForm {
