@@ -1058,8 +1058,7 @@ table {
             margin-top: 330px; } }
 /*----- community sub_visual  section ------------------*/
 .community .sub_visual {
-  background: url(../img/sub3.jpg) no-repeat center/cover;
-  filter: brightness(100%); }
+  background: url(../img/sub3.jpg) no-repeat center/cover; }
 
 /*----- Web_tab_contents ------*/
 #tab_community {
@@ -1995,6 +1994,13 @@ table {
           width: 22%; }
         #joinForm .inner table td label {
           font-size: 12px; } }
+/*----- youtube sub_visual  section ------------------*/
+.youtube .sub_visual {
+  background: url(../img/sub2.jpg) no-repeat center/cover;
+  background-position: left 0 bottom -250px;
+  filter: contrast(120%); }
+
+/*----- ------*/
 /*----- header -----------------------------------------------------*/
 #header {
   width: 100%;
