@@ -1549,17 +1549,31 @@ table {
           display: none; }
         #tab_community .inner dl dd #review h1 {
           font: 500 24px/1 'Roboto'; } }
+/*----- header_sub -----------------------------------------------------*/
+#header_sub {
+  background: #101820; }
+
+/*----- login section -------------------------------------------------*/
 .login {
-  padding: 0 0 100px; }
+  width: 100%;
+  padding: 150px 0 40px; }
   .login .sub_visual {
-    background: url(../img/sub6.jpg) no-repeat bottom/cover;
-    filter: contrast(120%);
-    background-position: left 50% bottom 10px; }
+    display: none; }
+  .login .titleWrap_login {
+    width: 1180px;
+    margin: 0 auto; }
+    .login .titleWrap_login h1 {
+      display: none;
+      font: 700 30px/1 'Roboto Condensed';
+      letter-spacing: 3px;
+      color: #101820;
+      text-align: center;
+      margin-top: 180px; }
 
 /*----- loginPage_section ----------------------------------*/
 #loginPage {
   width: 100%;
-  margin-bottom: 150px; }
+  margin-bottom: 100px; }
   #loginPage ::after {
     content: '';
     display: block;
@@ -1697,7 +1711,7 @@ table {
     padding: 20px 80px 60px; }
     #shortInfo .inner .newsInfo {
       float: left;
-      width: 550px; }
+      width: 500px; }
       #shortInfo .inner .newsInfo h1 {
         font: 500 21px/1 'roboto';
         margin-bottom: 20px; }
