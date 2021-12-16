@@ -2001,6 +2001,11 @@ table {
   filter: contrast(120%); }
 
 /*----- ------*/
+/*----- gallery sub_visual  section ------------------*/
+.gallery .sub_visual {
+  background: url(../img/sub4.jpg) no-repeat center/cover; }
+
+/*----- ------*/
 /*----- header -----------------------------------------------------*/
 #header {
   width: 100%;
