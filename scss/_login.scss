@@ -1,28 +1,11 @@
-/*----- header_sub -----------------------------------------------------*/
-#header_sub{
-    background: $green;
-}
-/*----- login section -------------------------------------------------*/
+/*----- login sub_visual section -------------------------------*/
 .login{
-  width: 100%;
-  padding: 0px 0 60px;
+  width: 100%; 
+  margin-bottom: 150px;
+
   .sub_visual{
-    display: none;
-  }
-
-  
-  .titleWrap_login{
-    width: 1180px;
-    margin: 0 auto;
-
-    h1{
-      font: 700 60px/1 'Roboto Condensed'; 
-      letter-spacing: 3px;
-      color:$green; 
-      text-align: left;
-      padding: 0 30px;
-      margin-top: 180px;
-    }
+    background: url(../img/sub6.jpg) no-repeat bottom/cover ;
+    filter: contrast(110%);
   }
 }
 

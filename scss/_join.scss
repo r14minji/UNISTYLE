@@ -1,28 +1,11 @@
-/*----- header_sub -----------------------------------------------------*/
-#header_sub{
-  background: $green;
-}
-
-/*----- join section -------------------------------------------------*/
+/*----- join sub_visual section -------------------------------------------------*/
 .join{
-  width: 100%;
-  padding: 0px 0 80px;
+  width: 100%; 
+  margin-bottom: 150px;
 
   .sub_visual{
-    display: none;
-  }
-
-  
-  .titleWrap_join{
-    width: 1180px;
-    margin: 0 auto;
-    h1{
-      font: 700 60px/1 'Roboto Condensed'; 
-      letter-spacing: 3px;
-      color:$green; 
-      text-align: left;
-      margin-top: 180px;
-    }
+    background: url(../img/sub7.jpg) no-repeat center/cover ;
+    filter: contrast(110%);
   }
 }
 

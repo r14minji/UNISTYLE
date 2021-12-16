@@ -242,15 +242,14 @@ table {
         #header_sub .inner .menuMo #gnbMo > li > a > img {
           display: none; }
 
-/*----- content section -------------------------------------------------*/
+/*----- content department section -------------------------------*/
 .content {
   width: 100%;
-  padding: 0 0 150px; }
+  margin-bottom: 150px; }
   .content .sub_visual {
     width: 100%;
     height: 500px;
-    background: #000;
-    margin-bottom: 100px; }
+    background: #000; }
     .content .sub_visual::after {
       content: "";
       display: block;
@@ -258,28 +257,19 @@ table {
       height: inherit;
       background-position: inherit;
       background: #000;
-      animation: imageAnime 5s;
-      opacity: 0.2; }
-  .content .titleWrap {
-    position: absolute;
-    top: 460px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #fff;
-    display: block;
-    width: 700px;
-    height: 80px;
-    text-align: center; }
-    .content .titleWrap h1 {
-      font: 700 50px/100px 'Roboto Condensed';
+      opacity: 0.5; }
+  .content .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    .content .inner h1 {
+      font: 700 100px/1 'Roboto Condensed';
       letter-spacing: 5px;
-      color: #101820; }
+      color: #fff;
+      position: absolute;
+      top: -85px;
+      left: 0; }
 
-@keyframes imageAnime {
-  0% {
-    opacity: 0.8; }
-  100% {
-    opacity: 0.2; } }
 /*----- footer --------------------------------------------------------*/
 #footer_sub {
   width: 100%;
@@ -408,9 +398,9 @@ table {
       margin-bottom: 10px;
       margin-top: 30px;
       padding: 2px 5px; } }
+/*----- department sub_visual  section ------------------*/
 .department .sub_visual {
-  background: url(../img/sub1.jpg) no-repeat center/cover fixed;
-  background-position: right 50% bottom 40%;
+  background: url(../img/sub1.jpg) no-repeat center/cover;
   filter: contrast(110%); }
 
 /*----- section1/value ------------------------------------------*/
@@ -1067,9 +1057,10 @@ table {
             height: 340px; }
           .members .inner .wrap .profile .txtWrap .txt {
             margin-top: 330px; } }
+/*----- community sub_visual  section ------------------*/
 .community .sub_visual {
-  background: url(../img/sub3.jpg) no-repeat center/cover fixed;
-  filter: contrast(90%); }
+  background: url(../img/sub3.jpg) no-repeat center/cover;
+  filter: contrast(110%); }
 
 /*----- Web_tab_contents ------*/
 #tab_community {
@@ -1549,26 +1540,13 @@ table {
           display: none; }
         #tab_community .inner dl dd #review h1 {
           font: 500 24px/1 'Roboto'; } }
-/*----- header_sub -----------------------------------------------------*/
-#header_sub {
-  background: #101820; }
-
-/*----- login section -------------------------------------------------*/
+/*----- login sub_visual section -------------------------------*/
 .login {
   width: 100%;
-  padding: 0px 0 60px; }
+  margin-bottom: 150px; }
   .login .sub_visual {
-    display: none; }
-  .login .titleWrap_login {
-    width: 1180px;
-    margin: 0 auto; }
-    .login .titleWrap_login h1 {
-      font: 700 60px/1 'Roboto Condensed';
-      letter-spacing: 3px;
-      color: #101820;
-      text-align: left;
-      padding: 0 30px;
-      margin-top: 180px; }
+    background: url(../img/sub6.jpg) no-repeat bottom/cover;
+    filter: contrast(110%); }
 
 /*----- loginPage_section ----------------------------------*/
 #loginPage {
@@ -1880,25 +1858,13 @@ table {
       font-size: 28px; }
     #shortInfo .inner .noticeInfo ul li a p {
       font-size: 13px; } }
-/*----- header_sub -----------------------------------------------------*/
-#header_sub {
-  background: #101820; }
-
-/*----- join section -------------------------------------------------*/
+/*----- join sub_visual section -------------------------------------------------*/
 .join {
   width: 100%;
-  padding: 0px 0 80px; }
+  margin-bottom: 150px; }
   .join .sub_visual {
-    display: none; }
-  .join .titleWrap_join {
-    width: 1180px;
-    margin: 0 auto; }
-    .join .titleWrap_join h1 {
-      font: 700 60px/1 'Roboto Condensed';
-      letter-spacing: 3px;
-      color: #101820;
-      text-align: left;
-      margin-top: 180px; }
+    background: url(../img/sub7.jpg) no-repeat center/cover;
+    filter: contrast(110%); }
 
 /*----- joinform --------------------------------------------------*/
 #joinForm {
