@@ -2006,6 +2006,11 @@ table {
   background: url(../img/sub4.jpg) no-repeat center/cover; }
 
 /*----- ------*/
+/*----- location sub_visual  section ------------------*/
+.location .sub_visual {
+  background: url(../img/sub5.jpg) no-repeat center/cover; }
+
+/*----- ------*/
 /*----- header -----------------------------------------------------*/
 #header {
   width: 100%;
