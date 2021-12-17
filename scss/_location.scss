@@ -223,106 +223,29 @@
 
     .inner{
       width: 100%;
+      padding: 0px 30px;
 
       h1{
-        font: 500 36px/1 'roboto';
-        margin-bottom: 40px;
+        font-size: 36px;
+        margin-bottom: 30px;
       }
 
       .wrap{
-        width: 100%;
-
         .txt{
-          float: left;
-          width: 50%;
-    
-          h2{
-            font: 500 20px/1 'roboto';
-            margin-bottom: 30px;
-          }
-          p{
-            font: 300 16px/1.2 'roboto';
-            width: 80%;
-            margin-bottom: 40px;
-          }
+          float: none;
+          width: 100%;
+  
           img{
-            width: 80%;
-            height: 300px;
-            object-fit: cover;
+            display: none;
           }
         }
     
         form{
-          float:right;
-          width: 50%;
-          position: relative;
-    
-          input[type=text]{
-            display: block; width: 100%;
-            border: none;
-            border-bottom: 1px solid #333;
-            position: relative;
-            height: 44px;
-            background-color: transparent;
-            color: #555;
-            padding: 14px 0;
-            outline: none;
-            transition: 0.2s;
-            font-size: 16px;
-            transition: border-bottom 0.6s ease;
-    
-            //js focus되거나 txt가 있을경우 고정
-            &:focus{
-              border-bottom: 2px solid #ff3f00;
-            }
-            &:focus + label{
-              color: #ff3f00;
-              transform: translateY(-21px);
-              font-size: 12px;
-            }
-          }
-    
-    
-          label{
-            display: inline-block;
-            position: relative; top: -44px; left: 0;
-            z-index: 2;
-            width: 100%; height: 100%;
-            padding: 21px 0 0;
-            font-size: 16px;
-            line-height: 1px;
-            cursor: text;
-            color: #555;
-            transition: .2s;
-    
-            span{
-              font:inherit;
-              vertical-align: baseline;
-            }
-    
-            &:nth-of-type(5){
-              display: block;
-              position: relative; top: 0px; left: 0;
-              padding: 0px; height: 44px; line-height: 44px;
-            }
-          }
-    
-          textarea{
-            width: 100%;
-            resize: none;
-            margin-bottom: 20px;
-          }
-    
-          input[type=submit]{
-            display: block; width: 120px;
-            height: 40px;
-            transition: .5s ease-in-out;
+          float: none;
+          width: 90%;
 
-            &:hover{
-              border: none;
-              background: $gold;
-              color: #fff;
-            }
+          input[type=submit]{
+            width: 100%;
           }
         }
       }
