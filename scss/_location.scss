@@ -8,4 +8,86 @@
   }
 }
 
-/*----- ------*/
+/*-----section contact -----------------------------------*/
+#contact{
+  width: 100%;
+  margin-bottom: 100px;
+
+  .inner{
+    width: 1180px;
+    position: relative;
+    margin: 0 auto;
+    &::after{content:""; display:block; clear: both;}
+
+    h1{
+      float: left; width: 100%;
+      font: 500 20px/1 'roboto';
+      margin-bottom: 40px;
+    }
+    .txt{
+      float: left;
+      width: 50%;
+      border: 1px solid blue;
+
+    }
+    form{
+      float:right;
+      width: 50%;
+      border: 1px solid red;
+
+      input[type=text]{
+        border: none;
+        position: relative;
+
+        &::before{
+          content: ''; display:block;
+          width: 100%; height: 1px;
+          color: #333;
+          position: absolute; top: 0; left: 0;
+        }
+      }
+    }
+  }
+}
+
+/*-----section store --------------------------------------*/
+#store{
+  width: 100%;
+  border: 1px solid pink;
+
+  .inner{
+    width: 1180px;
+    position: relative;
+    margin: 0 auto;
+
+    h1{
+      font: 500 20px/1 'roboto';
+      margin-bottom: 40px;
+    }
+
+    #map{
+      width: 100%;
+      height: 400px;
+      border: 1px solid #000;
+    }
+
+    .branch{
+      width: 100%;
+      border: 1px solid #000;
+    }
+
+    article{
+      width: 100%;
+
+      img{
+      width: 50%;
+      }
+
+      .txt{
+        width: 50%;
+        padding: 0 40px;
+        border: 1px solid #000;
+      }
+    }
+  }
+}
