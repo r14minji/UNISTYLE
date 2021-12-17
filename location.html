@@ -121,17 +121,22 @@
       </div>
 
         <form action="" id="getInTouch-form">
+          <!-- number -->
           <input type="hidden" name="contact_number">
+          <!-- name -->
           <input type="text" name="to_first_name" id="to_first_name" required >
           <label for="to_first_name">First name <span>*</span></label>
           <input type="text" name="to_last_name" id="to_last_name" required >
           <label for="to_last_name">Last name <span>*</span></label>
+          <!-- email -->
           <input type="text" name="from_name" id="from_name" required>
           <label for="from_name">Email <span>*</span></label>
+          <!-- telephone -->
           <input type="text" name="to_contact" id="to_contact">
           <label for="from_name">Telephone <span>*</span></label>
-          <textarea name="message_html" id="message_html" cols="30" rows="5"></textarea>
+          <!-- message -->
           <label for="message_html">Please give us a brief description about your enquiry <span>*</span></label>
+          <textarea name="message_html" id="message_html" cols="30" rows="5"></textarea>
 
           <input type="submit" value="Submit">
         </form>
