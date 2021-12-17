@@ -2165,12 +2165,9 @@ table {
 
   /*-----section contact -----------------------------------*/
   #contact {
-    width: 100%;
-    margin-bottom: 100px; }
+    margin-bottom: 80px; }
     #contact .inner {
-      width: 1180px;
-      position: relative;
-      margin: 0 auto; }
+      width: 100%; }
       #contact .inner h1 {
         font: 500 36px/1 'roboto';
         margin-bottom: 40px; }
