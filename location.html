@@ -115,31 +115,33 @@
   <section id="contact">
     <div class="inner">
       <h1>GET IN TOUCH</h1>
-      <div class="txt">
-        <h2>New Business Enquiries</h2>
-        <p>When it comes to building new relationships, we know that being approachable is just as important as being creative.<br><br> If you're interested in receiving a fresh perspective on your communication challenges, you're welcome to call us or use the form below to contact the studio.</p>
+      <div class="wrap">
+        <div class="txt">
+          <h2>New Business Enquiries</h2>
+          <p>When it comes to building new relationships, we know that being approachable is just as important as being creative.<br><br> If you're interested in receiving a fresh perspective on your communication challenges, you're welcome to call us or use the form below to contact the studio.</p>
+        </div>
+  
+          <form action="" id="getInTouch-form">
+            <!-- number -->
+            <input type="hidden" name="contact_number">
+            <!-- name -->
+            <input type="text" name="to_first_name" id="to_first_name" required >
+            <label for="to_first_name">First name <span>*</span></label>
+            <input type="text" name="to_last_name" id="to_last_name" required >
+            <label for="to_last_name">Last name <span>*</span></label>
+            <!-- email -->
+            <input type="text" name="from_name" id="from_name" required>
+            <label for="from_name">Email <span>*</span></label>
+            <!-- telephone -->
+            <input type="text" name="to_contact" id="to_contact">
+            <label for="from_name">Telephone <span>*</span></label>
+            <!-- message -->
+            <label for="message_html">Please give us a brief description about your enquiry <span>*</span></label>
+            <textarea name="message_html" id="message_html" cols="30" rows="5"></textarea>
+  
+            <input type="submit" value="Submit">
+          </form>
       </div>
-
-        <form action="" id="getInTouch-form">
-          <!-- number -->
-          <input type="hidden" name="contact_number">
-          <!-- name -->
-          <input type="text" name="to_first_name" id="to_first_name" required >
-          <label for="to_first_name">First name <span>*</span></label>
-          <input type="text" name="to_last_name" id="to_last_name" required >
-          <label for="to_last_name">Last name <span>*</span></label>
-          <!-- email -->
-          <input type="text" name="from_name" id="from_name" required>
-          <label for="from_name">Email <span>*</span></label>
-          <!-- telephone -->
-          <input type="text" name="to_contact" id="to_contact">
-          <label for="from_name">Telephone <span>*</span></label>
-          <!-- message -->
-          <label for="message_html">Please give us a brief description about your enquiry <span>*</span></label>
-          <textarea name="message_html" id="message_html" cols="30" rows="5"></textarea>
-
-          <input type="submit" value="Submit">
-        </form>
 
     </div>
   </section>
@@ -155,66 +157,68 @@
         <li><a href="#">branch2</a></li>
       </ul>
 
-      <article>
-        <img src="" alt="">
-        <div class="txt">
-          <h2>Headquarters</h2>
-          <ul>
-            <li>
-              <strong><i class="fas fa-map-marker-alt"></i></strong>
-              <span>Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX 76051</span>
-            </li>
-            <li>
-              <strong><i class="fas fa-map-marker-alt"></i></strong>
-              <span><a href="#">+1 321 123 0987</a></span>
-            </li>
-            <li>
-              <strong><i class="fas fa-envelope"></i></strong>
-              <span><a href="#">info@unistyle.co.kr</a></span>
-            </li>
-          </ul>
-        </div>
-      </article>
-      <article>
-        <img src="" alt="">
-        <div class="txt">
-          <h2>Branch1</h2>
-          <ul>
-            <li>
-              <strong><i class="fas fa-phone-alt"></i></strong>
-              <span>Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX 76051</span>
-            </li>
-            <li>
-              <strong><i class="fas fa-map-marker-alt"></i></strong>
-              <span><a href="#">+1 321 123 0987</a></span>
-            </li>
-            <li>
-              <strong><i class="fas fa-envelope"></i></strong>
-              <span><a href="#">info@unistyle.co.kr</a></span>
-            </li>
-          </ul>
-        </div>
-      </article>
-      <article>
-        <img src="" alt="">
-        <div class="txt">
-          <h2>Branch2</h2>
-          <ul>
-            <li>
-              <strong><i class="fas fa-map-marker-alt"></i></strong>
-              <span>Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX 76051</span>
-            </li>
-            <li>
-              <strong><i class="fas fa-map-marker-alt"></i></strong>
-              <span><a href="#">+1 321 123 0987</a></span>
-            </li>
-            <li>
-              <strong><i class="fas fa-envelope"></i></strong>
-              <span><a href="#">info@unistyle.co.kr</a></span>
-            </li>
-          </ul>
-        </div>
-      </article>
+      <div class="wrap">
+        <article>
+          <img src="img/sub11.jpg" alt="">
+          <div class="txt">
+            <h2>Headquarters</h2>
+            <ul>
+              <li>
+                <strong><i class="fas fa-map-marker-alt"></i></strong>
+                <span>Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX 76051</span>
+              </li>
+              <li>
+                <strong><i class="fas fa-map-marker-alt"></i></strong>
+                <span><a href="#">+1 321 123 0987</a></span>
+              </li>
+              <li>
+                <strong><i class="fas fa-envelope"></i></strong>
+                <span><a href="#">info@unistyle.co.kr</a></span>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <img src="" alt="">
+          <div class="txt">
+            <h2>Branch1</h2>
+            <ul>
+              <li>
+                <strong><i class="fas fa-phone-alt"></i></strong>
+                <span>Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX 76051</span>
+              </li>
+              <li>
+                <strong><i class="fas fa-map-marker-alt"></i></strong>
+                <span><a href="#">+1 321 123 0987</a></span>
+              </li>
+              <li>
+                <strong><i class="fas fa-envelope"></i></strong>
+                <span><a href="#">info@unistyle.co.kr</a></span>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <img src="" alt="">
+          <div class="txt">
+            <h2>Branch2</h2>
+            <ul>
+              <li>
+                <strong><i class="fas fa-map-marker-alt"></i></strong>
+                <span>Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX 76051</span>
+              </li>
+              <li>
+                <strong><i class="fas fa-map-marker-alt"></i></strong>
+                <span><a href="#">+1 321 123 0987</a></span>
+              </li>
+              <li>
+                <strong><i class="fas fa-envelope"></i></strong>
+                <span><a href="#">info@unistyle.co.kr</a></span>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
