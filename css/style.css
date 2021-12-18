@@ -2095,11 +2095,14 @@ table {
           display: block;
           width: 120px;
           height: 40px;
+          border: none;
+          background: #d1ac8f;
+          color: #fff;
           transition: .5s ease-in-out; }
           #contact .inner .wrap form input[type=submit]:hover {
-            border: none;
-            background: #d1ac8f;
-            color: #fff; }
+            border: 1px solid #d1ac8f;
+            background: #fff;
+            color: #d1ac8f; }
 
 /*-----section store --------------------------------------*/
 #store {
