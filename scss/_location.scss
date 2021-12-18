@@ -73,6 +73,14 @@
             transform: translateY(-21px);
             font-size: 12px;
           }
+          &.on{
+            border-bottom: 2px solid #ff3f00;
+          }
+          &.on + label{
+            color: #ff3f00;
+            transform: translateY(-21px);
+            font-size: 12px;
+          }
         }
   
   
