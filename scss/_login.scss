@@ -1,11 +1,9 @@
 /*----- login sub_visual section -------------------------------*/
 .login{
   width: 100%; 
-  margin-bottom: 150px;
 
   .sub_visual{
     background: url(../img/sub6.jpg) no-repeat center/cover ;
-    //filter: contrast(110%);
   }
 }
 
@@ -351,12 +349,16 @@
 
       .loginCheck{
         padding: 10px 10px;
+
       }
       .goToJoin{
         padding: 10px 10px;
+        p{
+          font-size: 18px;
+        }
         ul{
           li{
-            font-size: 16px;
+            font-size: 14px;
             margin: 0 0 10px 5px;
           }
         }

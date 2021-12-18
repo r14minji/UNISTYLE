@@ -365,7 +365,7 @@ table {
   /* content --------------------------------------- */
   .content {
     width: 100%;
-    padding: 0 0 20px;
+    padding: 0px;
     margin-bottom: 30px; }
     .content .sub_visual {
       display: none; }
@@ -1575,8 +1575,7 @@ table {
           font: 500 24px/1 'Roboto'; } }
 /*----- login sub_visual section -------------------------------*/
 .login {
-  width: 100%;
-  margin-bottom: 150px; }
+  width: 100%; }
   .login .sub_visual {
     background: url(../img/sub6.jpg) no-repeat center/cover; }
 
@@ -1865,8 +1864,10 @@ table {
       padding: 10px 10px; }
     #loginPage .inner .goToJoin {
       padding: 10px 10px; }
+      #loginPage .inner .goToJoin p {
+        font-size: 18px; }
       #loginPage .inner .goToJoin ul li {
-        font-size: 16px;
+        font-size: 14px;
         margin: 0 0 10px 5px; }
       #loginPage .inner .goToJoin .find span {
         margin-bottom: 20px; }
