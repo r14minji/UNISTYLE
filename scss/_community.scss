@@ -9,7 +9,6 @@
 /*----- Web_tab_contents ------*/
 #tab_community{
   width: 100%; height: auto;
-  //background: pink;
 
   .inner{
     width: 1180px;
@@ -268,7 +267,7 @@
                 padding: 20px 15px; 
                 border-bottom: 1px solid #ddd;
                 text-align: center; color:$darkblue; 
-                font: 300 15px/1 'roboto';
+                font: 300 14px/1 'roboto';
 
                 &:nth-of-type(2){
                   text-align: left;
@@ -462,13 +461,18 @@
 
 /*mobile ------*/
 @media screen and (max-width: $mobile){
+  .community{
+    padding: 0;
+    margin-bottom: 0;
+  }
+
   #tab_community{
 
     .inner{
       width: 100%;
 
       dl{
-        height: 1400px;  
+        height: 1000px;  
 
         dt{
           position: absolute; top: 0; left: 0;
@@ -487,11 +491,9 @@
   
           /*fisrt board-FAQ*/
           #faq{
-
-
             #searchQstn{
               .qstn{
-                >h1{ font-size: 18px; }
+                >h1{ font-size: 18px;}
               }
 
               .answersBy{
@@ -508,7 +510,7 @@
             }
   
             h1{
-              padding-left: 10px;
+              padding-left: 20px;
             }
             select{
               position: absolute; top: 459px; right: 10px; 
@@ -540,6 +542,7 @@
           /*second board-NOTICE*/
           #notice{
             h1{
+              padding: 0 20px;
               font:500 24px/1 'Roboto'; 
             }
             table{
@@ -563,6 +566,7 @@
           /*third board-REVIEW*/
           #review{
             h1{
+              padding: 0 20px;
               font:500 24px/1 'Roboto'; 
             }
 

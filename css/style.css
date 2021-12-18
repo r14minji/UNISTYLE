@@ -1337,7 +1337,7 @@ table {
               border-bottom: 1px solid #ddd;
               text-align: center;
               color: #52616b;
-              font: 300 15px/1 'roboto'; }
+              font: 300 14px/1 'roboto'; }
               #tab_community .inner dl dd #notice table tr td:nth-of-type(2) {
                 text-align: left; }
                 #tab_community .inner dl dd #notice table tr td:nth-of-type(2) a {
@@ -1491,10 +1491,14 @@ table {
           font: 500 24px/1 'Roboto'; } }
 /*mobile ------*/
 @media screen and (max-width: 539px) {
+  .community {
+    padding: 0;
+    margin-bottom: 0; }
+
   #tab_community .inner {
     width: 100%; }
     #tab_community .inner dl {
-      height: 1400px; }
+      height: 1000px; }
       #tab_community .inner dl dt {
         position: absolute;
         top: 0;
@@ -1530,7 +1534,7 @@ table {
           #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li a span {
             font-size: 10px; }
         #tab_community .inner dl dd #faq h1 {
-          padding-left: 10px; }
+          padding-left: 20px; }
         #tab_community .inner dl dd #faq select {
           position: absolute;
           top: 459px;
@@ -1551,6 +1555,7 @@ table {
               line-height: 14px;
               padding: 0px 10px; }
         #tab_community .inner dl dd #notice h1 {
+          padding: 0 20px;
           font: 500 24px/1 'Roboto'; }
         #tab_community .inner dl dd #notice table tr th:nth-of-type(1) {
           width: 0%;
@@ -1566,6 +1571,7 @@ table {
         #tab_community .inner dl dd #notice .paignation .numbers {
           display: none; }
         #tab_community .inner dl dd #review h1 {
+          padding: 0 20px;
           font: 500 24px/1 'Roboto'; } }
 /*----- login sub_visual section -------------------------------*/
 .login {
