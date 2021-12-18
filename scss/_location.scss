@@ -294,3 +294,79 @@
     }
   }
 }
+
+
+/*mobile*/
+@media screen and (max-width: $mobile){
+  /*----- location sub_visual  section ------------------*/
+  .location{
+    margin-bottom: 0px;
+  }
+
+  /*-----section contact -----------------------------------*/
+  #contact{
+    margin-bottom: 60px;
+
+    .inner{
+      padding: 0px 20px;
+
+      h1{
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      .wrap{
+        .txt{
+          h2{
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+          p{
+            font-size: 14px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  /*-----section store --------------------------------------*/
+  #store{
+    .inner{
+
+      padding: 0px 00px;
+
+      h1{
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+
+      #map{
+        height: 300px;
+      }
+
+      .branch{
+         // position띄우면 삭제하기
+      }
+
+      .wrap{
+        article{
+          padding-bottom: 60px;
+
+          &:nth-of-type(2){
+            .txt {padding: 0 40px 0 0px;}
+          }
+    
+          img{
+          width: 40%; height: 260px;
+          }
+    
+          .txt{
+            width: 60%; height: 260px;
+            padding: 0 0px 0 40px;
+          }
+        }
+      }
+    }
+  }
+}

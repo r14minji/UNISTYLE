@@ -300,6 +300,7 @@
   /* content --------------------------------------- */
   .content{
     width: 100%;
+    margin-bottom: 150px;
 
     .sub_visual{
       height: 300px;
@@ -307,12 +308,15 @@
       margin-bottom: 80px;
     }
 
-    .titleWrap{
-      position:absolute; top: 260px;
-      width: 480px; height: 60px;
+    .inner{
+      width: 100%;
+  
       h1{
-        font: 700 46px/80px 'Roboto Condensed'; 
-        letter-spacing: 4px;
+        font: 700 90px/1 'Roboto Condensed'; 
+        letter-spacing: 5px;
+        color: #fff; 
+        position: absolute; top: -156px; left: 0;
+        padding-left: 20px;
       }
     }
   }
@@ -349,19 +353,21 @@
   /* content --------------------------------------- */
   .content{
     width: 100%;
-    padding: 0 0 60px;
+    padding: 0 0 20px;
+    margin-bottom: 30px;
 
     .sub_visual{  
       display: none;
     }
 
-
-    .titleWrap{
-      position:absolute; top: 100px; left: 50%; transform: translateX(-50%);
-      width: 240px; height: 40px;
+    .inner{  
       h1{
-        font: 700 32px/70px 'Roboto Condensed'; 
-        letter-spacing: 2px;
+        font: 700 40px/1 'Roboto Condensed'; 
+        letter-spacing: 3px;
+        color: $green; 
+        position: static; 
+        padding-left: 0px;
+        text-align: center;
       }
     }
   }

@@ -327,19 +327,22 @@ table {
 
   /* content --------------------------------------- */
   .content {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 150px; }
     .content .sub_visual {
       height: 300px;
       background: #000;
       margin-bottom: 80px; }
-    .content .titleWrap {
-      position: absolute;
-      top: 260px;
-      width: 480px;
-      height: 60px; }
-      .content .titleWrap h1 {
-        font: 700 46px/80px 'Roboto Condensed';
-        letter-spacing: 4px; }
+    .content .inner {
+      width: 100%; }
+      .content .inner h1 {
+        font: 700 90px/1 'Roboto Condensed';
+        letter-spacing: 5px;
+        color: #fff;
+        position: absolute;
+        top: -156px;
+        left: 0;
+        padding-left: 20px; }
 
   #footer_sub .inner {
     width: 100%; } }
@@ -362,19 +365,17 @@ table {
   /* content --------------------------------------- */
   .content {
     width: 100%;
-    padding: 0 0 60px; }
+    padding: 0 0 20px;
+    margin-bottom: 30px; }
     .content .sub_visual {
       display: none; }
-    .content .titleWrap {
-      position: absolute;
-      top: 100px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 240px;
-      height: 40px; }
-      .content .titleWrap h1 {
-        font: 700 32px/70px 'Roboto Condensed';
-        letter-spacing: 2px; }
+    .content .inner h1 {
+      font: 700 40px/1 'Roboto Condensed';
+      letter-spacing: 3px;
+      color: #101820;
+      position: static;
+      padding-left: 0px;
+      text-align: center; }
 
   /*----- footer --------------------------------------------------------*/
   #footer_sub .inner {
@@ -2192,6 +2193,46 @@ table {
       margin-bottom: 30px; }
     #store .inner #map {
       height: 500px; }
+    #store .inner .wrap article {
+      padding-bottom: 60px; }
+      #store .inner .wrap article:nth-of-type(2) .txt {
+        padding: 0 40px 0 0px; }
+      #store .inner .wrap article img {
+        width: 40%;
+        height: 260px; }
+      #store .inner .wrap article .txt {
+        width: 60%;
+        height: 260px;
+        padding: 0 0px 0 40px; } }
+/*mobile*/
+@media screen and (max-width: 539px) {
+  /*----- location sub_visual  section ------------------*/
+  .location {
+    margin-bottom: 0px; }
+
+  /*-----section contact -----------------------------------*/
+  #contact {
+    margin-bottom: 60px; }
+    #contact .inner {
+      padding: 0px 20px; }
+      #contact .inner h1 {
+        font-size: 28px;
+        margin-bottom: 20px; }
+      #contact .inner .wrap .txt h2 {
+        font-size: 18px;
+        margin-bottom: 20px; }
+      #contact .inner .wrap .txt p {
+        font-size: 14px;
+        margin-bottom: 30px; }
+
+  /*-----section store --------------------------------------*/
+  #store .inner {
+    padding: 0px 00px; }
+    #store .inner h1 {
+      font-size: 36px;
+      margin-bottom: 30px; }
+    #store .inner #map {
+      height: 300px; }
     #store .inner .wrap article {
       padding-bottom: 60px; }
       #store .inner .wrap article:nth-of-type(2) .txt {
