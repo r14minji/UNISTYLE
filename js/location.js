@@ -28,13 +28,20 @@ window.onload = function(){
   })
 }
 
+
 //input에 value값이 있을 경우
 const form = document.querySelector("#getInTouch-form");
 const inputs = form.querySelectorAll("[type=text]");
 // inputs.forEach(el =>{
 //   let txt = el.value;
 //   console.log(txt);
+
 // })
 const firstName = form.querySelector("#to_first_name");
 console.log(firstName)
 console.log(firstName.value)
+
+
+
+
+//map api 연동
