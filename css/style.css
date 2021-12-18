@@ -328,7 +328,7 @@ table {
   /* content --------------------------------------- */
   .content {
     width: 100%;
-    margin-bottom: 150px; }
+    margin-bottom: 80px; }
     .content .sub_visual {
       height: 300px;
       background: #000;
@@ -470,11 +470,9 @@ table {
             position: absolute;
             bottom: 0;
             left: 0;
-            z-index: 1;
             opacity: 0;
             transition: opacity 1.5s; }
             .value .inner .wrap #tab_value .content > div.on {
-              z-index: 2;
               opacity: 1; }
             .value .inner .wrap #tab_value .content > div .title {
               width: 40%;
@@ -526,7 +524,7 @@ table {
       margin-top: 80px;
       padding: 20px 40px; }
       .business .inner .wrap .txt > h2 {
-        font: 500 40px/1.2 'roboto';
+        font: 500 36px/1.2 'roboto';
         color: #852132;
         margin-bottom: 40px; }
       .business .inner .wrap .txt > p {
@@ -712,18 +710,15 @@ table {
 
 /* tablet -------------------*/
 @media screen and (max-width: 1179px) {
-  .department .sub_visual {
-    background-position: bottom 200px right 50%; }
-
   /*----- section1/value ------------------------------------------*/
   .value {
-    margin-bottom: 100px; }
+    margin-bottom: 150px; }
     .value .inner {
       width: 100%;
       padding: 0 30px; }
       .value .inner h1 {
-        font-size: 32px;
-        margin-bottom: 80px; }
+        font-size: 36px;
+        margin-bottom: 40px; }
       .value .inner .wrap {
         width: 100%;
         height: 700px; }
@@ -796,63 +791,57 @@ table {
 
   /*----- section2/business --------------------------------------*/
   .business {
-    margin: 50px 0 100px; }
+    margin-bottom: 150px; }
     .business .inner {
       width: 100%;
       height: auto;
       padding: 0 30px; }
       .business .inner h1 {
-        font-size: 32px;
-        margin-bottom: 80px; }
+        font-size: 36px;
+        margin-bottom: 40px; }
       .business .inner .wrap .txt {
         width: 100%;
-        height: 280px;
+        height: auto;
         float: none;
         margin-top: 0px;
-        padding: 20px 40px; }
+        padding: 0px 0px; }
         .business .inner .wrap .txt h2 {
-          font-size: 32px;
+          font-size: 28px;
           margin-bottom: 20px; }
         .business .inner .wrap .txt p {
           font-size: 13px;
           margin-bottom: 20px; }
         .business .inner .wrap .txt a {
-          margin-bottom: 40px; }
+          margin-bottom: 20px; }
       .business .inner .wrap .pic {
         width: 100%;
-        height: 600px;
-        float: none; }
-        .business .inner .wrap .pic .bigPhoto {
-          width: 100%;
-          float: none;
-          height: 45vw;
-          min-height: 300px;
+        height: 540px;
+        float: left; }
+        .business .inner .wrap .pic div:nth-of-type(1) {
+          width: 50%;
+          float: left;
+          height: 100%; }
+        .business .inner .wrap .pic div:nth-of-type(2) {
+          width: 50%;
+          float: left;
+          height: 50%; }
+        .business .inner .wrap .pic .bigPhoto, .business .inner .wrap .pic .smallPhoto {
           font-size: 0; }
-          .business .inner .wrap .pic .bigPhoto img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; }
-        .business .inner .wrap .pic .smallPhoto {
-          width: 100%;
-          float: none;
-          height: 300px;
-          display: flex;
-          font-size: 0; }
-          .business .inner .wrap .pic .smallPhoto img {
+          .business .inner .wrap .pic .bigPhoto img, .business .inner .wrap .pic .smallPhoto img {
             width: 100%;
             height: 100%;
             object-fit: cover; }
 
   /*----- section3/innovation -------------------------- ---------*/
   .innovation {
-    margin: 50px 0 100px; }
+    margin-bottom: 100px; }
     .innovation .inner {
       width: 100%;
       height: auto;
       padding: 0 30px; }
       .innovation .inner h1 {
-        font-size: 32px;
-        margin-bottom: 80px; }
+        font-size: 36px;
+        margin-bottom: 40px; }
       .innovation .inner .wrap ul {
         display: flex;
         justify-content: center;
@@ -890,7 +879,7 @@ table {
 
   /*----- section4/members -----------  ------------------------*/
   .members {
-    margin: 50px 0 00px; }
+    margin-bottom: 0px; }
     .members .inner {
       width: 100%;
       height: auto;
@@ -925,12 +914,12 @@ table {
 @media screen and (max-width: 539px) {
   /*----- section1/value ------------------------------------------*/
   .value {
-    margin-bottom: 60px; }
+    margin-bottom: 80px; }
     .value .inner {
       padding: 0 20px; }
       .value .inner h1 {
-        font-size: 24px;
-        margin-bottom: 40px; }
+        font-size: 28px;
+        margin-bottom: 20px; }
       .value .inner .wrap {
         width: 100%;
         height: auto; }
@@ -945,7 +934,7 @@ table {
               font: 500 12px/1.5 'roboto'; }
         .value .inner .wrap #tab_value .content {
           width: 100%;
-          height: 400px;
+          height: 260px;
           position: relative;
           float: none; }
           .value .inner .wrap #tab_value .content > div {
@@ -954,57 +943,73 @@ table {
             padding: 10px; }
             .value .inner .wrap #tab_value .content > div .title {
               width: 100%;
-              height: 145px; }
+              height: auto;
+              border-top: none;
+              border-left: 4px solid #d1ac8f; }
+              .value .inner .wrap #tab_value .content > div .title h2 {
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 20px; }
             .value .inner .wrap #tab_value .content > div .circle {
               width: 100%;
-              height: 300px;
+              height: 200px;
               transform: scale(1); }
               .value .inner .wrap #tab_value .content > div .circle i {
                 font-size: 80px; }
 
   /*----- section2/business --------------------------------------*/
   .business {
-    margin-bottom: 60px;
-    height: 1320px; }
+    margin-bottom: 80px;
+    height: auto; }
     .business .inner {
       padding: 0 20px; }
       .business .inner h1 {
-        font-size: 24px;
-        margin-bottom: 40px; }
+        font-size: 28px;
+        margin-bottom: 20px; }
       .business .inner .wrap .txt {
         height: auto;
         padding: 10px 10px; }
         .business .inner .wrap .txt h2 {
-          font-size: 24px;
+          font-size: 18px;
           margin-bottom: 10px; }
         .business .inner .wrap .txt p {
-          font-size: 12px;
+          font-size: 14px;
           margin-bottom: 10px; }
         .business .inner .wrap .txt a {
           margin-bottom: 30px; }
       .business .inner .wrap .pic {
         width: 100%;
-        height: auto; }
+        height: auto;
+        float: none; }
+        .business .inner .wrap .pic div:nth-of-type(1) {
+          width: 100%;
+          float: none;
+          height: 100%; }
+        .business .inner .wrap .pic div:nth-of-type(2) {
+          width: 100%;
+          float: none;
+          height: 100%; }
         .business .inner .wrap .pic .bigPhoto {
           width: 100%;
           height: 300px;
           height: 300px; }
         .business .inner .wrap .pic .smallPhoto {
+          float: none;
           width: 100%;
-          height: 330px;
+          height: 300px;
           display: block; }
 
   /*----- section3/innovation -------------------------- ---------*/
   .innovation {
-    margin-bottom: 60px; }
+    margin-bottom: 80px; }
     .innovation .inner {
       padding: 0 20px; }
       .innovation .inner h1 {
-        font-size: 24px;
+        font-size: 28px;
         margin-bottom: 40px; }
       .innovation .inner .wrap ul {
         display: block;
-        width: 280px; }
+        width: 100%; }
         .innovation .inner .wrap ul li {
           margin: 10px 10px;
           width: 100%; }
@@ -1012,52 +1017,74 @@ table {
             margin-right: 10px; }
           .innovation .inner .wrap ul li .ideas {
             width: 100%;
-            height: 150px; }
+            height: 120px; }
             .innovation .inner .wrap ul li .ideas .icon {
-              width: 150px;
-              height: 150px;
-              float: left; }
+              width: 120px;
+              height: 120px;
+              float: left;
+              margin-right: 40px; }
             .innovation .inner .wrap ul li .ideas span {
-              float: right;
+              float: left;
               display: block;
-              width: 130px;
-              max-width: 130px;
-              height: 75px;
-              line-height: 100px;
-              margin: 10px 0;
+              width: 120px;
+              max-width: auto;
+              height: 60px;
+              line-height: 60px;
+              margin: 0px 0;
               text-align: center; }
             .innovation .inner .wrap ul li .ideas p {
-              float: right;
+              float: left;
               display: block;
-              width: 130px;
-              max-width: 130px;
-              height: 75px;
-              margin: 10px 0;
+              width: 120px;
+              max-width: auto;
+              height: 40px;
+              margin: 0px 0;
+              line-height: 1.2;
               text-align: center; }
 
   /*----- section4/members -----------  ------------------------*/
   .members {
-    margin-bottom: 00px; }
+    margin-bottom: 00px;
+    padding: 0; }
     .members .inner {
-      padding: 0 20px; }
+      padding: 30px 20px; }
       .members .inner h1 {
-        font-size: 24px;
-        margin-bottom: 40px; }
+        font-size: 28px;
+        margin-bottom: 20px; }
       .members .inner .wrap {
-        width: 280px;
+        width: 100%;
         position: relative;
         display: block;
         margin: 0 auto; }
         .members .inner .wrap .profile {
-          margin: 10px 20px;
+          margin: 0px;
           width: 100%;
           min-width: auto;
-          height: 600px; }
+          height: auto;
+          position: static; }
+          .members .inner .wrap .profile:nth-of-type(2n-1) {
+            transform: translateY(0px); }
+          .members .inner .wrap .profile:hover {
+            transform: translateY(0px);
+            z-index: 0; }
+            .members .inner .wrap .profile:hover .person img {
+              filter: grayscale(0%);
+              transform: scale(1); }
+            .members .inner .wrap .profile:hover .txtWrap {
+              opacity: 1;
+              transform: scale3d(1, 1, 1); }
           .members .inner .wrap .profile .person {
             width: 100%;
-            height: 340px; }
-          .members .inner .wrap .profile .txtWrap .txt {
-            margin-top: 330px; } }
+            height: 300px;
+            transform: scale(1); }
+          .members .inner .wrap .profile .txtWrap {
+            width: 100%;
+            height: 100%;
+            position: static;
+            border: none; }
+            .members .inner .wrap .profile .txtWrap .txt {
+              margin-top: 0px;
+              margin-bottom: 40px; } }
 /*----- community sub_visual  section ------------------*/
 .community .sub_visual {
   background: url(../img/sub3.jpg) no-repeat center/cover; }

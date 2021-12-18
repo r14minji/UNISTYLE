@@ -82,7 +82,7 @@
           >div{
             width: 100%; height: 100%;
 
-            position: absolute; bottom: 0; left: 0; z-index: 1;
+            position: absolute; bottom: 0; left: 0;
             
             opacity: 0; 
             transition: opacity 1.5s;
@@ -90,7 +90,6 @@
 
 
             &.on{ 
-              z-index: 2;
               opacity: 1; 
               //transform: translateY(0px);
             }
@@ -156,7 +155,7 @@
         padding: 20px 40px;
 
         >h2{
-          font: 500 40px/1.2 'roboto';
+          font: 500 36px/1.2 'roboto';
           color: $red;
           margin-bottom: 40px;
         }
@@ -370,23 +369,17 @@
 
 /* tablet -------------------*/
 @media screen and (max-width: $tablet){
-  .department{
-
-    .sub_visual{
-      background-position: bottom 200px right 50%;
-    }
-  }
   /*----- section1/value ------------------------------------------*/
   .value{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 
     .inner{
       width: 100%;
       padding: 0 30px;
 
       h1{
-        font-size: 32px;
-        margin-bottom:80px; 
+        font-size: 36px;
+        margin-bottom:40px; 
       }
       .wrap{
         width: 100%; height: 700px;
@@ -469,24 +462,24 @@
 
   /*----- section2/business --------------------------------------*/
   .business{
-    margin: 50px 0 100px;
+    margin-bottom: 150px;
 
     .inner{
       width: 100%; height: auto;
       padding: 0 30px;
       h1{
-        font-size: 32px;
-        margin-bottom:80px; 
+        font-size: 36px;
+        margin-bottom: 40px; 
       }
 
       .wrap{
         .txt{
-          width: 100%; height: 280px; float:none;
+          width: 100%; height: auto; float:none;
           margin-top: 0px;
-          padding: 20px 40px;
+          padding: 0px 0px;
 
           h2{
-            font-size: 32px;
+            font-size: 28px;
             margin-bottom: 20px;
           }
           p{
@@ -494,29 +487,20 @@
             margin-bottom: 20px;
           }
           a{
-            margin-bottom: 40px;
+            margin-bottom: 20px;
           }
         }
         .pic{
-          width: 100%; height: 600px; float: none;
+          width: 100%; height: 540px; float: left; 
           
-
-          .bigPhoto{
-            width: 100%; float:none; 
-            height: 45vw; min-height: 300px;
+          div:nth-of-type(1){ width: 50%; float:left; height: 100%;}
+          div:nth-of-type(2){ width: 50%; float:left; height: 50%;}
+          
+          .bigPhoto, .smallPhoto{
             font-size: 0;
             img{
               width: 100%; height: 100%;
-              object-fit: cover;
-            }
-          }
-          .smallPhoto{
-            width: 100%; float: none; height: 300px;
-            display: flex;
-            font-size: 0;
-            img{
-              width: 100%; height: 100%;
-              object-fit: cover;
+              object-fit: cover; 
             }
           }
         }
@@ -526,13 +510,14 @@
 
   /*----- section3/innovation -------------------------- ---------*/
   .innovation{
-    margin: 50px 0 100px;
+    margin-bottom: 100px;
     .inner{
       width: 100%; height: auto;
       padding: 0 30px;
+      
       h1{
-        font-size: 32px;
-        margin-bottom:80px; 
+        font-size: 36px;
+        margin-bottom:40px; 
       }
       
       .wrap{
@@ -578,7 +563,7 @@
 
   /*----- section4/members -----------  ------------------------*/
   .members{
-    margin: 50px 0 00px;
+    margin-bottom: 0px ;
     .inner{
       width: 100%; height: auto;
       padding: 0 30px;
@@ -623,14 +608,14 @@
 @media screen and (max-width: $mobile){
   /*----- section1/value ------------------------------------------*/
   .value{
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 
     .inner{
       padding: 0 20px;
 
       h1{
-        font-size: 24px;
-        margin-bottom: 40px; 
+        font-size: 28px;
+        margin-bottom: 20px; 
       }
       .wrap{
         width: 100%; height: auto;
@@ -652,7 +637,7 @@
             }
           }
           .content{
-            width: 100%; height: 400px;
+            width: 100%; height: 260px;
             position: relative;
             float: none; 
 
@@ -661,10 +646,18 @@
               padding: 10px;
 
               .title{
-                width: 100%; height: 145px;
+                width: 100%; height: auto;
+                border-top: none;
+                border-left: 4px solid $gold;
+
+                h2{
+                  font-size: 18px;
+                  font-weight: 500;
+                  margin-bottom: 20px;
+                }
               }
               .circle{
-                width: 100%; height: 300px;
+                width: 100%; height: 200px;
                 transform: scale(1.0);
 
                 i{  font-size: 80px;}
@@ -678,14 +671,14 @@
 
   /*----- section2/business --------------------------------------*/
   .business{
-    margin-bottom: 60px; height: 1320px;
+    margin-bottom: 80px; height: auto;
 
     .inner{
       padding: 0 20px;
 
       h1{
-        font-size: 24px;
-        margin-bottom: 40px; 
+        font-size: 28px;
+        margin-bottom: 20px; 
       }
 
       .wrap{
@@ -694,11 +687,11 @@
           padding: 10px 10px;
 
           h2{
-            font-size: 24px;
+            font-size: 18px;
             margin-bottom: 10px;
           }
           p{
-            font-size: 12px;
+            font-size: 14px;
             margin-bottom: 10px;
           }
           a{
@@ -707,13 +700,18 @@
         }
         .pic{
           width: 100%; height: auto; 
+          float: none; 
+
+          div:nth-of-type(1){ width: 100%; float:none; height: 100%;}
+          div:nth-of-type(2){ width: 100%; float:none; height: 100%;}
           
           .bigPhoto{
             width: 100%; 
             height: 300px; height: 300px;
           }
           .smallPhoto{
-            width: 100%; height: 330px;
+            float:none;
+            width: 100%; height: 300px;
             display: block;
           }
         }
@@ -723,19 +721,19 @@
 
   /*----- section3/innovation -------------------------- ---------*/
   .innovation{
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 
     .inner{
       padding: 0 20px;
 
       h1{
-        font-size: 24px;
+        font-size: 28px;
         margin-bottom: 40px; 
       }
       
       .wrap{
         ul{
-          display: block; width: 280px;
+          display: block; width: 100%;
           li{
             margin: 10px 10px;
             width: 100%; 
@@ -743,22 +741,24 @@
             &:last-child{ margin-right: 10px;}
 
             .ideas{
-              width: 100%; height: 150px; 
+              width: 100%; height: 120px; 
               .icon{
-                width: 150px; height:150px; 
-                float:left;
+                width: 120px; height:120px; 
+                float:left; 
+                margin-right: 40px;
               }
               span{
-                float: right;
-                display: block; width: 130px; max-width: 130px; height: 75px;
-                line-height: 100px;
-                margin: 10px 0;
+                float: left; 
+                display: block; width: 120px; max-width: auto; height: 60px;
+                line-height: 60px;
+                margin: 0px 0;
                 text-align: center;
               }
               p{
-                float: right;
-                display: block; width: 130px;  max-width: 130px;  height: 75px;
-                margin: 10px 0;
+                float: left; 
+                display: block; width: 120px;  max-width: auto;  height: 40px;
+                margin: 0px 0;
+                line-height: 1.2;
                 text-align: center;
               }
             }
@@ -771,32 +771,54 @@
   /*----- section4/members -----------  ------------------------*/
   .members{
     margin-bottom: 00px;
+    padding: 0;
 
     .inner{
-      padding: 0 20px;
+      padding: 30px 20px;
 
       h1{
-        font-size: 24px;
-        margin-bottom: 40px; 
+        font-size: 28px;
+        margin-bottom: 20px; 
       }
 
       .wrap{
-        width: 280px;
+        width: 100%;
         position: relative;
         display: block;
         margin: 0 auto;
 
         .profile{
-          margin: 10px 20px;
+          margin: 0px;
           width: 100%;
-          min-width: auto; height: 600px;
+          min-width: auto; height: auto;
+          position: static;
+
+          &:nth-of-type(2n-1){
+            transform: translateY(0px);
+          }
+  
+          &:hover{
+            transform: translateY(0px); z-index: 0;
+            .person img{filter: grayscale(0%); transform:scale(1)}
+            .txtWrap {
+              opacity: 1;
+              transform: scale3d(1,1,1);
+            }
+          }
 
           .person{
-            width: 100%; height: 340px;
+            width: 100%;
+            height: 300px;
+            transform: scale(1.0);
           }
           .txtWrap{
+            width: 100%; height: 100%;
+            position: static;
+            border: none;
+
             .txt{
-              margin-top: 330px;
+              margin-top: 0px;
+              margin-bottom: 40px;
             }
           }
         }
