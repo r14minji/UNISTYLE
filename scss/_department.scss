@@ -1,13 +1,9 @@
 /*----- department sub_visual  section ------------------*/
 .department{
-
   .sub_visual{
     background: url(../img/sub10.jpg) no-repeat center/cover;
-
   }
 }
-
-
 
 /*----- section1/value ------------------------------------------*/
 .value{
@@ -367,7 +363,8 @@
 }
 
 
-/* tablet -------------------*/
+
+/* tablet */
 @media screen and (max-width: $tablet){
   /*----- section1/value ------------------------------------------*/
   .value{
@@ -604,7 +601,8 @@
   }
 }
 
-/* mobile -------------------*/
+
+/* mobile */
 @media screen and (max-width: $mobile){
   /*----- section1/value ------------------------------------------*/
   .value{

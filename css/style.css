@@ -708,7 +708,7 @@ table {
                 font-size: 16px;
                 color: #000; }
 
-/* tablet -------------------*/
+/* tablet */
 @media screen and (max-width: 1179px) {
   /*----- section1/value ------------------------------------------*/
   .value {
@@ -910,7 +910,7 @@ table {
             opacity: 1; }
             .members .inner .wrap .profile .txtWrap .txt {
               margin-top: 330px; } }
-/* mobile -------------------*/
+/* mobile */
 @media screen and (max-width: 539px) {
   /*----- section1/value ------------------------------------------*/
   .value {
