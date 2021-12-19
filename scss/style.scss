@@ -103,6 +103,7 @@ $sky: #BFD9EB;
           position: absolute; right: 0; top: 80px;
           z-index: 6;
           padding: 30px;
+          //자식요소 float으로 배치
 
           >ul{
             width: 200px; 
@@ -122,6 +123,31 @@ $sky: #BFD9EB;
           }
 
           &:nth-of-type(1){ padding: 0px;}
+
+          &.depth2_department{
+            display: block;
+
+            strong{
+              font-size: 30px;
+              font-weight: 700;
+              font-family: "roboto condensed";
+              transform: rotate(-90deg);
+              color: #fff;
+              background: #ddd;
+              position: relative;
+              float: left;
+            }
+            >ul{
+              float: left;
+            }
+            .sub_content{
+              float: left;
+              display: block;
+              background-color: #ddd;
+
+            }
+
+          }
         }
       }
 

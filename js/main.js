@@ -10,6 +10,7 @@ btnCall.addEventListener("click", e =>{
   menuMo.classList.toggle("on");
 })
 
+/* 
 //2depth 
 gnb_lis.forEach( li=>{
   li.addEventListener("mouseenter", e=>{
@@ -47,3 +48,5 @@ gnb_lis.forEach( li=>{
     })
   }
 })
+
+*/

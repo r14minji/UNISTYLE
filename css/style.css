@@ -2417,6 +2417,23 @@ table {
                 padding: 10px; }
           #header .inner .menuWeb .gnbWrap ul li .sub:nth-of-type(1) {
             padding: 0px; }
+          #header .inner .menuWeb .gnbWrap ul li .sub.depth2_department {
+            display: block; }
+            #header .inner .menuWeb .gnbWrap ul li .sub.depth2_department strong {
+              font-size: 30px;
+              font-weight: 700;
+              font-family: "roboto condensed";
+              transform: rotate(-90deg);
+              color: #fff;
+              background: #ddd;
+              position: relative;
+              float: left; }
+            #header .inner .menuWeb .gnbWrap ul li .sub.depth2_department > ul {
+              float: left; }
+            #header .inner .menuWeb .gnbWrap ul li .sub.depth2_department .sub_content {
+              float: left;
+              display: block;
+              background-color: #ddd; }
     #header .inner .btnCall {
       display: none;
       position: absolute;
