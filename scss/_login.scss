@@ -50,13 +50,20 @@
         font: 300 16px/20px 'roboto';
       }
       input[type=submit]{
-        width: 100%; height: 80px;
-        background: #333; color: #fff;
+        width: 100%; height: 40px; 
+        color: #333;
         text-align: center;
-        font: 500 28px/80px 'roboto';
-        border: none;
+        font: 500 20px/40px 'roboto';
+        border: 2px solid #333;
+        background: #fff;
         cursor: pointer; 
         margin-bottom: 30px;
+        transition: 0.5s;
+
+        &:hover{
+          color: #fff;
+          background: #333;
+        }
       }
       .snsLogin{
         width: 100%;
@@ -105,11 +112,18 @@
       }
       >a{
         display: block; 
-        width: 100%; height: 80px;
-        background: $gold; text-align: center;
-        color: #fff;
-        font: 500 28px/80px 'roboto';
+        width: 100%; height: 40px;
+        background: #fff; text-align: center;
+        color: $gold;
+        border: 2px solid $gold;
+        font: 500 20px/40px 'roboto';
         margin-bottom: 30px;
+        transition: 0.5s;
+
+        &:hover{
+          background: $gold;
+          color: #fff;
+        }
       }
       .find{
         width: 100%;
