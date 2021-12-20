@@ -551,7 +551,7 @@ table {
           width: 90%;
           height: 90%;
           padding: 10px 15px;
-          border: 4px solid #821002;
+          border: 4px solid rgba(130, 16, 2, 0.7);
           position: absolute;
           top: 10px;
           left: 15px;
