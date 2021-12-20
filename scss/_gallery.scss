@@ -38,7 +38,9 @@
 
     .wrap{
       width: 100%; position: relative;
+
       .loading{
+        display: none;//삭제 예정
         width: 100px;
         position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
         transition: 1s;
@@ -54,12 +56,13 @@
   
   
       #photoList{
-        width: 100%; transform:translateY(100px); transition: 1s; opacity: 0;//
+        width: 100%; transform:translateY(100px); transition: 1s; opacity: 1;//
   
         &.on{
           transform: translateY(0px); opacity: 1;
         }
-        li{
+
+        li.item{
           width: calc(100% / 5); 
           margin: 0 auto;
           padding: 10px;

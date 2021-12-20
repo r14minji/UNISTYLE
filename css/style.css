@@ -2523,6 +2523,7 @@ aside.popup_youtube {
       width: 100%;
       position: relative; }
       .galleryContents .inner .wrap .loading {
+        display: none;
         width: 100px;
         position: fixed;
         top: 50%;
@@ -2540,32 +2541,32 @@ aside.popup_youtube {
         width: 100%;
         transform: translateY(100px);
         transition: 1s;
-        opacity: 0; }
+        opacity: 1; }
         .galleryContents .inner .wrap #photoList.on {
           transform: translateY(0px);
           opacity: 1; }
-        .galleryContents .inner .wrap #photoList li {
+        .galleryContents .inner .wrap #photoList li.item {
           width: calc(100% / 5);
           margin: 0 auto;
           padding: 10px; }
-          .galleryContents .inner .wrap #photoList li div {
+          .galleryContents .inner .wrap #photoList li.item div {
             width: 100%;
             padding: 20px 10px 20px;
             border-radius: 8px;
             background: #eee;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
             position: relative; }
-            .galleryContents .inner .wrap #photoList li div a > img {
+            .galleryContents .inner .wrap #photoList li.item div a > img {
               width: 100%;
               border-radius: 2px;
               filter: grayscale(50%);
               margin-bottom: 10px; }
-            .galleryContents .inner .wrap #photoList li div p {
+            .galleryContents .inner .wrap #photoList li.item div p {
               font: normal 16px/1 'Smooch';
               color: #555;
               text-align: center;
               margin-bottom: 16px; }
-            .galleryContents .inner .wrap #photoList li div .profile {
+            .galleryContents .inner .wrap #photoList li.item div .profile {
               display: inline-block;
               width: 15px;
               height: 15px;
@@ -2575,7 +2576,7 @@ aside.popup_youtube {
               bottom: 10px;
               right: 90px;
               filter: grayscale(100%); }
-            .galleryContents .inner .wrap #photoList li div strong {
+            .galleryContents .inner .wrap #photoList li.item div strong {
               display: inline-block;
               font: normal 10px/15px 'noto sans';
               width: 80px;
@@ -2584,9 +2585,9 @@ aside.popup_youtube {
               position: absolute;
               bottom: 10px;
               right: 10px; }
-          .galleryContents .inner .wrap #photoList li:hover {
+          .galleryContents .inner .wrap #photoList li.item:hover {
             transform: scale(1.1); }
-            .galleryContents .inner .wrap #photoList li:hover a > img {
+            .galleryContents .inner .wrap #photoList li.item:hover a > img {
               filter: grayscale(0%); }
 
 /*----- aside  popup_gallery------------------*/
