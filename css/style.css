@@ -2308,6 +2308,174 @@ table {
               width: 100%; }
               #store .inner .wrap article .txt ul li span a {
                 font-size: 14px; } }
+/*----- youtube sub_visual ------------------*/
+.youtube {
+  margin-bottom: 0px; }
+  .youtube .sub_visual {
+    background: url(../img/sub2.jpg) no-repeat center/cover; }
+
+/*----- youtubeVidList -----------------------------------*/
+#youtubeVidList {
+  width: 100%;
+  min-height: 500px;
+  padding-top: 150px;
+  background: linear-gradient(153deg, #020024 0%, #45321a 47%, #4d491a 67%, #2f2d10 83%, black 100%); }
+  #youtubeVidList .inner {
+    width: 1180px;
+    position: relative;
+    margin: 0 auto; }
+    #youtubeVidList .inner .vidList {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      #youtubeVidList .inner .vidList article {
+        width: 45%;
+        padding: 24px;
+        min-width: 360px;
+        margin-bottom: 60px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        background: white; }
+        #youtubeVidList .inner .vidList article.on {
+          display: block; }
+        #youtubeVidList .inner .vidList article strong {
+          display: inline-block;
+          font: 20px/1 'Noto Sans KR';
+          color: #101820;
+          opacity: 0.8;
+          margin-bottom: 30px;
+          transition: 500ms; }
+          #youtubeVidList .inner .vidList article strong::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #821002;
+            margin-top: 18px;
+            transition: .5s; }
+        #youtubeVidList .inner .vidList article h2 {
+          font: normal 16px/1 'Noto Sans';
+          color: #333;
+          margin-bottom: 20px;
+          overflow: hidden; }
+        #youtubeVidList .inner .vidList article p {
+          font: normal 12px/1 'Noto Sans KR';
+          color: #999;
+          opacity: 0.7;
+          margin-bottom: 40px;
+          overflow: hidden; }
+        #youtubeVidList .inner .vidList article a {
+          display: block;
+          width: 100%;
+          height: 243px;
+          margin-bottom: 20px;
+          border-radius: 10px; }
+          #youtubeVidList .inner .vidList article a img {
+            width: 100%;
+            height: 100%;
+            filter: grayscale(100%);
+            transition: 500ms; }
+        #youtubeVidList .inner .vidList article ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-around; }
+          #youtubeVidList .inner .vidList article ul li {
+            font-size: 12px;
+            color: #777; }
+        #youtubeVidList .inner .vidList article:hover strong {
+          font-weight: bold;
+          font-size: 36px;
+          opacity: 1; }
+        #youtubeVidList .inner .vidList article:hover strong::after {
+          width: 120px;
+          background: #821002; }
+        #youtubeVidList .inner .vidList article:hover h2 {
+          font-weight: bold; }
+        #youtubeVidList .inner .vidList article:hover p {
+          opacity: 1; }
+        #youtubeVidList .inner .vidList article:hover img {
+          filter: grayscale(0%); }
+
+/* aside_popup */
+aside.popup_youtube {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  transition: 1s;
+  padding: 100px 50px; }
+  aside.popup_youtube .inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between; }
+    aside.popup_youtube .inner .con {
+      width: 20%;
+      height: 100%; }
+      aside.popup_youtube .inner .con strong {
+        display: block;
+        font: 36px/1 'Noto Sans KR';
+        color: #821002;
+        margin-bottom: 30px; }
+      aside.popup_youtube .inner .con h1 {
+        font: 20px/1 'Noto Sans KR';
+        color: #fff;
+        margin-bottom: 40px;
+        height: 70px; }
+      aside.popup_youtube .inner .con p {
+        font: 14px/1 'Noto Sans KR';
+        color: #ddd;
+        margin-bottom: 30px;
+        height: 210px; }
+    aside.popup_youtube .inner iframe {
+      width: 72%;
+      height: 100%; }
+    aside.popup_youtube .inner span {
+      position: absolute;
+      top: -45px;
+      right: 0;
+      color: orange;
+      cursor: pointer; }
+
+/*tablet*/
+@media screen and (max-width: 1179px) {
+  /*----- youtube sub_visual ------------------*/
+  .youtube .sub_visual {
+    margin-bottom: 0px; }
+
+  /*----- youtubeVidList -----------------------------------*/
+  #youtubeVidList {
+    padding-top: 120px; }
+    #youtubeVidList .inner {
+      width: 100%; } }
+/*mobile*/
+@media screen and (max-width: 539px) {
+  /*----- header --------------------------------*/
+  #header_sub {
+    margin-bottom: 0; }
+
+  /*----- youtube sub_visual ------------------*/
+  .youtube .sub_visual {
+    margin-bottom: 0px; }
+
+  /*----- youtubeVidList -----------------------------------*/
+  #youtubeVidList {
+    padding-top: 80px; }
+    #youtubeVidList .inner .vidList {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      #youtubeVidList .inner .vidList article {
+        width: 95%;
+        padding: 14px;
+        min-width: auto;
+        max-width: 342px;
+        margin-bottom: 60px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        background: white; } }
 /*----- header -----------------------------------------------------*/
 #header {
   width: 100%;
