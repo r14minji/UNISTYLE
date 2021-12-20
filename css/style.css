@@ -454,11 +454,11 @@ table {
               .value .inner .wrap #tab_value .list #btns li:hover strong, .value .inner .wrap #tab_value .list #btns li:hover span {
                 color: #222; }
               .value .inner .wrap #tab_value .list #btns li:hover p {
-                color: #852132; }
+                color: #821002; }
               .value .inner .wrap #tab_value .list #btns li.on strong, .value .inner .wrap #tab_value .list #btns li.on span {
                 color: #222; }
               .value .inner .wrap #tab_value .list #btns li.on p {
-                color: #852132; }
+                color: #821002; }
         .value .inner .wrap #tab_value .content {
           width: 65%;
           height: 500px;
@@ -482,7 +482,7 @@ table {
               border-left: 6px solid #d1ac8f; }
               .value .inner .wrap #tab_value .content > div .title h2 {
                 font: 300 40px/1.2 'roboto';
-                color: #852132; }
+                color: #821002; }
               .value .inner .wrap #tab_value .content > div .title p {
                 font: 300 14px/1.3 'roboto'; }
             .value .inner .wrap #tab_value .content > div .circle {
@@ -551,7 +551,7 @@ table {
           width: 90%;
           height: 90%;
           padding: 10px 15px;
-          border: 4px solid rgba(133, 33, 50, 0.8);
+          border: 4px solid #821002;
           position: absolute;
           top: 10px;
           left: 15px;
@@ -623,16 +623,24 @@ table {
       padding: 20px 40px; }
       .business .inner .wrap .txt > h2 {
         font: 500 36px/1.2 'roboto';
-        color: #852132;
+        color: #821002;
         margin-bottom: 40px; }
       .business .inner .wrap .txt > p {
         font: 300 14px/1.4 'roboto';
         margin-bottom: 20px; }
       .business .inner .wrap .txt > a {
         display: block;
+        width: 150px;
+        padding: 5px 10px;
+        border: 1px solid #000;
         font: 300 14px/1.3 'roboto';
         letter-spacing: 2px;
-        color: #000; }
+        color: #000;
+        transition: 1s; }
+        .business .inner .wrap .txt > a:hover {
+          border: 1px solid #821002;
+          background: #821002;
+          color: #fff; }
     .business .inner .wrap .pic {
       width: 70%;
       height: 600px;
@@ -667,13 +675,9 @@ table {
       margin-bottom: 100px; }
     .innovation .inner .wrap {
       width: 100%; }
-      .innovation .inner .wrap ul ::after {
-        content: "";
-        display: block;
-        clear: both; }
       .innovation .inner .wrap ul li {
         float: left;
-        margin-right: 30px; }
+        margin-right: 24px; }
         .innovation .inner .wrap ul li:last-child {
           margin-right: 0; }
         .innovation .inner .wrap ul li .ideas {
@@ -682,33 +686,28 @@ table {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-content: center; }
+          align-items: center; }
           .innovation .inner .wrap ul li .ideas .icon {
-            width: 80%;
-            height: 180px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            background: #FFEACE;
+            background: #FFF7ED;
             position: relative;
             margin-bottom: 30px;
+            font-size: 40px;
+            color: #101820;
             display: flex;
-            align-content: center;
-            justify-content: center; }
-            .innovation .inner .wrap ul li .ideas .icon i {
-              font-size: 40px;
-              color: #101820;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%); }
+            justify-content: center;
+            align-items: center; }
           .innovation .inner .wrap ul li .ideas span {
             display: block;
-            font: 500 36px/1.4 'roboto';
-            color: #852132;
+            font: 500 30px/1.4 'roboto';
+            color: #821002;
             text-align: center;
             margin-bottom: 10px; }
             .innovation .inner .wrap ul li .ideas span strong {
               margin-left: 20px;
-              color: #852132;
+              color: #821002;
               font: 500 24px/1 'roboto'; }
           .innovation .inner .wrap ul li .ideas p {
             font: 300 18px/1.2 'roboto';
@@ -763,11 +762,11 @@ table {
                 .value .inner .wrap #tab_value .list #btns li:hover strong, .value .inner .wrap #tab_value .list #btns li:hover span {
                   color: #222; }
                 .value .inner .wrap #tab_value .list #btns li:hover p {
-                  color: #852132; }
+                  color: #821002; }
                 .value .inner .wrap #tab_value .list #btns li.on strong, .value .inner .wrap #tab_value .list #btns li.on span {
                   color: #222; }
                 .value .inner .wrap #tab_value .list #btns li.on p {
-                  color: #852132; }
+                  color: #821002; }
           .value .inner .wrap #tab_value .content {
             width: 100%;
             height: 300px;
