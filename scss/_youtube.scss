@@ -30,26 +30,26 @@
         strong{
           display: inline-block;
           font: 20px/1 'Noto Sans KR';
-          color: $menu; opacity: 0.8;
+          color: #ddd; opacity: 0.8;
           margin-bottom: 30px;
           transition: 500ms;
   
           &::after{
             content:""; display: block; 
-            width: 40px; height: 2px; background: $core;
+            width: 40px; height: 2px; background: #ddd;
             margin-top: 18px;
             transition: 500ms;
           }
         }
         h2{
           font: normal 16px/1 'Noto Sans';
-          color: $txt;
+          color: #000;
           margin-bottom: 20px;
           height: 70px;
         }
         p{
           font: normal 12px/1 'Noto Sans KR';
-          color: $txt; opacity: 0.7;
+          color: #000; opacity: 0.7;
           height: 210px;
         }
         a{
@@ -66,7 +66,7 @@
           font-weight: bold;  font-size: 36px; opacity: 1;
         }
         &:hover strong::after{
-          width: 250%; background: $hover;
+          width: 250%; background: #ddd;
         }
         &:hover h2 {font-weight: bold;}
         &:hover p {opacity: 1;}
@@ -95,7 +95,7 @@ aside{
       strong{
         display: block;
         font: 36px/1 'Noto Sans KR';
-        color: $menu;
+        color: #ddd;
         margin-bottom: 30px;
       }
       h1{
