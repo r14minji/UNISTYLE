@@ -2486,8 +2486,10 @@ aside.popup_youtube {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
         background: white; } }
 /*----- gallery sub_visual ------------------*/
-.gallery .sub_visual {
-  background: url(../img/sub4.jpg) no-repeat center/cover; }
+.gallery {
+  margin-bottom: 0px; }
+  .gallery .sub_visual {
+    background: url(../img/sub4.jpg) no-repeat center/cover; }
 
 /*----- galleryContents ------------------*/
 .galleryContents {
@@ -2508,16 +2510,15 @@ aside.popup_youtube {
         height: 40px;
         padding: 14px 10px;
         margin: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc; }
-      .galleryContents .inner .searchBox .btnSearch {
         border: none;
+        border-bottom: 1px solid #555; }
+      .galleryContents .inner .searchBox .btnSearch {
+        border: 1px solid #555;
         width: 100px;
         height: 40px;
         font: bold 15px/40px 'noto sans';
-        background: #333;
-        color: #fff;
-        border-radius: 5px;
+        background: #fff;
+        color: #555;
         cursor: pointer; }
     .galleryContents .inner .wrap {
       width: 100%;

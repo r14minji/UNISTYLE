@@ -1,6 +1,6 @@
 /*----- gallery sub_visual ------------------*/
 .gallery{
-  //margin-bottom: 0px;//
+  margin-bottom: 0px;
   .sub_visual{
     background: url(../img/sub4.jpg) no-repeat center/cover;
   }
@@ -23,15 +23,14 @@
       input[type=text]{
         width: 400px; height: 40px; padding: 14px 10px;
         margin: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
+        border: none;
+        border-bottom: 1px solid #555;
       }
       .btnSearch{
-        border: none;
+        border: 1px solid #555;
         width: 100px; height: 40px; 
         font: bold 15px/40px 'noto sans';
-        background: #333; color: #fff;
-        border-radius: 5px;
+        background: #fff; color: #555;
         cursor: pointer;
       }
     }
