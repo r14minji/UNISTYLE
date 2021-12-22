@@ -11,14 +11,14 @@
   width: 100%;
 
   .inner{
-    width: 1180px;
+    width: 100%;
     position: relative;
     margin: 0 auto;
 
     .searchBox{
       width: 100%;
       margin: 40px 20px;
-      display: flex; justify-content: flex-end; align-items: center; flex-wrap: nowrap; //부모의 width(1180)영역이 넘어가서 반응형 할 때 스크롤바가 생김.
+      display: flex; justify-content: center; align-items: center; flex-wrap: nowrap; //부모의 width(1180)영역이 넘어가서 반응형 할 때 스크롤바가 생김.
 
       input[type=text]{
         width: 400px; height: 40px; padding: 14px 10px;
@@ -57,24 +57,19 @@
   
       #photoList{
         width: 100%; transform:translateY(100px); transition: 1s; opacity: 1;//
-        display: flex; justify-content: space-around; 
+        display: flex; justify-content: space-between; 
         flex-wrap: wrap;
         &.on{
           transform: translateY(0px); opacity: 1;
         }
 
         li.item{
-          width: 400px; 
-          margin: 0 auto;
-          padding: 10px;
-  
-
+          width: 20%; 
 
           figure{
             width: 100%;
             position: relative;
             overflow: hidden;
-            transform-style: preserve-3d;
 
 
   
@@ -85,6 +80,7 @@
                 width: 100%; 
                 display: block;
                 position: relative;
+                filter: grayscale(50%);
                 transition: transform 0.4s;
               }
             }
@@ -130,6 +126,7 @@
     
           &:hover figure img{
             transform: translateY(-50px);
+            filter: grayscale(0%);
           }
           &:hover figure figcaption{
             opacity: 1;

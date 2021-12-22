@@ -2493,14 +2493,14 @@ aside.popup_youtube {
 .galleryContents {
   width: 100%; }
   .galleryContents .inner {
-    width: 1180px;
+    width: 100%;
     position: relative;
     margin: 0 auto; }
     .galleryContents .inner .searchBox {
       width: 100%;
       margin: 40px 20px;
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
       flex-wrap: nowrap; }
       .galleryContents .inner .searchBox input[type=text] {
@@ -2543,26 +2543,24 @@ aside.popup_youtube {
         transition: 1s;
         opacity: 1;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap; }
         .galleryContents .inner .wrap #photoList.on {
           transform: translateY(0px);
           opacity: 1; }
         .galleryContents .inner .wrap #photoList li.item {
-          width: 400px;
-          margin: 0 auto;
-          padding: 10px; }
+          width: 20%; }
           .galleryContents .inner .wrap #photoList li.item figure {
             width: 100%;
             position: relative;
-            overflow: hidden;
-            transform-style: preserve-3d; }
+            overflow: hidden; }
             .galleryContents .inner .wrap #photoList li.item figure a {
               overflow: hidden; }
               .galleryContents .inner .wrap #photoList li.item figure a img {
                 width: 100%;
                 display: block;
                 position: relative;
+                filter: grayscale(50%);
                 transition: transform 0.4s; }
             .galleryContents .inner .wrap #photoList li.item figure figcaption {
               position: absolute;
@@ -2593,7 +2591,8 @@ aside.popup_youtube {
                 bottom: 20px;
                 right: 20px; }
           .galleryContents .inner .wrap #photoList li.item:hover figure img {
-            transform: translateY(-50px); }
+            transform: translateY(-50px);
+            filter: grayscale(0%); }
           .galleryContents .inner .wrap #photoList li.item:hover figure figcaption {
             opacity: 1;
             transform: translateY(0px);
