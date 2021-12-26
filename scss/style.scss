@@ -70,16 +70,10 @@ $sky: #BFD9EB;
             >a{
               font: 400 14px/1 'roboto condensed';
               color: #ddd; position: relative;
-
-              &::after{
-                content: ''; display: block; 
-                  position: absolute; bottom: -10px; left: 0; 
-                  width: 0px; height: 3px; transition: all 250ms ease-in-out;
-                  opacity: 0; background: $gold;
-              }
-              &:hover::after{width: 100%; opacity: 1;}
-              &.on::after{width: 100%; opacity: 1;}
             }
+            
+            &:hover >a{ color: $gold; }
+            &.on >a{ color: $gold;}
           }
         }
         #gnb_right{
@@ -87,149 +81,50 @@ $sky: #BFD9EB;
             float: left; 
             padding: 30px 15px;
             &:nth-of-type(1){ margin-left: 20px;}
+
             >a{
               font: 400 14px/1 'roboto condensed'; position: relative;
               color: #ddd;
             }
-            &:nth-of-type(3), &:nth-of-type(4){
-              &:hover a{ color: $gold; }
-              &.on a{ color: $gold;}
-            }
 
-            &:nth-of-type(1), &:nth-of-type(2){
-              >a{
-                &::after{
-                  content: ''; display: block; 
-                    position: absolute; bottom: -10px; left: 0; 
-                    width: 0px; height: 3px; transition: all 250ms ease-in-out;
-                    opacity: 0; background: $gold;
-                }
-                &:hover::after{width: 100%; opacity: 1;}
-                &.on::after{width: 100%; opacity: 1;}
-              }
-            }
+            &:hover >a{ color: $gold; }
+            &.on >a{ color: $gold;}
           }
         }
 
         //sub
         >ul >li .sub{
-          display: none;
+          //display: none;
           width: 1180px;
-          height: 300px;
+          height: 50px;
           background: $green;
-          position: absolute; right: 0; top: 80px;
-          z-index: 6;
-
-          // &::before{
-          //   content: "";
-          //   display: block;
-          //   width: 100vw;
-          //   height: 300px;
-          //   background: $green;
-          //   position: absolute;
-          //   top: 0;
-          //   left: 50%;
-          //   transform: translateX(-50%);
-          //   z-index: 3;
-          // }
-        }
-
-        //2depth_DEPARTMENT
-        #gnb_left>li:nth-of-type(1) .sub{
-          >strong{
-            float: left;// position: relative; z-index: 6;
-            writing-mode: vertical-lr;
-            height: 300px;
-            font: 700 40px/1 "Train One";        
-            color: rgba(255, 255, 255, 0.9);
-            padding: 0px 30px;
-          }
+          position: absolute; left: 0px; top: 80px;
+          z-index: 2;
           
-          >ul{
-            float: left;
-            width: 200px; 
-            padding: 20px 20px;
-            >li{
-              width: 100%;
-              padding: 15px 0;
-              a{
-                position: relative; z-index: 6;
-                color: #A3ACB7;
-                display: inline-block;
-                font: 400 18px/1 "roboto condensed";
-                width: 150px; height: 10px; padding: 10px;
-              }
-              &:hover a{
-                color: $gold;
-              }
+          li{
+            float: left; position: relative; z-index: 6;
+            padding: 10px 40px 10px;
+
+            &:nth-of-type(1){margin-left: 195px;}
+            &:hover a{color: $gold;}
+            a{
+              font: 400 14px/1 'roboto';
+              color: #aaa;
             }
           }
 
-          .sub_content{
-            float: left;
+          &::before{
+            content: "";
             display: block;
-            width: 840px; height: 300px;
-            padding: 40px 0;
-
-            &::after {content: ""; display: block; clear: both;}
-            article{
-              float:left;
-              width: 400px;
-              border: 1px solid #ddd;
-              &:nth-of-type(1){
-                margin-right: 40px;
-                .txt{background: #5C7C7B;}
-                .pic{
-                  border-top: 1px solid #5C7C7B;
-                  border-bottom: 1px solid #5C7C7B;
-                  i{color: #5C7C7B;}
-                }
-              }
-              &:nth-of-type(2){
-                .txt{background: #F2DAEE;}
-                .pic{
-                  border-top: 1px solid #F2DAEE;
-                  border-bottom: 1px solid #F2DAEE;
-                  i{color: #F2DAEE;}
-                }
-              }
-              &::after{content: ''; display: block; clear: both;}
-
-              >strong{
-                font: 300 18px/1 "roboto condensed";
-                width: 100%; display: block; float: left;
-                border-top: 1px solid #ddd;
-                margin-top: 20px;
-                padding: 20px 10px;
-                color: #ddd;
-              }
-              .pic{
-                float: left;
-                width: 50%; height: 60px;
-                text-align: center; line-height: 60px;
-                font-size: 20px;
-              }
-              .txt{
-                float: left;
-                width: 50%; height: 60px;
-                font: 700 18px/60px "roboto condensed";
-                text-align: center;
-                color: $green;
-                cursor: pointer;
-              }
-              >p{
-                float: left;
-                font: 300 18px/1 "roboto condensed";
-                padding: 20px 10px;
-                color: #ddd;
-              }
-            }
+            width: 100vw; height: 50px;
+            background: $green;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            border-top: 1px solid #ddd;
           }
-        }
-
-        //2depth_LOCATION
-        #gnb_right>li:nth-of-type(2) .sub{
-
         }
       }
     }

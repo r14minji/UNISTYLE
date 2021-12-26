@@ -2763,23 +2763,10 @@ aside.popup_youtube {
               font: 400 14px/1 'roboto condensed';
               color: #ddd;
               position: relative; }
-              #header .inner .menuWeb .gnbWrap #gnb_left > li > a::after {
-                content: '';
-                display: block;
-                position: absolute;
-                bottom: -10px;
-                left: 0;
-                width: 0px;
-                height: 3px;
-                transition: all 250ms ease-in-out;
-                opacity: 0;
-                background: #d1ac8f; }
-              #header .inner .menuWeb .gnbWrap #gnb_left > li > a:hover::after {
-                width: 100%;
-                opacity: 1; }
-              #header .inner .menuWeb .gnbWrap #gnb_left > li > a.on::after {
-                width: 100%;
-                opacity: 1; }
+            #header .inner .menuWeb .gnbWrap #gnb_left > li:hover > a {
+              color: #d1ac8f; }
+            #header .inner .menuWeb .gnbWrap #gnb_left > li.on > a {
+              color: #d1ac8f; }
         #header .inner .menuWeb .gnbWrap #gnb_right > li {
           float: left;
           padding: 30px 15px; }
@@ -2789,124 +2776,42 @@ aside.popup_youtube {
             font: 400 14px/1 'roboto condensed';
             position: relative;
             color: #ddd; }
-          #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(3):hover a, #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(4):hover a {
+          #header .inner .menuWeb .gnbWrap #gnb_right > li:hover > a {
             color: #d1ac8f; }
-          #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(3).on a, #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(4).on a {
+          #header .inner .menuWeb .gnbWrap #gnb_right > li.on > a {
             color: #d1ac8f; }
-          #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(1) > a::after, #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(2) > a::after {
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 0px;
-            height: 3px;
-            transition: all 250ms ease-in-out;
-            opacity: 0;
-            background: #d1ac8f; }
-          #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(1) > a:hover::after, #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(2) > a:hover::after {
-            width: 100%;
-            opacity: 1; }
-          #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(1) > a.on::after, #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(2) > a.on::after {
-            width: 100%;
-            opacity: 1; }
         #header .inner .menuWeb .gnbWrap > ul > li .sub {
-          display: none;
           width: 1180px;
-          height: 300px;
+          height: 50px;
           background: #101820;
           position: absolute;
-          right: 0;
+          left: 0px;
           top: 80px;
-          z-index: 6; }
-        #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub > strong {
-          float: left;
-          writing-mode: vertical-lr;
-          height: 300px;
-          font: 700 40px/1 "Train One";
-          color: rgba(255, 255, 255, 0.9);
-          padding: 0px 30px; }
-        #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub > ul {
-          float: left;
-          width: 200px;
-          padding: 20px 20px; }
-          #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub > ul > li {
-            width: 100%;
-            padding: 15px 0; }
-            #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub > ul > li a {
-              position: relative;
-              z-index: 6;
-              color: #A3ACB7;
-              display: inline-block;
-              font: 400 18px/1 "roboto condensed";
-              width: 150px;
-              height: 10px;
-              padding: 10px; }
-            #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub > ul > li:hover a {
+          z-index: 2; }
+          #header .inner .menuWeb .gnbWrap > ul > li .sub li {
+            float: left;
+            position: relative;
+            z-index: 6;
+            padding: 10px 40px 10px; }
+            #header .inner .menuWeb .gnbWrap > ul > li .sub li:nth-of-type(1) {
+              margin-left: 195px; }
+            #header .inner .menuWeb .gnbWrap > ul > li .sub li:hover a {
               color: #d1ac8f; }
-        #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content {
-          float: left;
-          display: block;
-          width: 840px;
-          height: 300px;
-          padding: 40px 0; }
-          #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content::after {
+            #header .inner .menuWeb .gnbWrap > ul > li .sub li a {
+              font: 400 14px/1 'roboto';
+              color: #aaa; }
+          #header .inner .menuWeb .gnbWrap > ul > li .sub::before {
             content: "";
             display: block;
-            clear: both; }
-          #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article {
-            float: left;
-            width: 400px;
-            border: 1px solid #ddd; }
-            #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article:nth-of-type(1) {
-              margin-right: 40px; }
-              #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article:nth-of-type(1) .txt {
-                background: #5C7C7B; }
-              #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article:nth-of-type(1) .pic {
-                border-top: 1px solid #5C7C7B;
-                border-bottom: 1px solid #5C7C7B; }
-                #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article:nth-of-type(1) .pic i {
-                  color: #5C7C7B; }
-            #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article:nth-of-type(2) .txt {
-              background: #F2DAEE; }
-            #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article:nth-of-type(2) .pic {
-              border-top: 1px solid #F2DAEE;
-              border-bottom: 1px solid #F2DAEE; }
-              #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article:nth-of-type(2) .pic i {
-                color: #F2DAEE; }
-            #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article::after {
-              content: '';
-              display: block;
-              clear: both; }
-            #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article > strong {
-              font: 300 18px/1 "roboto condensed";
-              width: 100%;
-              display: block;
-              float: left;
-              border-top: 1px solid #ddd;
-              margin-top: 20px;
-              padding: 20px 10px;
-              color: #ddd; }
-            #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article .pic {
-              float: left;
-              width: 50%;
-              height: 60px;
-              text-align: center;
-              line-height: 60px;
-              font-size: 20px; }
-            #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article .txt {
-              float: left;
-              width: 50%;
-              height: 60px;
-              font: 700 18px/60px "roboto condensed";
-              text-align: center;
-              color: #101820;
-              cursor: pointer; }
-            #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article > p {
-              float: left;
-              font: 300 18px/1 "roboto condensed";
-              padding: 20px 10px;
-              color: #ddd; }
+            width: 100vw;
+            height: 50px;
+            background: #101820;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            border-top: 1px solid #ddd; }
     #header .inner .btnCall {
       display: none;
       position: absolute;
