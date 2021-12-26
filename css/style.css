@@ -2364,13 +2364,21 @@ table {
         #youtubeVidList .inner .vidList article h2 {
           font: normal 16px/1 'Noto Sans';
           color: #333;
-          margin-bottom: 20px;
+          margin-bottom: 10px;
           overflow: hidden; }
         #youtubeVidList .inner .vidList article p {
           font: normal 12px/1 'Noto Sans KR';
           color: #999;
           opacity: 0.7;
-          margin-bottom: 40px;
+          margin-bottom: 10px;
+          overflow: hidden; }
+        #youtubeVidList .inner .vidList article span {
+          display: block;
+          text-align: right;
+          font: normal 14px/1 'Noto Sans KR';
+          color: #999;
+          opacity: 0.7;
+          margin-bottom: 20px;
           overflow: hidden; }
         #youtubeVidList .inner .vidList article a {
           display: block;
@@ -2389,7 +2397,8 @@ table {
           justify-content: space-around; }
           #youtubeVidList .inner .vidList article ul li {
             font-size: 12px;
-            color: #777; }
+            color: #777;
+            cursor: pointer; }
         #youtubeVidList .inner .vidList article:hover strong {
           font-weight: bold;
           font-size: 36px;
