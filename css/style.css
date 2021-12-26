@@ -2505,10 +2505,11 @@ aside.popup_youtube {
   width: 100%;
   /*----- aside  popup_gallery------------------*/ }
   .galleryContents .inner {
-    width: 100%;
+    width: 1180px;
     position: relative;
     margin: 0 auto; }
     .galleryContents .inner .searchBox {
+      display: block;
       width: 100%;
       padding-top: 40px;
       display: flex;
@@ -2534,7 +2535,6 @@ aside.popup_youtube {
       width: 100%;
       position: relative; }
       .galleryContents .inner .wrap .loading {
-        display: none;
         width: 100px;
         position: fixed;
         top: 50%;
@@ -2552,7 +2552,7 @@ aside.popup_youtube {
         width: 100%;
         transform: translateY(100px);
         transition: 1s;
-        opacity: 1;
+        opacity: 0;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -2561,16 +2561,9 @@ aside.popup_youtube {
           transform: translateY(0px);
           opacity: 1; }
         .galleryContents .inner .wrap #photoList li.item {
-          width: 22%;
-          margin-bottom: 40px; }
-          .galleryContents .inner .wrap #photoList li.item:nth-of-type(4n-3) {
-            transform: translateY(-80px); }
-          .galleryContents .inner .wrap #photoList li.item:nth-of-type(4n-2) {
-            margin-bottom: 40px; }
-          .galleryContents .inner .wrap #photoList li.item:nth-of-type(4n-1) {
-            margin-bottom: 0px; }
-          .galleryContents .inner .wrap #photoList li.item:nth-of-type(4n) {
-            transform: translateY(-80px); }
+          width: calc(100% / 5);
+          margin: 0 auto;
+          padding: 10px; }
           .galleryContents .inner .wrap #photoList li.item figure {
             width: 100%;
             position: relative;
@@ -2595,9 +2588,9 @@ aside.popup_youtube {
               position: absolute;
               bottom: 0;
               left: 0;
-              padding: 20px;
-              background: #2c3f52;
-              color: #ed4e6e;
+              padding: 10px 5px 5px;
+              background: #101820;
+              color: orange;
               height: 100px;
               width: 100%;
               top: auto;
@@ -2606,19 +2599,27 @@ aside.popup_youtube {
               transform: translateY(100%);
               transition: transform 0.4s, opacity 0.1s 0.3s; }
               .galleryContents .inner .wrap #photoList li.item figure figcaption p {
-                color: #fff; }
+                color: #fff;
+                font: bold 16px/1 'noto sans';
+                margin-bottom: 10px; }
+              .galleryContents .inner .wrap #photoList li.item figure figcaption span {
+                display: block;
+                text-align: right;
+                font: bold 13px/1 'noto sans'; }
               .galleryContents .inner .wrap #photoList li.item figure figcaption span:before {
-                content: 'by '; }
+                content: 'by ';
+                font: bold 13px/1 'noto sans'; }
               .galleryContents .inner .wrap #photoList li.item figure figcaption a {
                 text-align: center;
                 padding: 5px 10px;
                 border-radius: 2px;
                 display: inline-block;
-                background: #ed4e6e;
-                color: #fff;
+                background: #fff;
+                color: #101820;
+                font: bold 14px/1 'noto sans';
                 position: absolute;
-                bottom: 20px;
-                right: 20px; }
+                bottom: 10px;
+                right: 5px; }
           .galleryContents .inner .wrap #photoList li.item:hover figure img {
             transform: translateY(-50px);
             filter: grayscale(0%); }

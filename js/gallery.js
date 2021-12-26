@@ -12,14 +12,13 @@ this.url4 =`${this.base}method=${this.method5}&api_key=${this.key}&per_page=${th
 
 //api 연결
 const api_key = "e876201effa30e353ec16d8c4b313899";
+const method1 = "flickr.people.getPhotos";
 const user_id = "194311789@N07";
-const method1 = "flickr.photosets.getPhotos";
 const method2 = "flickr.photos.search";
-const photoset_id = "72177720295508782";
-const per_page = 40;
+const per_page = 17;
 const format = "json";
 
-const url1 = `https://www.flickr.com/services/rest/?method=${method1}&photoset_id=${photoset_id}&api_key=${api_key}&user_id=${user_id}&per_page=${per_page}&format=${format}&nojsoncallback=1`;
+const url1 = `https://www.flickr.com/services/rest/?method=${method1}&api_key=${api_key}&user_id=${user_id}&per_page=${per_page}&format=${format}&nojsoncallback=1`;
 
 
 callData(url1);
@@ -32,7 +31,7 @@ btn.addEventListener("click", e=>{
   //console.log(tag);
   
   if(tag != ''){
-    callData_search(url2);
+    callData(url2);
     errMsg.style.display = "none";
   }else{
     errMsg.innerText = "검색어를 입력하세요.";
@@ -43,13 +42,13 @@ btn.addEventListener("click", e=>{
 
 //엔터로 검색하기
 input.addEventListener("keyup", e =>{
-  if(e.key == "enter"){
+  if(e.key == "Enter"){
     let tag = input.value;
     const url2 = `https://www.flickr.com/services/rest/?method=${method2}&api_key=${api_key}&per_page=${per_page}&format=${format}&nojsoncallback=1&tags=${tag}`;
     //console.log(tag);
     
     if(tag != ''){
-      callData_search(url2);
+      callData(url2);
       errMsg.style.display = "none";
     }else{
       errMsg.innerText = "검색어를 입력하세요";
@@ -112,30 +111,6 @@ function callData(url){
     return data.json();
   })
   .then(json =>{
-    let items = json.photoset.photo;
-    //console.log(json);
-
-    if(items.length > 0){
-      createList(items);
-      delayLoading();
-    }else{
-      loading.classList.add("off");
-      errMsg.innerText = "검색하신 이미지의 데이터가 없습니다.";
-      errMsg.style.display = "block";
-    }
-  })
-}
-
-//검색 데이터 불러오기
-function callData_search(url){
-  loading.classList.remove("off");
-  list.classList.remove("on");
-
-  fetch(url)
-  .then(data =>{
-    return data.json();
-  })
-  .then(json =>{
     let items = json.photos.photo;
     //console.log(json);
 
@@ -155,7 +130,6 @@ function callData_search(url){
 function createList(items){
   let htmls = "";
   items.forEach( item => {
-
     let title = item.title;
     if(title.length >17){
       title = title.substr(0,17);

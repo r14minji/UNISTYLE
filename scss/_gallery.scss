@@ -11,15 +11,15 @@
   width: 100%;
 
   .inner{
-    width: 100%;
+    width: 1180px;
     position: relative;
     margin: 0 auto;
 
     .searchBox{
+      display: block;
       width: 100%;
       padding-top: 40px;
-      display: flex; justify-content: center; align-items: center; flex-wrap: nowrap; //부모의 width(1180)영역이 넘어가서 반응형 할 때 스크롤바가 생김.
-      
+      display: flex; justify-content: center; align-items: center; flex-wrap: nowrap; 
 
       input[type=text]{
         width: 300px; height: 30px; padding: 14px 10px;
@@ -40,7 +40,6 @@
       width: 100%; position: relative;
 
       .loading{
-        display: none;//삭제 예정
         width: 100px;
         position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
         transition: 1s;
@@ -54,9 +53,8 @@
         &.off {display: none;}
       }
   
-  
       #photoList{
-        width: 100%; transform:translateY(100px); transition: 1s; opacity: 1;//
+        width: 100%; transform:translateY(100px); transition: 1s; opacity: 0;
         display: flex; justify-content: space-between; 
         flex-wrap: wrap;
         margin-bottom: 100px;
@@ -64,16 +62,10 @@
           transform: translateY(0px); opacity: 1;
         }
 
-
-
         li.item{
-          width: 22%; 
-          margin-bottom: 40px;
-
-          &:nth-of-type(4n-3){transform: translateY(-80px);}
-          &:nth-of-type(4n-2){margin-bottom: 40px;}
-          &:nth-of-type(4n-1){margin-bottom: 0px;}
-          &:nth-of-type(4n){transform: translateY(-80px);}
+          width: calc(100% / 5); 
+          margin: 0 auto;
+          padding: 10px;
 
           figure{
             width: 100%;
@@ -97,9 +89,9 @@
             
             figcaption{
               position: absolute; bottom: 0; left: 0;
-              padding: 20px;
-              background: #2c3f52;
-              color: #ed4e6e;
+              padding: 10px 5px 5px;
+              background: #101820;
+              color: orange;
               
               height: 100px;
               width: 100%;
@@ -111,10 +103,16 @@
 
               p{
                 color: #fff;
+                font: bold 16px/1 'noto sans';
+                margin-bottom: 10px;
               }
-
+              span{
+                display: block; text-align: right;
+                font: bold 13px/1 'noto sans';
+              }
               span:before{
                 content: 'by ';
+                font: bold 13px/1 'noto sans';
               }
 
               a{
@@ -122,12 +120,12 @@
                 padding: 5px 10px;
                 border-radius: 2px;
                 display: inline-block;
-                background: #ed4e6e;
-                color: #fff;
-
+                background: #fff;
+                color: #101820;
+                font: bold 14px/1 'noto sans';
                 position: absolute;
-                bottom: 20px;
-                right: 20px;
+                bottom: 10px;
+                right: 5px;
               }
             }
           }
@@ -145,6 +143,8 @@
       }
     }
   }
+
+
   /*----- aside  popup_gallery------------------*/
   aside.popup_gallery{
     width: 100%; height: 100vh;
@@ -181,7 +181,6 @@
     }
   }
 }
-
 
 
 // 반응형
