@@ -38,5 +38,3 @@ const inputs = form.querySelectorAll("[type=text]");
 
 // })
 const firstName = form.querySelector("#to_first_name");
-console.log(firstName)
-console.log(firstName.value)

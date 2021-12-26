@@ -2160,10 +2160,9 @@ table {
     #store .inner #map {
       width: 100%;
       height: 500px;
-      border: 1px solid #000;
       margin-bottom: 80px; }
     #store .inner .branch {
-      display: none;
+      display: block;
       width: 100%;
       border: 1px solid #000;
       margin-bottom: 80px; }
