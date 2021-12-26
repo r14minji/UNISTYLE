@@ -297,7 +297,15 @@
       }
 
       .branch{
-         // position띄우면 삭제하기
+        position: absolute; top: 5%; left: 40px; z-index: 2;
+  
+        li{
+          width: 200px;
+          height: 50px;
+          a{
+            font: 500 18px/50px 'roboto';
+          }
+        }
       }
 
       .wrap{
@@ -386,7 +394,15 @@
       }
 
       .branch{
-         // position띄우면 삭제하기
+        position: absolute; top: 3%; left: 10px; z-index: 2;
+  
+        li{
+          width: 100px;
+          height: 40px;
+          a{
+            font: 500 12px/40px 'roboto';
+          }
+        }
       }
 
       .wrap{

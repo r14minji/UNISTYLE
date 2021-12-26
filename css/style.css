@@ -2261,6 +2261,16 @@ table {
       margin-bottom: 30px; }
     #store .inner #map {
       height: 500px; }
+    #store .inner .branch {
+      position: absolute;
+      top: 5%;
+      left: 40px;
+      z-index: 2; }
+      #store .inner .branch li {
+        width: 200px;
+        height: 50px; }
+        #store .inner .branch li a {
+          font: 500 18px/50px 'roboto'; }
     #store .inner .wrap article {
       padding-bottom: 60px; }
       #store .inner .wrap article:nth-of-type(2) .txt {
@@ -2311,6 +2321,16 @@ table {
       #store .inner #map {
         height: 300px;
         margin-bottom: 40px; }
+      #store .inner .branch {
+        position: absolute;
+        top: 3%;
+        left: 10px;
+        z-index: 2; }
+        #store .inner .branch li {
+          width: 100px;
+          height: 40px; }
+          #store .inner .branch li a {
+            font: 500 12px/40px 'roboto'; }
       #store .inner .wrap {
         padding: 0px 20px; }
         #store .inner .wrap article {
