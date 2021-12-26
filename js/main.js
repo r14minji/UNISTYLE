@@ -1,6 +1,6 @@
 const btnCall = document.querySelector(".btnCall");
 const menuMo = document.querySelector(".menuMo");
-const gnb_lis = document.querySelectorAll(".gnbWrap>ul>li")
+const gnb_lis = document.querySelectorAll(".gnbWrap ul>li")
 
 //반응형 메뉴버튼
 btnCall.addEventListener("click", e =>{
@@ -10,9 +10,10 @@ btnCall.addEventListener("click", e =>{
   menuMo.classList.toggle("on");
 })
 
-/* 
+
 //2depth 
 gnb_lis.forEach( li=>{
+  console.log(li);
   li.addEventListener("mouseenter", e=>{
     const sub = e.currentTarget.querySelector(".sub");
     if(sub !=null){
@@ -48,4 +49,4 @@ gnb_lis.forEach( li=>{
     })
   }
 })
-*/
+

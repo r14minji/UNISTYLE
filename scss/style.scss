@@ -43,14 +43,17 @@ $sky: #BFD9EB;
     .menuWeb{
       width: 100%; height: 100%;
       position: relative;
-      padding: 30px 0;
+
 
       h1{
         position: absolute; top: 50%; left: 50%; transform: translate(-22px , -50%);
+
         a{
+          display: block;
           font: normal 22px/1 'Monoton';
           letter-spacing: 2px;
           color: $beige;
+          padding: 30px 0px;
         } 
       }
 
@@ -61,7 +64,8 @@ $sky: #BFD9EB;
         #gnb_left{
           margin-right: 136px;
           >li{
-            float:left; padding-right: 55px;
+            float:left; 
+            padding: 30px 25px;
 
             >a{
               font: 400 14px/1 'roboto condensed';
@@ -80,8 +84,9 @@ $sky: #BFD9EB;
         }
         #gnb_right{
           >li{
-            float: left; margin-left:30px;
-
+            float: left; 
+            padding: 30px 15px;
+            &:nth-of-type(1){ margin-left: 20px;}
             >a{
               font: 400 14px/1 'roboto condensed'; position: relative;
               color: #ddd;
@@ -131,8 +136,6 @@ $sky: #BFD9EB;
 
         //2depth_DEPARTMENT
         #gnb_left>li:nth-of-type(1) .sub{
-          display: block; //후에 삭제??
-
           >strong{
             float: left;// position: relative; z-index: 6;
             writing-mode: vertical-lr;
@@ -226,7 +229,7 @@ $sky: #BFD9EB;
 
         //2depth_LOCATION
         #gnb_right>li:nth-of-type(2) .sub{
-          
+
         }
       }
     }
