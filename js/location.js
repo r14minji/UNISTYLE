@@ -52,6 +52,10 @@ for (let i = 0; i < positions.length; i ++) {
 	positions[i].button.addEventListener("click", e => {
 		e.preventDefault();
 		setCenter(positions[i].latlng);
+    for(let btns of branch_btns){
+      btns.classList.remove("on");
+    }
+    e.currentTarget.classList.add("on");
 	})
 }
 
