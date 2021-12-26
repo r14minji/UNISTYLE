@@ -71,7 +71,7 @@ $sky: #BFD9EB;
               font: 400 14px/1 'roboto condensed';
               color: #ddd; position: relative;
             }
-            
+
             &:hover >a{ color: $gold; }
             &.on >a{ color: $gold;}
           }
@@ -94,7 +94,7 @@ $sky: #BFD9EB;
 
         //sub
         >ul >li .sub{
-          //display: none;
+          display: none;
           width: 1180px;
           height: 50px;
           background: $green;

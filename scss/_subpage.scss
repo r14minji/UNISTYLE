@@ -15,14 +15,17 @@
     .menuWeb{
       width: 100%; height: 100%;
       position: relative;
-      padding: 30px 0;
+
 
       h1{
         position: absolute; top: 50%; left: 50%; transform: translate(-22px , -50%);
+
         a{
+          display: block;
           font: normal 22px/1 'Monoton';
           letter-spacing: 2px;
           color: $beige;
+          padding: 30px 0px;
         } 
       }
 
@@ -33,48 +36,31 @@
         #gnb_left{
           margin-right: 136px;
           >li{
-            float:left; padding-right: 55px;
+            float:left; 
+            padding: 30px 25px;
 
             >a{
               font: 400 14px/1 'roboto condensed';
               color: #ddd; position: relative;
-              // &.on { text-shadow:#FC0 1px 0 10px;}
-              &::after{
-                content: ''; display: block; 
-                  position: absolute; bottom: -10px; left: 0; 
-                  width: 0px; height: 3px; transition: all 250ms ease-in-out;
-                  opacity: 0; background: $gold;
-              }
-              &:hover::after{width: 100%; opacity: 1;}
-              &.on::after{width: 100%; opacity: 1;}
             }
+            
+            &:hover >a{ color: $gold; }
+            &.on >a{ color: $gold;}
           }
         }
         #gnb_right{
           >li{
-            float: left; margin-left:30px;
+            float: left; 
+            padding: 30px 15px;
+            &:nth-of-type(1){ margin-left: 20px;}
 
             >a{
               font: 400 14px/1 'roboto condensed'; position: relative;
               color: #ddd;
             }
-            &:nth-of-type(3), &:nth-of-type(4){
-              &:hover a{ color: $gold; }
-              &.on a{ color: $gold;}
-            }
 
-            &:nth-of-type(1), &:nth-of-type(2){
-              >a{
-                &::after{
-                  content: ''; display: block; 
-                    position: absolute; bottom: -10px; left: 0; 
-                    width: 0px; height: 3px; transition: all 250ms ease-in-out;
-                    opacity: 0; background: $gold;
-                }
-                &:hover::after{width: 100%; opacity: 1;}
-                &.on::after{width: 100%; opacity: 1;}
-              }
-            }
+            &:hover >a{ color: $gold; }
+            &.on >a{ color: $gold;}
           }
         }
 
@@ -82,58 +68,34 @@
         >ul >li .sub{
           display: none;
           width: 1180px;
-          height: 300px;
+          height: 50px;
           background: $green;
-          position: absolute; right: 0; top: 80px;
-          z-index: 6;
-          padding: 30px;
-          //자식요소 float으로 배치
+          position: absolute; left: 0px; top: 80px;
+          z-index: 2;
+          
+          li{
+            float: left; position: relative; z-index: 6;
+            padding: 10px 40px 10px;
 
-          ul{
-            width: 200px; 
-            padding: 30px 20px;
-            border: 1px solid #FFF;
-
-            >li{
-              width: 100%;
-              a{
-                position: relative; z-index: 6;
-                color: #fff;
-                display: inline-block;
-                font: normal 12px/1.2 "roboto condensed";
-                width: 150px; height: 10px; padding: 10px;
-              }
+            &:nth-of-type(1){margin-left: 195px;}
+            &:hover a{color: $gold;}
+            a{
+              font: 400 14px/1 'roboto';
+              color: #aaa;
             }
           }
 
-          &:nth-of-type(1){ padding: 0px;}
-
-          &.depth2_dep{
-            //display: block;
-
-            strong{
-              font-size: 30px;
-              font-weight: 700;
-              font-family: "roboto condensed";
-              //transform: rotate(-90deg);
-              color: #fff;
-              background: #ddd;
-              position: relative;
-              float: left;
-            }
-            
-            ul{
-              float: left;
-            }
-
-            .sub_content{
-              float: left;
-              display: block;
-              width: 100px; height: 200px;
-              border: 1px solid #ddd;
-
-            }
-
+          &::before{
+            content: "";
+            display: block;
+            width: 100vw; height: 50px;
+            background: $green;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            border-top: 1px solid #ddd;
           }
         }
       }
