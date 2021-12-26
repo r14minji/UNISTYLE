@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Shadow&family=Train+One&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -50,7 +51,7 @@ table {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-15px, -50%); }
+        transform: translate(-22px, -50%); }
         #header_sub .inner .menuWeb h1 a {
           font: normal 22px/1 'Monoton';
           letter-spacing: 2px;
@@ -92,24 +93,28 @@ table {
             font: 400 14px/1 'roboto condensed';
             position: relative;
             color: #ddd; }
-            #header_sub .inner .menuWeb .gnbWrap #gnb_right > li > a::after {
-              content: '';
-              display: block;
-              position: absolute;
-              bottom: -10px;
-              left: 0;
-              width: 0px;
-              height: 3px;
-              transition: all 250ms ease-in-out;
-              opacity: 0;
-              background: #d1ac8f; }
-            #header_sub .inner .menuWeb .gnbWrap #gnb_right > li > a:hover::after {
-              width: 100%;
-              opacity: 1; }
-            #header_sub .inner .menuWeb .gnbWrap #gnb_right > li > a.on::after {
-              width: 100%;
-              opacity: 1; }
-        #header_sub .inner .menuWeb .gnbWrap ul li .sub {
+          #header_sub .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(3):hover a, #header_sub .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(4):hover a {
+            color: #d1ac8f; }
+          #header_sub .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(3).on a, #header_sub .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(4).on a {
+            color: #d1ac8f; }
+          #header_sub .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(1) > a::after, #header_sub .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(2) > a::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 0px;
+            height: 3px;
+            transition: all 250ms ease-in-out;
+            opacity: 0;
+            background: #d1ac8f; }
+          #header_sub .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(1) > a:hover::after, #header_sub .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(2) > a:hover::after {
+            width: 100%;
+            opacity: 1; }
+          #header_sub .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(1) > a.on::after, #header_sub .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(2) > a.on::after {
+            width: 100%;
+            opacity: 1; }
+        #header_sub .inner .menuWeb .gnbWrap > ul > li .sub {
           display: none;
           width: 1180px;
           height: 300px;
@@ -119,13 +124,13 @@ table {
           top: 80px;
           z-index: 6;
           padding: 30px; }
-          #header_sub .inner .menuWeb .gnbWrap ul li .sub > ul {
+          #header_sub .inner .menuWeb .gnbWrap > ul > li .sub ul {
             width: 200px;
             padding: 30px 20px;
             border: 1px solid #FFF; }
-            #header_sub .inner .menuWeb .gnbWrap ul li .sub > ul > li {
+            #header_sub .inner .menuWeb .gnbWrap > ul > li .sub ul > li {
               width: 100%; }
-              #header_sub .inner .menuWeb .gnbWrap ul li .sub > ul > li a {
+              #header_sub .inner .menuWeb .gnbWrap > ul > li .sub ul > li a {
                 position: relative;
                 z-index: 6;
                 color: #fff;
@@ -134,8 +139,24 @@ table {
                 width: 150px;
                 height: 10px;
                 padding: 10px; }
-          #header_sub .inner .menuWeb .gnbWrap ul li .sub:nth-of-type(1) {
+          #header_sub .inner .menuWeb .gnbWrap > ul > li .sub:nth-of-type(1) {
             padding: 0px; }
+          #header_sub .inner .menuWeb .gnbWrap > ul > li .sub.depth2_dep strong {
+            font-size: 30px;
+            font-weight: 700;
+            font-family: "roboto condensed";
+            color: #fff;
+            background: #ddd;
+            position: relative;
+            float: left; }
+          #header_sub .inner .menuWeb .gnbWrap > ul > li .sub.depth2_dep ul {
+            float: left; }
+          #header_sub .inner .menuWeb .gnbWrap > ul > li .sub.depth2_dep .sub_content {
+            float: left;
+            display: block;
+            width: 100px;
+            height: 200px;
+            border: 1px solid #ddd; }
     #header_sub .inner .btnCall {
       display: none;
       position: absolute;
@@ -2765,23 +2786,27 @@ aside.popup_youtube {
             font: 400 14px/1 'roboto condensed';
             position: relative;
             color: #ddd; }
-            #header .inner .menuWeb .gnbWrap #gnb_right > li > a::after {
-              content: '';
-              display: block;
-              position: absolute;
-              bottom: -10px;
-              left: 0;
-              width: 0px;
-              height: 3px;
-              transition: all 250ms ease-in-out;
-              opacity: 0;
-              background: #d1ac8f; }
-            #header .inner .menuWeb .gnbWrap #gnb_right > li > a:hover::after {
-              width: 100%;
-              opacity: 1; }
-            #header .inner .menuWeb .gnbWrap #gnb_right > li > a.on::after {
-              width: 100%;
-              opacity: 1; }
+          #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(3):hover a, #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(4):hover a {
+            color: #d1ac8f; }
+          #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(3).on a, #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(4).on a {
+            color: #d1ac8f; }
+          #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(1) > a::after, #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(2) > a::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 0px;
+            height: 3px;
+            transition: all 250ms ease-in-out;
+            opacity: 0;
+            background: #d1ac8f; }
+          #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(1) > a:hover::after, #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(2) > a:hover::after {
+            width: 100%;
+            opacity: 1; }
+          #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(1) > a.on::after, #header .inner .menuWeb .gnbWrap #gnb_right > li:nth-of-type(2) > a.on::after {
+            width: 100%;
+            opacity: 1; }
         #header .inner .menuWeb .gnbWrap > ul > li .sub {
           display: none;
           width: 1180px;
@@ -2790,41 +2815,97 @@ aside.popup_youtube {
           position: absolute;
           right: 0;
           top: 80px;
-          z-index: 6;
-          padding: 30px; }
-          #header .inner .menuWeb .gnbWrap > ul > li .sub ul {
+          z-index: 6; }
+        #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub {
+          display: block; }
+          #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub > strong {
+            float: left;
+            writing-mode: vertical-lr;
+            height: 300px;
+            font: 700 40px/1 "Train One";
+            color: rgba(255, 255, 255, 0.9);
+            padding: 0px 30px; }
+          #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub > ul {
+            float: left;
             width: 200px;
-            padding: 30px 20px;
-            border: 1px solid #FFF; }
-            #header .inner .menuWeb .gnbWrap > ul > li .sub ul > li {
-              width: 100%; }
-              #header .inner .menuWeb .gnbWrap > ul > li .sub ul > li a {
+            padding: 20px 20px; }
+            #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub > ul > li {
+              width: 100%;
+              padding: 15px 0; }
+              #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub > ul > li a {
                 position: relative;
                 z-index: 6;
-                color: #fff;
+                color: #A3ACB7;
                 display: inline-block;
-                font: normal 12px/1.2 "roboto condensed";
+                font: 400 18px/1 "roboto condensed";
                 width: 150px;
                 height: 10px;
                 padding: 10px; }
-          #header .inner .menuWeb .gnbWrap > ul > li .sub:nth-of-type(1) {
-            padding: 0px; }
-          #header .inner .menuWeb .gnbWrap > ul > li .sub.depth2_dep strong {
-            font-size: 30px;
-            font-weight: 700;
-            font-family: "roboto condensed";
-            color: #fff;
-            background: #ddd;
-            position: relative;
-            float: left; }
-          #header .inner .menuWeb .gnbWrap > ul > li .sub.depth2_dep ul {
-            float: left; }
-          #header .inner .menuWeb .gnbWrap > ul > li .sub.depth2_dep .sub_content {
+              #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub > ul > li:hover a {
+                color: #d1ac8f; }
+          #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content {
             float: left;
             display: block;
-            width: 100px;
-            height: 200px;
-            border: 1px solid #ddd; }
+            width: 840px;
+            height: 300px;
+            padding: 40px 0; }
+            #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content::after {
+              content: "";
+              display: block;
+              clear: both; }
+            #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article {
+              float: left;
+              width: 400px;
+              border: 1px solid #ddd; }
+              #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article:nth-of-type(1) {
+                margin-right: 40px; }
+                #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article:nth-of-type(1) .txt {
+                  background: #5C7C7B; }
+                #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article:nth-of-type(1) .pic {
+                  border-top: 1px solid #5C7C7B;
+                  border-bottom: 1px solid #5C7C7B; }
+                  #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article:nth-of-type(1) .pic i {
+                    color: #5C7C7B; }
+              #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article:nth-of-type(2) .txt {
+                background: #F2DAEE; }
+              #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article:nth-of-type(2) .pic {
+                border-top: 1px solid #F2DAEE;
+                border-bottom: 1px solid #F2DAEE; }
+                #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article:nth-of-type(2) .pic i {
+                  color: #F2DAEE; }
+              #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article::after {
+                content: '';
+                display: block;
+                clear: both; }
+              #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article > strong {
+                font: 300 18px/1 "roboto condensed";
+                width: 100%;
+                display: block;
+                float: left;
+                border-top: 1px solid #ddd;
+                margin-top: 20px;
+                padding: 20px 10px;
+                color: #ddd; }
+              #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article .pic {
+                float: left;
+                width: 50%;
+                height: 60px;
+                text-align: center;
+                line-height: 60px;
+                font-size: 20px; }
+              #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article .txt {
+                float: left;
+                width: 50%;
+                height: 60px;
+                font: 700 18px/60px "roboto condensed";
+                text-align: center;
+                color: #101820;
+                cursor: pointer; }
+              #header .inner .menuWeb .gnbWrap #gnb_left > li:nth-of-type(1) .sub .sub_content article > p {
+                float: left;
+                font: 300 18px/1 "roboto condensed";
+                padding: 20px 10px;
+                color: #ddd; }
     #header .inner .btnCall {
       display: none;
       position: absolute;

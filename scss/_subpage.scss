@@ -18,13 +18,12 @@
       padding: 30px 0;
 
       h1{
-        position: absolute; top: 50%; left: 50%; transform: translate(-15px , -50%);
+        position: absolute; top: 50%; left: 50%; transform: translate(-22px , -50%);
         a{
           font: normal 22px/1 'Monoton';
           letter-spacing: 2px;
           color: $beige;
         } 
-
       }
 
       .gnbWrap{
@@ -58,20 +57,29 @@
             >a{
               font: 400 14px/1 'roboto condensed'; position: relative;
               color: #ddd;
-              &::after{
-                content: ''; display: block; 
-                  position: absolute; bottom: -10px; left: 0; 
-                  width: 0px; height: 3px; transition: all 250ms ease-in-out;
-                  opacity: 0; background: $gold;
+            }
+            &:nth-of-type(3), &:nth-of-type(4){
+              &:hover a{ color: $gold; }
+              &.on a{ color: $gold;}
+            }
+
+            &:nth-of-type(1), &:nth-of-type(2){
+              >a{
+                &::after{
+                  content: ''; display: block; 
+                    position: absolute; bottom: -10px; left: 0; 
+                    width: 0px; height: 3px; transition: all 250ms ease-in-out;
+                    opacity: 0; background: $gold;
+                }
+                &:hover::after{width: 100%; opacity: 1;}
+                &.on::after{width: 100%; opacity: 1;}
               }
-              &:hover::after{width: 100%; opacity: 1;}
-              &.on::after{width: 100%; opacity: 1;}
             }
           }
         }
 
         //sub
-        ul li .sub{
+        >ul >li .sub{
           display: none;
           width: 1180px;
           height: 300px;
@@ -79,8 +87,9 @@
           position: absolute; right: 0; top: 80px;
           z-index: 6;
           padding: 30px;
+          //자식요소 float으로 배치
 
-          >ul{
+          ul{
             width: 200px; 
             padding: 30px 20px;
             border: 1px solid #FFF;
@@ -98,9 +107,36 @@
           }
 
           &:nth-of-type(1){ padding: 0px;}
+
+          &.depth2_dep{
+            //display: block;
+
+            strong{
+              font-size: 30px;
+              font-weight: 700;
+              font-family: "roboto condensed";
+              //transform: rotate(-90deg);
+              color: #fff;
+              background: #ddd;
+              position: relative;
+              float: left;
+            }
+            
+            ul{
+              float: left;
+            }
+
+            .sub_content{
+              float: left;
+              display: block;
+              width: 100px; height: 200px;
+              border: 1px solid #ddd;
+
+            }
+
+          }
         }
       }
-
     }
 
     .btnCall{
