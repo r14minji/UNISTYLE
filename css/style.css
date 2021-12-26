@@ -33,7 +33,7 @@ table {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2; }
+  z-index: 10; }
   #header_sub:hover {
     background: #101820; }
   #header_sub .inner {
@@ -218,7 +218,7 @@ table {
       width: 270px;
       height: 100vh;
       background: #000;
-      transition: 0.5s;
+      transition: 0.5s 0.8s;
       padding: 25px 30px;
       z-index: 5; }
       #header_sub .inner .menuMo.on {
@@ -2907,7 +2907,7 @@ aside.popup_youtube {
       width: 270px;
       height: 100vh;
       background: #000;
-      transition: 0.5s;
+      transition: 0.5s 0.8s;
       padding: 25px 30px;
       z-index: 5; }
       #header .inner .menuMo.on {
