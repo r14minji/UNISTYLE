@@ -35,7 +35,7 @@ fetch(url)
 
     result += `
     <article>
-      <strong>${++count}</strong>
+      <strong>0${++count}</strong>
       <h2>${title}</h2>
       <p>${con}</p>
       <span>${date}</span>
