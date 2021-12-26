@@ -5,9 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GALLERY</title>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script src="https://kit.fontawesome.com/91c15511c8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
+  <script defer src="js/gallery.js"></script>
 </head>
 <body>
   <!-- header  -->
@@ -126,128 +128,13 @@
         <img src="img/loading.gif" class="loading"> 
         <p class= "errMsg"></p>
 
-        <ul id="photoList">
-
-
-          <!-- 동적으로 생성 -->
-
-          <li class="item">
-            <figure>
-              <a href=""> 
-                <img src="img/menuMo1.jpg" class="thumb">
-              </a>
-              <figcaption>
-                <p>제목</p>
-                <span>작성자</span>
-                <a href="#">VIEW MORE</a>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <figure>
-              <a href="">
-                <img src="img/menuMo2.png" class="thumb">
-              </a>
-              <figcaption>
-                <p>제목</p>
-                <span>작성자</span>
-                <a href="#">VIEW MORE</a>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <figure>
-              <a href="">
-                <img src="img/menuMo3.jpg" class="thumb">
-              </a>
-              <figcaption>
-                <p>제목</p>
-                <span>작성자</span>
-                <a href="#">VIEW MORE</a>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <figure>
-              <a href="">
-                <img src="img/theView.jpg" class="thumb">
-              </a>
-              <figcaption>
-                <p>제목</p>
-                <span>작성자</span>
-                <a href="#">VIEW MORE</a>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <figure>
-              <a href=""> 
-                <img src="img/experience2.jpg" class="thumb">
-              </a>
-              <figcaption>
-                <p>제목</p>
-                <span>작성자</span>
-                <a href="#">VIEW MORE</a>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <figure>
-              <a href="">
-                <img src="img/experience1.jpg" class="thumb">
-              </a>
-              <figcaption>
-                <p>제목</p>
-                <span>작성자</span>
-                <a href="#">VIEW MORE</a>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <figure>
-              <a href="">
-                <img src="img/home.jpg" class="thumb">
-              </a>
-              <figcaption>
-                <p>제목</p>
-                <span>작성자</span>
-                <a href="#">VIEW MORE</a>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <figure>
-              <a href="">
-                <img src="img/branch1.jpg" class="thumb">
-              </a>
-              <figcaption>
-                <p>제목</p>
-                <span>작성자</span>
-                <a href="#">VIEW MORE</a>
-              </figcaption>
-            </figure>
-          </li>
-
-
-
-                    <!-- 동적으로 생성 -->
-
-
-        </ul>
+        <ul id="photoList"></ul>
 
       </article>
 
     </div>
   </section>
 
-<!-- 팝업창
-  <aside class="popup_gallery">
-    <div class="con">
-      <img src="${imgSrc}" alt="">
-    </div>
-    <span>close</span>
-  </aside>
--->
 
 
   <!-- footer -->
