@@ -61,11 +61,10 @@ for (let i = 0; i < positions.length; i ++) {
 
 //리사이즈 (반응형 웹 필요)
 window.onresize = () => {
-  let active_btn = document.querySelector("dt.on");
+  let active_btn = document.querySelector(".branch li.on");
   let active_index = active_btn.getAttribute("data-index");
   map.setCenter(positions[active_index].latlng)
 }
-
 
 //지도이동시키기 함수 (중요)
 setCenter(positions[0].latlng);
