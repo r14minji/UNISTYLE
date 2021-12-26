@@ -2511,7 +2511,7 @@ aside.popup_youtube {
     .galleryContents .inner .searchBox {
       display: block;
       width: 100%;
-      padding-top: 40px;
+      padding: 60px 0px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -2591,6 +2591,7 @@ aside.popup_youtube {
               padding: 10px 5px 5px;
               background: #101820;
               color: orange;
+              text-transform: uppercase;
               height: 100px;
               width: 100%;
               top: auto;
