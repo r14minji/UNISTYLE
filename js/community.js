@@ -1,3 +1,5 @@
+//api 데이터 불러오기
+
 //tab
 const tab = document.querySelector("#tab_community");
 const dts = tab.querySelectorAll("dt");
