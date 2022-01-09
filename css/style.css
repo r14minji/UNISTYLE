@@ -1115,7 +1115,8 @@ table {
           #tab_community .inner main .wrap > div.on {
             display: block; }
           #tab_community .inner main .wrap > div#faq {
-            width: 100%; }
+            width: 100%;
+            position: relative; }
             #tab_community .inner main .wrap > div#faq ::after {
               content: '';
               display: block;
@@ -1202,23 +1203,25 @@ table {
                       float: left;
                       padding: 5px;
                       text-align: center; }
-            #tab_community .inner main .wrap > div#faq h1 {
-              font: 500 24px/1 'Roboto';
-              letter-spacing: 2px;
-              color: #101820;
-              margin-bottom: 20px; }
-            #tab_community .inner main .wrap > div#faq select {
-              position: absolute;
-              top: 310px;
-              right: 0;
-              z-index: 2;
-              width: 140px;
-              background: #fff;
-              border: none;
-              font: 300 14px/1 'roboto'; }
-              #tab_community .inner main .wrap > div#faq select option {
-                font: 300 14px/1 'roboto';
-                color: #52616b; }
+            #tab_community .inner main .wrap > div#faq .wrapper {
+              position: relative; }
+              #tab_community .inner main .wrap > div#faq .wrapper h1 {
+                font: 500 24px/1 'Roboto';
+                letter-spacing: 2px;
+                color: #101820;
+                margin-bottom: 20px; }
+              #tab_community .inner main .wrap > div#faq .wrapper select {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                z-index: 2;
+                width: 140px;
+                background: #fff;
+                border: none;
+                font: 300 14px/1 'roboto'; }
+                #tab_community .inner main .wrap > div#faq .wrapper select option {
+                  font: 300 14px/1 'roboto';
+                  color: #52616b; }
             #tab_community .inner main .wrap > div#faq .accordion {
               width: 100%;
               position: relative; }
@@ -1432,193 +1435,185 @@ table {
 @media screen and (max-width: 1179px) {
   #tab_community .inner {
     width: 100%; }
-    #tab_community .inner dl {
-      height: 1400px; }
-      #tab_community .inner dl dt {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 80px;
-        height: 40px;
-        border-left: none; }
-        #tab_community .inner dl dt:nth-of-type(2) {
-          top: 0px;
-          left: 80px; }
-        #tab_community .inner dl dt:nth-of-type(3) {
-          top: 0px;
-          left: 180px; }
-      #tab_community .inner dl dd {
-        width: 100%;
-        float: left;
-        position: absolute;
-        top: 40px;
-        left: 0;
-        display: none;
-        padding: 30px 20px;
+    #tab_community .inner main {
+      padding: 0 40px; }
+      #tab_community .inner main > ul li a {
+        padding-left: 20px; }
+      #tab_community .inner main .wrap > div {
         /*fisrt board-FAQ*/
         /*second board-NOTICE*/
         /*third board-REVIEW*/ }
-        #tab_community .inner dl dd.on {
-          display: block; }
-        #tab_community .inner dl dd #faq {
+        #tab_community .inner main .wrap > div#faq {
           width: 100%; }
-          #tab_community .inner dl dd #faq #searchBox {
+          #tab_community .inner main .wrap > div#faq #searchBox {
             width: 100%;
             margin-bottom: 40px; }
-            #tab_community .inner dl dd #faq #searchBox .qstn {
+            #tab_community .inner main .wrap > div#faq #searchBox .qstn {
               width: 100%;
               float: left;
               padding: 30px 20px;
               height: 210px; }
-              #tab_community .inner dl dd #faq #searchBox .qstn > h1 {
+              #tab_community .inner main .wrap > div#faq #searchBox .qstn > h1 {
                 font-size: 20px;
                 color: #101820; }
-              #tab_community .inner dl dd #faq #searchBox .qstn > span {
+              #tab_community .inner main .wrap > div#faq #searchBox .qstn > span {
                 margin: 5px; }
-            #tab_community .inner dl dd #faq #searchBox .answersBy {
+            #tab_community .inner main .wrap > div#faq #searchBox .answersBy {
               width: 100%;
               float: left; }
-              #tab_community .inner dl dd #faq #searchBox .answersBy > ul li {
+              #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li {
                 float: left;
                 display: block;
-                width: 24%;
+                width: 25%;
                 height: 96px; }
-                #tab_community .inner dl dd #faq #searchBox .answersBy > ul li a .pic i {
+                #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a .pic i {
                   color: #d1ac8f; }
-                #tab_community .inner dl dd #faq #searchBox .answersBy > ul li a span {
-                  color: #d1ac8f; }
-          #tab_community .inner dl dd #faq h1 {
-            font: 500 24px/1 'Roboto'; }
-          #tab_community .inner dl dd #faq select {
-            position: absolute;
-            top: 474px;
-            right: 20px; }
-          #tab_community .inner dl dd #faq .accordion {
+                #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a span {
+                  color: #d1ac8f;
+                  padding: 0px; }
+          #tab_community .inner main .wrap > div#faq .accordion {
             width: 100%;
             height: auto;
             position: relative; }
-            #tab_community .inner dl dd #faq .accordion > ul .item {
+            #tab_community .inner main .wrap > div#faq .accordion > ul .item {
               position: relative;
               /*title*/
               /* Text Content */ }
-              #tab_community .inner dl dd #faq .accordion > ul .item > h2 {
+              #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 {
                 font-size: 16px;
                 line-height: 30px;
                 padding: 20px; }
-                #tab_community .inner dl dd #faq .accordion > ul .item > h2:hover {
+                #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2:hover {
                   padding-left: 20px; }
-                #tab_community .inner dl dd #faq .accordion > ul .item > h2 strong {
+                #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 strong {
                   display: none; }
-              #tab_community .inner dl dd #faq .accordion > ul .item .text {
+              #tab_community .inner main .wrap > div#faq .accordion > ul .item .text {
                 font-size: 14px; }
-        #tab_community .inner dl dd #notice h1 {
+        #tab_community .inner main .wrap > div#notice h1 {
           font: 500 24px/1 'Roboto'; }
-        #tab_community .inner dl dd #notice table tr th:nth-of-type(1) {
+        #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(1) {
           width: 15%; }
-        #tab_community .inner dl dd #notice table tr th:nth-of-type(3) {
+        #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(3) {
           width: 17%; }
-        #tab_community .inner dl dd #notice table tr th:nth-of-type(4) {
+        #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(4) {
           width: 0%;
           display: none; }
-        #tab_community .inner dl dd #notice table tr td:nth-of-type(4) {
+        #tab_community .inner main .wrap > div#notice table tr td:nth-of-type(4) {
           width: 0%;
           display: none; }
-        #tab_community .inner dl dd #notice .paignation .numbers > a:nth-of-type(6) {
+        #tab_community .inner main .wrap > div#notice .paignation .numbers > a:nth-of-type(6) {
           display: none; }
-        #tab_community .inner dl dd #notice .paignation .numbers > a:nth-of-type(7) {
+        #tab_community .inner main .wrap > div#notice .paignation .numbers > a:nth-of-type(7) {
           display: none; }
-        #tab_community .inner dl dd #notice .paignation .numbers > a:nth-of-type(8) {
+        #tab_community .inner main .wrap > div#notice .paignation .numbers > a:nth-of-type(8) {
           display: none; }
-        #tab_community .inner dl dd #notice .paignation .numbers > a:nth-of-type(9) {
+        #tab_community .inner main .wrap > div#notice .paignation .numbers > a:nth-of-type(9) {
           display: none; }
-        #tab_community .inner dl dd #notice .paignation .numbers > a:nth-of-type(10) {
+        #tab_community .inner main .wrap > div#notice .paignation .numbers > a:nth-of-type(10) {
           display: none; }
-        #tab_community .inner dl dd #review h1 {
-          font: 500 24px/1 'Roboto'; } }
+        #tab_community .inner main .wrap > div#review > article {
+          display: flex;
+          flex-wrap: wrap; }
+          #tab_community .inner main .wrap > div#review > article .writerInfo {
+            flex: auto;
+            width: 20%; }
+          #tab_community .inner main .wrap > div#review > article .photo {
+            flex: auto;
+            width: 80%; }
+            #tab_community .inner main .wrap > div#review > article .photo img {
+              max-width: 250px; }
+          #tab_community .inner main .wrap > div#review > article .contents {
+            flex: auto;
+            width: 100%;
+            margin-top: 20px; }
+        #tab_community .inner main .wrap > div#review .paignation .numbers > a:nth-of-type(6) {
+          display: none; }
+        #tab_community .inner main .wrap > div#review .paignation .numbers > a:nth-of-type(7) {
+          display: none; }
+        #tab_community .inner main .wrap > div#review .paignation .numbers > a:nth-of-type(8) {
+          display: none; }
+        #tab_community .inner main .wrap > div#review .paignation .numbers > a:nth-of-type(9) {
+          display: none; }
+        #tab_community .inner main .wrap > div#review .paignation .numbers > a:nth-of-type(10) {
+          display: none; } }
 /*mobile ------*/
 @media screen and (max-width: 539px) {
-  .community {
-    padding: 0;
-    margin-bottom: 0; }
-
   #tab_community .inner {
     width: 100%; }
-    #tab_community .inner dl {
-      height: 1000px; }
-      #tab_community .inner dl dt {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 80px;
-        height: 40px;
-        border-left: none; }
-        #tab_community .inner dl dt:nth-of-type(2) {
-          top: 0px;
-          left: 80px; }
-        #tab_community .inner dl dt:nth-of-type(3) {
-          top: 0px;
-          left: 160px; }
-      #tab_community .inner dl dd {
+    #tab_community .inner main {
+      display: block;
+      padding: 0 20px; }
+      #tab_community .inner main > ul {
         width: 100%;
-        float: left;
-        position: absolute;
-        top: 40px;
-        left: 0;
-        display: none;
-        padding: 20px 0px;
-        /*fisrt board-FAQ*/
-        /*second board-NOTICE*/
-        /*third board-REVIEW*/ }
-        #tab_community .inner dl dd.on {
-          display: block; }
-        #tab_community .inner dl dd #faq #searchBox .qstn > h1 {
-          font-size: 18px; }
-        #tab_community .inner dl dd #faq #searchBox .answersBy h3 {
-          font-size: 16px; }
-        #tab_community .inner dl dd #faq #searchBox .answersBy > ul li {
-          padding: 0; }
-          #tab_community .inner dl dd #faq #searchBox .answersBy > ul li a span {
-            font-size: 10px; }
-        #tab_community .inner dl dd #faq h1 {
-          padding-left: 20px; }
-        #tab_community .inner dl dd #faq select {
-          position: absolute;
-          top: 459px;
-          right: 10px; }
-        #tab_community .inner dl dd #faq .accordion {
+        display: flex;
+        margin-bottom: 20px; }
+        #tab_community .inner main > ul li {
+          border: none;
           padding: 0 10px; }
-          #tab_community .inner dl dd #faq .accordion > ul .item {
-            /*title*/
-            /* Text Content */ }
-            #tab_community .inner dl dd #faq .accordion > ul .item > h2 {
+          #tab_community .inner main > ul li a {
+            padding-left: 0px; }
+          #tab_community .inner main > ul li.on {
+            border-bottom: 4px solid #d1ac8f; }
+      #tab_community .inner main .wrap {
+        width: 100%;
+        padding: 0px; }
+        #tab_community .inner main .wrap > div {
+          /*fisrt board-FAQ*/
+          /*second board-NOTICE*/
+          /*third board-REVIEW*/ }
+          #tab_community .inner main .wrap > div#faq #searchBox .qstn {
+            padding: 20px 10px 10px;
+            height: auto; }
+            #tab_community .inner main .wrap > div#faq #searchBox .qstn > h1 {
+              font-size: 18px; }
+            #tab_community .inner main .wrap > div#faq #searchBox .qstn input {
+              width: 80%; }
+            #tab_community .inner main .wrap > div#faq #searchBox .qstn button {
+              width: 20%; }
+          #tab_community .inner main .wrap > div#faq #searchBox .answersBy {
+            padding: 10px 10px 20px; }
+            #tab_community .inner main .wrap > div#faq #searchBox .answersBy h3 {
+              font-size: 16px; }
+            #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li {
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a .pic {
+                height: auto;
+                padding: 0px; }
+              #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a span {
+                display: none; }
+          #tab_community .inner main .wrap > div#faq .accordion {
+            padding: 0 10px; }
+            #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 {
               font-size: 14px;
               line-height: 20px;
               padding: 10px; }
-              #tab_community .inner dl dd #faq .accordion > ul .item > h2:hover {
+              #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2:hover {
                 padding-left: 10px; }
-            #tab_community .inner dl dd #faq .accordion > ul .item .text {
+            #tab_community .inner main .wrap > div#faq .accordion > ul .item .text {
               font-size: 14px;
               line-height: 14px;
               padding: 0px 10px; }
-        #tab_community .inner dl dd #notice h1 {
-          padding: 0 20px;
-          font: 500 24px/1 'Roboto'; }
-        #tab_community .inner dl dd #notice table tr th:nth-of-type(1) {
-          width: 0%;
-          display: none; }
-        #tab_community .inner dl dd #notice table tr th:nth-of-type(3) {
-          width: 27%; }
-        #tab_community .inner dl dd #notice table tr th:nth-of-type(4) {
-          width: 0%;
-          display: none; }
-        #tab_community .inner dl dd #notice table tr td:nth-of-type(1) {
-          width: 0%;
-          display: none; }
-        #tab_community .inner dl dd #notice .paignation .numbers {
-          display: none; }
-        #tab_community .inner dl dd #review h1 {
-          padding: 0 20px;
-          font: 500 24px/1 'Roboto'; } }
+          #tab_community .inner main .wrap > div#notice h1 {
+            padding: 0 20px;
+            font: 500 24px/1 'Roboto'; }
+          #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(1) {
+            width: 0%;
+            display: none; }
+          #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(3) {
+            width: 27%; }
+          #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(4) {
+            width: 0%;
+            display: none; }
+          #tab_community .inner main .wrap > div#notice table tr td:nth-of-type(1) {
+            width: 0%;
+            display: none; }
+          #tab_community .inner main .wrap > div#notice .paignation .numbers {
+            display: none; }
+          #tab_community .inner main .wrap > div#review h1 {
+            padding: 0 20px;
+            font: 500 24px/1 'Roboto'; } }
 /*----- login sub_visual section -------------------------------*/
 .login {
   width: 100%; }
