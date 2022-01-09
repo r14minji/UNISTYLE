@@ -2129,12 +2129,6 @@ table {
           transition: 0.2s;
           font-size: 16px;
           transition: border-bottom 0.6s ease; }
-          #contact .inner .wrap form input[type=text]:focus {
-            border-bottom: 2px solid #ff3f00; }
-          #contact .inner .wrap form input[type=text]:focus + label {
-            color: #ff3f00;
-            transform: translateY(-21px);
-            font-size: 12px; }
           #contact .inner .wrap form input[type=text].on {
             border-bottom: 2px solid #ff3f00; }
           #contact .inner .wrap form input[type=text].on + label {

@@ -30,11 +30,34 @@ window.onload = function(){
 
 
 //input에 value값이 있을 경우
-const form = document.querySelector("#getInTouch-form");
+const form = document.querySelector("form");
 const inputs = form.querySelectorAll("[type=text]");
-// inputs.forEach(el =>{
-//   let txt = el.value;
-//   console.log(txt);
+const labels = form.querySelectorAll(".up");
+//console.log(inputs);
 
-// })
-const firstName = form.querySelector("#to_first_name");
+inputs.forEach((input, index)=>{
+  input.addEventListener("focus", e=>{
+    let focus = e.currentTarget;
+    focus.classList.add("on");
+  })
+
+  input.addEventListener("keydown", e=>{
+    let value = e.currentTarget.value;
+    if(value.length > 0){
+      e.currentTarget.classList.add("on");
+    }
+  })
+
+  input.addEventListener("blur", e=>{
+    if(input.value.length >0 ){
+      e.preventDefault();
+    }else{
+      let blur = e.currentTarget;
+      blur.classList.remove("on");
+    }
+  })
+})
+
+
+
+
