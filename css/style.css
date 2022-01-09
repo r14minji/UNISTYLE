@@ -2607,11 +2607,11 @@ aside.popup_youtube {
       width: 100%;
       position: relative; }
       .galleryContents .inner .wrap .loading {
-        width: 100px;
+        width: 200px;
         position: fixed;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -20%);
         transition: 1s; }
         .galleryContents .inner .wrap .loading.off {
           opacity: 0; }
@@ -2628,7 +2628,8 @@ aside.popup_youtube {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: 100px; }
+        margin-bottom: 100px;
+        min-height: 500px; }
         .galleryContents .inner .wrap #photoList.on {
           transform: translateY(0px);
           opacity: 1; }

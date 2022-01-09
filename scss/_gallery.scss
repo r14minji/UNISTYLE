@@ -40,8 +40,8 @@
       width: 100%; position: relative;
 
       .loading{
-        width: 100px;
-        position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        width: 200px;
+        position: fixed; top: 50%; left: 50%; transform: translate(-50%, -20%);
         transition: 1s;
   
         &.off { opacity: 0;}
@@ -58,6 +58,7 @@
         display: flex; justify-content: space-between; 
         flex-wrap: wrap;
         margin-bottom: 100px;
+        min-height: 500px;
         
         &.on{
           transform: translateY(0px); opacity: 1;
