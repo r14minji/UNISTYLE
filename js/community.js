@@ -14,24 +14,24 @@ function callData(){
 
 //tab
 const tab = document.querySelector("#tab_community");
-const dts = tab.querySelectorAll("dt");
-const dds = tab.querySelectorAll("dd");
-const dt_btn = document.querySelectorAll("dt>a");
+const btns = tab.querySelectorAll("ul li");
+const boxs = tab.querySelectorAll(".wrap >div");
+const btns_a = document.querySelectorAll("dt>a");
 
-dts.forEach((el, index) =>{
+btns.forEach((el, index) =>{
   el.addEventListener("click", e => {
     e.preventDefault();
     let isOn = e.currentTarget.classList.contains("on");
     if(isOn) return;
-    activationTab(dts, index);
-    activationTab(dds, index);
+    activationTab(btns, index);
+    activationTab(boxs, index);
   })
 })
 
-dt_btn.forEach((el, index) => {
+btns_a.forEach((el, index) => {
   el.addEventListener("focusin", e => {
-    activationTab(dts, index);
-    activationTab(dds, index);
+    activationTab(btns, index);
+    activationTab(boxs, index);
   })
 })
 
