@@ -5,6 +5,8 @@ const btn = document.querySelector(".btnSearch");
 const loading = document.querySelector(".loading");
 const list = document.querySelector("#photoList");
 const errMsg = document.querySelector(".errMsg");
+const h1 = document.querySelector(".gallery .inner h1");
+
 
 
 this.url4 =`${this.base}method=${this.method5}&api_key=${this.key}&per_page=${this.per_page}&format=json&nojsoncallback=1&gallery_id=${this.galleryname}`;
@@ -23,6 +25,11 @@ const url1 = `https://www.flickr.com/services/rest/?method=${method1}&api_key=${
 
 callData(url1);
 window.onload = callData(url1);
+
+//h1클릭시 처음 데이터 보여주기
+h1.addEventListener("click", e=>{
+  callData(url1);
+})
 
 // 검색어로 이미지 찾기
 btn.addEventListener("click", e=>{
@@ -65,7 +72,7 @@ list.addEventListener("click", e => {
   if(e.target == list) return
 
   let target = e.target.closest(".item").querySelector(".viewMore");
-  console.log(target);
+  //console.log(target);
 
   if(e.target == target){
     const imgSrc = target.getAttribute("href");
@@ -117,11 +124,13 @@ function callData(url){
     if(items.length > 0){
       createList(items);
       delayLoading();
+
     }else{
       loading.classList.add("off");
       errMsg.innerText = "검색하신 이미지의 데이터가 없습니다.";
       errMsg.style.display = "block";
     }
+    
   })
 }
 

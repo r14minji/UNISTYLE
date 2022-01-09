@@ -2571,6 +2571,8 @@ aside.popup_youtube {
   margin-bottom: 0px; }
   .gallery .sub_visual {
     background: url(../img/sub4.jpg) no-repeat center/cover; }
+  .gallery .inner h1 {
+    cursor: pointer; }
 
 /*----- galleryContents ------------------*/
 .galleryContents {
