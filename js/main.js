@@ -13,7 +13,6 @@ btnCall.addEventListener("click", e =>{
 
 //2depth 
 gnb_lis.forEach( li=>{
-  console.log(li);
   li.addEventListener("mouseenter", e=>{
     const sub = e.currentTarget.querySelector(".sub");
     if(sub !=null){

@@ -1,0 +1,52 @@
+{
+  "review" :[
+    {
+      "userIconSrc" : "/img/userIcon1.png",
+      "userId" : "ganda5396",
+      "photoSrc"  : "/img/review1.jpg",
+      "start" : 5,
+      "date" : "2022.01.09",
+      "description" :" Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores delectus fugiat quo veritatis quibusdam officiis a aliquid, iure vero pariatur ut quas reprehenderit amet ipsam aut beatae consequatur officia?"
+    },
+    {
+      "userIconSrc" : "/img/userIcon2.png",
+      "userId" : "54orions",
+      "photoSrc"  : "/img/review2.jpg",
+      "start" : 4,
+      "date" : "2022.01.07",
+      "description" :" Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores delectus fugiat quo veritatis quibusdam officiis a aliquid, iure vero pariatur ut quas reprehenderit amet ipsam aut beatae consequatur officia s fugiat quo veritatis quibusdam officiis a aliquid, iure. "
+    },
+    {
+      "userIconSrc" : "/img/userIcon3.png",
+      "userId" : "dasie009",
+      "photoSrc"  : "/img/review3.jpg",
+      "start" : 5,
+      "date" : "2022.01.02",
+      "description" :" Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores delectus fugiat quo veritatis quibusdam officiis a aliquid, iure vero pariatur ut quas reprehenderit amet ipsam aut beatae consequatur officia res delectus fugiat quo verita."
+    },
+    {
+      "userIconSrc" : "/img/userIcon4.png",
+      "userId" : "__bobo",
+      "photoSrc"  : "/img/review4.jpg",
+      "start" :3,
+      "date" : "2021.12.25",
+      "description" :" Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores delectus fugiat quo veritatis quibusdam officiis a aliquid, iure vero pariatur ut quas reprehenderit amet ipsam aut beatae consequatur officia  ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores delectus fugiat quo veritatis quibusdam  ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores delectus fugiat quo veritatis quibusdam."
+    },
+    {
+      "userIconSrc" : "/img/userIcon5.png",
+      "userId" : "kauylle9",
+      "photoSrc"  : "/img/review5.jpg",
+      "start" : 5,
+      "date" : "2021.11.01",
+      "description" :" Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores delectus fugiat quo veritatis quibusdam officiis a aliquid, iure vero pariatur ut quas reprehenderit amet ipsam aut beatae consequatur officia."
+    },
+    {
+      "userIconSrc" : "/img/userIcon6.png",
+      "userId" : "Ellea45",
+      "photoSrc"  : "/img/review6.jpg",
+      "start" : 4,
+      "date" : "2021.10.28",
+      "description" :" Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores delectus fugiat quo. "
+    }
+  ]
+}

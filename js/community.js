@@ -1,10 +1,21 @@
 //api 데이터 불러오기
+function callData(){
+  const url = "./dbs/community.json";
+
+  fetch(url)
+  .then(data =>{
+    console.log(data)
+    return data.json();
+  })
+  .then(json =>{
+    console.log(json)
+  })
+}
 
 //tab
 const tab = document.querySelector("#tab_community");
 const dts = tab.querySelectorAll("dt");
 const dds = tab.querySelectorAll("dd");
-console
 const dt_btn = document.querySelectorAll("dt>a");
 
 dts.forEach((el, index) =>{
