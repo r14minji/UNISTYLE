@@ -1085,355 +1085,348 @@ table {
   #tab_community .inner {
     width: 1180px;
     margin: 0 auto;
-    position: relative;
-    background: yellow; }
-    #tab_community .inner dl {
+    position: relative; }
+    #tab_community .inner main {
+      width: 100%;
+      position: relative;
+      margin-bottom: 40px;
       display: flex; }
-      #tab_community .inner dl dt {
-        flex-direction: column;
-        display: block;
-        border: 1px solid #000;
-        width: 236px;
-        height: 40px;
-        border-left: 4px solid #d1ac8f; }
-        #tab_community .inner dl dt:nth-of-type(2) {
-          top: 40px; }
-        #tab_community .inner dl dt:nth-of-type(3) {
-          top: 80px; }
-        #tab_community .inner dl dt a {
-          display: block;
-          width: 100%;
-          font: 300 16px/40px 'roboto';
-          margin-left: 30px;
-          color: #555; }
-        #tab_community .inner dl dt.on a {
-          font-weight: 500;
-          color: #d1ac8f; }
-      #tab_community .inner dl dd {
-        width: 944px;
-        height: auto;
-        display: none;
-        /*fisrt board-FAQ*/
-        /*second board-NOTICE*/
-        /*third board-REVIEW*/ }
-        #tab_community .inner dl dd.on {
-          display: block; }
-        #tab_community .inner dl dd #faq {
-          width: 100%; }
-          #tab_community .inner dl dd #faq ::after {
-            content: '';
+      #tab_community .inner main > ul {
+        width: 15%; }
+        #tab_community .inner main > ul li {
+          height: 40px;
+          border-left: 4px solid #d1ac8f; }
+          #tab_community .inner main > ul li a {
             display: block;
-            clear: both; }
-          #tab_community .inner dl dd #faq #searchQstn {
-            width: 100%;
-            margin-bottom: 40px; }
-            #tab_community .inner dl dd #faq #searchQstn ::after {
+            font: 300 16px/40px 'roboto';
+            padding-left: 30px;
+            color: #555; }
+          #tab_community .inner main > ul li.on a {
+            font-weight: 500;
+            color: #d1ac8f; }
+      #tab_community .inner main .wrap {
+        width: 85%;
+        padding-left: 40px; }
+        #tab_community .inner main .wrap > div {
+          display: none;
+          /*fisrt board-FAQ*/
+          /*second board-NOTICE*/
+          /*third board-REVIEW*/ }
+          #tab_community .inner main .wrap > div.on {
+            display: block; }
+          #tab_community .inner main .wrap > div#faq {
+            width: 100%; }
+            #tab_community .inner main .wrap > div#faq ::after {
               content: '';
               display: block;
               clear: both; }
-            #tab_community .inner dl dd #faq #searchQstn .qstn {
-              width: 50%;
-              float: left;
-              padding: 20px 30px;
-              background: #eee;
-              height: 264px; }
-              #tab_community .inner dl dd #faq #searchQstn .qstn > h1 {
-                font: 500 30px/1.2 'roboto';
-                color: #101820;
-                float: left;
-                margin-bottom: 10px; }
-              #tab_community .inner dl dd #faq #searchQstn .qstn > input {
-                width: 90%;
-                height: 50px;
-                padding: 5px 10px;
-                float: left; }
-              #tab_community .inner dl dd #faq #searchQstn .qstn > button {
-                width: 10%;
-                height: 50px;
-                float: right;
-                border: none;
-                background: #101820;
-                text-align: center;
-                cursor: pointer; }
-                #tab_community .inner dl dd #faq #searchQstn .qstn > button i {
-                  color: #eee;
-                  font-size: 20px; }
-              #tab_community .inner dl dd #faq #searchQstn .qstn > h2 {
-                margin: 10px 5px 5px;
-                float: left;
-                width: 100%;
-                font: 500 12px/1.2 'roboto'; }
-              #tab_community .inner dl dd #faq #searchQstn .qstn > span {
-                margin-left: 5px;
-                float: left;
-                font: 300 14px/1.4 'roboto'; }
-                #tab_community .inner dl dd #faq #searchQstn .qstn > span i {
-                  padding-right: 10px; }
-            #tab_community .inner dl dd #faq #searchQstn .answersBy {
-              width: 50%;
-              float: right;
-              padding: 30px 20px;
-              background: #eee;
-              margin: 0 auto; }
-              #tab_community .inner dl dd #faq #searchQstn .answersBy h3 {
-                font: 500 20px/1.2 'roboto';
-                color: #101820;
-                margin-bottom: 10px; }
-              #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li {
-                float: left;
+            #tab_community .inner main .wrap > div#faq #searchBox {
+              width: 100%;
+              margin-bottom: 40px; }
+              #tab_community .inner main .wrap > div#faq #searchBox ::after {
+                content: '';
                 display: block;
-                width: 49%;
-                padding: 5px 10px;
-                border: 1px solid #eee;
-                background: #fff; }
-                #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li:hover a .pic i, #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li:hover span {
-                  color: #d1ac8f; }
-                #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li a {
-                  display: block; }
-                  #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li a .pic {
-                    width: 100%;
-                    height: 50px;
-                    text-align: center;
-                    padding-top: 20px; }
-                    #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li a .pic i {
-                      font-size: 20px;
-                      color: #000; }
-                  #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li a span {
-                    display: block;
-                    width: 100%;
-                    font: 500 12px/1 'roboto';
-                    color: #101820;
-                    float: left;
-                    padding: 5px;
-                    text-align: center; }
-          #tab_community .inner dl dd #faq h1 {
-            font: 500 24px/1 'Roboto';
-            letter-spacing: 2px;
-            color: #101820;
-            margin-bottom: 40px; }
-          #tab_community .inner dl dd #faq select {
-            position: absolute;
-            top: 310px;
-            right: 0;
-            z-index: 2;
-            width: 140px;
-            background: #fff;
-            border: none;
-            font: 300 14px/1 'roboto'; }
-            #tab_community .inner dl dd #faq select option {
-              font: 300 14px/1 'roboto';
-              color: #52616b; }
-          #tab_community .inner dl dd #faq .container {
-            width: 100%;
-            height: auto;
-            position: relative; }
-            #tab_community .inner dl dd #faq .container > ul {
-              background: #fff;
-              border-radius: 3px; }
-              #tab_community .inner dl dd #faq .container > ul .item {
-                position: relative;
-                /*title*/
-                /* Text Content */ }
-                #tab_community .inner dl dd #faq .container > ul .item .accordionTitle {
-                  padding: 20px 20px 20px 150px;
-                  position: relative;
-                  font: 500 18px/30px 'roboto';
-                  color: #52616b;
-                  transition: ease-in-out 0.2s all;
-                  border-top: 1px solid #BFD9EB;
+                clear: both; }
+              #tab_community .inner main .wrap > div#faq #searchBox .qstn {
+                width: 50%;
+                float: left;
+                padding: 20px 30px;
+                background: #eee;
+                height: 264px; }
+                #tab_community .inner main .wrap > div#faq #searchBox .qstn > h1 {
+                  font: 500 30px/1.2 'roboto';
+                  color: #101820;
+                  float: left;
+                  margin-bottom: 10px; }
+                #tab_community .inner main .wrap > div#faq #searchBox .qstn > input {
+                  width: 90%;
+                  height: 50px;
+                  padding: 5px 10px;
+                  float: left; }
+                #tab_community .inner main .wrap > div#faq #searchBox .qstn > button {
+                  width: 10%;
+                  height: 50px;
+                  float: right;
+                  border: none;
+                  background: #101820;
+                  text-align: center;
                   cursor: pointer; }
-                  #tab_community .inner dl dd #faq .container > ul .item .accordionTitle:hover {
-                    padding-left: 175px; }
-                    #tab_community .inner dl dd #faq .container > ul .item .accordionTitle:hover .accIcon::before, #tab_community .inner dl dd #faq .container > ul .item .accordionTitle:hover .accIcon::after {
-                      background-color: #52616b; }
-                  #tab_community .inner dl dd #faq .container > ul .item .accordionTitle strong {
-                    display: inline-block;
-                    position: absolute;
-                    top: 25px;
-                    left: 10px;
-                    width: 140px;
-                    font: 500 11px/30px 'roboto';
-                    color: #101820; }
-                  #tab_community .inner dl dd #faq .container > ul .item .accordionTitle .accIcon {
-                    float: right;
-                    width: 30px;
-                    height: 30px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: -3px; }
-                    #tab_community .inner dl dd #faq .container > ul .item .accordionTitle .accIcon::before, #tab_community .inner dl dd #faq .container > ul .item .accordionTitle .accIcon::after {
-                      content: "";
-                      display: block;
-                      position: absolute;
-                      border-radius: 50px;
-                      background: #c9d6df;
-                      transition: ease 0.3s all; }
-                    #tab_community .inner dl dd #faq .container > ul .item .accordionTitle .accIcon::before {
-                      width: 2px;
-                      height: 20px; }
-                    #tab_community .inner dl dd #faq .container > ul .item .accordionTitle .accIcon::after {
-                      width: 20px;
-                      height: 2px; }
-                    #tab_community .inner dl dd #faq .container > ul .item .accordionTitle .accIcon.anime.accIcon::before {
-                      transform: rotate(90deg); }
-                #tab_community .inner dl dd #faq .container > ul .item .text {
-                  font: 300 16px/24px 'roboto';
-                  letter-spacing: 0.5px;
-                  background-color: #f0f5f9;
-                  padding: 0px 20px;
-                  overflow: hidden;
-                  position: relative;
-                  opacity: 0;
-                  height: 0;
-                  transition: all 0.6s cubic-bezier(0.42, 0.2, 0.08, 1); }
-                  #tab_community .inner dl dd #faq .container > ul .item .text.show {
-                    opacity: 1;
-                    height: auto;
-                    padding: 25px 20px;
-                    position: relative;
-                    z-index: 0;
-                    border-radius: 0px 0px 3px 3px; }
-        #tab_community .inner dl dd #notice {
-          width: 100%;
-          position: relative; }
-          #tab_community .inner dl dd #notice h1 {
-            font: 500 24px/1 'Roboto';
-            letter-spacing: 2px;
-            color: #101820;
-            margin-bottom: 20px; }
-          #tab_community .inner dl dd #notice table {
-            width: 100%;
-            margin-bottom: 50px;
-            border-collapse: collapse; }
-            #tab_community .inner dl dd #notice table tr th {
-              padding: 10px 15px;
-              background: #d1ac8f;
-              color: #fff; }
-              #tab_community .inner dl dd #notice table tr th:nth-of-type(1) {
-                width: 10%; }
-              #tab_community .inner dl dd #notice table tr th:nth-of-type(3) {
-                width: 15%; }
-              #tab_community .inner dl dd #notice table tr th:nth-of-type(4) {
-                width: 15%; }
-            #tab_community .inner dl dd #notice table tr td {
-              padding: 20px 15px;
-              border-bottom: 1px solid #ddd;
-              text-align: center;
-              color: #52616b;
-              font: 300 14px/1 'roboto'; }
-              #tab_community .inner dl dd #notice table tr td:nth-of-type(2) {
-                text-align: left; }
-                #tab_community .inner dl dd #notice table tr td:nth-of-type(2) a {
-                  text-align: left;
-                  color: #52616b; }
-            #tab_community .inner dl dd #notice table tr:hover td {
-              background: rgba(255, 233, 207, 0.5); }
-          #tab_community .inner dl dd #notice .paignation {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center; }
-            #tab_community .inner dl dd #notice .paignation > a {
-              display: inline-block;
-              width: 30px;
-              height: 30px;
-              font: normal 20px/30px 'Roboto';
-              color: #d1ac8f;
-              opacity: 0.7; }
-            #tab_community .inner dl dd #notice .paignation .numbers {
-              display: flex;
-              justify-content: space-around;
-              align-items: center; }
-              #tab_community .inner dl dd #notice .paignation .numbers > a {
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                font: normal 20px/30px 'Roboto';
-                color: #52616b;
-                text-align: center;
-                opacity: 0.7; }
-                #tab_community .inner dl dd #notice .paignation .numbers > a.on {
-                  background: #d1ac8f;
-                  color: #fff;
-                  opacity: 1; }
-        #tab_community .inner dl dd #review {
-          width: 100%;
-          position: relative; }
-          #tab_community .inner dl dd #review h1 {
-            font: 500 24px/1 'Roboto';
-            letter-spacing: 2px;
-            color: #101820;
-            margin-bottom: 20px; }
-          #tab_community .inner dl dd #review > article {
-            width: 100%;
-            padding: 10px;
-            display: flex;
-            border-top: 1px solid #ddd;
-            border-bottom: 1px solid #ddd; }
-            #tab_community .inner dl dd #review > article .writerInfo {
-              flex: 1; }
-              #tab_community .inner dl dd #review > article .writerInfo .userIcon {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                margin: 0 auto; }
-                #tab_community .inner dl dd #review > article .writerInfo .userIcon img {
+                  #tab_community .inner main .wrap > div#faq #searchBox .qstn > button i {
+                    color: #eee;
+                    font-size: 20px; }
+                #tab_community .inner main .wrap > div#faq #searchBox .qstn > h2 {
+                  margin: 10px 5px 5px;
+                  float: left;
                   width: 100%;
-                  height: 100%;
-                  object-fit: cover; }
-              #tab_community .inner dl dd #review > article .writerInfo p {
-                font: 400 14px/1 'Roboto';
-                padding: 10px 0;
-                text-align: center;
-                color: #777; }
-            #tab_community .inner dl dd #review > article .photo {
-              flex: 3;
-              padding: 0 20px; }
-              #tab_community .inner dl dd #review > article .photo img {
-                width: 100%;
-                object-fit: cover; }
-            #tab_community .inner dl dd #review > article .contents {
-              flex: 10;
-              padding: 0 10px; }
-              #tab_community .inner dl dd #review > article .contents span {
-                font-size: 20px;
-                color: #821002; }
-              #tab_community .inner dl dd #review > article .contents strong {
-                font: 400 16px/1 'Roboto';
-                color: #777; }
-              #tab_community .inner dl dd #review > article .contents > p {
-                margin: 20px 0px;
-                font: 300 16px/1 'Roboto'; }
-          #tab_community .inner dl dd #review .paignation {
-            margin-top: 20px;
+                  font: 500 12px/1.2 'roboto'; }
+                #tab_community .inner main .wrap > div#faq #searchBox .qstn > span {
+                  margin-left: 5px;
+                  float: left;
+                  font: 300 14px/1.4 'roboto'; }
+                  #tab_community .inner main .wrap > div#faq #searchBox .qstn > span i {
+                    padding-right: 10px; }
+              #tab_community .inner main .wrap > div#faq #searchBox .answersBy {
+                width: 50%;
+                float: right;
+                padding: 30px 20px;
+                background: #eee;
+                margin: 0 auto; }
+                #tab_community .inner main .wrap > div#faq #searchBox .answersBy h3 {
+                  font: 500 20px/1.2 'roboto';
+                  color: #101820;
+                  margin-bottom: 10px; }
+                #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li {
+                  float: left;
+                  display: block;
+                  width: 49%;
+                  padding: 5px 10px;
+                  border: 1px solid #eee;
+                  background: #fff; }
+                  #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li:hover a .pic i, #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li:hover span {
+                    color: #d1ac8f; }
+                  #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a {
+                    display: block; }
+                    #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a .pic {
+                      width: 100%;
+                      height: 50px;
+                      text-align: center;
+                      padding-top: 20px; }
+                      #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a .pic i {
+                        font-size: 20px;
+                        color: #000; }
+                    #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a span {
+                      display: block;
+                      width: 100%;
+                      font: 500 12px/1 'roboto';
+                      color: #101820;
+                      float: left;
+                      padding: 5px;
+                      text-align: center; }
+            #tab_community .inner main .wrap > div#faq h1 {
+              font: 500 24px/1 'Roboto';
+              letter-spacing: 2px;
+              color: #101820;
+              margin-bottom: 20px; }
+            #tab_community .inner main .wrap > div#faq select {
+              position: absolute;
+              top: 310px;
+              right: 0;
+              z-index: 2;
+              width: 140px;
+              background: #fff;
+              border: none;
+              font: 300 14px/1 'roboto'; }
+              #tab_community .inner main .wrap > div#faq select option {
+                font: 300 14px/1 'roboto';
+                color: #52616b; }
+            #tab_community .inner main .wrap > div#faq .accordion {
+              width: 100%;
+              position: relative; }
+              #tab_community .inner main .wrap > div#faq .accordion > ul {
+                background: #fff;
+                border-radius: 3px; }
+                #tab_community .inner main .wrap > div#faq .accordion > ul .item {
+                  position: relative; }
+                  #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 {
+                    padding: 20px 20px 20px 150px;
+                    position: relative;
+                    font: 500 18px/30px 'roboto';
+                    color: #52616b;
+                    transition: ease-in-out 0.2s all;
+                    border-top: 1px solid #BFD9EB;
+                    cursor: pointer; }
+                    #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 strong {
+                      display: inline-block;
+                      position: absolute;
+                      top: 25px;
+                      left: 10px;
+                      width: 140px;
+                      font: 500 11px/30px 'roboto';
+                      color: #101820; }
+                    #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 .accIcon {
+                      float: right;
+                      width: 30px;
+                      height: 30px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      margin-top: -3px; }
+                      #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 .accIcon::before, #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 .accIcon::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        border-radius: 50px;
+                        background: #c9d6df;
+                        transition: ease 0.3s all; }
+                      #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 .accIcon::before {
+                        width: 2px;
+                        height: 20px; }
+                      #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 .accIcon::after {
+                        width: 20px;
+                        height: 2px; }
+                      #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 .accIcon.anime.accIcon::before {
+                        transform: rotate(90deg); }
+                    #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2:hover {
+                      padding-left: 175px; }
+                      #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2:hover .accIcon::before, #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2:hover .accIcon::after {
+                        background-color: #52616b; }
+                  #tab_community .inner main .wrap > div#faq .accordion > ul .item .text {
+                    font: 300 16px/24px 'roboto';
+                    letter-spacing: 0.5px;
+                    background-color: #f0f5f9;
+                    padding: 0px 20px;
+                    overflow: hidden;
+                    position: relative;
+                    opacity: 0;
+                    height: 0;
+                    transition: all 0.6s cubic-bezier(0.42, 0.2, 0.08, 1); }
+                    #tab_community .inner main .wrap > div#faq .accordion > ul .item .text.show {
+                      opacity: 1;
+                      height: auto;
+                      padding: 25px 20px;
+                      position: relative;
+                      z-index: 0;
+                      border-radius: 0px 0px 3px 3px; }
+          #tab_community .inner main .wrap > div#notice {
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center; }
-            #tab_community .inner dl dd #review .paignation > a {
-              display: inline-block;
-              width: 30px;
-              height: 30px;
-              font: normal 20px/30px 'Roboto';
-              color: #d1ac8f;
-              opacity: 0.7; }
-            #tab_community .inner dl dd #review .paignation .numbers {
+            position: relative; }
+            #tab_community .inner main .wrap > div#notice h1 {
+              font: 500 24px/1 'Roboto';
+              letter-spacing: 2px;
+              color: #101820;
+              margin-bottom: 20px; }
+            #tab_community .inner main .wrap > div#notice table {
+              width: 100%;
+              margin-bottom: 50px;
+              border-collapse: collapse; }
+              #tab_community .inner main .wrap > div#notice table tr th {
+                padding: 10px 15px;
+                background: #d1ac8f;
+                color: #fff; }
+                #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(1) {
+                  width: 10%; }
+                #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(3) {
+                  width: 15%; }
+                #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(4) {
+                  width: 15%; }
+              #tab_community .inner main .wrap > div#notice table tr td {
+                padding: 20px 15px;
+                border-bottom: 1px solid #ddd;
+                text-align: center;
+                color: #52616b;
+                font: 300 14px/1 'roboto'; }
+                #tab_community .inner main .wrap > div#notice table tr td:nth-of-type(2) {
+                  text-align: left; }
+                  #tab_community .inner main .wrap > div#notice table tr td:nth-of-type(2) a {
+                    text-align: left;
+                    color: #52616b; }
+              #tab_community .inner main .wrap > div#notice table tr:hover td {
+                background: rgba(255, 233, 207, 0.5); }
+            #tab_community .inner main .wrap > div#notice .paignation {
+              width: 100%;
               display: flex;
-              justify-content: space-around;
+              justify-content: space-between;
               align-items: center; }
-              #tab_community .inner dl dd #review .paignation .numbers > a {
+              #tab_community .inner main .wrap > div#notice .paignation > a {
                 display: inline-block;
                 width: 30px;
                 height: 30px;
                 font: normal 20px/30px 'Roboto';
-                color: #52616b;
-                text-align: center;
+                color: #d1ac8f;
                 opacity: 0.7; }
-                #tab_community .inner dl dd #review .paignation .numbers > a.on {
-                  background: #d1ac8f;
-                  color: #fff;
-                  opacity: 1; }
+              #tab_community .inner main .wrap > div#notice .paignation .numbers {
+                display: flex;
+                justify-content: space-around;
+                align-items: center; }
+                #tab_community .inner main .wrap > div#notice .paignation .numbers > a {
+                  display: inline-block;
+                  width: 30px;
+                  height: 30px;
+                  font: normal 20px/30px 'Roboto';
+                  color: #52616b;
+                  text-align: center;
+                  opacity: 0.7; }
+                  #tab_community .inner main .wrap > div#notice .paignation .numbers > a.on {
+                    background: #d1ac8f;
+                    color: #fff;
+                    opacity: 1; }
+          #tab_community .inner main .wrap > div#review {
+            width: 100%;
+            position: relative; }
+            #tab_community .inner main .wrap > div#review h1 {
+              font: 500 24px/1 'Roboto';
+              letter-spacing: 2px;
+              color: #101820;
+              margin-bottom: 20px; }
+            #tab_community .inner main .wrap > div#review > article {
+              width: 100%;
+              padding: 10px;
+              display: flex;
+              border-top: 1px solid #ddd;
+              border-bottom: 1px solid #ddd; }
+              #tab_community .inner main .wrap > div#review > article .writerInfo {
+                flex: 1; }
+                #tab_community .inner main .wrap > div#review > article .writerInfo .userIcon {
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  margin: 0 auto; }
+                  #tab_community .inner main .wrap > div#review > article .writerInfo .userIcon img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; }
+                #tab_community .inner main .wrap > div#review > article .writerInfo p {
+                  font: 400 14px/1 'Roboto';
+                  padding: 10px 0;
+                  text-align: center;
+                  color: #777; }
+              #tab_community .inner main .wrap > div#review > article .photo {
+                flex: 3;
+                padding: 0 20px; }
+                #tab_community .inner main .wrap > div#review > article .photo img {
+                  width: 100%;
+                  object-fit: cover; }
+              #tab_community .inner main .wrap > div#review > article .contents {
+                flex: 10;
+                padding: 0 10px; }
+                #tab_community .inner main .wrap > div#review > article .contents span {
+                  font-size: 20px;
+                  color: #821002; }
+                #tab_community .inner main .wrap > div#review > article .contents strong {
+                  font: 400 16px/1 'Roboto';
+                  color: #777; }
+                #tab_community .inner main .wrap > div#review > article .contents > p {
+                  margin: 20px 0px;
+                  font: 300 16px/1 'Roboto'; }
+            #tab_community .inner main .wrap > div#review .paignation {
+              margin-top: 20px;
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center; }
+              #tab_community .inner main .wrap > div#review .paignation > a {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                font: normal 20px/30px 'Roboto';
+                color: #d1ac8f;
+                opacity: 0.7; }
+              #tab_community .inner main .wrap > div#review .paignation .numbers {
+                display: flex;
+                justify-content: space-around;
+                align-items: center; }
+                #tab_community .inner main .wrap > div#review .paignation .numbers > a {
+                  display: inline-block;
+                  width: 30px;
+                  height: 30px;
+                  font: normal 20px/30px 'Roboto';
+                  color: #52616b;
+                  text-align: center;
+                  opacity: 0.7; }
+                  #tab_community .inner main .wrap > div#review .paignation .numbers > a.on {
+                    background: #d1ac8f;
+                    color: #fff;
+                    opacity: 1; }
 
 /*tablet ------*/
 @media screen and (max-width: 1179px) {
@@ -1469,30 +1462,30 @@ table {
           display: block; }
         #tab_community .inner dl dd #faq {
           width: 100%; }
-          #tab_community .inner dl dd #faq #searchQstn {
+          #tab_community .inner dl dd #faq #searchBox {
             width: 100%;
             margin-bottom: 40px; }
-            #tab_community .inner dl dd #faq #searchQstn .qstn {
+            #tab_community .inner dl dd #faq #searchBox .qstn {
               width: 100%;
               float: left;
               padding: 30px 20px;
               height: 210px; }
-              #tab_community .inner dl dd #faq #searchQstn .qstn > h1 {
+              #tab_community .inner dl dd #faq #searchBox .qstn > h1 {
                 font-size: 20px;
                 color: #101820; }
-              #tab_community .inner dl dd #faq #searchQstn .qstn > span {
+              #tab_community .inner dl dd #faq #searchBox .qstn > span {
                 margin: 5px; }
-            #tab_community .inner dl dd #faq #searchQstn .answersBy {
+            #tab_community .inner dl dd #faq #searchBox .answersBy {
               width: 100%;
               float: left; }
-              #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li {
+              #tab_community .inner dl dd #faq #searchBox .answersBy > ul li {
                 float: left;
                 display: block;
                 width: 24%;
                 height: 96px; }
-                #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li a .pic i {
+                #tab_community .inner dl dd #faq #searchBox .answersBy > ul li a .pic i {
                   color: #d1ac8f; }
-                #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li a span {
+                #tab_community .inner dl dd #faq #searchBox .answersBy > ul li a span {
                   color: #d1ac8f; }
           #tab_community .inner dl dd #faq h1 {
             font: 500 24px/1 'Roboto'; }
@@ -1500,23 +1493,23 @@ table {
             position: absolute;
             top: 474px;
             right: 20px; }
-          #tab_community .inner dl dd #faq .container {
+          #tab_community .inner dl dd #faq .accordion {
             width: 100%;
             height: auto;
             position: relative; }
-            #tab_community .inner dl dd #faq .container > ul .item {
+            #tab_community .inner dl dd #faq .accordion > ul .item {
               position: relative;
               /*title*/
               /* Text Content */ }
-              #tab_community .inner dl dd #faq .container > ul .item .accordionTitle {
+              #tab_community .inner dl dd #faq .accordion > ul .item > h2 {
                 font-size: 16px;
                 line-height: 30px;
                 padding: 20px; }
-                #tab_community .inner dl dd #faq .container > ul .item .accordionTitle:hover {
+                #tab_community .inner dl dd #faq .accordion > ul .item > h2:hover {
                   padding-left: 20px; }
-                #tab_community .inner dl dd #faq .container > ul .item .accordionTitle strong {
+                #tab_community .inner dl dd #faq .accordion > ul .item > h2 strong {
                   display: none; }
-              #tab_community .inner dl dd #faq .container > ul .item .text {
+              #tab_community .inner dl dd #faq .accordion > ul .item .text {
                 font-size: 14px; }
         #tab_community .inner dl dd #notice h1 {
           font: 500 24px/1 'Roboto'; }
@@ -1578,13 +1571,13 @@ table {
         /*third board-REVIEW*/ }
         #tab_community .inner dl dd.on {
           display: block; }
-        #tab_community .inner dl dd #faq #searchQstn .qstn > h1 {
+        #tab_community .inner dl dd #faq #searchBox .qstn > h1 {
           font-size: 18px; }
-        #tab_community .inner dl dd #faq #searchQstn .answersBy h3 {
+        #tab_community .inner dl dd #faq #searchBox .answersBy h3 {
           font-size: 16px; }
-        #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li {
+        #tab_community .inner dl dd #faq #searchBox .answersBy > ul li {
           padding: 0; }
-          #tab_community .inner dl dd #faq #searchQstn .answersBy > ul li a span {
+          #tab_community .inner dl dd #faq #searchBox .answersBy > ul li a span {
             font-size: 10px; }
         #tab_community .inner dl dd #faq h1 {
           padding-left: 20px; }
@@ -1592,18 +1585,18 @@ table {
           position: absolute;
           top: 459px;
           right: 10px; }
-        #tab_community .inner dl dd #faq .container {
+        #tab_community .inner dl dd #faq .accordion {
           padding: 0 10px; }
-          #tab_community .inner dl dd #faq .container > ul .item {
+          #tab_community .inner dl dd #faq .accordion > ul .item {
             /*title*/
             /* Text Content */ }
-            #tab_community .inner dl dd #faq .container > ul .item .accordionTitle {
+            #tab_community .inner dl dd #faq .accordion > ul .item > h2 {
               font-size: 14px;
               line-height: 20px;
               padding: 10px; }
-              #tab_community .inner dl dd #faq .container > ul .item .accordionTitle:hover {
+              #tab_community .inner dl dd #faq .accordion > ul .item > h2:hover {
                 padding-left: 10px; }
-            #tab_community .inner dl dd #faq .container > ul .item .text {
+            #tab_community .inner dl dd #faq .accordion > ul .item .text {
               font-size: 14px;
               line-height: 14px;
               padding: 0px 10px; }
