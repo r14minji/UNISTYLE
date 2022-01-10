@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;500&family=Londrina+Shadow&family=Train+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;500&family=Londrina+Shadow&family=Train+One&family=Do+Hyeon&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -2008,11 +2008,6 @@ table {
             box-shadow: 0 4px #eee;
             top: 2px; }
 
-#result {
-  font: 700 30px/1 'roboto condensed';
-  text-align: center;
-  margin-bottom: 100px; }
-
 /*tablet*/
 @media screen and (max-width: 1179px) {
   .join .inner h1, .join .inner h2 {
@@ -2710,6 +2705,36 @@ aside.popup_youtube {
 
 /*tablet*/
 /*mobile*/
+.result .inner {
+  padding-top: 100px; }
+  .result .inner #result {
+    background: #000; }
+    .result .inner #result .wrap {
+      width: 100%;
+      height: 600px;
+      opacity: 0.7;
+      position: relative;
+      background: url(../img/relax.jpg) no-repeat center/cover; }
+      .result .inner #result .wrap h1 {
+        font: 58px/1 'Do Hyeon';
+        color: #FFE9CF;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .result .inner #result .wrap a {
+        display: block;
+        margin: 0 auto;
+        padding: 20px 40px;
+        font: 25px/1 'Do Hyeon';
+        background-color: #FFE9CF;
+        color: #101820;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%); }
+
 /*----- header -----------------------------------------------------*/
 #header {
   width: 100%;
