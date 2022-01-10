@@ -1,15 +1,10 @@
 const body = document.querySelector("body");
-const section = document.querySelector(".galleryContents");
+const section = document.querySelector("section");
 const input = document.getElementById("search");
 const btn = document.querySelector(".btnSearch");
 const loading = document.querySelector(".loading");
 const list = document.querySelector("#photoList");
 const errMsg = document.querySelector(".errMsg");
-const h1 = document.querySelector(".gallery .inner h1");
-
-
-
-this.url4 =`${this.base}method=${this.method5}&api_key=${this.key}&per_page=${this.per_page}&format=json&nojsoncallback=1&gallery_id=${this.galleryname}`;
 
 
 //api 연결
@@ -26,10 +21,6 @@ const url1 = `https://www.flickr.com/services/rest/?method=${method1}&api_key=${
 callData(url1);
 window.onload = callData(url1);
 
-//h1클릭시 처음 데이터 보여주기
-h1.addEventListener("click", e=>{
-  callData(url1);
-})
 
 // 검색어로 이미지 찾기
 btn.addEventListener("click", e=>{

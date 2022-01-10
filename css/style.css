@@ -2051,43 +2051,39 @@ table {
         margin: 5px 20px 5px 0px; }
     .join .inner .formBtns {
       margin: 40px 0px; } }
-/*----- location sub_visual  section ------------------*/
 .location .sub_visual {
   background: url(../img/sub5.jpg) no-repeat center/cover;
   filter: contrast(80%); }
-
-/*-----section contact -----------------------------------*/
-#contact {
-  width: 100%;
-  margin-bottom: 100px; }
-  #contact .inner {
-    width: 1180px;
-    position: relative;
-    margin: 0 auto; }
-    #contact .inner h1 {
+.location .inner {
+  /*-----section - contact -----------------------------------*/
+  /*-----section - store --------------------------------------*/ }
+  .location .inner #contact {
+    width: 100%;
+    margin-bottom: 100px; }
+    .location .inner #contact h1 {
       font: 500 36px/1 'roboto';
       margin-bottom: 40px; }
-    #contact .inner .wrap {
+    .location .inner #contact .wrap {
       width: 100%; }
-      #contact .inner .wrap .txt {
+      .location .inner #contact .wrap .txt {
         float: left;
         width: 50%; }
-        #contact .inner .wrap .txt h2 {
+        .location .inner #contact .wrap .txt h2 {
           font: 500 20px/1 'roboto';
           margin-bottom: 30px; }
-        #contact .inner .wrap .txt p {
+        .location .inner #contact .wrap .txt p {
           font: 300 16px/1.2 'roboto';
           width: 80%;
           margin-bottom: 40px; }
-        #contact .inner .wrap .txt img {
+        .location .inner #contact .wrap .txt img {
           width: 80%;
           height: 300px;
           object-fit: cover; }
-      #contact .inner .wrap form {
+      .location .inner #contact .wrap form {
         float: right;
         width: 50%;
         position: relative; }
-        #contact .inner .wrap form input[type=text] {
+        .location .inner #contact .wrap form input[type=text] {
           display: block;
           width: 100%;
           border: none;
@@ -2101,13 +2097,13 @@ table {
           transition: 0.2s;
           font-size: 16px;
           transition: border-bottom 0.6s ease; }
-          #contact .inner .wrap form input[type=text].on {
+          .location .inner #contact .wrap form input[type=text].on {
             border-bottom: 2px solid #ff3f00; }
-          #contact .inner .wrap form input[type=text].on + label {
+          .location .inner #contact .wrap form input[type=text].on + label {
             color: #ff3f00;
             transform: translateY(-21px);
             font-size: 12px; }
-        #contact .inner .wrap form label {
+        .location .inner #contact .wrap form label {
           display: inline-block;
           position: relative;
           top: -44px;
@@ -2120,10 +2116,10 @@ table {
           cursor: text;
           color: #555;
           transition: .2s; }
-          #contact .inner .wrap form label span {
+          .location .inner #contact .wrap form label span {
             font: inherit;
             vertical-align: baseline; }
-          #contact .inner .wrap form label:nth-of-type(5) {
+          .location .inner #contact .wrap form label:nth-of-type(5) {
             display: block;
             position: relative;
             top: 0px;
@@ -2131,11 +2127,11 @@ table {
             padding: 0px;
             height: 44px;
             line-height: 44px; }
-        #contact .inner .wrap form textarea {
+        .location .inner #contact .wrap form textarea {
           width: 100%;
           resize: none;
           margin-bottom: 20px; }
-        #contact .inner .wrap form input[type=submit] {
+        .location .inner #contact .wrap form input[type=submit] {
           display: block;
           width: 120px;
           height: 40px;
@@ -2143,221 +2139,200 @@ table {
           background: #d1ac8f;
           color: #fff;
           transition: .5s ease-in-out; }
-          #contact .inner .wrap form input[type=submit]:hover {
+          .location .inner #contact .wrap form input[type=submit]:hover {
             border: 1px solid #d1ac8f;
             background: #fff;
             color: #d1ac8f; }
-
-/*-----section store --------------------------------------*/
-#store {
-  width: 100%; }
-  #store .inner {
-    width: 1180px;
-    position: relative;
-    margin: 0 auto; }
-    #store .inner h1 {
+  .location .inner #store {
+    width: 100%;
+    position: relative; }
+    .location .inner #store h1 {
       font: 500 36px/1 'roboto';
       margin-bottom: 40px; }
-    #store .inner #map {
+    .location .inner #store #map {
       width: 100%;
       height: 500px;
       margin-bottom: 80px; }
-    #store .inner .branch {
+    .location .inner #store .branch {
       display: block;
       width: 100%;
       position: absolute;
       top: 5%;
       left: 10px;
       z-index: 2; }
-      #store .inner .branch li {
+      .location .inner #store .branch li {
         width: 250px;
         height: 60px;
         margin-bottom: 10px; }
-        #store .inner .branch li:nth-of-type(1) {
+        .location .inner #store .branch li:nth-of-type(1) {
           background: #A37A88;
           opacity: 0.7; }
-        #store .inner .branch li:nth-of-type(2) {
+        .location .inner #store .branch li:nth-of-type(2) {
           background: #7C6881;
           opacity: 0.7; }
-        #store .inner .branch li:nth-of-type(3) {
+        .location .inner #store .branch li:nth-of-type(3) {
           background: #2F4858;
           opacity: 0.7; }
-        #store .inner .branch li.on {
+        .location .inner #store .branch li.on {
           opacity: 1; }
-        #store .inner .branch li a {
+        .location .inner #store .branch li a {
           display: block;
           font: 500 20px/60px 'roboto';
           color: #fff;
           text-align: center; }
-    #store .inner .wrap {
+    .location .inner #store .wrap {
       width: 100%; }
-      #store .inner .wrap article {
+      .location .inner #store .wrap article {
         width: 100%;
         padding-bottom: 80px;
         display: flex;
         justify-content: space-around; }
-        #store .inner .wrap article:nth-of-type(2) {
+        .location .inner #store .wrap article:nth-of-type(2) {
           flex-direction: row-reverse; }
-        #store .inner .wrap article img {
+        .location .inner #store .wrap article img {
           width: 50%;
           height: 300px;
           object-fit: cover;
           object-position: center; }
-        #store .inner .wrap article .txt {
+        .location .inner #store .wrap article .txt {
           width: 50%;
           padding: 0 50px; }
-          #store .inner .wrap article .txt h2 {
+          .location .inner #store .wrap article .txt h2 {
             font: 500 20px/1 'roboto';
             margin-bottom: 20px;
             color: #333; }
-          #store .inner .wrap article .txt ul {
+          .location .inner #store .wrap article .txt ul {
             width: 100%; }
-            #store .inner .wrap article .txt ul li {
+            .location .inner #store .wrap article .txt ul li {
               padding: 10px 0;
               display: flex; }
-              #store .inner .wrap article .txt ul li strong {
+              .location .inner #store .wrap article .txt ul li strong {
                 width: 10%;
                 font-size: 20px;
                 color: #d1ac8f;
                 text-align: left; }
-              #store .inner .wrap article .txt ul li span {
+              .location .inner #store .wrap article .txt ul li span {
                 width: 80%; }
-                #store .inner .wrap article .txt ul li span a {
+                .location .inner #store .wrap article .txt ul li span a {
                   font: normal 16px/1.2 'rotobo';
                   color: #333;
                   line-height: 26px; }
 
 /*tablet*/
 @media screen and (max-width: 1179px) {
-  /*----- location sub_visual  section ------------------*/
-  .location {
-    margin-bottom: 80px; }
-
-  /*-----section contact -----------------------------------*/
-  #contact {
-    margin-bottom: 80px; }
-    #contact .inner {
-      width: 100%;
-      padding: 0px 30px; }
-      #contact .inner h1 {
+  .location .inner {
+    /*-----section contact ------------------------------*/
+    /*-----section store --------------------------------------*/ }
+    .location .inner #contact {
+      margin-bottom: 80px; }
+      .location .inner #contact h1 {
         font-size: 36px;
         margin-bottom: 30px; }
-      #contact .inner .wrap .txt {
+      .location .inner #contact .wrap .txt {
         float: none;
         width: 100%; }
-        #contact .inner .wrap .txt img {
-          display: none; }
-      #contact .inner .wrap form {
-        float: none;
-        width: 90%; }
-        #contact .inner .wrap form input[type=submit] {
+        .location .inner #contact .wrap .txt p {
           width: 100%; }
-
-  /*-----section store --------------------------------------*/
-  #store .inner {
-    width: 100%;
-    padding: 0px 30px; }
-    #store .inner h1 {
+        .location .inner #contact .wrap .txt img {
+          display: none; }
+      .location .inner #contact .wrap form {
+        float: none;
+        width: 100%; }
+        .location .inner #contact .wrap form input[type=submit] {
+          width: 100%; }
+    .location .inner #store h1 {
       font-size: 36px;
       margin-bottom: 30px; }
-    #store .inner #map {
+    .location .inner #store #map {
       height: 500px; }
-    #store .inner .branch {
+    .location .inner #store .branch {
       position: absolute;
       top: 5%;
-      left: 40px;
+      left: 10px;
       z-index: 2; }
-      #store .inner .branch li {
+      .location .inner #store .branch li {
         width: 200px;
         height: 50px; }
-        #store .inner .branch li a {
+        .location .inner #store .branch li a {
           font: 500 18px/50px 'roboto'; }
-    #store .inner .wrap article {
+    .location .inner #store .wrap article {
       padding-bottom: 60px; }
-      #store .inner .wrap article:nth-of-type(2) .txt {
+      .location .inner #store .wrap article:nth-of-type(2) .txt {
         padding: 0 40px 0 0px; }
-      #store .inner .wrap article img {
+      .location .inner #store .wrap article img {
         width: 40%;
         height: 260px; }
-      #store .inner .wrap article .txt {
+      .location .inner #store .wrap article .txt {
         width: 60%;
         height: 260px;
         padding: 0 0px 0 40px; } }
 /*mobile*/
 @media screen and (max-width: 539px) {
-  /*----- location sub_visual  section ------------------*/
-  .location {
-    margin-bottom: 0px; }
-
-  /*-----section contact -----------------------------------*/
-  #contact {
-    margin: 00px 0 60px 0; }
-    #contact .inner {
-      padding: 0px 20px; }
-      #contact .inner h1 {
+  .location .inner {
+    /*-----section contact -----------------------------------*/
+    /*-----section store --------------------------------------*/ }
+    .location .inner #contact {
+      margin: 00px 0 60px 0; }
+      .location .inner #contact h1 {
         font-size: 28px;
         margin-bottom: 20px; }
-      #contact .inner .wrap .txt h2 {
+      .location .inner #contact .wrap .txt h2 {
         font-size: 18px;
         margin-bottom: 20px; }
-      #contact .inner .wrap .txt p {
+      .location .inner #contact .wrap .txt p {
         font-size: 14px;
         margin-bottom: 30px; }
-      #contact .inner .wrap form label:nth-of-type(5) {
+      .location .inner #contact .wrap form label:nth-of-type(5) {
         display: block;
         width: 100%;
         height: 44px;
         line-height: 20px;
         margin-bottom: 20px; }
-
-  /*-----section store --------------------------------------*/
-  #store {
-    margin: 0px 0 20px 0; }
-    #store .inner {
-      padding: 0px 00px; }
-      #store .inner h1 {
+    .location .inner #store {
+      margin: 0px 0 20px 0; }
+      .location .inner #store h1 {
         font-size: 28px;
         margin-bottom: 20px;
         padding: 0px 20px; }
-      #store .inner #map {
+      .location .inner #store #map {
         height: 300px;
         margin-bottom: 40px; }
-      #store .inner .branch {
+      .location .inner #store .branch {
         position: absolute;
         top: 3%;
         left: 10px;
         z-index: 2; }
-        #store .inner .branch li {
+        .location .inner #store .branch li {
           width: 100px;
           height: 40px; }
-          #store .inner .branch li a {
+          .location .inner #store .branch li a {
             font: 500 12px/40px 'roboto'; }
-      #store .inner .wrap {
-        padding: 0px 20px; }
-        #store .inner .wrap article {
-          padding-bottom: 40px;
-          display: flex;
-          flex-direction: column-reverse;
-          justify-content: flex-start; }
-          #store .inner .wrap article:nth-of-type(2) {
-            flex-direction: column-reverse; }
-            #store .inner .wrap article:nth-of-type(2) .txt {
-              padding: 0 40px 0 0px; }
-          #store .inner .wrap article img {
-            width: 100%;
-            height: 240px; }
-          #store .inner .wrap article .txt {
-            width: 100%;
-            height: 200px;
-            padding: 0px; }
-            #store .inner .wrap article .txt h2 {
-              font-size: 18px;
-              margin-bottom: 10px; }
-            #store .inner .wrap article .txt ul li strong {
+      .location .inner #store .wrap article {
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start; }
+        .location .inner #store .wrap article:nth-of-type(2) {
+          flex-direction: column-reverse; }
+          .location .inner #store .wrap article:nth-of-type(2) .txt {
+            padding: 0 40px 0 0px; }
+        .location .inner #store .wrap article img {
+          width: 100%;
+          height: 240px; }
+        .location .inner #store .wrap article .txt {
+          width: 100%;
+          height: auto;
+          padding: 0px; }
+          .location .inner #store .wrap article .txt h2 {
+            font-size: 18px;
+            margin-bottom: 10px; }
+          .location .inner #store .wrap article .txt ul li {
+            padding: 5px 0; }
+            .location .inner #store .wrap article .txt ul li strong {
               font-size: 16px; }
-            #store .inner .wrap article .txt ul li span {
+            .location .inner #store .wrap article .txt ul li span {
               width: 100%; }
-              #store .inner .wrap article .txt ul li span a {
+              .location .inner #store .wrap article .txt ul li span a {
                 font-size: 14px; } }
 /*----- youtube sub_visual ------------------*/
 .youtube {
@@ -2533,22 +2508,14 @@ aside.popup_youtube {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
         background: white; } }
 /*----- gallery sub_visual ------------------*/
-.gallery {
-  margin-bottom: 0px; }
-  .gallery .sub_visual {
-    background: url(../img/sub4.jpg) no-repeat center/cover; }
-  .gallery .inner h1 {
-    cursor: pointer; }
-
-/*----- galleryContents ------------------*/
-.galleryContents {
-  width: 100%;
-  /*----- aside  popup_gallery------------------*/ }
-  .galleryContents .inner {
-    width: 1180px;
-    position: relative;
-    margin: 0 auto; }
-    .galleryContents .inner .searchBox {
+.gallery .sub_visual {
+  background: url(../img/sub4.jpg) no-repeat center/cover; }
+.gallery .inner {
+  padding-top: 80px; }
+  .gallery .inner section {
+    width: 100%;
+    /*----- aside  popup_gallery------------------*/ }
+    .gallery .inner section .searchBox {
       display: block;
       width: 100%;
       padding: 60px 0px;
@@ -2556,14 +2523,16 @@ aside.popup_youtube {
       justify-content: center;
       align-items: center;
       flex-wrap: nowrap; }
-      .galleryContents .inner .searchBox input[type=text] {
+      .gallery .inner section .searchBox input[type=text] {
         width: 300px;
         height: 30px;
         padding: 14px 10px;
         margin: 10px;
         border: none;
         border-bottom: 1px solid #555; }
-      .galleryContents .inner .searchBox .btnSearch {
+        .gallery .inner section .searchBox input[type=text]:focus {
+          outline: none; }
+      .gallery .inner section .searchBox .btnSearch {
         border: 1px solid #555;
         width: 80px;
         height: 30px;
@@ -2571,24 +2540,25 @@ aside.popup_youtube {
         background: #fff;
         color: #555;
         cursor: pointer; }
-    .galleryContents .inner .wrap {
+    .gallery .inner section .wrap {
       width: 100%;
-      position: relative; }
-      .galleryContents .inner .wrap .loading {
+      position: relative;
+      /* 동적으로 생성 */ }
+      .gallery .inner section .wrap .loading {
         width: 200px;
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -20%);
         transition: 1s; }
-        .galleryContents .inner .wrap .loading.off {
+        .gallery .inner section .wrap .loading.off {
           opacity: 0; }
-      .galleryContents .inner .wrap .errMsg {
+      .gallery .inner section .wrap .errMsg {
         margin-left: 80px;
         font: normal 18px/1 'noto sans kr'; }
-        .galleryContents .inner .wrap .errMsg.off {
+        .gallery .inner section .wrap .errMsg.off {
           display: none; }
-      .galleryContents .inner .wrap #photoList {
+      .gallery .inner section .wrap #photoList {
         width: 100%;
         transform: translateY(100px);
         transition: 1s;
@@ -2598,18 +2568,18 @@ aside.popup_youtube {
         flex-wrap: wrap;
         margin-bottom: 100px;
         min-height: 500px; }
-        .galleryContents .inner .wrap #photoList.on {
+        .gallery .inner section .wrap #photoList.on {
           transform: translateY(0px);
           opacity: 1; }
-        .galleryContents .inner .wrap #photoList li.item {
-          width: calc(100% / 5);
+        .gallery .inner section .wrap #photoList li.item {
+          width: calc(100% / 4);
           margin: 0 auto;
           padding: 10px; }
-          .galleryContents .inner .wrap #photoList li.item figure {
+          .gallery .inner section .wrap #photoList li.item figure {
             width: 100%;
             position: relative;
             overflow: hidden; }
-            .galleryContents .inner .wrap #photoList li.item figure i {
+            .gallery .inner section .wrap #photoList li.item figure i {
               position: relative;
               top: 10px;
               left: 50%;
@@ -2617,15 +2587,15 @@ aside.popup_youtube {
               transform: rotate(20deg);
               font-size: 30px;
               color: red; }
-            .galleryContents .inner .wrap #photoList li.item figure img {
+            .gallery .inner section .wrap #photoList li.item figure img {
               width: 100%;
               max-height: 380px;
               display: block;
               position: relative;
               object-fit: cover;
-              filter: grayscale(70%);
+              filter: grayscale(50%);
               transition: transform 0.4s; }
-            .galleryContents .inner .wrap #photoList li.item figure figcaption {
+            .gallery .inner section .wrap #photoList li.item figure figcaption {
               position: absolute;
               bottom: 0;
               left: 0;
@@ -2640,18 +2610,18 @@ aside.popup_youtube {
               opacity: 0;
               transform: translateY(100%);
               transition: transform 0.4s, opacity 0.1s 0.3s; }
-              .galleryContents .inner .wrap #photoList li.item figure figcaption p {
+              .gallery .inner section .wrap #photoList li.item figure figcaption p {
                 color: #fff;
                 font: bold 16px/1 'noto sans';
                 margin-bottom: 10px; }
-              .galleryContents .inner .wrap #photoList li.item figure figcaption span {
+              .gallery .inner section .wrap #photoList li.item figure figcaption span {
                 display: block;
                 text-align: right;
                 font: bold 13px/1 'noto sans'; }
-              .galleryContents .inner .wrap #photoList li.item figure figcaption span:before {
+              .gallery .inner section .wrap #photoList li.item figure figcaption span:before {
                 content: 'by ';
                 font: bold 13px/1 'noto sans'; }
-              .galleryContents .inner .wrap #photoList li.item figure figcaption a {
+              .gallery .inner section .wrap #photoList li.item figure figcaption a {
                 text-align: center;
                 padding: 5px 10px;
                 border-radius: 2px;
@@ -2662,49 +2632,49 @@ aside.popup_youtube {
                 position: absolute;
                 bottom: 10px;
                 right: 5px; }
-          .galleryContents .inner .wrap #photoList li.item:hover figure img {
+          .gallery .inner section .wrap #photoList li.item:hover figure img {
             transform: translateY(-50px);
             filter: grayscale(0%); }
-          .galleryContents .inner .wrap #photoList li.item:hover figure figcaption {
+          .gallery .inner section .wrap #photoList li.item:hover figure figcaption {
             opacity: 1;
             transform: translateY(0px);
             transition: transform 0.4s, opacity 0.1s; }
-  .galleryContents aside.popup_gallery {
-    width: 100%;
-    height: 100vh;
-    padding: 20px 70px;
-    background: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    top: 0;
-    left: 0; }
-    .galleryContents aside.popup_gallery .con {
+    .gallery .inner section aside.popup_gallery {
       width: 100%;
-      height: 100%;
-      overflow: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .galleryContents aside.popup_gallery .con img {
-        object-fit: contain; }
-      .galleryContents aside.popup_gallery .con::-webkit-scrollbar {
-        width: 10px; }
-      .galleryContents aside.popup_gallery .con::-webkit-scrollbar-thumb {
-        background-color: #2f3542;
-        border-radius: 10px; }
-      .galleryContents aside.popup_gallery .con::-webkit-scrollbar-track {
-        background-color: grey;
-        border-radius: 10px;
-        box-shadow: inset 0px 0px 5px white; }
-    .galleryContents aside.popup_gallery span {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      font: normal 16px/1 'noto sans';
-      color: orange;
-      cursor: pointer; }
+      height: 100vh;
+      padding: 5vw;
+      background: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      top: 0;
+      left: 0; }
+      .gallery .inner section aside.popup_gallery .con {
+        width: 100%;
+        height: 100%;
+        overflow: auto; }
+        .gallery .inner section aside.popup_gallery .con img {
+          width: 100%;
+          height: 95%;
+          object-fit: contain; }
+      .gallery .inner section aside.popup_gallery span {
+        position: absolute;
+        top: 3vw;
+        right: 5vw;
+        font-size: 26px;
+        color: orange;
+        cursor: pointer; }
 
 /*tablet*/
-/*mobile*/
+@media screen and (max-width: 1179px) {
+  .gallery .inner {
+    width: 100%; }
+    .gallery .inner .item {
+      width: calc(100% / 3) !important; } }
+@media screen and (max-width: 739px) {
+  .gallery .inner .item {
+    width: 50% !important; } }
+@media screen and (max-width: 479px) {
+  .gallery .inner .item {
+    width: 100% !important; } }
 .result .inner {
   padding-top: 100px; }
   .result .inner #result {
