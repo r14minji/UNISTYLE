@@ -110,30 +110,25 @@
   </header>
 
 
-  <section class="content community">
-    <div class="sub_visual"></div>
-    <div class="inner">
+  <main class="content community">
+    <div class="sub_visual">
       <h1>COMMUNITY</h1>
     </div>
-  </section>
-
-
-  <!-- tab -->
-  <section id="tab_community">
     <div class="inner">
-      <main>
+
+      <section>
         <!-- tab button -->
-        <ul>
+        <ul class="tabButton">
           <li class="on"><a href="#faq">FAQ</a></li>
           <li><a href="#notice">NOTICE</a></li>
           <li><a href="#review">REVIEW</a></li>
         </ul>
     
+        <!-- tab board -->
         <div class="wrap">
-
           <!-- fisrt board -->
-          <div id="faq" class="on">
-            <article id="searchBox">
+          <article id="faq" class="on">
+            <div id="searchBox">
               <div class="qstn">
                 <h1>ANY QUESTIONS?<br>
                   WE’VE GOT THE ANSWERS</h1>
@@ -182,9 +177,9 @@
                   </li>
                 </ul>
               </div>
-            </article>
-
-            <div class="wrapper">
+            </div>
+    
+            <div class="answerBoard">
               <h1>FAQ</h1>
     
               <select name="category" id="category">
@@ -195,12 +190,12 @@
                 <option value="returns">returns</option>
               </select>
             </div>
-
+    
             
             <div class="accordion">
               <ul>
                 <li class="item">
-                  <h2>
+                  <h2 class="accordionTitle">
                     <strong>product&material</strong>
                     WHY IS EVERY BAG UNIQUE? 
                     <span class="accIcon"></span>
@@ -208,7 +203,7 @@
                   <div class="text">Our bags are not “artificially” unique; they are that way right from the beginning on. They are truly unique items, because they are made from used truck tarps. Every tarp has its own story, its own look and its own state of use. Furthermore each bag is still cut by hand in Zurich, Switzerland, and gets its individual look depending on the color, the writing and design of the tarp. That’s why every single product will be one of a kind. </div>
                 </li>
                 <li class="item">
-                  <h2>
+                  <h2 class="accordionTitle">
                     <strong>product&material</strong> 
                     WHY ARE YOU USING RECYCLED MATERIALS?
                     <span class="accIcon"></span>
@@ -216,7 +211,7 @@
                   <div class="text">The basic idea was to make something useful from waste. Then, we started looking into truck tarpaulins because we didn’t know of any other material that was as tough. It was a mixture of intent and coincidence. The recycling idea is very important to us. But, we also want to offer functional, robust and stylish products — a bag that is fun to use in everyday life. The recycling gives it its unique character.</div>
                 </li>
                 <li class="item">
-                  <h2>
+                  <h2 class="accordionTitle">
                     <strong>product&material</strong> 
                     HOW TOUGH ARE FREITAG BAGS? 
                     <span class="accIcon"></span>
@@ -225,7 +220,7 @@
                   P.S. If you ever take a bag made by our calfskin and crocodile-recycling competition for a walk in the rain, you’ll see exactly what we mean. </div>
                 </li>
                 <li class="item">
-                  <h2>
+                  <h2 class="accordionTitle">
                     <strong>PRODUCTS&MATERIAL</strong> 
                     DOES FREITAG SELL VOUCHERS ONLINE?
                     <span class="accIcon"></span>
@@ -233,7 +228,7 @@
                   <div class="text">Yes. The FREITAG WOWCHER is redeemable in the Online Shop and in all FREITAG Stores, offering free choice across 25,000 unique bags and F-ABRIC pieces - the perfect gift! </div>
                 </li>
                 <li class="item">
-                  <h2>
+                  <h2 class="accordionTitle">
                     <strong>SHIPPING&DELIVERY</strong> 
                     HOW DO I CLEAN MY BAG? 
                     <span class="accIcon"></span>
@@ -241,7 +236,7 @@
                   <div class="text">There’s no exorbitantly expensive or highly-toxic special cleaner necessary for cleaning your FREITAG bag. H2O from the tap and some run-of-the-mill detergent that you trust dabbed on a soft cloth is all you need and will do the job perfectly. This will keep your bag happy, shiny and well protected. There are longstanding F-ans who swear that they clean their favorite bags regularly with a soft cloth and a bit of coffee creamer. (However, we can’t make it an official FREITAG Rejuvenation Committee recommendation for technical reasons, and because our mothers always told us not to play with our food.)</div>
                 </li>
                 <li class="item">
-                  <h2>
+                  <h2 class="accordionTitle">
                     <strong>ORDERING&PAYMENT</strong>
                     WHEN ARE NEW FREITAG ONE-OFFS LAUNCHED? 
                     <span class="accIcon"></span>
@@ -249,7 +244,7 @@
                   <div class="text">New unique products are not uploaded according to a particular schedule. Our warehouse and online restocking specialist Mr Gashi always works according to his gut feeling, the reproduction of individual models, as well as color and design availability - and he’s been doing it since the pre-Facebook era. So it’s always worth checking in regularly and if you have a really urgent request, you can contact him directly (but be aware, he’s not really a people person, he prefers forklifts and SAP systems and can sometimes be a bit grumpy if he’s under the pump - you have been warned).</div>
                 </li>
                 <li class="item">
-                  <h2>
+                  <h2 class="accordionTitle">
                     <strong>returns</strong>
                     BUT DOESN'T LINEN LOSE ITS SHAPE? 
                     <span class="accIcon"></span>
@@ -258,10 +253,10 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </article>
     
           <!-- second board -->
-          <div id="notice" >
+          <article id="notice" >
             <h1>NOTICE</h1>
             <table>
               <caption class="hidden">NOTICE</caption>
@@ -359,12 +354,12 @@
                 <i class="fas fas fa-angle-double-right"></i>
               </a>
             </div>
-          </div>
+          </article>
     
           <!-- third board -->
-          <div id="review">
+          <article id="review">
             <h1>REVIEW</h1>
-              <article>
+              <div class="list">
                 <div class="writerInfo">
                   <div class="userIcon">
                     <img src="./img/userIcon1.png">
@@ -380,8 +375,8 @@
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores delectus fugiat quo veritatis quibusdam officiis a aliquid, iure vero pariatur ut quas reprehenderit amet ipsam aut beatae consequatur officia?</p>
                   <!-- <div class="plus">더보기</div> -->
                 </div>
-              </article>
-              <article>
+              </div>
+              <div class="list">
                 <div class="writerInfo">
                   <div class="userIcon">
                     <img src="./img/userIcon2.png">
@@ -397,75 +392,7 @@
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores delectus fugiat quo veritatis quibusdam officiis a aliquid, iure vero pariatur ut quas reprehenderit amet ipsam aut beatae consequatur officia?</p>
                   <!-- <div class="plus">더보기</div> -->
                 </div>
-              </article>
-              <article>
-                <div class="writerInfo">
-                  <div class="userIcon">
-                    <img src="./img/userIcon3.png">
-                  </div>
-                  <p>ganda5396</p>
-                </div>
-                <div class="photo">
-                  <img src="./img/review3.jpg" >
-                </div>
-                <div class="contents">
-                  <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                  <strong>2022.01.09</strong>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores delectus fugiat quo veritatis quibusdam officiis a aliquid, iure vero pariatur ut quas reprehenderit amet ipsam aut beatae consequatur officia?</p>
-                  <!-- <div class="plus">더보기</div> -->
-                </div>
-              </article>
-              <article>
-                <div class="writerInfo">
-                  <div class="userIcon">
-                    <img src="./img/userIcon4.png">
-                  </div>
-                  <p>ganda5396</p>
-                </div>
-                <div class="photo">
-                  <img src="./img/review4.jpg" >
-                </div>
-                <div class="contents">
-                  <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                  <strong>2022.01.09</strong>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores delectus fugiat quo veritatis quibusdam officiis a aliquid, iure vero pariatur ut quas reprehenderit amet ipsam aut beatae consequatur officia?</p>
-                  <!-- <div class="plus">더보기</div> -->
-                </div>
-              </article>
-              <article>
-                <div class="writerInfo">
-                  <div class="userIcon">
-                    <img src="./img/userIcon5.png">
-                  </div>
-                  <p>ganda5396</p>
-                </div>
-                <div class="photo">
-                  <img src="./img/review5.jpg" >
-                </div>
-                <div class="contents">
-                  <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                  <strong>2022.01.09</strong>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores delectus fugiat quo veritatis quibusdam officiis a aliquid, iure vero pariatur ut quas reprehenderit amet ipsam aut beatae consequatur officia?</p>
-                  <!-- <div class="plus">더보기</div> -->
-                </div>
-              </article>
-              <article>
-                <div class="writerInfo">
-                  <div class="userIcon">
-                    <img src="./img/userIcon6.png">
-                  </div>
-                  <p>ganda5396</p>
-                </div>
-                <div class="photo">
-                  <img src="./img/review6.jpg" >
-                </div>
-                <div class="contents">
-                  <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                  <strong>2022.01.09</strong>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores delectus fugiat quo veritatis quibusdam officiis a aliquid, iure vero pariatur ut quas reprehenderit amet ipsam aut beatae consequatur officia?</p>
-                  <!-- <div class="plus">더보기</div> -->
-                </div>
-              </article>
+              </div>
     
               <div class="paignation">
                 <a href="#" class="prev">
@@ -489,11 +416,15 @@
                   <i class="fas fas fa-angle-double-right"></i>
                 </a>
               </div>
-          </div>
+          </article>
         </div>
-      </main>
+      </section>
     </div>
-  </section>
+  </main>
+
+
+
+
 
 
   <!-- footer -->

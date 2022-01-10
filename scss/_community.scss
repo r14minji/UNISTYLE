@@ -1,55 +1,43 @@
-/*----- community sub_visual  section ------------------*/
 .community{
-
   .sub_visual{
     background: url(../img/sub3.jpg) no-repeat center/cover ;
   }
-}
-
-/*----- Web_tab_contents ------*/
-#tab_community{
-  width: 100%; height: auto;
 
   .inner{
-    width: 1180px;
-    margin: 0 auto;
-    position: relative;
-
-    main{
-      width: 100%;
-      position: relative;
+    section{
+      width: 100%; position: relative;
       margin-bottom: 40px;
-      display: flex;
-
+      display: flex; flex-wrap: wrap;
+    
       >ul{
         width: 15%;
-
+    
         li{
           height: 40px; 
           border-left: 4px solid $gold;
-
+    
           a{
             display: block;
             font: 300 16px/40px 'roboto';
             padding-left: 30px;
             color: #555;
           }
-
+    
           &.on a{
             font-weight: 500;
             color: $gold;
           }
         }
       }
-
+    
       .wrap{
         width: 85%; padding-left: 40px;
-
-        >div{
+    
+        article{
           display: none;
-
+    
           &.on {display: block;}
-
+    
           /*fisrt board-FAQ*/
           &#faq{
             width: 100%;position: relative;
@@ -58,7 +46,7 @@
             #searchBox{
               width: 100%;   
               margin-bottom: 40px;
-  
+    
               ::after{ content: ''; display: block; clear: both;}
               .qstn{
                 width: 50%; float: left; 
@@ -143,8 +131,8 @@
                 }
               }
             }
-
-            .wrapper{
+    
+            .answerBoard{
               position: relative;
               h1{
                 font:500 24px/1 'Roboto'; 
@@ -152,7 +140,7 @@
                 color:$green; 
                 margin-bottom:20px; 
               }
-  
+    
               select{
                 position: absolute; top: 0px; right: 0px; z-index: 2;
                 width: 140px; background: #fff;
@@ -165,7 +153,7 @@
                 }
               }
             }
-
+    
             .accordion{
               width: 100%; 
               position: relative;
@@ -173,10 +161,10 @@
               >ul{
                 background: #fff;
                 border-radius: 3px;
-  
+    
                 .item{
                   position: relative;
-
+    
                   >h2{
                     padding: 20px 20px 20px 150px;
                     position: relative;
@@ -185,7 +173,7 @@
                     transition: ease-in-out 0.2s all;
                     border-top: 1px solid $sky;
                     cursor: pointer;
-
+    
                     strong{
                       display: inline-block; 
                       position: absolute; top: 25px; left: 10px;
@@ -213,7 +201,7 @@
                       }
                       &.anime.accIcon::before{ transform: rotate(90deg);}
                     }
-
+    
                     &:hover{
                       padding-left: 175px;
                       
@@ -222,7 +210,7 @@
                       }
                     }
                   }
-
+    
                   .text{
                     font: 300 16px/24px 'roboto';
                     letter-spacing: 0.5px;
@@ -233,7 +221,7 @@
                     opacity: 0;
                     height: 0;
                     transition: all 0.6s cubic-bezier(.42,.2,.08,1);
-  
+    
                     &.show{
                       opacity: 1;
                       height: auto;
@@ -246,7 +234,7 @@
               }
             }
           }
-
+    
           /*second board-NOTICE*/
           &#notice{
             width: 100%;
@@ -266,7 +254,7 @@
                 th{
                   padding: 10px 15px;
                   background: $gold; color: #fff;      
-
+    
                   &:nth-of-type(1) { width: 10%;}
                   &:nth-of-type(3) { width: 15%;}
                   &:nth-of-type(4) { width: 15%;}    
@@ -277,7 +265,7 @@
                   border-bottom: 1px solid #ddd;
                   text-align: center; color:$darkblue; 
                   font: 300 14px/1 'roboto';
-
+    
                   &:nth-of-type(2){
                     text-align: left;
                     a{
@@ -311,25 +299,25 @@
               }
             }
           }
-
+    
           /*third board-REVIEW*/
           &#review{
             width: 100%;
             position: relative;
-
+    
             h1{
               font:500 24px/1 'Roboto'; 
               letter-spacing: 2px;
               color:$green; 
               margin-bottom:20px; 
             }
-  
-            >article{
+    
+            .list{
               width: 100%; padding: 10px;
               display: flex;
               border-top: 1px solid #ddd;
               border-bottom: 1px solid #ddd;
-  
+    
               .writerInfo{
                 flex:1; 
                 .userIcon{
@@ -365,11 +353,11 @@
                   font: 300 16px/1 'Roboto';
                 }
                 .plus{
-  
+    
                 }
               }
             }
-  
+    
             .paignation{
               margin-top: 20px;
               width: 100%;
@@ -398,268 +386,224 @@
   }
 }
 
+
 /*tablet ------*/
 @media screen and (max-width: $tablet){
-  #tab_community{
+  .community .inner section{
+    ul  li a{  padding-left: 20px; }
+    
+    .wrap article{
+      /*fisrt board-FAQ*/
+      &#faq{
+        width: 100%;
 
-    .inner{
-      width: 100%;
+        #searchBox{
+          width: 100%;   
+          margin-bottom: 40px;
 
-      main{
-        padding: 0 40px;
+          .qstn{
+            width: 100%; float: left; 
+            padding: 30px 20px;
+            height: 210px;
+            
+            >h1{
+              font-size: 20px;
+              color: $green;
+            }
+            >span{
+              margin: 5px; 
+            }
+          }
+      
+          .answersBy{
+            width: 100%; float:left;
 
-        >ul{
-          li a{
-            padding-left: 20px;
+            >ul{          
+              li{
+                float:left; display: block; width: 25%; height: 96px;
+                a{
+                  .pic{
+                    i{  color: $gold;  }
+                  }
+                  span{ 
+                    color: $gold; 
+                    padding: 0px;
+                  }
+                }
+              }
+            }
           }
         }
 
-        .wrap{
-          >div{
+        .accordion{
+          width: 100%; height: auto;
+          position: relative;
+        
+          >ul{
+            .item{
+              position: relative;
+              /*title*/
+              >h2{
+                font-size: 16px; line-height: 30px;
+                padding: 20px;
 
-            /*fisrt board-FAQ*/
-            &#faq{
-              width: 100%;
-  
-              #searchBox{
-                width: 100%;   
-                margin-bottom: 40px;
-    
-                .qstn{
-                  width: 100%; float: left; 
-                  padding: 30px 20px;
-                  height: 210px;
-                  
-                  >h1{
-                    font-size: 20px;
-                    color: $green;
-                  }
-                  >span{
-                    margin: 5px; 
-                  }
+                &:hover{
+                  padding-left: 20px;
                 }
-            
-                .answersBy{
-                  width: 100%; float:left;
-  
-                  >ul{          
-                    li{
-                      float:left; display: block; width: 25%; height: 96px;
-                      a{
-                        .pic{
-                          i{  color: $gold;  }
-                        }
-                        span{ 
-                          color: $gold; 
-                          padding: 0px;
-                        }
-                      }
-                    }
-                  }
-                }
+                strong{  display: none;  }
               }
-    
-              .accordion{
-                width: 100%; height: auto;
-                position: relative;
-              
-                >ul{
-                  .item{
-                    position: relative;
-                    /*title*/
-                    >h2{
-                      font-size: 16px; line-height: 30px;
-                      padding: 20px;
-  
-                      &:hover{
-                        padding-left: 20px;
-                      }
-                      strong{  display: none;  }
-                    }
-                    /* Text Content */
-                    .text{ font-size: 14px; }
-                  }
-                }
-              }
-            }
-
-            /*second board-NOTICE*/
-            &#notice{
-              h1{
-                font:500 24px/1 'Roboto'; 
-              }
-              table{
-                tr{
-                  th{
-                    &:nth-of-type(1){ width: 15%;}
-                    &:nth-of-type(3){ width: 17%;}
-                    &:nth-of-type(4){ width: 0%; display: none;}
-                  }
-                  td{
-                    &:nth-of-type(4){ width: 0%; display: none;}
-                  }
-                }
-              }
-
-              .paignation{
-                .numbers{
-                  >a{
-                    @for $i from 6 through 10{
-                      &:nth-of-type(#{$i}){display: none;}
-                    }
-                  }
-                }
-              }
-            }
-
-            /*third board-REVIEW*/
-            &#review{
-              >article{
-                display: flex; flex-wrap: wrap;
-
-                .writerInfo{
-                  flex:auto; width: 20%; 
-                }
-                .photo{
-                  flex: auto; width: 80%; 
-                  img{
-                    max-width: 250px;
-                  }
-                }
-                .contents{
-                  flex: auto; width: 100%; margin-top: 20px;
-                }
-              }
-
-            .paignation{
-              .numbers{
-                >a{
-                  @for $i from 6 through 10{
-                    &:nth-of-type(#{$i}){display: none;}
-                  }
-                }
-              }
-            }
+              /* Text Content */
+              .text{ font-size: 14px; }
             }
           }
         }
       }
+
+        /*second board-NOTICE*/
+        &#notice{
+          h1{ font:500 24px/1 'Roboto';   }
+          table{
+            tr{
+              th{
+                &:nth-of-type(1){ width: 15%;}
+                &:nth-of-type(3){ width: 17%;}
+                &:nth-of-type(4){ width: 0%; display: none;}
+              }
+              td{
+                &:nth-of-type(4){ width: 0%; display: none;}
+              }
+            }
+          }
+
+          .paignation{
+            .numbers{
+              >a{
+                @for $i from 6 through 10{
+                  &:nth-of-type(#{$i}){display: none;}
+                }
+              }
+            }
+          }
+        }
+
+        /*third board-REVIEW*/
+        &#review{
+          .list{
+            display: flex; flex-wrap: wrap;
+
+            .writerInfo{
+              flex:auto; width: 20%; 
+            }
+            .photo{
+              flex: auto; width: 80%; 
+              img{
+                max-width: 250px;
+              }
+            }
+            .contents{
+              flex: auto; width: 100%; margin-top: 20px;
+            }
+          }
+
+        .paignation{
+          .numbers{
+            >a{
+              @for $i from 6 through 10{
+                &:nth-of-type(#{$i}){display: none;}
+              }
+            }
+          }
+        }
+        }
     }
   }
 }
 
 /*mobile ------*/
 @media screen and (max-width: $mobile){
-
-  #tab_community{
-
-    .inner{
+  .community .inner section{
+    ul{
       width: 100%;
+      display: flex;
+      margin-bottom: 20px;
+      
+      li{
+        border: none;
+        padding: 0 10px;
 
-      main{
-        display: block;
-        padding: 0 20px;
-        
-        >ul{
-          width: 100%;
-          display: flex;
-          margin-bottom: 20px;
-          
-          li{
-            border: none;
+        a{  padding-left: 0px;}
+        &.on{  border-bottom: 4px solid $gold; }
+      }
+    }
+
+    .wrap {
+      width: 100%;
+      padding: 0px;
+      article{
+        /*fisrt board-FAQ*/
+        &#faq {
+          #searchBox{
+            .qstn{
+              padding: 20px 10px 10px;
+              height:auto;
+              >h1{ font-size: 18px;}
+              input{ width: 80%;}
+              button{width: 20%;}
+            }
+            .answersBy{
+              padding: 10px 10px 20px;
+              h3{font-size: 16px;}
+              >ul li {
+                display: flex; justify-content: center; align-items: center;
+                a{
+                  .pic{ height: auto;  padding: 0px;}
+                  span{ display: none;}
+                }
+              }
+            }
+          }
+          .answerBoard h1{padding: 0 10px;}
+          .accordion{
             padding: 0 10px;
-
-            a{  padding-left: 0px;}
-            &.on{  border-bottom: 4px solid $gold; }
-          }
-        }
-
-        
-        .wrap{
-          width: 100%;
-          padding: 0px;
-          >div{
-
-            /*fisrt board-FAQ*/
-            &#faq {
-              #searchBox{
-                .qstn{
-                  padding: 20px 10px 10px;
-                  height:auto;
-                  >h1{ font-size: 18px;}
-                  input{ width: 80%;}
-                  button{width: 20%;}
+            >ul{
+              display: block;
+              .item{
+                padding: 0px;
+                >h2{  font-size: 14px;  padding: 10px; }
+                .text{ 
+                  font-size: 14px; line-height: 14px;
+                  padding: 0px 10px;
                 }
-                .answersBy{
-                  padding: 10px 10px 20px;
-                  h3{font-size: 16px;}
-                  >ul li {
-                    display: flex; justify-content: center; align-items: center;
-                    a{
-                      .pic{ height: auto;  padding: 0px;}
-                      span{ display: none;}
-                    }
-                  }
-
-                }
-              }
-
-              .accordion{
-                padding: 0 10px;
-                >ul{
-                  .item{
-  
-                    >h2{
-                      font-size: 14px; line-height: 20px;
-                      padding: 10px;
-  
-                      &:hover{
-                        padding-left: 10px;
-                      }
-                    }
-                    .text{ 
-                      font-size: 14px; line-height: 14px;
-                      padding: 0px 10px;
-                    }
-                  }
-                }
-              }
-            }
-
-            /*second board-NOTICE*/
-            &#notice{
-              h1{
-                padding: 0 20px;
-                font:500 24px/1 'Roboto'; 
-              }
-
-              table{
-                tr{
-                  th{
-                    &:nth-of-type(1){ width: 0%; display: none;}
-                    &:nth-of-type(3){ width: 27%;}
-                    &:nth-of-type(4){ width: 0%; display: none;}
-                  }
-                  td{
-                    &:nth-of-type(1){ width: 0%; display: none;}
-                  }
-                }
-              }
-
-              .paignation{
-                .numbers{ display: none;}
-              }
-            }
-
-            /*third board-REVIEW*/
-            &#review{
-              h1{
-                padding: 0 20px;
-                font:500 24px/1 'Roboto'; 
               }
             }
           }
         }
+  
+        /*second board-NOTICE*/
+        &#notice{
+          h1{  padding: 0 20px; font:500 24px/1 'Roboto'; }
+  
+          table{
+            tr{
+              th{
+                &:nth-of-type(1){ width: 0%; display: none;}
+                &:nth-of-type(3){ width: 27%;}
+                &:nth-of-type(4){ width: 0%; display: none;}
+              }
+              td{
+                &:nth-of-type(1){ width: 0%; display: none;}
+              }
+            }
+          }
+  
+          .paignation .numbers{ display: none;}
+        }
+  
+        /*third board-REVIEW*/
+        &#review {
+          h1{ padding: 0 20px;  font:500 24px/1 'Roboto'; }
+          .paignation .numbers{ display: none;}
+        } 
       }
     }
   }

@@ -1,10 +1,9 @@
 //api 데이터 불러오기
 function callData(){
-  const url = "./dbs/community.json";
+  const url = "../js/dbs/community.json";
 
   fetch(url)
   .then(data =>{
-    console.log(data)
     return data.json();
   })
   .then(json =>{
@@ -12,11 +11,13 @@ function callData(){
   })
 }
 
+callData();
+
 //tab
-const tab = document.querySelector("#tab_community");
-const btns = tab.querySelectorAll("ul li");
-const boxs = tab.querySelectorAll(".wrap >div");
-const btns_a = document.querySelectorAll("dt>a");
+const tab = document.querySelector("section");
+const btns = tab.querySelectorAll(".tabButton li");
+const boxs = tab.querySelectorAll(".wrap >article");
+const btns_a = document.querySelectorAll(".tabButton li a");
 
 btns.forEach((el, index) =>{
   el.addEventListener("click", e => {
@@ -43,12 +44,11 @@ function activationTab(items, index){
 }
 
 //accordion
-const boardFAQ = document.querySelector("#faq");
-const accordionBtn = boardFAQ.querySelectorAll(".accordionTitle");
-const allTexts = boardFAQ.querySelectorAll(".text");
+const board = document.querySelector("#faq");
+const h2 = board.querySelectorAll(".accordionTitle");
 const accIcon = document.querySelectorAll(".accIcon");
 
-accordionBtn.forEach((el)=>{
+h2.forEach((el)=>{
   el.addEventListener("click", e =>{
     let targetText = e.currentTarget.nextElementSibling.classList;
     let targetAccIcon = e.currentTarget.children[1]; 
@@ -59,7 +59,7 @@ accordionBtn.forEach((el)=>{
       targetAccIcon.classList.remove("anime");
     }
     else{    
-      for(let btn of accordionBtn){
+      for(let btn of h2){
         btn.classList.remove("show");
       }
       targetText.add("show");

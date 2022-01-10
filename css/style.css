@@ -1080,546 +1080,533 @@ table {
               margin: 0px 0;
               line-height: 1.2;
               text-align: center; } }
-/*----- community sub_visual  section ------------------*/
 .community .sub_visual {
   background: url(../img/sub3.jpg) no-repeat center/cover; }
-
-/*----- Web_tab_contents ------*/
-#tab_community {
+.community .inner section {
   width: 100%;
-  height: auto; }
-  #tab_community .inner {
-    width: 1180px;
-    margin: 0 auto;
-    position: relative; }
-    #tab_community .inner main {
-      width: 100%;
-      position: relative;
-      margin-bottom: 40px;
-      display: flex; }
-      #tab_community .inner main > ul {
-        width: 15%; }
-        #tab_community .inner main > ul li {
-          height: 40px;
-          border-left: 4px solid #d1ac8f; }
-          #tab_community .inner main > ul li a {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap; }
+  .community .inner section > ul {
+    width: 15%; }
+    .community .inner section > ul li {
+      height: 40px;
+      border-left: 4px solid #d1ac8f; }
+      .community .inner section > ul li a {
+        display: block;
+        font: 300 16px/40px 'roboto';
+        padding-left: 30px;
+        color: #555; }
+      .community .inner section > ul li.on a {
+        font-weight: 500;
+        color: #d1ac8f; }
+  .community .inner section .wrap {
+    width: 85%;
+    padding-left: 40px; }
+    .community .inner section .wrap article {
+      display: none;
+      /*fisrt board-FAQ*/
+      /*second board-NOTICE*/
+      /*third board-REVIEW*/ }
+      .community .inner section .wrap article.on {
+        display: block; }
+      .community .inner section .wrap article#faq {
+        width: 100%;
+        position: relative; }
+        .community .inner section .wrap article#faq ::after {
+          content: '';
+          display: block;
+          clear: both; }
+        .community .inner section .wrap article#faq #searchBox {
+          width: 100%;
+          margin-bottom: 40px; }
+          .community .inner section .wrap article#faq #searchBox ::after {
+            content: '';
             display: block;
-            font: 300 16px/40px 'roboto';
-            padding-left: 30px;
-            color: #555; }
-          #tab_community .inner main > ul li.on a {
-            font-weight: 500;
-            color: #d1ac8f; }
-      #tab_community .inner main .wrap {
-        width: 85%;
-        padding-left: 40px; }
-        #tab_community .inner main .wrap > div {
-          display: none;
-          /*fisrt board-FAQ*/
-          /*second board-NOTICE*/
-          /*third board-REVIEW*/ }
-          #tab_community .inner main .wrap > div.on {
-            display: block; }
-          #tab_community .inner main .wrap > div#faq {
-            width: 100%;
-            position: relative; }
-            #tab_community .inner main .wrap > div#faq ::after {
-              content: '';
+            clear: both; }
+          .community .inner section .wrap article#faq #searchBox .qstn {
+            width: 50%;
+            float: left;
+            padding: 20px 30px;
+            background: #eee;
+            height: 264px; }
+            .community .inner section .wrap article#faq #searchBox .qstn > h1 {
+              font: 500 30px/1.2 'roboto';
+              color: #101820;
+              float: left;
+              margin-bottom: 10px; }
+            .community .inner section .wrap article#faq #searchBox .qstn > input {
+              width: 90%;
+              height: 50px;
+              padding: 5px 10px;
+              float: left; }
+            .community .inner section .wrap article#faq #searchBox .qstn > button {
+              width: 10%;
+              height: 50px;
+              float: right;
+              border: none;
+              background: #101820;
+              text-align: center;
+              cursor: pointer; }
+              .community .inner section .wrap article#faq #searchBox .qstn > button i {
+                color: #eee;
+                font-size: 20px; }
+            .community .inner section .wrap article#faq #searchBox .qstn > h2 {
+              margin: 10px 5px 5px;
+              float: left;
+              width: 100%;
+              font: 500 12px/1.2 'roboto'; }
+            .community .inner section .wrap article#faq #searchBox .qstn > span {
+              margin-left: 5px;
+              float: left;
+              font: 300 14px/1.4 'roboto'; }
+              .community .inner section .wrap article#faq #searchBox .qstn > span i {
+                padding-right: 10px; }
+          .community .inner section .wrap article#faq #searchBox .answersBy {
+            width: 50%;
+            float: right;
+            padding: 30px 20px;
+            background: #eee;
+            margin: 0 auto; }
+            .community .inner section .wrap article#faq #searchBox .answersBy h3 {
+              font: 500 20px/1.2 'roboto';
+              color: #101820;
+              margin-bottom: 10px; }
+            .community .inner section .wrap article#faq #searchBox .answersBy > ul li {
+              float: left;
               display: block;
-              clear: both; }
-            #tab_community .inner main .wrap > div#faq #searchBox {
-              width: 100%;
-              margin-bottom: 40px; }
-              #tab_community .inner main .wrap > div#faq #searchBox ::after {
-                content: '';
-                display: block;
-                clear: both; }
-              #tab_community .inner main .wrap > div#faq #searchBox .qstn {
-                width: 50%;
-                float: left;
-                padding: 20px 30px;
-                background: #eee;
-                height: 264px; }
-                #tab_community .inner main .wrap > div#faq #searchBox .qstn > h1 {
-                  font: 500 30px/1.2 'roboto';
-                  color: #101820;
-                  float: left;
-                  margin-bottom: 10px; }
-                #tab_community .inner main .wrap > div#faq #searchBox .qstn > input {
-                  width: 90%;
-                  height: 50px;
-                  padding: 5px 10px;
-                  float: left; }
-                #tab_community .inner main .wrap > div#faq #searchBox .qstn > button {
-                  width: 10%;
-                  height: 50px;
-                  float: right;
-                  border: none;
-                  background: #101820;
-                  text-align: center;
-                  cursor: pointer; }
-                  #tab_community .inner main .wrap > div#faq #searchBox .qstn > button i {
-                    color: #eee;
-                    font-size: 20px; }
-                #tab_community .inner main .wrap > div#faq #searchBox .qstn > h2 {
-                  margin: 10px 5px 5px;
-                  float: left;
+              width: 49%;
+              padding: 5px 10px;
+              border: 1px solid #eee;
+              background: #fff; }
+              .community .inner section .wrap article#faq #searchBox .answersBy > ul li:hover a .pic i, .community .inner section .wrap article#faq #searchBox .answersBy > ul li:hover span {
+                color: #d1ac8f; }
+              .community .inner section .wrap article#faq #searchBox .answersBy > ul li a {
+                display: block; }
+                .community .inner section .wrap article#faq #searchBox .answersBy > ul li a .pic {
                   width: 100%;
-                  font: 500 12px/1.2 'roboto'; }
-                #tab_community .inner main .wrap > div#faq #searchBox .qstn > span {
-                  margin-left: 5px;
-                  float: left;
-                  font: 300 14px/1.4 'roboto'; }
-                  #tab_community .inner main .wrap > div#faq #searchBox .qstn > span i {
-                    padding-right: 10px; }
-              #tab_community .inner main .wrap > div#faq #searchBox .answersBy {
-                width: 50%;
-                float: right;
-                padding: 30px 20px;
-                background: #eee;
-                margin: 0 auto; }
-                #tab_community .inner main .wrap > div#faq #searchBox .answersBy h3 {
-                  font: 500 20px/1.2 'roboto';
-                  color: #101820;
-                  margin-bottom: 10px; }
-                #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li {
-                  float: left;
+                  height: 50px;
+                  text-align: center;
+                  padding-top: 20px; }
+                  .community .inner section .wrap article#faq #searchBox .answersBy > ul li a .pic i {
+                    font-size: 20px;
+                    color: #000; }
+                .community .inner section .wrap article#faq #searchBox .answersBy > ul li a span {
                   display: block;
-                  width: 49%;
-                  padding: 5px 10px;
-                  border: 1px solid #eee;
-                  background: #fff; }
-                  #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li:hover a .pic i, #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li:hover span {
-                    color: #d1ac8f; }
-                  #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a {
-                    display: block; }
-                    #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a .pic {
-                      width: 100%;
-                      height: 50px;
-                      text-align: center;
-                      padding-top: 20px; }
-                      #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a .pic i {
-                        font-size: 20px;
-                        color: #000; }
-                    #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a span {
-                      display: block;
-                      width: 100%;
-                      font: 500 12px/1 'roboto';
-                      color: #101820;
-                      float: left;
-                      padding: 5px;
-                      text-align: center; }
-            #tab_community .inner main .wrap > div#faq .wrapper {
-              position: relative; }
-              #tab_community .inner main .wrap > div#faq .wrapper h1 {
-                font: 500 24px/1 'Roboto';
-                letter-spacing: 2px;
-                color: #101820;
-                margin-bottom: 20px; }
-              #tab_community .inner main .wrap > div#faq .wrapper select {
-                position: absolute;
-                top: 0px;
-                right: 0px;
-                z-index: 2;
-                width: 140px;
-                background: #fff;
-                border: none;
-                font: 300 14px/1 'roboto'; }
-                #tab_community .inner main .wrap > div#faq .wrapper select option {
-                  font: 300 14px/1 'roboto';
-                  color: #52616b; }
-            #tab_community .inner main .wrap > div#faq .accordion {
-              width: 100%;
-              position: relative; }
-              #tab_community .inner main .wrap > div#faq .accordion > ul {
-                background: #fff;
-                border-radius: 3px; }
-                #tab_community .inner main .wrap > div#faq .accordion > ul .item {
-                  position: relative; }
-                  #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 {
-                    padding: 20px 20px 20px 150px;
-                    position: relative;
-                    font: 500 18px/30px 'roboto';
-                    color: #52616b;
-                    transition: ease-in-out 0.2s all;
-                    border-top: 1px solid #BFD9EB;
-                    cursor: pointer; }
-                    #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 strong {
-                      display: inline-block;
-                      position: absolute;
-                      top: 25px;
-                      left: 10px;
-                      width: 140px;
-                      font: 500 11px/30px 'roboto';
-                      color: #101820; }
-                    #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 .accIcon {
-                      float: right;
-                      width: 30px;
-                      height: 30px;
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
-                      margin-top: -3px; }
-                      #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 .accIcon::before, #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 .accIcon::after {
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        border-radius: 50px;
-                        background: #c9d6df;
-                        transition: ease 0.3s all; }
-                      #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 .accIcon::before {
-                        width: 2px;
-                        height: 20px; }
-                      #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 .accIcon::after {
-                        width: 20px;
-                        height: 2px; }
-                      #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 .accIcon.anime.accIcon::before {
-                        transform: rotate(90deg); }
-                    #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2:hover {
-                      padding-left: 175px; }
-                      #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2:hover .accIcon::before, #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2:hover .accIcon::after {
-                        background-color: #52616b; }
-                  #tab_community .inner main .wrap > div#faq .accordion > ul .item .text {
-                    font: 300 16px/24px 'roboto';
-                    letter-spacing: 0.5px;
-                    background-color: #f0f5f9;
-                    padding: 0px 20px;
-                    overflow: hidden;
-                    position: relative;
-                    opacity: 0;
-                    height: 0;
-                    transition: all 0.6s cubic-bezier(0.42, 0.2, 0.08, 1); }
-                    #tab_community .inner main .wrap > div#faq .accordion > ul .item .text.show {
-                      opacity: 1;
-                      height: auto;
-                      padding: 25px 20px;
-                      position: relative;
-                      z-index: 0;
-                      border-radius: 0px 0px 3px 3px; }
-          #tab_community .inner main .wrap > div#notice {
-            width: 100%;
-            position: relative; }
-            #tab_community .inner main .wrap > div#notice h1 {
-              font: 500 24px/1 'Roboto';
-              letter-spacing: 2px;
-              color: #101820;
-              margin-bottom: 20px; }
-            #tab_community .inner main .wrap > div#notice table {
-              width: 100%;
-              margin-bottom: 50px;
-              border-collapse: collapse; }
-              #tab_community .inner main .wrap > div#notice table tr th {
-                padding: 10px 15px;
-                background: #d1ac8f;
-                color: #fff; }
-                #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(1) {
-                  width: 10%; }
-                #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(3) {
-                  width: 15%; }
-                #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(4) {
-                  width: 15%; }
-              #tab_community .inner main .wrap > div#notice table tr td {
-                padding: 20px 15px;
-                border-bottom: 1px solid #ddd;
-                text-align: center;
-                color: #52616b;
-                font: 300 14px/1 'roboto'; }
-                #tab_community .inner main .wrap > div#notice table tr td:nth-of-type(2) {
-                  text-align: left; }
-                  #tab_community .inner main .wrap > div#notice table tr td:nth-of-type(2) a {
-                    text-align: left;
-                    color: #52616b; }
-              #tab_community .inner main .wrap > div#notice table tr:hover td {
-                background: rgba(255, 233, 207, 0.5); }
-            #tab_community .inner main .wrap > div#notice .paignation {
-              width: 100%;
-              display: flex;
-              justify-content: space-between;
-              align-items: center; }
-              #tab_community .inner main .wrap > div#notice .paignation > a {
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                font: normal 20px/30px 'Roboto';
-                color: #d1ac8f;
-                opacity: 0.7; }
-              #tab_community .inner main .wrap > div#notice .paignation .numbers {
-                display: flex;
-                justify-content: space-around;
-                align-items: center; }
-                #tab_community .inner main .wrap > div#notice .paignation .numbers > a {
-                  display: inline-block;
-                  width: 30px;
-                  height: 30px;
-                  font: normal 20px/30px 'Roboto';
-                  color: #52616b;
-                  text-align: center;
-                  opacity: 0.7; }
-                  #tab_community .inner main .wrap > div#notice .paignation .numbers > a.on {
-                    background: #d1ac8f;
-                    color: #fff;
-                    opacity: 1; }
-          #tab_community .inner main .wrap > div#review {
-            width: 100%;
-            position: relative; }
-            #tab_community .inner main .wrap > div#review h1 {
-              font: 500 24px/1 'Roboto';
-              letter-spacing: 2px;
-              color: #101820;
-              margin-bottom: 20px; }
-            #tab_community .inner main .wrap > div#review > article {
-              width: 100%;
-              padding: 10px;
-              display: flex;
-              border-top: 1px solid #ddd;
-              border-bottom: 1px solid #ddd; }
-              #tab_community .inner main .wrap > div#review > article .writerInfo {
-                flex: 1; }
-                #tab_community .inner main .wrap > div#review > article .writerInfo .userIcon {
-                  width: 40px;
-                  height: 40px;
-                  border-radius: 50%;
-                  margin: 0 auto; }
-                  #tab_community .inner main .wrap > div#review > article .writerInfo .userIcon img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover; }
-                #tab_community .inner main .wrap > div#review > article .writerInfo p {
-                  font: 400 14px/1 'Roboto';
-                  padding: 10px 0;
-                  text-align: center;
-                  color: #777; }
-              #tab_community .inner main .wrap > div#review > article .photo {
-                flex: 3;
-                padding: 0 20px; }
-                #tab_community .inner main .wrap > div#review > article .photo img {
                   width: 100%;
-                  object-fit: cover; }
-              #tab_community .inner main .wrap > div#review > article .contents {
-                flex: 10;
-                padding: 0 10px; }
-                #tab_community .inner main .wrap > div#review > article .contents span {
-                  font-size: 20px;
-                  color: #821002; }
-                #tab_community .inner main .wrap > div#review > article .contents strong {
-                  font: 400 16px/1 'Roboto';
-                  color: #777; }
-                #tab_community .inner main .wrap > div#review > article .contents > p {
-                  margin: 20px 0px;
-                  font: 300 16px/1 'Roboto'; }
-            #tab_community .inner main .wrap > div#review .paignation {
-              margin-top: 20px;
-              width: 100%;
-              display: flex;
-              justify-content: space-between;
-              align-items: center; }
-              #tab_community .inner main .wrap > div#review .paignation > a {
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                font: normal 20px/30px 'Roboto';
-                color: #d1ac8f;
-                opacity: 0.7; }
-              #tab_community .inner main .wrap > div#review .paignation .numbers {
-                display: flex;
-                justify-content: space-around;
-                align-items: center; }
-                #tab_community .inner main .wrap > div#review .paignation .numbers > a {
+                  font: 500 12px/1 'roboto';
+                  color: #101820;
+                  float: left;
+                  padding: 5px;
+                  text-align: center; }
+        .community .inner section .wrap article#faq .answerBoard {
+          position: relative; }
+          .community .inner section .wrap article#faq .answerBoard h1 {
+            font: 500 24px/1 'Roboto';
+            letter-spacing: 2px;
+            color: #101820;
+            margin-bottom: 20px; }
+          .community .inner section .wrap article#faq .answerBoard select {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            z-index: 2;
+            width: 140px;
+            background: #fff;
+            border: none;
+            font: 300 14px/1 'roboto'; }
+            .community .inner section .wrap article#faq .answerBoard select option {
+              font: 300 14px/1 'roboto';
+              color: #52616b; }
+        .community .inner section .wrap article#faq .accordion {
+          width: 100%;
+          position: relative; }
+          .community .inner section .wrap article#faq .accordion > ul {
+            background: #fff;
+            border-radius: 3px; }
+            .community .inner section .wrap article#faq .accordion > ul .item {
+              position: relative; }
+              .community .inner section .wrap article#faq .accordion > ul .item > h2 {
+                padding: 20px 20px 20px 150px;
+                position: relative;
+                font: 500 18px/30px 'roboto';
+                color: #52616b;
+                transition: ease-in-out 0.2s all;
+                border-top: 1px solid #BFD9EB;
+                cursor: pointer; }
+                .community .inner section .wrap article#faq .accordion > ul .item > h2 strong {
                   display: inline-block;
+                  position: absolute;
+                  top: 25px;
+                  left: 10px;
+                  width: 140px;
+                  font: 500 11px/30px 'roboto';
+                  color: #101820; }
+                .community .inner section .wrap article#faq .accordion > ul .item > h2 .accIcon {
+                  float: right;
                   width: 30px;
                   height: 30px;
-                  font: normal 20px/30px 'Roboto';
-                  color: #52616b;
-                  text-align: center;
-                  opacity: 0.7; }
-                  #tab_community .inner main .wrap > div#review .paignation .numbers > a.on {
-                    background: #d1ac8f;
-                    color: #fff;
-                    opacity: 1; }
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-top: -3px; }
+                  .community .inner section .wrap article#faq .accordion > ul .item > h2 .accIcon::before, .community .inner section .wrap article#faq .accordion > ul .item > h2 .accIcon::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    border-radius: 50px;
+                    background: #c9d6df;
+                    transition: ease 0.3s all; }
+                  .community .inner section .wrap article#faq .accordion > ul .item > h2 .accIcon::before {
+                    width: 2px;
+                    height: 20px; }
+                  .community .inner section .wrap article#faq .accordion > ul .item > h2 .accIcon::after {
+                    width: 20px;
+                    height: 2px; }
+                  .community .inner section .wrap article#faq .accordion > ul .item > h2 .accIcon.anime.accIcon::before {
+                    transform: rotate(90deg); }
+                .community .inner section .wrap article#faq .accordion > ul .item > h2:hover {
+                  padding-left: 175px; }
+                  .community .inner section .wrap article#faq .accordion > ul .item > h2:hover .accIcon::before, .community .inner section .wrap article#faq .accordion > ul .item > h2:hover .accIcon::after {
+                    background-color: #52616b; }
+              .community .inner section .wrap article#faq .accordion > ul .item .text {
+                font: 300 16px/24px 'roboto';
+                letter-spacing: 0.5px;
+                background-color: #f0f5f9;
+                padding: 0px 20px;
+                overflow: hidden;
+                position: relative;
+                opacity: 0;
+                height: 0;
+                transition: all 0.6s cubic-bezier(0.42, 0.2, 0.08, 1); }
+                .community .inner section .wrap article#faq .accordion > ul .item .text.show {
+                  opacity: 1;
+                  height: auto;
+                  padding: 25px 20px;
+                  position: relative;
+                  z-index: 0;
+                  border-radius: 0px 0px 3px 3px; }
+      .community .inner section .wrap article#notice {
+        width: 100%;
+        position: relative; }
+        .community .inner section .wrap article#notice h1 {
+          font: 500 24px/1 'Roboto';
+          letter-spacing: 2px;
+          color: #101820;
+          margin-bottom: 20px; }
+        .community .inner section .wrap article#notice table {
+          width: 100%;
+          margin-bottom: 50px;
+          border-collapse: collapse; }
+          .community .inner section .wrap article#notice table tr th {
+            padding: 10px 15px;
+            background: #d1ac8f;
+            color: #fff; }
+            .community .inner section .wrap article#notice table tr th:nth-of-type(1) {
+              width: 10%; }
+            .community .inner section .wrap article#notice table tr th:nth-of-type(3) {
+              width: 15%; }
+            .community .inner section .wrap article#notice table tr th:nth-of-type(4) {
+              width: 15%; }
+          .community .inner section .wrap article#notice table tr td {
+            padding: 20px 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            color: #52616b;
+            font: 300 14px/1 'roboto'; }
+            .community .inner section .wrap article#notice table tr td:nth-of-type(2) {
+              text-align: left; }
+              .community .inner section .wrap article#notice table tr td:nth-of-type(2) a {
+                text-align: left;
+                color: #52616b; }
+          .community .inner section .wrap article#notice table tr:hover td {
+            background: rgba(255, 233, 207, 0.5); }
+        .community .inner section .wrap article#notice .paignation {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .community .inner section .wrap article#notice .paignation > a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            font: normal 20px/30px 'Roboto';
+            color: #d1ac8f;
+            opacity: 0.7; }
+          .community .inner section .wrap article#notice .paignation .numbers {
+            display: flex;
+            justify-content: space-around;
+            align-items: center; }
+            .community .inner section .wrap article#notice .paignation .numbers > a {
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+              font: normal 20px/30px 'Roboto';
+              color: #52616b;
+              text-align: center;
+              opacity: 0.7; }
+              .community .inner section .wrap article#notice .paignation .numbers > a.on {
+                background: #d1ac8f;
+                color: #fff;
+                opacity: 1; }
+      .community .inner section .wrap article#review {
+        width: 100%;
+        position: relative; }
+        .community .inner section .wrap article#review h1 {
+          font: 500 24px/1 'Roboto';
+          letter-spacing: 2px;
+          color: #101820;
+          margin-bottom: 20px; }
+        .community .inner section .wrap article#review .list {
+          width: 100%;
+          padding: 10px;
+          display: flex;
+          border-top: 1px solid #ddd;
+          border-bottom: 1px solid #ddd; }
+          .community .inner section .wrap article#review .list .writerInfo {
+            flex: 1; }
+            .community .inner section .wrap article#review .list .writerInfo .userIcon {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              margin: 0 auto; }
+              .community .inner section .wrap article#review .list .writerInfo .userIcon img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; }
+            .community .inner section .wrap article#review .list .writerInfo p {
+              font: 400 14px/1 'Roboto';
+              padding: 10px 0;
+              text-align: center;
+              color: #777; }
+          .community .inner section .wrap article#review .list .photo {
+            flex: 3;
+            padding: 0 20px; }
+            .community .inner section .wrap article#review .list .photo img {
+              width: 100%;
+              object-fit: cover; }
+          .community .inner section .wrap article#review .list .contents {
+            flex: 10;
+            padding: 0 10px; }
+            .community .inner section .wrap article#review .list .contents span {
+              font-size: 20px;
+              color: #821002; }
+            .community .inner section .wrap article#review .list .contents strong {
+              font: 400 16px/1 'Roboto';
+              color: #777; }
+            .community .inner section .wrap article#review .list .contents > p {
+              margin: 20px 0px;
+              font: 300 16px/1 'Roboto'; }
+        .community .inner section .wrap article#review .paignation {
+          margin-top: 20px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .community .inner section .wrap article#review .paignation > a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            font: normal 20px/30px 'Roboto';
+            color: #d1ac8f;
+            opacity: 0.7; }
+          .community .inner section .wrap article#review .paignation .numbers {
+            display: flex;
+            justify-content: space-around;
+            align-items: center; }
+            .community .inner section .wrap article#review .paignation .numbers > a {
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+              font: normal 20px/30px 'Roboto';
+              color: #52616b;
+              text-align: center;
+              opacity: 0.7; }
+              .community .inner section .wrap article#review .paignation .numbers > a.on {
+                background: #d1ac8f;
+                color: #fff;
+                opacity: 1; }
 
 /*tablet ------*/
 @media screen and (max-width: 1179px) {
-  #tab_community .inner {
-    width: 100%; }
-    #tab_community .inner main {
-      padding: 0 40px; }
-      #tab_community .inner main > ul li a {
-        padding-left: 20px; }
-      #tab_community .inner main .wrap > div {
-        /*fisrt board-FAQ*/
-        /*second board-NOTICE*/
-        /*third board-REVIEW*/ }
-        #tab_community .inner main .wrap > div#faq {
-          width: 100%; }
-          #tab_community .inner main .wrap > div#faq #searchBox {
-            width: 100%;
-            margin-bottom: 40px; }
-            #tab_community .inner main .wrap > div#faq #searchBox .qstn {
-              width: 100%;
-              float: left;
-              padding: 30px 20px;
-              height: 210px; }
-              #tab_community .inner main .wrap > div#faq #searchBox .qstn > h1 {
-                font-size: 20px;
-                color: #101820; }
-              #tab_community .inner main .wrap > div#faq #searchBox .qstn > span {
-                margin: 5px; }
-            #tab_community .inner main .wrap > div#faq #searchBox .answersBy {
-              width: 100%;
-              float: left; }
-              #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li {
-                float: left;
-                display: block;
-                width: 25%;
-                height: 96px; }
-                #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a .pic i {
-                  color: #d1ac8f; }
-                #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a span {
-                  color: #d1ac8f;
-                  padding: 0px; }
-          #tab_community .inner main .wrap > div#faq .accordion {
-            width: 100%;
-            height: auto;
-            position: relative; }
-            #tab_community .inner main .wrap > div#faq .accordion > ul .item {
-              position: relative;
-              /*title*/
-              /* Text Content */ }
-              #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 {
-                font-size: 16px;
-                line-height: 30px;
-                padding: 20px; }
-                #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2:hover {
-                  padding-left: 20px; }
-                #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 strong {
-                  display: none; }
-              #tab_community .inner main .wrap > div#faq .accordion > ul .item .text {
-                font-size: 14px; }
-        #tab_community .inner main .wrap > div#notice h1 {
-          font: 500 24px/1 'Roboto'; }
-        #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(1) {
-          width: 15%; }
-        #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(3) {
-          width: 17%; }
-        #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(4) {
-          width: 0%;
-          display: none; }
-        #tab_community .inner main .wrap > div#notice table tr td:nth-of-type(4) {
-          width: 0%;
-          display: none; }
-        #tab_community .inner main .wrap > div#notice .paignation .numbers > a:nth-of-type(6) {
-          display: none; }
-        #tab_community .inner main .wrap > div#notice .paignation .numbers > a:nth-of-type(7) {
-          display: none; }
-        #tab_community .inner main .wrap > div#notice .paignation .numbers > a:nth-of-type(8) {
-          display: none; }
-        #tab_community .inner main .wrap > div#notice .paignation .numbers > a:nth-of-type(9) {
-          display: none; }
-        #tab_community .inner main .wrap > div#notice .paignation .numbers > a:nth-of-type(10) {
-          display: none; }
-        #tab_community .inner main .wrap > div#review > article {
-          display: flex;
-          flex-wrap: wrap; }
-          #tab_community .inner main .wrap > div#review > article .writerInfo {
-            flex: auto;
-            width: 20%; }
-          #tab_community .inner main .wrap > div#review > article .photo {
-            flex: auto;
-            width: 80%; }
-            #tab_community .inner main .wrap > div#review > article .photo img {
-              max-width: 250px; }
-          #tab_community .inner main .wrap > div#review > article .contents {
-            flex: auto;
-            width: 100%;
-            margin-top: 20px; }
-        #tab_community .inner main .wrap > div#review .paignation .numbers > a:nth-of-type(6) {
-          display: none; }
-        #tab_community .inner main .wrap > div#review .paignation .numbers > a:nth-of-type(7) {
-          display: none; }
-        #tab_community .inner main .wrap > div#review .paignation .numbers > a:nth-of-type(8) {
-          display: none; }
-        #tab_community .inner main .wrap > div#review .paignation .numbers > a:nth-of-type(9) {
-          display: none; }
-        #tab_community .inner main .wrap > div#review .paignation .numbers > a:nth-of-type(10) {
-          display: none; } }
+  .community .inner section ul li a {
+    padding-left: 20px; }
+  .community .inner section .wrap article {
+    /*fisrt board-FAQ*/
+    /*second board-NOTICE*/
+    /*third board-REVIEW*/ }
+    .community .inner section .wrap article#faq {
+      width: 100%; }
+      .community .inner section .wrap article#faq #searchBox {
+        width: 100%;
+        margin-bottom: 40px; }
+        .community .inner section .wrap article#faq #searchBox .qstn {
+          width: 100%;
+          float: left;
+          padding: 30px 20px;
+          height: 210px; }
+          .community .inner section .wrap article#faq #searchBox .qstn > h1 {
+            font-size: 20px;
+            color: #101820; }
+          .community .inner section .wrap article#faq #searchBox .qstn > span {
+            margin: 5px; }
+        .community .inner section .wrap article#faq #searchBox .answersBy {
+          width: 100%;
+          float: left; }
+          .community .inner section .wrap article#faq #searchBox .answersBy > ul li {
+            float: left;
+            display: block;
+            width: 25%;
+            height: 96px; }
+            .community .inner section .wrap article#faq #searchBox .answersBy > ul li a .pic i {
+              color: #d1ac8f; }
+            .community .inner section .wrap article#faq #searchBox .answersBy > ul li a span {
+              color: #d1ac8f;
+              padding: 0px; }
+      .community .inner section .wrap article#faq .accordion {
+        width: 100%;
+        height: auto;
+        position: relative; }
+        .community .inner section .wrap article#faq .accordion > ul .item {
+          position: relative;
+          /*title*/
+          /* Text Content */ }
+          .community .inner section .wrap article#faq .accordion > ul .item > h2 {
+            font-size: 16px;
+            line-height: 30px;
+            padding: 20px; }
+            .community .inner section .wrap article#faq .accordion > ul .item > h2:hover {
+              padding-left: 20px; }
+            .community .inner section .wrap article#faq .accordion > ul .item > h2 strong {
+              display: none; }
+          .community .inner section .wrap article#faq .accordion > ul .item .text {
+            font-size: 14px; }
+    .community .inner section .wrap article#notice h1 {
+      font: 500 24px/1 'Roboto'; }
+    .community .inner section .wrap article#notice table tr th:nth-of-type(1) {
+      width: 15%; }
+    .community .inner section .wrap article#notice table tr th:nth-of-type(3) {
+      width: 17%; }
+    .community .inner section .wrap article#notice table tr th:nth-of-type(4) {
+      width: 0%;
+      display: none; }
+    .community .inner section .wrap article#notice table tr td:nth-of-type(4) {
+      width: 0%;
+      display: none; }
+    .community .inner section .wrap article#notice .paignation .numbers > a:nth-of-type(6) {
+      display: none; }
+    .community .inner section .wrap article#notice .paignation .numbers > a:nth-of-type(7) {
+      display: none; }
+    .community .inner section .wrap article#notice .paignation .numbers > a:nth-of-type(8) {
+      display: none; }
+    .community .inner section .wrap article#notice .paignation .numbers > a:nth-of-type(9) {
+      display: none; }
+    .community .inner section .wrap article#notice .paignation .numbers > a:nth-of-type(10) {
+      display: none; }
+    .community .inner section .wrap article#review .list {
+      display: flex;
+      flex-wrap: wrap; }
+      .community .inner section .wrap article#review .list .writerInfo {
+        flex: auto;
+        width: 20%; }
+      .community .inner section .wrap article#review .list .photo {
+        flex: auto;
+        width: 80%; }
+        .community .inner section .wrap article#review .list .photo img {
+          max-width: 250px; }
+      .community .inner section .wrap article#review .list .contents {
+        flex: auto;
+        width: 100%;
+        margin-top: 20px; }
+    .community .inner section .wrap article#review .paignation .numbers > a:nth-of-type(6) {
+      display: none; }
+    .community .inner section .wrap article#review .paignation .numbers > a:nth-of-type(7) {
+      display: none; }
+    .community .inner section .wrap article#review .paignation .numbers > a:nth-of-type(8) {
+      display: none; }
+    .community .inner section .wrap article#review .paignation .numbers > a:nth-of-type(9) {
+      display: none; }
+    .community .inner section .wrap article#review .paignation .numbers > a:nth-of-type(10) {
+      display: none; } }
 /*mobile ------*/
 @media screen and (max-width: 539px) {
-  #tab_community .inner {
-    width: 100%; }
-    #tab_community .inner main {
-      display: block;
-      padding: 0 20px; }
-      #tab_community .inner main > ul {
-        width: 100%;
-        display: flex;
-        margin-bottom: 20px; }
-        #tab_community .inner main > ul li {
-          border: none;
-          padding: 0 10px; }
-          #tab_community .inner main > ul li a {
-            padding-left: 0px; }
-          #tab_community .inner main > ul li.on {
-            border-bottom: 4px solid #d1ac8f; }
-      #tab_community .inner main .wrap {
-        width: 100%;
-        padding: 0px; }
-        #tab_community .inner main .wrap > div {
-          /*fisrt board-FAQ*/
-          /*second board-NOTICE*/
-          /*third board-REVIEW*/ }
-          #tab_community .inner main .wrap > div#faq #searchBox .qstn {
-            padding: 20px 10px 10px;
-            height: auto; }
-            #tab_community .inner main .wrap > div#faq #searchBox .qstn > h1 {
-              font-size: 18px; }
-            #tab_community .inner main .wrap > div#faq #searchBox .qstn input {
-              width: 80%; }
-            #tab_community .inner main .wrap > div#faq #searchBox .qstn button {
-              width: 20%; }
-          #tab_community .inner main .wrap > div#faq #searchBox .answersBy {
-            padding: 10px 10px 20px; }
-            #tab_community .inner main .wrap > div#faq #searchBox .answersBy h3 {
-              font-size: 16px; }
-            #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li {
-              display: flex;
-              justify-content: center;
-              align-items: center; }
-              #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a .pic {
-                height: auto;
-                padding: 0px; }
-              #tab_community .inner main .wrap > div#faq #searchBox .answersBy > ul li a span {
-                display: none; }
-          #tab_community .inner main .wrap > div#faq .accordion {
-            padding: 0 10px; }
-            #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2 {
+  .community .inner section ul {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px; }
+    .community .inner section ul li {
+      border: none;
+      padding: 0 10px; }
+      .community .inner section ul li a {
+        padding-left: 0px; }
+      .community .inner section ul li.on {
+        border-bottom: 4px solid #d1ac8f; }
+  .community .inner section .wrap {
+    width: 100%;
+    padding: 0px; }
+    .community .inner section .wrap article {
+      /*fisrt board-FAQ*/
+      /*second board-NOTICE*/
+      /*third board-REVIEW*/ }
+      .community .inner section .wrap article#faq #searchBox .qstn {
+        padding: 20px 10px 10px;
+        height: auto; }
+        .community .inner section .wrap article#faq #searchBox .qstn > h1 {
+          font-size: 18px; }
+        .community .inner section .wrap article#faq #searchBox .qstn input {
+          width: 80%; }
+        .community .inner section .wrap article#faq #searchBox .qstn button {
+          width: 20%; }
+      .community .inner section .wrap article#faq #searchBox .answersBy {
+        padding: 10px 10px 20px; }
+        .community .inner section .wrap article#faq #searchBox .answersBy h3 {
+          font-size: 16px; }
+        .community .inner section .wrap article#faq #searchBox .answersBy > ul li {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .community .inner section .wrap article#faq #searchBox .answersBy > ul li a .pic {
+            height: auto;
+            padding: 0px; }
+          .community .inner section .wrap article#faq #searchBox .answersBy > ul li a span {
+            display: none; }
+      .community .inner section .wrap article#faq .answerBoard h1 {
+        padding: 0 10px; }
+      .community .inner section .wrap article#faq .accordion {
+        padding: 0 10px; }
+        .community .inner section .wrap article#faq .accordion > ul {
+          display: block; }
+          .community .inner section .wrap article#faq .accordion > ul .item {
+            padding: 0px; }
+            .community .inner section .wrap article#faq .accordion > ul .item > h2 {
               font-size: 14px;
-              line-height: 20px;
               padding: 10px; }
-              #tab_community .inner main .wrap > div#faq .accordion > ul .item > h2:hover {
-                padding-left: 10px; }
-            #tab_community .inner main .wrap > div#faq .accordion > ul .item .text {
+            .community .inner section .wrap article#faq .accordion > ul .item .text {
               font-size: 14px;
               line-height: 14px;
               padding: 0px 10px; }
-          #tab_community .inner main .wrap > div#notice h1 {
-            padding: 0 20px;
-            font: 500 24px/1 'Roboto'; }
-          #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(1) {
-            width: 0%;
-            display: none; }
-          #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(3) {
-            width: 27%; }
-          #tab_community .inner main .wrap > div#notice table tr th:nth-of-type(4) {
-            width: 0%;
-            display: none; }
-          #tab_community .inner main .wrap > div#notice table tr td:nth-of-type(1) {
-            width: 0%;
-            display: none; }
-          #tab_community .inner main .wrap > div#notice .paignation .numbers {
-            display: none; }
-          #tab_community .inner main .wrap > div#review h1 {
-            padding: 0 20px;
-            font: 500 24px/1 'Roboto'; } }
+      .community .inner section .wrap article#notice h1 {
+        padding: 0 20px;
+        font: 500 24px/1 'Roboto'; }
+      .community .inner section .wrap article#notice table tr th:nth-of-type(1) {
+        width: 0%;
+        display: none; }
+      .community .inner section .wrap article#notice table tr th:nth-of-type(3) {
+        width: 27%; }
+      .community .inner section .wrap article#notice table tr th:nth-of-type(4) {
+        width: 0%;
+        display: none; }
+      .community .inner section .wrap article#notice table tr td:nth-of-type(1) {
+        width: 0%;
+        display: none; }
+      .community .inner section .wrap article#notice .paignation .numbers {
+        display: none; }
+      .community .inner section .wrap article#review h1 {
+        padding: 0 20px;
+        font: 500 24px/1 'Roboto'; }
+      .community .inner section .wrap article#review .paignation .numbers {
+        display: none; } }
 /*----- login sub_visual -------------------------------*/
 .login {
   width: 100%; }
