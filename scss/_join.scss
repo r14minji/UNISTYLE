@@ -1,15 +1,14 @@
-/*----- join sub_visual section -------------------------------------------------*/
+/*----- join sub_visual -------------------------------------------------*/
 .join{
   width: 100%; 
-  margin-bottom: 150px;
 
   .sub_visual{
     background: url(../img/sub7.jpg) no-repeat bottom/cover ;
   }
 }
 
-/*----- joinform --------------------------------------------------*/
-#joinForm{
+/*----- join_form --------------------------------------------------*/
+#join_form{
   width: 100%;
   margin-bottom: 100px;
 
@@ -113,14 +112,9 @@
 
 /*tablet*/
 @media screen and (max-width:$tablet){
-  .join{
-    .sub_visual{
-      background-position: left 50% bottom 210px;
-    }
-  }
   
-  /*----- joinform --------------------------------------------------*/
-  #joinForm{
+  /*----- join_form --------------------------------------------------*/
+  #join_form{
     margin-bottom: 80px;
   
     .inner{
@@ -168,8 +162,8 @@
     }
   }
   
-  /*----- joinform --------------------------------------------------*/
-  #joinForm{
+  /*----- join_form --------------------------------------------------*/
+  #join_form{
     margin-bottom: 40px;
   
     .inner{

@@ -232,26 +232,32 @@ table {
   .content .sub_visual {
     width: 100%;
     height: 500px;
-    background: #000; }
+    background: #000;
+    position: relative;
+    z-index: -1; }
     .content .sub_visual::after {
       content: "";
       display: block;
       width: inherit;
       height: inherit;
       background-position: inherit;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
       background: #000;
       opacity: 0.7; }
-  .content .inner {
-    width: 1180px;
-    margin: 0 auto;
-    position: relative; }
-    .content .inner h1 {
+    .content .sub_visual h1 {
       font: 700 100px/1 'Roboto Condensed';
       letter-spacing: 5px;
       color: #fff;
       position: absolute;
-      top: -85px;
-      left: 0; }
+      bottom: -15px;
+      left: 12vw; }
+  .content .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
 
 /*----- footer --------------------------------------------------------*/
 #footer_sub {
@@ -313,18 +319,14 @@ table {
     width: 100%;
     margin-bottom: 80px; }
     .content .sub_visual {
-      height: 300px;
-      background: #000; }
-    .content .inner {
-      width: 100%; }
-      .content .inner h1 {
+      height: 300px; }
+      .content .sub_visual h1 {
         font: 700 90px/1 'Roboto Condensed';
         letter-spacing: 5px;
         color: #fff;
         position: absolute;
-        top: -76px;
-        left: 0;
-        padding-left: 20px; }
+        bottom: -14px;
+        left: 10vw; }
 
   #footer_sub .inner {
     width: 100%; } }
@@ -350,15 +352,18 @@ table {
     padding: 0px;
     margin-bottom: 20px; }
     .content .sub_visual {
-      display: none; }
-    .content .inner h1 {
-      font: 700 40px/1 'Roboto Condensed';
-      letter-spacing: 3px;
-      color: rgba(16, 24, 32, 0.8);
-      position: static;
-      padding-left: 0px;
-      text-align: center;
-      padding: 10px 0; }
+      height: auto;
+      background: none; }
+      .content .sub_visual::after {
+        display: none; }
+      .content .sub_visual h1 {
+        font: 700 40px/1 'Roboto Condensed';
+        letter-spacing: 3px;
+        color: rgba(16, 24, 32, 0.8);
+        position: static;
+        padding-left: 0px;
+        text-align: center;
+        padding: 20px 0; }
 
   /*----- footer --------------------------------------------------------*/
   #footer_sub .inner {
@@ -1612,7 +1617,7 @@ table {
           #tab_community .inner main .wrap > div#review h1 {
             padding: 0 20px;
             font: 500 24px/1 'Roboto'; } }
-/*----- login sub_visual section -------------------------------*/
+/*----- login sub_visual -------------------------------*/
 .login {
   width: 100%; }
   .login .sub_visual {
@@ -1939,70 +1944,69 @@ table {
       font-size: 28px; }
     #shortInfo .inner .noticeInfo ul li a p {
       font-size: 13px; } }
-/*----- join sub_visual section -------------------------------------------------*/
+/*----- join sub_visual -------------------------------------------------*/
 .join {
-  width: 100%;
-  margin-bottom: 150px; }
+  width: 100%; }
   .join .sub_visual {
     background: url(../img/sub7.jpg) no-repeat bottom/cover; }
 
-/*----- joinform --------------------------------------------------*/
-#joinForm {
+/*----- join_form --------------------------------------------------*/
+#join_form {
   width: 100%;
   margin-bottom: 100px; }
-  #joinForm .inner {
+  #join_form .inner {
     width: 1180px;
     position: relative;
     margin: 0 auto;
     /*Cancel, Submit Button */ }
-    #joinForm .inner h1, #joinForm .inner h2 {
+    #join_form .inner h1, #join_form .inner h2 {
       font: 500 30px/1 'roboto';
       margin-bottom: 30px; }
-    #joinForm .inner table {
+    #join_form .inner table {
       width: 100%;
       border-top: 2px solid #333;
       border-bottom: 2px solid #333;
       margin-bottom: 60px; }
-      #joinForm .inner table th, #joinForm .inner table td {
+      #join_form .inner table th, #join_form .inner table td {
         border-bottom: 1px solid #ddd;
         padding: 15px 25px; }
-      #joinForm .inner table th {
+      #join_form .inner table th {
         width: 20%; }
-      #joinForm .inner table td input[type=text], #joinForm .inner table td input[type=password] {
+      #join_form .inner table td input[type=text], #join_form .inner table td input[type=password] {
         width: 60%;
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 8px; }
-        #joinForm .inner table td input[type=text]:focus, #joinForm .inner table td input[type=password]:focus {
+        #join_form .inner table td input[type=text]:focus, #join_form .inner table td input[type=password]:focus {
           outline: none;
           border: 2px solid rgba(209, 172, 143, 0.4);
           box-shadow: 0 0 0 4px rgba(209, 172, 143, 0.1); }
-      #joinForm .inner table td input[type=checkbox] {
+      #join_form .inner table td input[type=checkbox] {
         display: inline-block;
         margin: 0 10px 0 30px; }
-      #joinForm .inner table td select {
+      #join_form .inner table td select {
         width: 10%;
         padding: 10px;
         margin-right: 10px;
         border: 1px solid #ccc;
         border-radius: 8px; }
-      #joinForm .inner table td label {
+      #join_form .inner table td label {
         font: 300 16px/1 'roboto';
         position: relative;
         top: -2px;
         margin: 10px; }
-      #joinForm .inner table td p {
+      #join_form .inner table td p {
         font: 14px/1 "맑은 고딕";
         color: hotpink;
         margin-top: 5px; }
-    #joinForm .inner .formBtns {
+    #join_form .inner .formBtns {
       display: flex;
       justify-content: center; }
-      #joinForm .inner .formBtns .btns {
+      #join_form .inner .formBtns .btns {
         width: 300px;
         margin: 0 20px;
         position: relative; }
-        #joinForm .inner .formBtns .btns input[type=reset], #joinForm .inner .formBtns .btns input[type=submit] {
+        #join_form .inner .formBtns .btns input[type=reset], #join_form .inner .formBtns .btns input[type=submit] {
           width: 100%;
           height: 40px;
           border: none;
@@ -2013,10 +2017,10 @@ table {
           box-shadow: 0 6px #ddd;
           border-radius: 0 0 5px 5px;
           color: #444; }
-          #joinForm .inner .formBtns .btns input[type=reset]:hover, #joinForm .inner .formBtns .btns input[type=submit]:hover {
+          #join_form .inner .formBtns .btns input[type=reset]:hover, #join_form .inner .formBtns .btns input[type=submit]:hover {
             box-shadow: 0 4px #eee;
             top: 2px; }
-          #joinForm .inner .formBtns .btns input[type=reset]:active, #joinForm .inner .formBtns .btns input[type=submit]:active {
+          #join_form .inner .formBtns .btns input[type=reset]:active, #join_form .inner .formBtns .btns input[type=submit]:active {
             box-shadow: 0 0px #ddd;
             top: 6px; }
 
@@ -2027,30 +2031,27 @@ table {
 
 /*tablet*/
 @media screen and (max-width: 1179px) {
-  .join .sub_visual {
-    background-position: left 50% bottom 210px; }
-
-  /*----- joinform --------------------------------------------------*/
-  #joinForm {
+  /*----- join_form --------------------------------------------------*/
+  #join_form {
     margin-bottom: 80px; }
-    #joinForm .inner {
+    #join_form .inner {
       width: 100%;
       padding: 0 30px;
       /*Cancel, Submit Button */ }
-      #joinForm .inner h1, #joinForm .inner h2 {
+      #join_form .inner h1, #join_form .inner h2 {
         font-size: 24px; }
-      #joinForm .inner table {
+      #join_form .inner table {
         width: 100%;
         margin: 0 0px 60px; }
-        #joinForm .inner table th, #joinForm .inner table td {
+        #join_form .inner table th, #join_form .inner table td {
           padding: 15px 10px; }
-        #joinForm .inner table th {
+        #join_form .inner table th {
           width: 20%; }
-        #joinForm .inner table td input[type=text], #joinForm .inner table td input[type=password] {
+        #join_form .inner table td input[type=text], #join_form .inner table td input[type=password] {
           display: block; }
-        #joinForm .inner table td input[type=checkbox] {
+        #join_form .inner table td input[type=checkbox] {
           margin: 10px 0px 0 0px; }
-        #joinForm .inner table td select {
+        #join_form .inner table td select {
           width: 20%;
           padding: 10px; } }
 /*mobile*/
@@ -2060,22 +2061,22 @@ table {
     .join .sub_visual {
       background-position: left 72% top -180px; }
 
-  /*----- joinform --------------------------------------------------*/
-  #joinForm {
+  /*----- join_form --------------------------------------------------*/
+  #join_form {
     margin-bottom: 40px; }
-    #joinForm .inner {
+    #join_form .inner {
       padding: 0 10px; }
-      #joinForm .inner h1, #joinForm .inner h2 {
+      #join_form .inner h1, #join_form .inner h2 {
         font-size: 18px; }
-      #joinForm .inner table {
+      #join_form .inner table {
         width: 100%;
         margin: 0 0px 60px; }
-        #joinForm .inner table th, #joinForm .inner table td {
+        #join_form .inner table th, #join_form .inner table td {
           padding: 10px 10px; }
-        #joinForm .inner table th {
+        #join_form .inner table th {
           font-size: 14px;
           width: 22%; }
-        #joinForm .inner table td label {
+        #join_form .inner table td label {
           font-size: 12px; } }
 /*----- location sub_visual  section ------------------*/
 .location .sub_visual {
