@@ -1,22 +1,12 @@
-/*----- join sub_visual -------------------------------------------------*/
 .join{
   width: 100%; 
 
   .sub_visual{
     background: url(../img/sub7.jpg) no-repeat bottom/cover ;
   }
-}
-
-/*----- join_form --------------------------------------------------*/
-#join_form{
-  width: 100%;
-  margin-bottom: 100px;
 
   .inner{
-    width: 1180px;
-    position: relative;
-    margin: 0 auto;
-
+    /* table - Personal Information,  Additional Information */
     h1, h2{
       font: 500 30px/1 'roboto';
       margin-bottom: 30px;
@@ -32,9 +22,9 @@
         border-bottom: 1px solid #ddd;
         padding: 15px 25px;
       }
-      th{
-        width: 20%;
-      }
+
+      th{ width: 20%;   }
+
       td{
         input[type=text], input[type=password]{
           width: 60%; padding: 10px;
@@ -62,7 +52,7 @@
           margin: 10px;
         }
 
-        //error message style
+        /*error message style*/
         p{
           font: 14px/1 "맑은 고딕";
           color: hotpink;
@@ -80,28 +70,23 @@
 
         input[type=reset], input[type=submit]{
           width: 100%; height: 40px;
-          border: none;
-          font: bold 14px/40px 'arial'; 
-          cursor: pointer; 
-          transition: 0.3s;
+          border: none; cursor: pointer; 
+          font: bold 14px/40px 'arial';  color: #444;
           background: #eee;
-          box-shadow: 0 6px #ddd;
+          position: relative;
           border-radius: 0 0 5px 5px;
-          color: #444;
+          box-shadow: 0 6px #ddd;
 
           &:hover{
             box-shadow: 0 4px #eee;
             top: 2px;
-          }
-          &:active{
-            box-shadow: 0 0px #ddd;
-            top: 6px;
           }
         }
       }
     }
   }
 }
+
 
 //result페이지
 #result{
@@ -110,68 +95,38 @@
   margin-bottom: 100px;
 }
 
+
 /*tablet*/
 @media screen and (max-width:$tablet){
-  
-  /*----- join_form --------------------------------------------------*/
-  #join_form{
-    margin-bottom: 80px;
-  
+  .join{
     .inner{
-      width: 100%;
-      padding: 0 30px;
-  
-      h1, h2{
-        font-size: 24px;  
-      }
+      h1, h2{ font-size: 24px;  }
 
       table{
         width: 100%;
         margin: 0 0px 60px;
   
-        th, td{
-          padding: 15px 10px;
-        }
-        th{
-          width: 20%;
-        }
+        th, td{ padding: 15px 10px;  }
+        th{  width: 20%; }
         td{
-          input[type=text], input[type=password]{
-            display: block;
-          }
-          input[type=checkbox]{
-            margin: 10px 0px 0 0px;
-          }
-          select{
-            width: 20%; padding: 10px;
-          }
+          input[type=text], input[type=password]{ display: block;}
+          input[type=checkbox]{   margin: 10px 0px 0 0px; }
+          select{  width: 25%; padding: 10px; }
         }
       }
-  
-      /*Cancel, Submit Button */
     }
   }
 }
 
+
 /*mobile*/
 @media screen and (max-width:$mobile){
+
   .join{
-    padding-bottom: 0px;
-    .sub_visual{
-      background-position: left 72% top -180px;
-    }
-  }
-  
-  /*----- join_form --------------------------------------------------*/
-  #join_form{
-    margin-bottom: 40px;
-  
     .inner{
       padding: 0 10px;
   
-      h1, h2{
-        font-size: 18px;  
-      }
+      h1, h2{ font-size: 18px;  }
 
       table{
         width: 100%;
@@ -185,10 +140,15 @@
           width: 22%;
         }
         td{
-          label{
-            font-size: 12px;
-          }
+          input[type=text], input[type=password]{width: 100%;}
+          label{ font-size: 12px; }
+          select{  width: 45%; padding: 10px; margin: 5px 20px 5px 0px; }
         }
+      }
+
+      /*Cancel, Submit Button */
+      .formBtns{
+        margin: 40px 0px;
       }
     }
   }
