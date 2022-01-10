@@ -5,143 +5,138 @@
   .sub_visual{
     background: url(../img/sub6.jpg) no-repeat center/cover ;
   }
-}
 
-/*----- loginPage_section ----------------------------------*/
-#loginPage{
-  width: 100%;
-  margin-bottom: 100px;
-
-  ::after{ content:''; display: block; clear:both;}
   .inner{
-    width: 1180px;
-    position: relative;
-    margin: 0 auto;
 
-    ::after{ content:''; display: block; clear:both;}
+    /*----- section - login_form -----------------------------*/
+    #login_form{
+      width: 100%;
+      margin-bottom: 100px;
 
-    .loginCheck{
-      width: 50%; float:left;
-      padding: 20px 30px;
+      &::after{ content:''; display: block; clear:both;}
+      .userCheck{
+        width: 50%; float:left;
+        padding: 20px 30px;
 
-      h1{
-        font: 500 36px/1 'roboto';
-        margin-bottom: 40px;
-      }
-      input[type=text], input[type=password]{
-        width: 100%; height: 50px;
-        font: 300 18px/1 'roboto';
-        padding: 10px 15px;
-        border: none;
-        border-bottom: 1px solid #ccc;
-        margin-bottom: 30px;
-
-        &:focus{
-          outline: none;
-          border-bottom: 1px solid #000;
+        h1{
+          font: 500 36px/1 'roboto';
+          margin-bottom: 40px;
         }
-      }
-      input[type=checkbox]{
-        width: 20px; height: 20px; border: 1px solid #ddd;
-        margin: 10px 10px 30px 0;
-      }
-      label[for=loggedIn]{
-        position: relative; top: -5px;
-        font: 300 16px/20px 'roboto';
-      }
-      input[type=submit]{
-        width: 100%; height: 40px; 
-        color: #333;
-        text-align: center;
-        font: 500 20px/40px 'roboto';
-        border: 2px solid #333;
-        background: #fff;
-        cursor: pointer; 
-        margin-bottom: 30px;
-        transition: 0.5s;
+        input[type=text], input[type=password]{
+          width: 100%; height: 50px;
+          font: 300 18px/1 'roboto';
+          padding: 10px 15px;
+          border: none;
+          border-bottom: 1px solid #ccc;
+          margin-bottom: 30px;
 
-        &:hover{
-          color: #fff;
-          background: #333;
+          &:focus{
+            outline: none;
+            border-bottom: 1px solid #000;
+          }
         }
-      }
-      .snsLogin{
-        width: 100%;
-        ::after{ content:''; display: block; clear:both;}
-        span{
-          font: 500 24px/40px 'roboto';
-          float: left;
+        input[type=checkbox]{
+          width: 20px; height: 20px; border: 1px solid #ddd;
+          margin: 10px 10px 30px 0;
         }
-        ul{
-          float: right;
-          li{
-            width: 40px; height: 40px; border: 1px solid #ddd;
-            font-size: 30px; text-align: center;
+        label[for=loggedIn]{
+          position: relative; top: -5px;
+          font: 300 16px/20px 'roboto';
+        }
+        input[type=submit]{
+          width: 100%; height: 40px; 
+          color: #333;
+          text-align: center;
+          font: 500 20px/40px 'roboto';
+          border: 2px solid #333;
+          background: #fff;
+          cursor: pointer; 
+          margin-bottom: 30px;
+          transition: 0.5s;
+
+          &:hover{
+            color: #fff;
+            background: #333;
+          }
+        }
+        .snsLogin{
+          width: 100%;
+          ::after{ content:''; display: block; clear:both;}
+          span{
+            font: 500 24px/40px 'roboto';
             float: left;
-            margin-right: 10px;
-            &:nth-of-type(1){color: rgba(6, 6, 155, 0.973);}
-            &:nth-of-type(2){color: $sky;}
-            &:nth-of-type(3){color: rgb(224, 178, 24); margin-right: 0;}
+          }
+          ul{
+            float: right;
+            li{
+              width: 40px; height: 40px; border: 1px solid #ddd;
+              font-size: 30px; text-align: center;
+              float: left; cursor: pointer;
+              margin-right: 10px;
+              &:nth-of-type(1){color: rgba(6, 6, 155, 0.973);}
+              &:nth-of-type(2){color: $sky;}
+              &:nth-of-type(3){color: rgb(224, 178, 24); margin-right: 0;}
+            }
           }
         }
       }
-    }
 
-    .goToJoin{
-      width: 50%; float: right;
-      padding: 20px 30px;
+      .goToJoin{
+        width: 50%; float: right;
+        padding: 20px 30px;
 
-      h2{
-        font: 500 36px/1 'roboto';
-        margin-bottom: 20px;
-      }
-      p{
-        font: 500 22px/1 'roboto';
-        margin-bottom: 20px;
-      }
-      ul{
-        width: 100%;
-        margin-bottom: 47px;
-        li{
-          font: 300 18px/1.2 'roboto';
-          margin: 0 0 10px 20px;
-          list-style-type: square;
-          list-style-position : inside;
-
+        h2{
+          font: 500 36px/1 'roboto';
+          margin-bottom: 20px;
         }
-      }
-      >a{
-        display: block; 
-        width: 100%; height: 40px;
-        background: #fff; text-align: center;
-        color: $gold;
-        border: 2px solid $gold;
-        font: 500 20px/40px 'roboto';
-        margin-bottom: 30px;
-        transition: 0.5s;
+        p{
+          font: 500 22px/1 'roboto';
+          margin-bottom: 20px;
+        }
+        ul{
+          width: 100%;
+          margin-bottom: 47px;
+          li{
+            font: 300 18px/1.2 'roboto';
+            margin: 0 0 10px 20px;
+            list-style-type: square;
+            list-style-position : inside;
 
-        &:hover{
-          background: $gold;
-          color: #fff;
+          }
         }
-      }
-      .find{
-        width: 100%;
-        span{
-          float:left;
-          height: 40px;
-          font: 500 24px/40px 'roboto';
+        >a{
+          display: block; 
+          width: 100%; height: 40px;
+          background: #fff; text-align: center;
+          color: $gold;
+          border: 2px solid $gold;
+          font: 500 20px/40px 'roboto';
+          margin-bottom: 30px;
+          transition: 0.5s;
+
+          &:hover{
+            background: $gold;
+            color: #fff;
+          }
         }
-        .findBtn{
-          float:right;
-          >a{
-            display: inline-block; 
-            width: 120px; height: 40px;
-            margin-right: 10px;
-            font: 500 14px/40px 'roboto';
-            text-align: center; color: #333;
-            border: 1px solid $darkblue;
-            &:nth-of-type(2){ margin-right: 0;}
+        .find{
+          width: 100%;
+          span{
+            float:left;
+            height: 40px;
+            font: 500 24px/40px 'roboto';
+          }
+          .findBtn{
+            float:right;
+            >a{
+              display: inline-block; 
+              width: 120px; height: 40px;
+              margin-right: 10px;
+              font: 500 14px/40px 'roboto';
+              text-align: center; color: #333;
+              border: 1px solid $darkblue;
+              &:nth-of-type(2){ margin-right: 0;}
+            }
           }
         }
       }
@@ -149,7 +144,7 @@
   }
 }
 
-  /*----- aside - shortInfo ------------------------------------*/
+/*----- aside  - shortInfo ------------------------------------*/
 #shortInfo{
   width: 100%;
   margin-bottom: 40px;
@@ -231,61 +226,41 @@
 
 /*tablet*/
 @media screen and (max-width: $tablet){
-  /*----- loginPage_section -------------------------------------*/
-  #loginPage{
+  /*----- login_form_section -------------------------------------*/
+  .login{
     .inner{
-      width: 100%;
-
-      .loginCheck{
-        width: 100%; float:left;
-        margin-bottom: 40px;
-
-        h1{
-          font-size: 28px;
-        }
-        input[type=submit]{
-          width: 100%; height: 60px;
-          font-size: 24px;
-          line-height: 60px;
-
-        }
-        .snsLogin{
-          span{
-            font-size: 20px;
-            line-height: 30px;
-          }
-          ul{
-            li{
-              width: 30px; height: 30px; 
-              font-size: 20px; 
-            }
-          }
-        }
-      }
-      .goToJoin{
-        width: 100%; float:left;
-
-        h2{
-          font-size: 28px;
-        }
-        p{
-          font-size: 20px;
-          margin-bottom: 20px;
-        }
-        ul{
-          li{
-            font-size: 18px;
-          }
-        }
-        >a{
-          width: 100%; height: 60px;
-          font-size: 24px;
-          line-height: 60px;
-        }
-        .find{
-          span{
-            font-size: 20px;
+      #login_form{
+        .userCheck{
+          width: 100%; float:left;
+          margin-bottom: 40px;
+  
+          h1{font-size: 28px; }
+          input[type=submit]{
+            width: 100%; height: 40px;
+            font-size: 24px;
             line-height: 40px;
+          }
+          .snsLogin{
+            span{  font-size: 20px;  line-height: 30px; }
+            ul li{  width: 30px; height: 30px;  font-size: 20px; }
+          }
+        }
+        .goToJoin{
+          width: 100%; float:left;
+  
+          h2{  font-size: 28px; }
+          p{ font-size: 20px; margin-bottom: 20px;}
+          ul li{  font-size: 18px; }
+          >a{
+            width: 100%; height: 40px;
+            font-size: 24px;
+            line-height: 40px;
+          }
+          .find{
+            span{
+              font-size: 20px;
+              line-height: 40px;
+            }
           }
         }
       }
@@ -356,81 +331,64 @@
 
 /*mobile*/
 @media screen and (max-width: $mobile){
-  /*loginPage_section */
-  #loginPage{
+  .login{
     .inner{
-      width: 100%;
+      /*login_form_section */
+      #login_form{
+        .userCheck{ padding: 0px;}
+        .goToJoin{
+          padding: 0px;
+          p{  font-size: 18px}
+          ul li{ font-size: 14px; margin: 0 0 10px 5px; }
 
-      .loginCheck{
-        padding: 10px 10px;
-
-      }
-      .goToJoin{
-        padding: 10px 10px;
-        p{
-          font-size: 18px;
-        }
-        ul{
-          li{
-            font-size: 14px;
-            margin: 0 0 10px 5px;
-          }
-        }
-
-        .find{
-
-          span{
-            margin-bottom: 20px;
-          }
-          .findBtn{
-            width: 100%;
-            float:left;
+          .find{
+            span{  margin-bottom: 20px; }
+            .findBtn{  width: 100%; float:left; }
           }
         }
       }
     }
   }
+
+  /*----- aside - shortInfo ------------------------------------*/
+  #shortInfo{
+
+    .inner{
+      width: 100%; 
+      padding: 20px;
   
-    /*----- aside - shortInfo ------------------------------------*/
-    #shortInfo{
+      .newsInfo{
 
-      .inner{
-        width: 100%; 
-        padding: 20px;
-    
-        .newsInfo{
-
-          h1{
-            font-size: 18px;
-          }
-          ul{
-            li{
-              padding: 10px 0;
-              a{
-
-                .title{
-                  font-size: 12px;
-                }
-                .date{
-                  font-size: 10px;
-                }
-              }
-            }
-          }
+        h1{
+          font-size: 18px;
         }
-    
-        .noticeInfo{
+        ul{
+          li{
+            padding: 10px 0;
+            a{
 
-          ul{
-            li{
-              a{
-                i{  font-size: 28px;}
-                p{  font-size: 13px; }
+              .title{
+                font-size: 12px;
+              }
+              .date{
+                font-size: 10px;
               }
             }
           }
         }
       }
-    }
   
+      .noticeInfo{
+
+        ul{
+          li{
+            a{
+              i{  font-size: 28px;}
+              p{  font-size: 13px; }
+            }
+          }
+        }
+      }
+    }
+  }
 }

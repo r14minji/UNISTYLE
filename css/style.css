@@ -365,6 +365,8 @@ table {
         padding-left: 0px;
         text-align: center;
         padding: 20px 0; }
+    .content .inner {
+      padding: 0 10px; }
 
   /*----- footer --------------------------------------------------------*/
   #footer_sub .inner {
@@ -1623,143 +1625,136 @@ table {
   width: 100%; }
   .login .sub_visual {
     background: url(../img/sub6.jpg) no-repeat center/cover; }
-
-/*----- loginPage_section ----------------------------------*/
-#loginPage {
-  width: 100%;
-  margin-bottom: 100px; }
-  #loginPage ::after {
-    content: '';
-    display: block;
-    clear: both; }
-  #loginPage .inner {
-    width: 1180px;
-    position: relative;
-    margin: 0 auto; }
-    #loginPage .inner ::after {
-      content: '';
-      display: block;
-      clear: both; }
-    #loginPage .inner .loginCheck {
-      width: 50%;
-      float: left;
-      padding: 20px 30px; }
-      #loginPage .inner .loginCheck h1 {
-        font: 500 36px/1 'roboto';
-        margin-bottom: 40px; }
-      #loginPage .inner .loginCheck input[type=text], #loginPage .inner .loginCheck input[type=password] {
-        width: 100%;
-        height: 50px;
-        font: 300 18px/1 'roboto';
-        padding: 10px 15px;
-        border: none;
-        border-bottom: 1px solid #ccc;
-        margin-bottom: 30px; }
-        #loginPage .inner .loginCheck input[type=text]:focus, #loginPage .inner .loginCheck input[type=password]:focus {
-          outline: none;
-          border-bottom: 1px solid #000; }
-      #loginPage .inner .loginCheck input[type=checkbox] {
-        width: 20px;
-        height: 20px;
-        border: 1px solid #ddd;
-        margin: 10px 10px 30px 0; }
-      #loginPage .inner .loginCheck label[for=loggedIn] {
-        position: relative;
-        top: -5px;
-        font: 300 16px/20px 'roboto'; }
-      #loginPage .inner .loginCheck input[type=submit] {
-        width: 100%;
-        height: 40px;
-        color: #333;
-        text-align: center;
-        font: 500 20px/40px 'roboto';
-        border: 2px solid #333;
-        background: #fff;
-        cursor: pointer;
-        margin-bottom: 30px;
-        transition: 0.5s; }
-        #loginPage .inner .loginCheck input[type=submit]:hover {
-          color: #fff;
-          background: #333; }
-      #loginPage .inner .loginCheck .snsLogin {
-        width: 100%; }
-        #loginPage .inner .loginCheck .snsLogin ::after {
-          content: '';
-          display: block;
-          clear: both; }
-        #loginPage .inner .loginCheck .snsLogin span {
-          font: 500 24px/40px 'roboto';
-          float: left; }
-        #loginPage .inner .loginCheck .snsLogin ul {
-          float: right; }
-          #loginPage .inner .loginCheck .snsLogin ul li {
-            width: 40px;
-            height: 40px;
-            border: 1px solid #ddd;
-            font-size: 30px;
-            text-align: center;
-            float: left;
-            margin-right: 10px; }
-            #loginPage .inner .loginCheck .snsLogin ul li:nth-of-type(1) {
-              color: rgba(6, 6, 155, 0.973); }
-            #loginPage .inner .loginCheck .snsLogin ul li:nth-of-type(2) {
-              color: #BFD9EB; }
-            #loginPage .inner .loginCheck .snsLogin ul li:nth-of-type(3) {
-              color: #e0b218;
-              margin-right: 0; }
-    #loginPage .inner .goToJoin {
-      width: 50%;
-      float: right;
-      padding: 20px 30px; }
-      #loginPage .inner .goToJoin h2 {
-        font: 500 36px/1 'roboto';
-        margin-bottom: 20px; }
-      #loginPage .inner .goToJoin p {
-        font: 500 22px/1 'roboto';
-        margin-bottom: 20px; }
-      #loginPage .inner .goToJoin ul {
-        width: 100%;
-        margin-bottom: 47px; }
-        #loginPage .inner .goToJoin ul li {
-          font: 300 18px/1.2 'roboto';
-          margin: 0 0 10px 20px;
-          list-style-type: square;
-          list-style-position: inside; }
-      #loginPage .inner .goToJoin > a {
+  .login .inner {
+    /*----- section - login_form -----------------------------*/ }
+    .login .inner #login_form {
+      width: 100%;
+      margin-bottom: 100px; }
+      .login .inner #login_form::after {
+        content: '';
         display: block;
-        width: 100%;
-        height: 40px;
-        background: #fff;
-        text-align: center;
-        color: #d1ac8f;
-        border: 2px solid #d1ac8f;
-        font: 500 20px/40px 'roboto';
-        margin-bottom: 30px;
-        transition: 0.5s; }
-        #loginPage .inner .goToJoin > a:hover {
-          background: #d1ac8f;
-          color: #fff; }
-      #loginPage .inner .goToJoin .find {
-        width: 100%; }
-        #loginPage .inner .goToJoin .find span {
-          float: left;
+        clear: both; }
+      .login .inner #login_form .userCheck {
+        width: 50%;
+        float: left;
+        padding: 20px 30px; }
+        .login .inner #login_form .userCheck h1 {
+          font: 500 36px/1 'roboto';
+          margin-bottom: 40px; }
+        .login .inner #login_form .userCheck input[type=text], .login .inner #login_form .userCheck input[type=password] {
+          width: 100%;
+          height: 50px;
+          font: 300 18px/1 'roboto';
+          padding: 10px 15px;
+          border: none;
+          border-bottom: 1px solid #ccc;
+          margin-bottom: 30px; }
+          .login .inner #login_form .userCheck input[type=text]:focus, .login .inner #login_form .userCheck input[type=password]:focus {
+            outline: none;
+            border-bottom: 1px solid #000; }
+        .login .inner #login_form .userCheck input[type=checkbox] {
+          width: 20px;
+          height: 20px;
+          border: 1px solid #ddd;
+          margin: 10px 10px 30px 0; }
+        .login .inner #login_form .userCheck label[for=loggedIn] {
+          position: relative;
+          top: -5px;
+          font: 300 16px/20px 'roboto'; }
+        .login .inner #login_form .userCheck input[type=submit] {
+          width: 100%;
           height: 40px;
-          font: 500 24px/40px 'roboto'; }
-        #loginPage .inner .goToJoin .find .findBtn {
-          float: right; }
-          #loginPage .inner .goToJoin .find .findBtn > a {
-            display: inline-block;
-            width: 120px;
+          color: #333;
+          text-align: center;
+          font: 500 20px/40px 'roboto';
+          border: 2px solid #333;
+          background: #fff;
+          cursor: pointer;
+          margin-bottom: 30px;
+          transition: 0.5s; }
+          .login .inner #login_form .userCheck input[type=submit]:hover {
+            color: #fff;
+            background: #333; }
+        .login .inner #login_form .userCheck .snsLogin {
+          width: 100%; }
+          .login .inner #login_form .userCheck .snsLogin ::after {
+            content: '';
+            display: block;
+            clear: both; }
+          .login .inner #login_form .userCheck .snsLogin span {
+            font: 500 24px/40px 'roboto';
+            float: left; }
+          .login .inner #login_form .userCheck .snsLogin ul {
+            float: right; }
+            .login .inner #login_form .userCheck .snsLogin ul li {
+              width: 40px;
+              height: 40px;
+              border: 1px solid #ddd;
+              font-size: 30px;
+              text-align: center;
+              float: left;
+              cursor: pointer;
+              margin-right: 10px; }
+              .login .inner #login_form .userCheck .snsLogin ul li:nth-of-type(1) {
+                color: rgba(6, 6, 155, 0.973); }
+              .login .inner #login_form .userCheck .snsLogin ul li:nth-of-type(2) {
+                color: #BFD9EB; }
+              .login .inner #login_form .userCheck .snsLogin ul li:nth-of-type(3) {
+                color: #e0b218;
+                margin-right: 0; }
+      .login .inner #login_form .goToJoin {
+        width: 50%;
+        float: right;
+        padding: 20px 30px; }
+        .login .inner #login_form .goToJoin h2 {
+          font: 500 36px/1 'roboto';
+          margin-bottom: 20px; }
+        .login .inner #login_form .goToJoin p {
+          font: 500 22px/1 'roboto';
+          margin-bottom: 20px; }
+        .login .inner #login_form .goToJoin ul {
+          width: 100%;
+          margin-bottom: 47px; }
+          .login .inner #login_form .goToJoin ul li {
+            font: 300 18px/1.2 'roboto';
+            margin: 0 0 10px 20px;
+            list-style-type: square;
+            list-style-position: inside; }
+        .login .inner #login_form .goToJoin > a {
+          display: block;
+          width: 100%;
+          height: 40px;
+          background: #fff;
+          text-align: center;
+          color: #d1ac8f;
+          border: 2px solid #d1ac8f;
+          font: 500 20px/40px 'roboto';
+          margin-bottom: 30px;
+          transition: 0.5s; }
+          .login .inner #login_form .goToJoin > a:hover {
+            background: #d1ac8f;
+            color: #fff; }
+        .login .inner #login_form .goToJoin .find {
+          width: 100%; }
+          .login .inner #login_form .goToJoin .find span {
+            float: left;
             height: 40px;
-            margin-right: 10px;
-            font: 500 14px/40px 'roboto';
-            text-align: center;
-            color: #333;
-            border: 1px solid #52616b; }
-            #loginPage .inner .goToJoin .find .findBtn > a:nth-of-type(2) {
-              margin-right: 0; }
+            font: 500 24px/40px 'roboto'; }
+          .login .inner #login_form .goToJoin .find .findBtn {
+            float: right; }
+            .login .inner #login_form .goToJoin .find .findBtn > a {
+              display: inline-block;
+              width: 120px;
+              height: 40px;
+              margin-right: 10px;
+              font: 500 14px/40px 'roboto';
+              text-align: center;
+              color: #333;
+              border: 1px solid #52616b; }
+              .login .inner #login_form .goToJoin .find .findBtn > a:nth-of-type(2) {
+                margin-right: 0; }
 
-/*----- aside - shortInfo ------------------------------------*/
+/*----- aside  - shortInfo ------------------------------------*/
 #shortInfo {
   width: 100%;
   margin-bottom: 40px; }
@@ -1829,45 +1824,43 @@ table {
 
 /*tablet*/
 @media screen and (max-width: 1179px) {
-  /*----- loginPage_section -------------------------------------*/
-  #loginPage .inner {
-    width: 100%; }
-    #loginPage .inner .loginCheck {
+  /*----- login_form_section -------------------------------------*/
+  .login .inner #login_form .userCheck {
+    width: 100%;
+    float: left;
+    margin-bottom: 40px; }
+    .login .inner #login_form .userCheck h1 {
+      font-size: 28px; }
+    .login .inner #login_form .userCheck input[type=submit] {
       width: 100%;
-      float: left;
-      margin-bottom: 40px; }
-      #loginPage .inner .loginCheck h1 {
-        font-size: 28px; }
-      #loginPage .inner .loginCheck input[type=submit] {
-        width: 100%;
-        height: 60px;
-        font-size: 24px;
-        line-height: 60px; }
-      #loginPage .inner .loginCheck .snsLogin span {
-        font-size: 20px;
-        line-height: 30px; }
-      #loginPage .inner .loginCheck .snsLogin ul li {
-        width: 30px;
-        height: 30px;
-        font-size: 20px; }
-    #loginPage .inner .goToJoin {
+      height: 40px;
+      font-size: 24px;
+      line-height: 40px; }
+    .login .inner #login_form .userCheck .snsLogin span {
+      font-size: 20px;
+      line-height: 30px; }
+    .login .inner #login_form .userCheck .snsLogin ul li {
+      width: 30px;
+      height: 30px;
+      font-size: 20px; }
+  .login .inner #login_form .goToJoin {
+    width: 100%;
+    float: left; }
+    .login .inner #login_form .goToJoin h2 {
+      font-size: 28px; }
+    .login .inner #login_form .goToJoin p {
+      font-size: 20px;
+      margin-bottom: 20px; }
+    .login .inner #login_form .goToJoin ul li {
+      font-size: 18px; }
+    .login .inner #login_form .goToJoin > a {
       width: 100%;
-      float: left; }
-      #loginPage .inner .goToJoin h2 {
-        font-size: 28px; }
-      #loginPage .inner .goToJoin p {
-        font-size: 20px;
-        margin-bottom: 20px; }
-      #loginPage .inner .goToJoin ul li {
-        font-size: 18px; }
-      #loginPage .inner .goToJoin > a {
-        width: 100%;
-        height: 60px;
-        font-size: 24px;
-        line-height: 60px; }
-      #loginPage .inner .goToJoin .find span {
-        font-size: 20px;
-        line-height: 40px; }
+      height: 40px;
+      font-size: 24px;
+      line-height: 40px; }
+    .login .inner #login_form .goToJoin .find span {
+      font-size: 20px;
+      line-height: 40px; }
 
   /*----- aside - shortInfo ------------------------------------*/
   #shortInfo {
@@ -1911,21 +1904,20 @@ table {
               font-size: 16px; } }
 /*mobile*/
 @media screen and (max-width: 539px) {
-  /*loginPage_section */
-  #loginPage .inner {
-    width: 100%; }
-    #loginPage .inner .loginCheck {
-      padding: 10px 10px; }
-    #loginPage .inner .goToJoin {
-      padding: 10px 10px; }
-      #loginPage .inner .goToJoin p {
+  .login .inner {
+    /*login_form_section */ }
+    .login .inner #login_form .userCheck {
+      padding: 0px; }
+    .login .inner #login_form .goToJoin {
+      padding: 0px; }
+      .login .inner #login_form .goToJoin p {
         font-size: 18px; }
-      #loginPage .inner .goToJoin ul li {
+      .login .inner #login_form .goToJoin ul li {
         font-size: 14px;
         margin: 0 0 10px 5px; }
-      #loginPage .inner .goToJoin .find span {
+      .login .inner #login_form .goToJoin .find span {
         margin-bottom: 20px; }
-      #loginPage .inner .goToJoin .find .findBtn {
+      .login .inner #login_form .goToJoin .find .findBtn {
         width: 100%;
         float: left; }
 
