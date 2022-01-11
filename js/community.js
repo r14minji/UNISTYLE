@@ -113,29 +113,32 @@ function activationTab(items, index){
 }
 
 //accordion
-const board = document.querySelector("#faq");
-const h2 = board.querySelectorAll(".accordionTitle");
-const accIcon = document.querySelectorAll(".accIcon");
+const board = document.querySelector(".accordion ul");
 
-h2.forEach((el)=>{
-  el.addEventListener("click", e =>{
-    let targetText = e.currentTarget.nextElementSibling.classList;
-    let targetAccIcon = e.currentTarget.children[1]; 
-    //let target = e.currentTarget;
+board.addEventListener("click", e=>{
+  const h2 = e.target.closest(".item").querySelector(".accordionTitle");
+  const accIcon = e.target.closest(".item").querySelector(".accIcon");
 
-    if(targetText.contains("show")){
-      targetText.remove("show");
-      targetAccIcon.classList.remove("anime");
+  let targetText = h2.nextElementSibling.classList;
+  let targetAccIcon = h2.children[1]; 
+
+  if(targetText.contains("show")){
+    targetText.remove("show");
+    targetAccIcon.classList.remove("anime");
+  }
+  else{
+    //주석은 하나를 클릭하면 다른 text는 자동으로 닫히게 하는 코드
+    //const shows =  e.currentTarget.querySelectorAll(".show");
+    const accIcons = e.currentTarget.querySelectorAll(".anime");
+    // for(el of shows){
+    //   el.classList.remove("show");
+    // }
+    targetText.add("show");
+    for(el of accIcons){
+      el.classList.remove("anime");
     }
-    else{    
-      for(let btn of h2){
-        btn.classList.remove("show");
-      }
-      targetText.add("show");
-      for(let icon of accIcon){
-        icon.classList.remove("anime");
-      }
-      targetAccIcon.classList.add("anime");
-    }
-  })
+    targetAccIcon.classList.add("anime");
+  }
 })
+
+
