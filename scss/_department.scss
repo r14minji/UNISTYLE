@@ -217,10 +217,9 @@
   /*----- section - business -------------*/
   .business{
     width: 100%;
-    margin: 50px 0 180px;
 
     .inner{
-      width: 1180px; height: 740px;
+      width: 1180px; 
       margin: 0 auto;
       position: relative;
 
@@ -283,13 +282,7 @@
   }
   /*----- section_innovation ------------*/
   .innovation{
-    width: 100%;
-    margin: 50px 0 180px;
-
     .inner{
-      width: 1180px; 
-      margin: 0 auto;
-      position: relative;
 
       h1{
         font:700 36px/1 'Roboto Condensed'; 
@@ -298,49 +291,44 @@
         margin-bottom:100px; 
       }
       
-      .wrap{
+      ul{
         width: 100%;
+        &::after{ content: ''; display: block; clear: both;}
 
-        ul{
+        li{
+          float: left;
+          margin-right: 24px;
+          &:last-child{ margin-right: 0;}
 
-          li{
-            float: left;
-            margin-right: 24px;
-            &:last-child{ margin-right: 0;}
+          .ideas{
+            width: 212px; height: 350px;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            .icon{
+              width: 150px; height: 150px;
+              border-radius: 50%;
+              background: #FFF7ED ;
+              position: relative;
+              margin-bottom: 30px;
+              font-size: 40px;
+              color: $green;
+              display: flex; justify-content: center; align-items: center; 
+            }
+            span{
+              display: block;
+              font: 500 30px/1.4 'roboto'; color: $red;
+              text-align: center;
+              margin-bottom: 10px;
 
-            .ideas{
-              width: 212px; height: 350px;
-              display: flex; flex-direction: column; justify-content: center; align-items: center;
-              .icon{
-                width: 150px; height: 150px;
-                border-radius: 50%;
-                background: #FFF7ED ; //#eee; //#d1ac8f;
-                position: relative;
-                margin-bottom: 30px;
-
-              
-
-                  font-size: 40px;
-                  color: $green;
-
-                  display: flex; justify-content: center; align-items: center; 
-
+              strong{
+                margin-left: 20px; color: $red;
+                font: 500 24px/1 'roboto';
               }
-              span{
-                display: block;
-                font: 500 30px/1.4 'roboto'; color: $red;
-                text-align: center;
-                margin-bottom: 10px;
-                strong{
-                  margin-left: 20px; color: $red;
-                  font: 500 24px/1 'roboto';
-                }
-              }
-              p{
-                font: 300 18px/1.2 'roboto';
-                text-align: center;
-                margin-bottom: 20px;
-              }
+            }
+
+            p{
+              font: 300 18px/1.2 'roboto';
+              text-align: center;
+              margin-bottom: 20px;
             }
           }
         }
@@ -450,7 +438,7 @@
       }
     }
 
-    /*----- section_business --------------------------------------*/
+    /*----- section_business -------------*/
     .business{
       margin-bottom: 150px;
 
@@ -498,52 +486,58 @@
       }
     }
     
-    /*----- section_innovation -----------------------------------*/
+    /*----- section_innovation -----------*/
     .innovation{
-      margin-bottom: 100px;
+      margin-bottom: 50px;
       .inner{
-        width: 100%; height: auto;
-        padding: 0 30px;
+        width: 100%;
+        padding: 80px 40px 0px;
+        margin: 0 auto;
         
         h1{
           font-size: 36px;
-          margin-bottom:40px; 
+          margin-bottom:100px; 
         }
         
-        .wrap{
-          ul{
-            display: flex; justify-content: center; flex-wrap: wrap;
-            flex-grow: 1;
-            li{
-              float: none; margin: 3%;
-              width: 25%; 
+        ul{
+          display: block;
+          width: 440px;
+          margin: 0 auto;
 
-              &:last-child{ margin-right: 0;}
+          li{
+            float: none; width:440px;  padding: 0px 0px;
+            margin: 0;
+            &:last-child{ margin-right: 0;}
 
-              .ideas{
-                width: 100%; height: 250px; 
-                margin: 0 auto;
-                .icon{
-                  width: 80%; max-width: 170px; height: 60%; 
-                  margin: 0 auto;
+            .ideas{
+              display: block; 
+              width: 100%; height: 200px;
+              margin: 0 auto;
+
+              ::after{ content:""; display: block; clear: both;}
+
+              .icon{
+                float: left;
+                width: 130px; height: 130px;  
+                margin-right: 40px;
+              
+                i{ font-size: 50px; }
+              }
+              span{
+                float: right; display: block;
+                width: 270px; height: 80px;line-height: 80px;
+                font-size: 30px; margin-bottom: 0;
                 
-                  i{
-                    font-size: 50px;
-                  }
-                }
-                span{
-                  font-size: 30px; line-height: 1.2;
-                  margin: 10px 0;
-                  strong{
-                    margin-left: 10px; 
-                    font-size: 20px;
-                  }
-                }
-                p{
-                  font-size: 16px;
-                  text-align: center; line-height: 1;
-                  margin-bottom: 0px;
-                }
+                strong{ margin-left: 10px;  font-size: 20px; }
+              }
+
+              p{
+                float: right; display: block; 
+                width: 270px;
+                height: 40px; line-height: 40px;
+                font-size: 20px;
+                text-align: center;
+                margin: 0px;
               }
             }
           }
@@ -633,8 +627,6 @@
           .profile{
             width: 320px; margin: 0 auto;
             min-width: auto; height: 540px;
-
-
           }
         }
       }
@@ -695,43 +687,42 @@
       margin-bottom: 80px;
 
       .inner{
-        padding: 0 20px;
+        padding: 0 10px;
 
         h1{
           font-size: 28px;
           margin-bottom: 40px; 
         }
-        
-        .wrap{
-          ul{
-            display: block; width: 100%;
-            li{
-              margin: 10px 10px;
-              width: 100%; 
+        ul{
+          display: block; width: 100%;
+          li{
 
-              &:last-child{ margin-right: 10px;}
+            margin: 10px 10px;
+            width: 100%; 
 
-              .ideas{
-                width: 100%; height: 120px; 
-                .icon{
-                  width: 120px; height:120px; 
-                  float:left; 
-                  margin-right: 40px;
-                }
-                span{
-                  float: left; 
-                  display: block; width: 120px; max-width: auto; height: 60px;
-                  line-height: 60px;
-                  margin: 0px 0;
-                  text-align: center;
-                }
-                p{
-                  float: left; 
-                  display: block; width: 120px;  max-width: auto;  height: 40px;
-                  margin: 0px 0;
-                  line-height: 1.2;
-                  text-align: center;
-                }
+            &:last-child{ margin-right: 10px;}
+
+            .ideas{
+              display: block;
+              width:540px; height: 80px; 
+              .icon{
+                width: 30%; height:80px; 
+                float:left; 
+                margin-right: 3%;
+              }
+              span{
+                float: left; 
+                display: block; width: 33.33%; max-width: auto; height: 60px;
+                line-height: 60px;
+                margin: 0px 0;
+                text-align: center;
+              }
+              p{
+                float: left; 
+                display: block; width: 33.33%;  max-width: auto;  height: 40px;
+                margin: 0px 0;
+                line-height: 1.2;
+                text-align: center; 
               }
             }
           }

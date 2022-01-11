@@ -570,11 +570,9 @@ table {
                 font-size: 16px;
                 color: #000; }
   .department .business {
-    width: 100%;
-    margin: 50px 0 180px; }
+    width: 100%; }
     .department .business .inner {
       width: 1180px;
-      height: 740px;
       margin: 0 auto;
       position: relative; }
       .department .business .inner h1 {
@@ -626,66 +624,63 @@ table {
             width: 100%;
             height: 100%;
             object-fit: cover; }
-  .department .innovation {
-    width: 100%;
-    margin: 50px 0 180px; }
-    .department .innovation .inner {
-      width: 1180px;
-      margin: 0 auto;
-      position: relative; }
-      .department .innovation .inner h1 {
-        font: 700 36px/1 'Roboto Condensed';
-        letter-spacing: 2px;
-        color: #101820;
-        margin-bottom: 100px; }
-      .department .innovation .inner .wrap {
-        width: 100%; }
-        .department .innovation .inner .wrap ul li {
-          float: left;
-          margin-right: 24px; }
-          .department .innovation .inner .wrap ul li:last-child {
-            margin-right: 0; }
-          .department .innovation .inner .wrap ul li .ideas {
-            width: 212px;
-            height: 350px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; }
-            .department .innovation .inner .wrap ul li .ideas .icon {
-              width: 150px;
-              height: 150px;
-              border-radius: 50%;
-              background: #FFF7ED;
-              position: relative;
-              margin-bottom: 30px;
-              font-size: 40px;
-              color: #101820;
-              display: flex;
-              justify-content: center;
-              align-items: center; }
-            .department .innovation .inner .wrap ul li .ideas span {
-              display: block;
-              font: 500 30px/1.4 'roboto';
-              color: #821002;
-              text-align: center;
-              margin-bottom: 10px; }
-              .department .innovation .inner .wrap ul li .ideas span strong {
-                margin-left: 20px;
-                color: #821002;
-                font: 500 24px/1 'roboto'; }
-            .department .innovation .inner .wrap ul li .ideas p {
-              font: 300 18px/1.2 'roboto';
-              text-align: center;
-              margin-bottom: 20px; }
+  .department .innovation .inner h1 {
+    font: 700 36px/1 'Roboto Condensed';
+    letter-spacing: 2px;
+    color: #101820;
+    margin-bottom: 100px; }
+  .department .innovation .inner ul {
+    width: 100%; }
+    .department .innovation .inner ul::after {
+      content: '';
+      display: block;
+      clear: both; }
+    .department .innovation .inner ul li {
+      float: left;
+      margin-right: 24px; }
+      .department .innovation .inner ul li:last-child {
+        margin-right: 0; }
+      .department .innovation .inner ul li .ideas {
+        width: 212px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .department .innovation .inner ul li .ideas .icon {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          background: #FFF7ED;
+          position: relative;
+          margin-bottom: 30px;
+          font-size: 40px;
+          color: #101820;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .department .innovation .inner ul li .ideas span {
+          display: block;
+          font: 500 30px/1.4 'roboto';
+          color: #821002;
+          text-align: center;
+          margin-bottom: 10px; }
+          .department .innovation .inner ul li .ideas span strong {
+            margin-left: 20px;
+            color: #821002;
+            font: 500 24px/1 'roboto'; }
+        .department .innovation .inner ul li .ideas p {
+          font: 300 18px/1.2 'roboto';
+          text-align: center;
+          margin-bottom: 20px; }
 
 /* tablet */
 @media screen and (max-width: 1179px) {
   .department {
     /*----- section_value -----------------*/
     /*----- section_members -------------*/
-    /*----- section_business --------------------------------------*/
-    /*----- section_innovation -----------------------------------*/ }
+    /*----- section_business -------------*/
+    /*----- section_innovation -----------*/ }
     .department .value {
       margin-bottom: 100px; }
       .department .value .inner {
@@ -812,48 +807,61 @@ table {
               height: 100%;
               object-fit: cover; }
     .department .innovation {
-      margin-bottom: 100px; }
+      margin-bottom: 50px; }
       .department .innovation .inner {
         width: 100%;
-        height: auto;
-        padding: 0 30px; }
+        padding: 80px 40px 0px;
+        margin: 0 auto; }
         .department .innovation .inner h1 {
           font-size: 36px;
-          margin-bottom: 40px; }
-        .department .innovation .inner .wrap ul {
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
-          flex-grow: 1; }
-          .department .innovation .inner .wrap ul li {
+          margin-bottom: 100px; }
+        .department .innovation .inner ul {
+          display: block;
+          width: 440px;
+          margin: 0 auto; }
+          .department .innovation .inner ul li {
             float: none;
-            margin: 3%;
-            width: 25%; }
-            .department .innovation .inner .wrap ul li:last-child {
+            width: 440px;
+            padding: 0px 0px;
+            margin: 0; }
+            .department .innovation .inner ul li:last-child {
               margin-right: 0; }
-            .department .innovation .inner .wrap ul li .ideas {
+            .department .innovation .inner ul li .ideas {
+              display: block;
               width: 100%;
-              height: 250px;
+              height: 200px;
               margin: 0 auto; }
-              .department .innovation .inner .wrap ul li .ideas .icon {
-                width: 80%;
-                max-width: 170px;
-                height: 60%;
-                margin: 0 auto; }
-                .department .innovation .inner .wrap ul li .ideas .icon i {
+              .department .innovation .inner ul li .ideas ::after {
+                content: "";
+                display: block;
+                clear: both; }
+              .department .innovation .inner ul li .ideas .icon {
+                float: left;
+                width: 130px;
+                height: 130px;
+                margin-right: 40px; }
+                .department .innovation .inner ul li .ideas .icon i {
                   font-size: 50px; }
-              .department .innovation .inner .wrap ul li .ideas span {
+              .department .innovation .inner ul li .ideas span {
+                float: right;
+                display: block;
+                width: 270px;
+                height: 80px;
+                line-height: 80px;
                 font-size: 30px;
-                line-height: 1.2;
-                margin: 10px 0; }
-                .department .innovation .inner .wrap ul li .ideas span strong {
+                margin-bottom: 0; }
+                .department .innovation .inner ul li .ideas span strong {
                   margin-left: 10px;
                   font-size: 20px; }
-              .department .innovation .inner .wrap ul li .ideas p {
-                font-size: 16px;
+              .department .innovation .inner ul li .ideas p {
+                float: right;
+                display: block;
+                width: 270px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 20px;
                 text-align: center;
-                line-height: 1;
-                margin-bottom: 0px; } }
+                margin: 0px; } }
 /* mobile */
 @media screen and (max-width: 539px) {
   .department {
@@ -970,39 +978,40 @@ table {
     .department .innovation {
       margin-bottom: 80px; }
       .department .innovation .inner {
-        padding: 0 20px; }
+        padding: 0 10px; }
         .department .innovation .inner h1 {
           font-size: 28px;
           margin-bottom: 40px; }
-        .department .innovation .inner .wrap ul {
+        .department .innovation .inner ul {
           display: block;
           width: 100%; }
-          .department .innovation .inner .wrap ul li {
+          .department .innovation .inner ul li {
             margin: 10px 10px;
             width: 100%; }
-            .department .innovation .inner .wrap ul li:last-child {
+            .department .innovation .inner ul li:last-child {
               margin-right: 10px; }
-            .department .innovation .inner .wrap ul li .ideas {
-              width: 100%;
-              height: 120px; }
-              .department .innovation .inner .wrap ul li .ideas .icon {
-                width: 120px;
-                height: 120px;
+            .department .innovation .inner ul li .ideas {
+              display: block;
+              width: 540px;
+              height: 80px; }
+              .department .innovation .inner ul li .ideas .icon {
+                width: 30%;
+                height: 80px;
                 float: left;
-                margin-right: 40px; }
-              .department .innovation .inner .wrap ul li .ideas span {
+                margin-right: 3%; }
+              .department .innovation .inner ul li .ideas span {
                 float: left;
                 display: block;
-                width: 120px;
+                width: 33.33%;
                 max-width: auto;
                 height: 60px;
                 line-height: 60px;
                 margin: 0px 0;
                 text-align: center; }
-              .department .innovation .inner .wrap ul li .ideas p {
+              .department .innovation .inner ul li .ideas p {
                 float: left;
                 display: block;
-                width: 120px;
+                width: 33.33%;
                 max-width: auto;
                 height: 40px;
                 margin: 0px 0;
