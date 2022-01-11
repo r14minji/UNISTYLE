@@ -1,5 +1,5 @@
 const body = document.querySelector("body");
-const vidList = document.querySelector(".vidList");
+const vidList = document.querySelector("#vidList .wrap");
 const key = "AIzaSyB3Xi97H8RT0bj6sAR6FQRG1TB8ts5Br7k";
 const playListId = "PL5jd_nA7BbYsJhoye24NUYMlS6eUq1v1a";
 const num = 8;
@@ -19,13 +19,13 @@ fetch(url)
 
   items.forEach(item =>{
     let title = item.snippet.title;
-    if(title.length >32) {
-      title = title.substr(0,32) + '...';
-    }
+    // if(title.length >32) {
+    //   title = title.substr(0,32) + '...';
+    // }
 
     let con = item.snippet.description;
-    if(con.length > 80){
-      con =  con.substr(0, 80);
+    if(con.length > 350){
+      con =  con.substr(0, 350);
     }
 
     let date = item.snippet.publishedAt;
@@ -35,19 +35,17 @@ fetch(url)
 
     result += `
     <article>
-      <strong>0${++count}</strong>
-      <h2>${title}</h2>
-      <p>${con}</p>
-      <span>${date}</span>
-      <a href="${item.snippet.resourceId.videoId}" class="pic">
-        <img src="${item.snippet.thumbnails.medium.url}">
-      </a>
-      <ul>
-        <li><i class="fas fa-download"></i></li>
-        <li><i class="fas fa-heart"></i></li>
-        <li><i class="fas fa-share"></i></li>
-        <li><i class="fas fa-ellipsis-h"></i></li>
-      </ul>
+      <h1>${title}</h1>
+      <div class="txt">
+        <strong>0${++count}</strong>
+        <p>${con}</p>
+        <span>${date}</span>
+      </div>
+      <div class="pic">
+        <a href="${item.snippet.resourceId.videoId}" class="pic">
+          <img src="${item.snippet.thumbnails.medium.url}">
+        </a>
+      </div>
     </article>
     `
   })
