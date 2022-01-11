@@ -6,6 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UNISTYLE</title>
   <script src="https://kit.fontawesome.com/91c15511c8.js" crossorigin="anonymous"></script>
+
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
 </head>
@@ -257,90 +266,99 @@
   </section>
   <!-- section9/stories -->
   <section id="stories">
-    <div class="inner">
-      <h1>STORIES</h1>
-      <h2>EXPERIENCE FROM INTERIOR</h2>
-
-      <div class="storyGallery">
-        <figure class="storyPic">
-          <img src="img/story1.jpg" alt="climb with dog">
-          <div class="storyTxt">
-            <h3>Cloudy</h3>
-            <p>April 26, 2017</p>
-          </div>
-          <figcaption>
-            <p>UNISTYLE STORY</p>
-            <ul>
-              <li><i class="fas fa-paperclip"></i></li>
-              <li><i class="far fa-eye"></i></li>
-              <li><i class="far fa-heart"></i></li>
-            </ul>
-          </figcaption>
-        </figure>
-        <figure class="storyPic">
-          <img src="img/story2.jpg" alt="rocks">
-          <div class="storyTxt">
-            <h3>Children's room</h3>
-            <p>July 07, 2020</p>
-          </div>
-          <figcaption>
-            <p>UNISTYLE STORY</p>
-            <ul>
-              <li><i class="fas fa-paperclip"></i></li>
-              <li><i class="far fa-eye"></i></li>
-              <li><i class="far fa-heart"></i></li>
-            </ul>
-          </figcaption>
-        </figure>
-        <figure class="storyPic">
-          <img src="img/story3.jpg" alt="cloudy">
-          <div class="storyTxt">
-            <h3>Livingroom</h3>
-            <p>January 14, 2021</p>
-          </div>
-          <figcaption>
-            <p>UNISTYLE STORY</p>
-            <ul>
-              <li><i class="fas fa-paperclip"></i></li>
-              <li><i class="far fa-eye"></i></li>
-              <li><i class="far fa-heart"></i></li>
-            </ul>
-          </figcaption>
-        </figure>
-        <figure class="storyPic">
-          <img src="img/story4.jpg" alt="mountain">
-          <div class="storyTxt">
-            <h3>lifestyle</h3>
-            <p>May 21, 2009</p>
-          </div>
-          <figcaption>
-            <p>UNISTYLE STORY</p>
-            <ul>
-              <li><i class="fas fa-paperclip"></i></li>
-              <li><i class="far fa-eye"></i></li>
-              <li><i class="far fa-heart"></i></li>
-            </ul>
-          </figcaption>
-        </figure>
-        <figure class="storyPic">
-          <img src="img/story5.jpg" alt="lake and boat">
-          <div class="storyTxt">
-            <h3>Rough Horn</h3>
-            <p>March 16, 2014</p>
-          </div>
-          <figcaption>
-            <p>UNISTYLE STORY</p>
-            <ul>
-              <li><i class="fas fa-paperclip"></i></li>
-              <li><i class="far fa-eye"></i></li>
-              <li><i class="far fa-heart"></i></li>
-            </ul>
-          </figcaption>
-        </figure>
+    <h1>STORIES</h1>
+    <h2>EXPERIENCE FROM INTERIOR</h2>
+    <div class="storyGallery mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <figure>
+            <img src="img/story1.jpg" alt="climb with dog">
+            <div class="storyTxt">
+              <h3>Cloudy</h3>
+              <p>April 26, 2017</p>
+            </div>
+            <figcaption>
+              <p>UNISTYLE STORY</p>
+              <ul>
+                <li><i class="fas fa-paperclip"></i></li>
+                <li><i class="far fa-eye"></i></li>
+                <li><i class="far fa-heart"></i></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="img/story2.jpg" alt="rocks">
+            <div class="storyTxt">
+              <h3>Children's room</h3>
+              <p>July 07, 2020</p>
+            </div>
+            <figcaption>
+              <p>UNISTYLE STORY</p>
+              <ul>
+                <li><i class="fas fa-paperclip"></i></li>
+                <li><i class="far fa-eye"></i></li>
+                <li><i class="far fa-heart"></i></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="img/story3.jpg" alt="cloudy">
+            <div class="storyTxt">
+              <h3>Livingroom</h3>
+              <p>January 14, 2021</p>
+            </div>
+            <figcaption>
+              <p>UNISTYLE STORY</p>
+              <ul>
+                <li><i class="fas fa-paperclip"></i></li>
+                <li><i class="far fa-eye"></i></li>
+                <li><i class="far fa-heart"></i></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="img/story4.jpg" alt="mountain">
+            <div class="storyTxt">
+              <h3>lifestyle</h3>
+              <p>May 21, 2009</p>
+            </div>
+            <figcaption>
+              <p>UNISTYLE STORY</p>
+              <ul>
+                <li><i class="fas fa-paperclip"></i></li>
+                <li><i class="far fa-eye"></i></li>
+                <li><i class="far fa-heart"></i></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="img/story5.jpg" alt="lake and boat">
+            <div class="storyTxt">
+              <h3>Rough Horn</h3>
+              <p>March 16, 2014</p>
+            </div>
+            <figcaption>
+              <p>UNISTYLE STORY</p>
+              <ul>
+                <li><i class="fas fa-paperclip"></i></li>
+                <li><i class="far fa-eye"></i></li>
+                <li><i class="far fa-heart"></i></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
-
-  </section>
+</section>
   <!-- section10/area -->
   <section id="area">
     <div class="inner">

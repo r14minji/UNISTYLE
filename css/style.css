@@ -3257,98 +3257,88 @@ aside.popup_youtube {
 
 /* ----- section9/stories  --------------------------------------------*/
 #stories {
-  width: 100%;
-  height: 360px; }
-  #stories .inner {
-    width: 100%;
-    margin: 0 auto; }
-    #stories .inner h1 {
-      font: 700 28px/1 'roboto condensed';
-      color: #101820;
-      letter-spacing: 5px;
-      margin-bottom: 10px;
-      text-align: center; }
-    #stories .inner h2 {
-      font: 300 14px/1 'roboto condensed';
-      color: #777;
-      letter-spacing: 3px;
-      margin-bottom: 20px;
-      text-align: center; }
-    #stories .inner .storyGallery {
-      width: 100%;
-      position: relative;
-      display: flex; }
-      #stories .inner .storyGallery .storyPic {
-        width: 23%;
-        height: 180px;
-        margin: 1%;
-        overflow: hidden; }
-        #stories .inner .storyGallery .storyPic img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover; }
-        #stories .inner .storyGallery .storyPic .storyTxt {
-          width: 210px;
-          margin-left: 20px;
-          position: relative;
-          transform: translateY(0px);
-          transition: transform 0.35s; }
-          #stories .inner .storyGallery .storyPic .storyTxt h3 {
-            font: 300 14px/20px 'roboto condensed';
-            color: #fff;
-            position: absolute;
-            bottom: 30px;
-            left: 0; }
-          #stories .inner .storyGallery .storyPic .storyTxt > p {
-            font: 300 14px/20px 'roboto condensed';
-            color: #fff;
-            position: absolute;
-            bottom: 10px;
-            left: 0; }
-        #stories .inner .storyGallery .storyPic figcaption {
-          padding: 10px;
-          color: #555;
-          text-transform: uppercase;
-          font-size: 12px;
-          top: auto;
-          bottom: 0;
-          height: 30%;
-          background: #fff;
-          color: #52616b;
-          transition: 0.5s;
-          opacity: 0; }
-          #stories .inner .storyGallery .storyPic figcaption > p {
-            float: left;
-            line-height: 30px;
-            position: absolute; }
-            #stories .inner .storyGallery .storyPic figcaption > p span {
-              font-weight: blod; }
-          #stories .inner .storyGallery .storyPic figcaption > ul {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center; }
-            #stories .inner .storyGallery .storyPic figcaption > ul li {
-              margin: 5px;
-              height: auto;
-              transition: transform 0.35s;
-              transform: translate3d(0, 200%, 0); }
-        #stories .inner .storyGallery .storyPic:hover .storyTxt {
-          transform: translateY(-120px); }
-        #stories .inner .storyGallery .storyPic:hover figcaption {
+  margin-bottom: 60px; }
+  #stories h1 {
+    font: 700 28px/1 'roboto condensed';
+    color: #333;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    text-align: center; }
+  #stories h2 {
+    font: 300 14px/1 'roboto condensed';
+    color: #777;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-align: center; }
+  #stories .mySwiper {
+    width: 100%; }
+    #stories .mySwiper figure {
+      height: 223px; }
+      #stories .mySwiper figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      #stories .mySwiper figure .storyTxt {
+        margin: 0 10px;
+        position: relative;
+        transform: translateY(0px);
+        transition: transform 0.35s; }
+        #stories .mySwiper figure .storyTxt h3 {
+          font: 300 14px/20px 'roboto condensed';
           color: #fff;
-          opacity: 1;
-          position: relative;
-          bottom: 30%;
-          background: rgba(0, 0, 0, 0.8); }
-          #stories .inner .storyGallery .storyPic:hover figcaption li {
-            transform: translate3d(0, 0, 0);
-            color: #ffff; }
-            #stories .inner .storyGallery .storyPic:hover figcaption li:nth-of-type(1) {
-              transition-delay: 0.1s; }
-            #stories .inner .storyGallery .storyPic:hover figcaption li:nth-of-type(2) {
-              transition-delay: 0.15s; }
-            #stories .inner .storyGallery .storyPic:hover figcaption li:nth-of-type(3) {
-              transition-delay: 0.2s; }
+          position: absolute;
+          bottom: 30px;
+          left: 0; }
+        #stories .mySwiper figure .storyTxt > p {
+          font: 300 14px/20px 'roboto condensed';
+          color: #fff;
+          position: absolute;
+          bottom: 10px;
+          left: 0; }
+      #stories .mySwiper figure figcaption {
+        padding: 10px;
+        color: #555;
+        text-transform: uppercase;
+        font-size: 12px;
+        top: auto;
+        bottom: 0;
+        height: 30%;
+        background: #fff;
+        color: #333;
+        transition: 0.5s;
+        opacity: 0; }
+        #stories .mySwiper figure figcaption > p {
+          float: left;
+          line-height: 30px;
+          position: absolute; }
+          #stories .mySwiper figure figcaption > p span {
+            font-weight: blod; }
+        #stories .mySwiper figure figcaption > ul {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center; }
+          #stories .mySwiper figure figcaption > ul li {
+            margin: 5px;
+            height: auto;
+            transition: transform 0.35s;
+            transform: translate3d(0, 200%, 0); }
+      #stories .mySwiper figure:hover .storyTxt {
+        transform: translateY(-160px); }
+      #stories .mySwiper figure:hover figcaption {
+        color: #fff;
+        opacity: 1;
+        position: relative;
+        bottom: 30%;
+        background: rgba(0, 0, 0, 0.8); }
+        #stories .mySwiper figure:hover figcaption li {
+          transform: translate3d(0, 0, 0);
+          color: #ffff; }
+          #stories .mySwiper figure:hover figcaption li:nth-of-type(1) {
+            transition-delay: 0.1s; }
+          #stories .mySwiper figure:hover figcaption li:nth-of-type(2) {
+            transition-delay: 0.15s; }
+          #stories .mySwiper figure:hover figcaption li:nth-of-type(3) {
+            transition-delay: 0.2s; }
 
 /* ----- section10/area  ---------------------------------------------*/
 #area {
