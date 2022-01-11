@@ -389,154 +389,138 @@ table {
       margin-bottom: 10px;
       margin-top: 30px;
       padding: 2px 5px; } }
-/*----- department sub_visual  section ------------------*/
-.department .sub_visual {
-  background: url(../img/sub1.jpg) no-repeat center/cover; }
-
-/*----- section_value ------------------------------------------*/
-.value {
-  width: 100%;
-  margin-bottom: 180px; }
-  .value .inner {
-    width: 1180px;
-    margin: 0 auto;
-    position: relative; }
-    .value .inner h1 {
+.department {
+  /*----- section - value -----------------*/
+  /*----- section - members ------------*/
+  /*----- section - business -------------*/
+  /*----- section_innovation ------------*/ }
+  .department .sub_visual {
+    background: url(../img/sub1.jpg) no-repeat center/cover; }
+  .department .value {
+    width: 100%;
+    margin-bottom: 180px; }
+    .department .value .inner h1 {
       font: 700 36px/1 'Roboto Condensed';
       letter-spacing: 2px;
       color: #101820;
       margin-bottom: 100px; }
-    .value .inner .wrap {
+    .department .value .inner .wrap {
       width: 100%;
       height: 500px; }
-      .value .inner .wrap #tab_value {
-        width: 100%;
-        height: 100%; }
-        .value .inner .wrap #tab_value .list {
-          width: 35%;
+      .department .value .inner .wrap #btns {
+        width: 35%;
+        height: 100%;
+        float: right;
+        position: relative; }
+        .department .value .inner .wrap #btns li {
+          width: 80%;
+          padding: 20px 10px;
+          margin-left: 60px;
+          border-bottom: 1px solid  #ddd; }
+          .department .value .inner .wrap #btns li a {
+            display: block; }
+            .department .value .inner .wrap #btns li a strong {
+              display: block;
+              width: 60px;
+              font: 300 50px/1 'roboto';
+              color: #ccc;
+              padding-right: 20px;
+              float: left; }
+            .department .value .inner .wrap #btns li a p {
+              display: block;
+              font: 500 16px/1.5 'roboto';
+              color: #ccc; }
+            .department .value .inner .wrap #btns li a span {
+              display: block;
+              font: 500 14px/1.5 'roboto';
+              color: #ccc; }
+          .department .value .inner .wrap #btns li:hover strong, .department .value .inner .wrap #btns li:hover span {
+            color: #222; }
+          .department .value .inner .wrap #btns li:hover p {
+            color: #821002; }
+          .department .value .inner .wrap #btns li.on strong, .department .value .inner .wrap #btns li.on span {
+            color: #222; }
+          .department .value .inner .wrap #btns li.on p {
+            color: #821002; }
+      .department .value .inner .wrap .content {
+        width: 65%;
+        height: 500px;
+        position: relative;
+        float: left; }
+        .department .value .inner .wrap .content > div {
+          width: 100%;
           height: 100%;
-          float: right;
-          position: relative; }
-          .value .inner .wrap #tab_value .list #btns {
-            width: 80%;
-            margin: 0 0px 0 60px; }
-            .value .inner .wrap #tab_value .list #btns li {
-              padding: 20px 10px;
-              border-bottom: 1px solid  #ddd; }
-              .value .inner .wrap #tab_value .list #btns li a {
-                display: block; }
-                .value .inner .wrap #tab_value .list #btns li a strong {
-                  display: block;
-                  width: 60px;
-                  font: 300 50px/1 'roboto';
-                  color: #ccc;
-                  padding-right: 20px;
-                  float: left; }
-                .value .inner .wrap #tab_value .list #btns li a p {
-                  display: block;
-                  font: 500 16px/1.5 'roboto';
-                  color: #ccc; }
-                .value .inner .wrap #tab_value .list #btns li a span {
-                  display: block;
-                  font: 500 14px/1.5 'roboto';
-                  color: #ccc; }
-              .value .inner .wrap #tab_value .list #btns li:hover strong, .value .inner .wrap #tab_value .list #btns li:hover span {
-                color: #222; }
-              .value .inner .wrap #tab_value .list #btns li:hover p {
-                color: #821002; }
-              .value .inner .wrap #tab_value .list #btns li.on strong, .value .inner .wrap #tab_value .list #btns li.on span {
-                color: #222; }
-              .value .inner .wrap #tab_value .list #btns li.on p {
-                color: #821002; }
-        .value .inner .wrap #tab_value .content {
-          width: 65%;
-          height: 500px;
-          position: relative;
-          float: left; }
-          .value .inner .wrap #tab_value .content > div {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            opacity: 0;
-            transition: opacity 1.5s; }
-            .value .inner .wrap #tab_value .content > div.on {
-              opacity: 1; }
-            .value .inner .wrap #tab_value .content > div .title {
-              width: 40%;
-              padding: 10px 20px;
-              float: left;
-              border-top: 6px solid #d1ac8f;
-              border-left: 6px solid #d1ac8f; }
-              .value .inner .wrap #tab_value .content > div .title h2 {
-                font: 300 40px/1.2 'roboto';
-                color: #821002; }
-              .value .inner .wrap #tab_value .content > div .title p {
-                font: 300 14px/1.3 'roboto'; }
-            .value .inner .wrap #tab_value .content > div .circle {
-              width: 60%;
-              height: 500px;
-              float: left;
-              background: url(../img/circle.png) no-repeat center/cover;
-              transform: scale(1.4); }
-              .value .inner .wrap #tab_value .content > div .circle i {
-                font-size: 120px;
-                color: #02343F;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%); }
-
-/*----- section_members -----------------------------------*/
-.members {
-  width: 100%;
-  margin: 50px 0 0px;
-  padding: 50px 0 30px;
-  background: url(../img/texture.jpg) no-repeat center/cover; }
-  .members .inner {
-    width: 1180px;
-    margin: 0 auto;
-    position: relative; }
-    .members .inner h1 {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          opacity: 0;
+          transition: opacity 1.5s; }
+          .department .value .inner .wrap .content > div.on {
+            opacity: 1; }
+          .department .value .inner .wrap .content > div .title {
+            width: 40%;
+            padding: 10px 20px;
+            float: left;
+            border-top: 6px solid #d1ac8f;
+            border-left: 6px solid #d1ac8f; }
+            .department .value .inner .wrap .content > div .title h2 {
+              font: 300 40px/1.2 'roboto';
+              color: #821002; }
+            .department .value .inner .wrap .content > div .title p {
+              font: 300 14px/1.3 'roboto'; }
+          .department .value .inner .wrap .content > div .circle {
+            width: 60%;
+            height: 500px;
+            float: left;
+            background: url(../img/circle.png) no-repeat center/cover;
+            transform: scale(1.4); }
+            .department .value .inner .wrap .content > div .circle i {
+              font-size: 120px;
+              color: #02343F;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%); }
+  .department .members {
+    width: 100%;
+    background: url(../img/texture.jpg) repeat center/contain; }
+    .department .members .inner h1 {
       font: 700 36px/1 'Roboto Condensed';
       letter-spacing: 2px;
       color: #101820;
       margin-bottom: 100px; }
-    .members .inner .wrap {
+    .department .members .inner .wrap {
       width: 100%;
-      position: relative; }
-      .members .inner .wrap ::after {
-        content: "";
-        display: block;
-        clear: both; }
-      .members .inner .wrap .profile {
-        float: left;
-        width: 295px;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .department .members .inner .wrap .profile {
+        width: 25%;
         height: 600px;
         position: relative;
         transition: 1s; }
-        .members .inner .wrap .profile:nth-of-type(2n-1) {
+        .department .members .inner .wrap .profile:nth-of-type(2n-1) {
           transform: translateY(30px); }
-        .members .inner .wrap .profile:hover {
+        .department .members .inner .wrap .profile:hover {
           transform: translateY(0px);
           z-index: 2; }
-          .members .inner .wrap .profile:hover .person img {
+          .department .members .inner .wrap .profile:hover .person img {
             filter: grayscale(0%);
             transform: scale(1.05); }
-          .members .inner .wrap .profile:hover .txtWrap {
+          .department .members .inner .wrap .profile:hover .txtWrap {
             opacity: 1;
             transform: scale3d(1, 1, 1); }
-        .members .inner .wrap .profile .person {
+        .department .members .inner .wrap .profile .person {
           width: 100%;
           height: 360px; }
-          .members .inner .wrap .profile .person img {
+          .department .members .inner .wrap .profile .person img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             filter: grayscale(100%);
             transition: 1s; }
-        .members .inner .wrap .profile .txtWrap {
+        .department .members .inner .wrap .profile .txtWrap {
           width: 90%;
           height: 90%;
           padding: 10px 15px;
@@ -547,221 +531,203 @@ table {
           transform: scale3d(0.9, 0.9, 1);
           opacity: 0;
           transition: transform 0.3s, opacity 0.3s; }
-          .members .inner .wrap .profile .txtWrap .txt {
+          .department .members .inner .wrap .profile .txtWrap .txt {
             width: 100%;
             margin-top: 350px; }
-            .members .inner .wrap .profile .txtWrap .txt h2 {
+            .department .members .inner .wrap .profile .txtWrap .txt h2 {
               font: 500 22px/1 'Roboto';
               letter-spacing: 2px;
               color: #101820;
               margin-bottom: 10px; }
-            .members .inner .wrap .profile .txtWrap .txt p {
+            .department .members .inner .wrap .profile .txtWrap .txt p {
               font: 300 17px/1 'Roboto';
               color: #101820;
               margin-bottom: 20px; }
-              .members .inner .wrap .profile .txtWrap .txt p ::before {
+              .department .members .inner .wrap .profile .txtWrap .txt p ::before {
                 content: "";
                 display: block;
                 margin: 10px 0;
                 width: 30px;
                 height: 2px;
                 background: #101820; }
-            .members .inner .wrap .profile .txtWrap .txt strong {
+            .department .members .inner .wrap .profile .txtWrap .txt strong {
               display: block;
               margin-bottom: 5px; }
-              .members .inner .wrap .profile .txtWrap .txt strong a {
+              .department .members .inner .wrap .profile .txtWrap .txt strong a {
                 color: #000;
                 font: 500 15px/1 'Roboto'; }
-            .members .inner .wrap .profile .txtWrap .txt span {
+            .department .members .inner .wrap .profile .txtWrap .txt span {
               display: block;
               margin-bottom: 20px; }
-              .members .inner .wrap .profile .txtWrap .txt span a {
+              .department .members .inner .wrap .profile .txtWrap .txt span a {
                 color: #000;
                 font: 300 15px/1 'Roboto'; }
-            .members .inner .wrap .profile .txtWrap .txt ul li {
+            .department .members .inner .wrap .profile .txtWrap .txt ul li {
               float: left;
               margin-right: 15px; }
-              .members .inner .wrap .profile .txtWrap .txt ul li a {
+              .department .members .inner .wrap .profile .txtWrap .txt ul li a {
                 display: inline;
                 font-size: 16px;
                 color: #000; }
-
-/*----- section_business --------------------------------------*/
-.business {
-  width: 100%;
-  margin: 50px 0 180px; }
-  .business .inner {
-    width: 1180px;
-    height: 740px;
-    margin: 0 auto;
-    position: relative; }
-    .business .inner h1 {
-      font: 700 36px/1 'Roboto Condensed';
-      letter-spacing: 2px;
-      color: #101820;
-      margin-bottom: 100px; }
-    .business .inner .wrap ::after {
-      content: "";
-      display: block;
-      float: left; }
-    .business .inner .wrap .txt {
-      width: 30%;
-      height: 600px;
-      float: left;
-      margin-top: 80px;
-      padding: 20px 40px; }
-      .business .inner .wrap .txt > h2 {
-        font: 500 36px/1.2 'roboto';
-        color: #821002;
-        margin-bottom: 40px; }
-      .business .inner .wrap .txt > p {
-        font: 300 14px/1.4 'roboto';
-        margin-bottom: 20px; }
-      .business .inner .wrap .txt > a {
-        display: block;
-        width: 150px;
-        padding: 5px 10px;
-        border: 1px solid #000;
-        font: 300 14px/1.3 'roboto';
+  .department .business {
+    width: 100%;
+    margin: 50px 0 180px; }
+    .department .business .inner {
+      width: 1180px;
+      height: 740px;
+      margin: 0 auto;
+      position: relative; }
+      .department .business .inner h1 {
+        font: 700 36px/1 'Roboto Condensed';
         letter-spacing: 2px;
-        color: #000;
-        transition: 1s; }
-        .business .inner .wrap .txt > a:hover {
-          border: 1px solid #821002;
-          background: #821002;
-          color: #fff; }
-    .business .inner .wrap .pic {
-      width: 70%;
-      height: 600px;
-      float: left; }
-      .business .inner .wrap .pic div:nth-of-type(1) {
-        width: 50%;
+        color: #101820;
+        margin-bottom: 100px; }
+      .department .business .inner .wrap .txt {
+        width: 30%;
+        height: 600px;
         float: left;
-        height: 100%; }
-      .business .inner .wrap .pic div:nth-of-type(2) {
-        width: 50%;
-        float: left;
-        height: 50%; }
-      .business .inner .wrap .pic .bigPhoto, .business .inner .wrap .pic .smallPhoto {
-        font-size: 0; }
-        .business .inner .wrap .pic .bigPhoto img, .business .inner .wrap .pic .smallPhoto img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover; }
-
-/*----- section_innovation -----------------------------------*/
-.innovation {
-  width: 100%;
-  margin: 50px 0 180px; }
-  .innovation .inner {
-    width: 1180px;
-    margin: 0 auto;
-    position: relative; }
-    .innovation .inner h1 {
-      font: 700 36px/1 'Roboto Condensed';
-      letter-spacing: 2px;
-      color: #101820;
-      margin-bottom: 100px; }
-    .innovation .inner .wrap {
-      width: 100%; }
-      .innovation .inner .wrap ul li {
-        float: left;
-        margin-right: 24px; }
-        .innovation .inner .wrap ul li:last-child {
-          margin-right: 0; }
-        .innovation .inner .wrap ul li .ideas {
-          width: 212px;
-          height: 350px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center; }
-          .innovation .inner .wrap ul li .ideas .icon {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background: #FFF7ED;
-            position: relative;
-            margin-bottom: 30px;
-            font-size: 40px;
-            color: #101820;
+        margin-top: 80px;
+        padding: 20px 40px; }
+        .department .business .inner .wrap .txt > h2 {
+          font: 500 36px/1.2 'roboto';
+          color: #821002;
+          margin-bottom: 40px; }
+        .department .business .inner .wrap .txt > p {
+          font: 300 14px/1.4 'roboto';
+          margin-bottom: 20px; }
+        .department .business .inner .wrap .txt > a {
+          display: block;
+          width: 150px;
+          padding: 5px 10px;
+          border: 1px solid #000;
+          font: 300 14px/1.3 'roboto';
+          letter-spacing: 2px;
+          color: #000;
+          transition: 1s; }
+          .department .business .inner .wrap .txt > a:hover {
+            border: 1px solid #821002;
+            background: #821002;
+            color: #fff; }
+      .department .business .inner .wrap .pic {
+        width: 70%;
+        height: 600px;
+        float: left; }
+        .department .business .inner .wrap .pic div:nth-of-type(1) {
+          width: 50%;
+          float: left;
+          height: 100%; }
+        .department .business .inner .wrap .pic div:nth-of-type(2) {
+          width: 50%;
+          float: left;
+          height: 50%; }
+        .department .business .inner .wrap .pic .bigPhoto, .department .business .inner .wrap .pic .smallPhoto {
+          font-size: 0; }
+          .department .business .inner .wrap .pic .bigPhoto img, .department .business .inner .wrap .pic .smallPhoto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+  .department .innovation {
+    width: 100%;
+    margin: 50px 0 180px; }
+    .department .innovation .inner {
+      width: 1180px;
+      margin: 0 auto;
+      position: relative; }
+      .department .innovation .inner h1 {
+        font: 700 36px/1 'Roboto Condensed';
+        letter-spacing: 2px;
+        color: #101820;
+        margin-bottom: 100px; }
+      .department .innovation .inner .wrap {
+        width: 100%; }
+        .department .innovation .inner .wrap ul li {
+          float: left;
+          margin-right: 24px; }
+          .department .innovation .inner .wrap ul li:last-child {
+            margin-right: 0; }
+          .department .innovation .inner .wrap ul li .ideas {
+            width: 212px;
+            height: 350px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center; }
-          .innovation .inner .wrap ul li .ideas span {
-            display: block;
-            font: 500 30px/1.4 'roboto';
-            color: #821002;
-            text-align: center;
-            margin-bottom: 10px; }
-            .innovation .inner .wrap ul li .ideas span strong {
-              margin-left: 20px;
+            .department .innovation .inner .wrap ul li .ideas .icon {
+              width: 150px;
+              height: 150px;
+              border-radius: 50%;
+              background: #FFF7ED;
+              position: relative;
+              margin-bottom: 30px;
+              font-size: 40px;
+              color: #101820;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+            .department .innovation .inner .wrap ul li .ideas span {
+              display: block;
+              font: 500 30px/1.4 'roboto';
               color: #821002;
-              font: 500 24px/1 'roboto'; }
-          .innovation .inner .wrap ul li .ideas p {
-            font: 300 18px/1.2 'roboto';
-            text-align: center;
-            margin-bottom: 20px; }
+              text-align: center;
+              margin-bottom: 10px; }
+              .department .innovation .inner .wrap ul li .ideas span strong {
+                margin-left: 20px;
+                color: #821002;
+                font: 500 24px/1 'roboto'; }
+            .department .innovation .inner .wrap ul li .ideas p {
+              font: 300 18px/1.2 'roboto';
+              text-align: center;
+              margin-bottom: 20px; }
 
 /* tablet */
 @media screen and (max-width: 1179px) {
-  /*----- section_value ------------------------------------------*/
-  .value {
-    margin-bottom: 150px; }
-    .value .inner {
-      width: 100%;
-      padding: 0 30px; }
-      .value .inner h1 {
-        font-size: 36px;
-        margin-bottom: 40px; }
-      .value .inner .wrap {
+  .department {
+    /*----- section_value -----------------*/
+    /*----- section_members -----------------------------------*/
+    /*----- section_business --------------------------------------*/
+    /*----- section_innovation -----------------------------------*/ }
+    .department .value {
+      margin-bottom: 100px; }
+      .department .value .inner {
         width: 100%;
-        height: 700px; }
-        .value .inner .wrap #tab_value {
+        padding: 80px 40px 0px; }
+        .department .value .inner h1 {
+          font-size: 36px;
+          margin-bottom: 40px; }
+        .department .value .inner .wrap {
           width: 100%;
-          height: 100%; }
-          .value .inner .wrap #tab_value .list {
+          height: 700px; }
+          .department .value .inner .wrap #btns {
             float: none;
             width: 100%;
             height: 120px;
             position: relative;
-            margin-bottom: 0px; }
-            .value .inner .wrap #tab_value .list #btns {
-              width: 100%;
-              margin-left: 0px; }
-              .value .inner .wrap #tab_value .list #btns li {
-                float: left;
-                width: 20%;
-                padding: 20px 10px;
-                border-bottom: none; }
-                .value .inner .wrap #tab_value .list #btns li a {
+            margin-bottom: 0px;
+            margin-left: 0px; }
+            .department .value .inner .wrap #btns li {
+              float: left;
+              width: 20%;
+              padding: 20px 10px;
+              margin-left: 0px;
+              border-bottom: none; }
+              .department .value .inner .wrap #btns li a {
+                display: block;
+                text-align: center; }
+                .department .value .inner .wrap #btns li a strong {
                   display: block;
-                  text-align: center; }
-                  .value .inner .wrap #tab_value .list #btns li a strong {
-                    display: block;
-                    width: 100%;
-                    font: 300 50px/1 'roboto';
-                    padding-right: 0px;
-                    float: none; }
-                  .value .inner .wrap #tab_value .list #btns li a p {
-                    display: block;
-                    font: 500 16px/1.5 'roboto'; }
-                  .value .inner .wrap #tab_value .list #btns li a span {
-                    display: none; }
-                .value .inner .wrap #tab_value .list #btns li:hover strong, .value .inner .wrap #tab_value .list #btns li:hover span {
-                  color: #222; }
-                .value .inner .wrap #tab_value .list #btns li:hover p {
-                  color: #821002; }
-                .value .inner .wrap #tab_value .list #btns li.on strong, .value .inner .wrap #tab_value .list #btns li.on span {
-                  color: #222; }
-                .value .inner .wrap #tab_value .list #btns li.on p {
-                  color: #821002; }
-          .value .inner .wrap #tab_value .content {
+                  width: 100%;
+                  padding-right: 0px;
+                  float: none; }
+                .department .value .inner .wrap #btns li a p {
+                  display: block; }
+                .department .value .inner .wrap #btns li a span {
+                  display: none; }
+          .department .value .inner .wrap .content {
             width: 100%;
             height: 300px;
             position: relative;
             float: none; }
-            .value .inner .wrap #tab_value .content > div {
+            .department .value .inner .wrap .content > div {
               width: 100%;
               height: 150px;
               padding: 20px;
@@ -770,316 +736,315 @@ table {
               left: 50%;
               transform: translateX(-50%);
               z-index: 1; }
-              .value .inner .wrap #tab_value .content > div .title {
+              .department .value .inner .wrap .content > div .title {
                 width: 300px;
                 height: 130px;
                 padding: 10px 20px;
                 float: none; }
-              .value .inner .wrap #tab_value .content > div .circle {
-                width: 500px;
+              .department .value .inner .wrap .content > div .circle {
+                width: 100%;
+                max-width: 500px;
                 height: 500px;
                 margin: 0 auto;
                 float: none;
                 transform: scale(1.1); }
-                .value .inner .wrap #tab_value .content > div .circle i {
+                .department .value .inner .wrap .content > div .circle i {
                   font-size: 120px; }
-
-  /*----- section_members -----------------------------------*/
-  .members {
-    margin-bottom: 0px; }
-    .members .inner {
-      width: 100%;
-      height: auto;
-      padding: 0 30px; }
-      .members .inner h1 {
-        font-size: 32px;
-        margin-bottom: 80px; }
-      .members .inner .wrap {
-        width: 100%;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap; }
-        .members .inner .wrap .profile {
-          float: none;
-          width: 24%;
-          min-width: 220px;
-          height: 620px;
-          transform: translateY(0px); }
-          .members .inner .wrap .profile:nth-of-type(2n) {
-            transform: translateY(0px); }
-          .members .inner .wrap .profile .person {
-            width: 100%;
-            height: 340px; }
-            .members .inner .wrap .profile .person img {
-              filter: grayscale(0%); }
-          .members .inner .wrap .profile .txtWrap {
-            opacity: 1; }
-            .members .inner .wrap .profile .txtWrap .txt {
-              margin-top: 330px; }
-
-  /*----- section_business --------------------------------------*/
-  .business {
-    margin-bottom: 150px; }
-    .business .inner {
-      width: 100%;
-      height: auto;
-      padding: 0 30px; }
-      .business .inner h1 {
-        font-size: 36px;
-        margin-bottom: 40px; }
-      .business .inner .wrap .txt {
+    .department .members {
+      margin-bottom: 0px; }
+      .department .members .inner {
         width: 100%;
         height: auto;
-        float: none;
-        margin-top: 0px;
-        padding: 0px 0px; }
-        .business .inner .wrap .txt h2 {
-          font-size: 28px;
-          margin-bottom: 20px; }
-        .business .inner .wrap .txt p {
-          font-size: 13px;
-          margin-bottom: 20px; }
-        .business .inner .wrap .txt a {
-          margin-bottom: 20px; }
-      .business .inner .wrap .pic {
+        padding: 0 30px; }
+        .department .members .inner h1 {
+          font-size: 32px;
+          margin-bottom: 80px; }
+        .department .members .inner .wrap {
+          width: 100%;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap; }
+          .department .members .inner .wrap .profile {
+            float: none;
+            width: 24%;
+            min-width: 220px;
+            height: 620px;
+            transform: translateY(0px); }
+            .department .members .inner .wrap .profile:nth-of-type(2n) {
+              transform: translateY(0px); }
+            .department .members .inner .wrap .profile .person {
+              width: 100%;
+              height: 340px; }
+              .department .members .inner .wrap .profile .person img {
+                filter: grayscale(0%); }
+            .department .members .inner .wrap .profile .txtWrap {
+              opacity: 1; }
+              .department .members .inner .wrap .profile .txtWrap .txt {
+                margin-top: 330px; }
+    .department .business {
+      margin-bottom: 150px; }
+      .department .business .inner {
         width: 100%;
-        height: 540px;
-        float: left; }
-        .business .inner .wrap .pic div:nth-of-type(1) {
-          width: 50%;
-          float: left;
-          height: 100%; }
-        .business .inner .wrap .pic div:nth-of-type(2) {
-          width: 50%;
-          float: left;
-          height: 50%; }
-        .business .inner .wrap .pic .bigPhoto, .business .inner .wrap .pic .smallPhoto {
-          font-size: 0; }
-          .business .inner .wrap .pic .bigPhoto img, .business .inner .wrap .pic .smallPhoto img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; }
-
-  /*----- section_innovation -----------------------------------*/
-  .innovation {
-    margin-bottom: 100px; }
-    .innovation .inner {
-      width: 100%;
-      height: auto;
-      padding: 0 30px; }
-      .innovation .inner h1 {
-        font-size: 36px;
-        margin-bottom: 40px; }
-      .innovation .inner .wrap ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-grow: 1; }
-        .innovation .inner .wrap ul li {
+        height: auto;
+        padding: 0 30px; }
+        .department .business .inner h1 {
+          font-size: 36px;
+          margin-bottom: 40px; }
+        .department .business .inner .wrap .txt {
+          width: 100%;
+          height: auto;
           float: none;
-          margin: 3%;
-          width: 25%; }
-          .innovation .inner .wrap ul li:last-child {
-            margin-right: 0; }
-          .innovation .inner .wrap ul li .ideas {
-            width: 100%;
-            height: 250px;
-            margin: 0 auto; }
-            .innovation .inner .wrap ul li .ideas .icon {
-              width: 80%;
-              max-width: 170px;
-              height: 60%;
+          margin-top: 0px;
+          padding: 0px 0px; }
+          .department .business .inner .wrap .txt h2 {
+            font-size: 28px;
+            margin-bottom: 20px; }
+          .department .business .inner .wrap .txt p {
+            font-size: 13px;
+            margin-bottom: 20px; }
+          .department .business .inner .wrap .txt a {
+            margin-bottom: 20px; }
+        .department .business .inner .wrap .pic {
+          width: 100%;
+          height: 540px;
+          float: left; }
+          .department .business .inner .wrap .pic div:nth-of-type(1) {
+            width: 50%;
+            float: left;
+            height: 100%; }
+          .department .business .inner .wrap .pic div:nth-of-type(2) {
+            width: 50%;
+            float: left;
+            height: 50%; }
+          .department .business .inner .wrap .pic .bigPhoto, .department .business .inner .wrap .pic .smallPhoto {
+            font-size: 0; }
+            .department .business .inner .wrap .pic .bigPhoto img, .department .business .inner .wrap .pic .smallPhoto img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+    .department .innovation {
+      margin-bottom: 100px; }
+      .department .innovation .inner {
+        width: 100%;
+        height: auto;
+        padding: 0 30px; }
+        .department .innovation .inner h1 {
+          font-size: 36px;
+          margin-bottom: 40px; }
+        .department .innovation .inner .wrap ul {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          flex-grow: 1; }
+          .department .innovation .inner .wrap ul li {
+            float: none;
+            margin: 3%;
+            width: 25%; }
+            .department .innovation .inner .wrap ul li:last-child {
+              margin-right: 0; }
+            .department .innovation .inner .wrap ul li .ideas {
+              width: 100%;
+              height: 250px;
               margin: 0 auto; }
-              .innovation .inner .wrap ul li .ideas .icon i {
-                font-size: 50px; }
-            .innovation .inner .wrap ul li .ideas span {
-              font-size: 30px;
-              line-height: 1.2;
-              margin: 10px 0; }
-              .innovation .inner .wrap ul li .ideas span strong {
-                margin-left: 10px;
-                font-size: 20px; }
-            .innovation .inner .wrap ul li .ideas p {
-              font-size: 16px;
-              text-align: center;
-              line-height: 1;
-              margin-bottom: 0px; } }
+              .department .innovation .inner .wrap ul li .ideas .icon {
+                width: 80%;
+                max-width: 170px;
+                height: 60%;
+                margin: 0 auto; }
+                .department .innovation .inner .wrap ul li .ideas .icon i {
+                  font-size: 50px; }
+              .department .innovation .inner .wrap ul li .ideas span {
+                font-size: 30px;
+                line-height: 1.2;
+                margin: 10px 0; }
+                .department .innovation .inner .wrap ul li .ideas span strong {
+                  margin-left: 10px;
+                  font-size: 20px; }
+              .department .innovation .inner .wrap ul li .ideas p {
+                font-size: 16px;
+                text-align: center;
+                line-height: 1;
+                margin-bottom: 0px; } }
 /* mobile */
 @media screen and (max-width: 539px) {
-  /*----- section_value ------------------------------------------*/
-  .value {
-    margin-bottom: 80px; }
-    .value .inner {
-      padding: 0 20px; }
-      .value .inner h1 {
-        font-size: 28px;
-        margin-bottom: 20px; }
-      .value .inner .wrap {
-        width: 100%;
-        height: auto; }
-        .value .inner .wrap #tab_value .list {
+  .department {
+    /*----- section_value -----------------*/
+    /*----- section_members -----------------------------------*/
+    /*----- section_business --------------------------------------*/
+    /*----- section_innovation -----------------------------------*/ }
+    .department .value {
+      margin-bottom: 80px; }
+      .department .value .inner {
+        padding: 0 10px; }
+        .department .value .inner h1 {
+          font-size: 28px;
+          margin-bottom: 20px;
+          text-align: center; }
+        .department .value .inner .wrap {
           width: 100%;
-          height: 80px; }
-          .value .inner .wrap #tab_value .list #btns li {
-            padding: 10px 5px; }
-            .value .inner .wrap #tab_value .list #btns li a strong {
-              font: 300 30px/1 'roboto'; }
-            .value .inner .wrap #tab_value .list #btns li a p {
-              font: 500 12px/1.5 'roboto'; }
-        .value .inner .wrap #tab_value .content {
-          width: 100%;
-          height: 260px;
-          position: relative;
-          float: none; }
-          .value .inner .wrap #tab_value .content > div {
+          height: auto; }
+          .department .value .inner .wrap #btns {
             width: 100%;
-            height: 100%;
-            padding: 10px; }
-            .value .inner .wrap #tab_value .content > div .title {
+            height: 80px; }
+            .department .value .inner .wrap #btns li {
+              padding: 10px 5px; }
+              .department .value .inner .wrap #btns li a strong {
+                font: 300 30px/1 'roboto'; }
+              .department .value .inner .wrap #btns li a p {
+                font: 500 12px/1.5 'roboto'; }
+          .department .value .inner .wrap .content {
+            width: 100%;
+            height: 260px;
+            position: relative;
+            float: none;
+            margin-bottom: 40px; }
+            .department .value .inner .wrap .content > div {
               width: 100%;
-              height: auto;
-              border-top: none;
-              border-left: 4px solid #d1ac8f; }
-              .value .inner .wrap #tab_value .content > div .title h2 {
-                font-size: 18px;
-                font-weight: 500;
-                margin-bottom: 20px; }
-            .value .inner .wrap #tab_value .content > div .circle {
-              width: 100%;
-              height: 200px;
-              transform: scale(1); }
-              .value .inner .wrap #tab_value .content > div .circle i {
-                font-size: 80px; }
-
-  /*----- section_members -----------------------------------*/
-  .members {
-    margin-bottom: 00px;
-    padding: 0; }
-    .members .inner {
-      padding: 30px 20px; }
-      .members .inner h1 {
-        font-size: 28px;
-        margin-bottom: 20px; }
-      .members .inner .wrap {
-        width: 100%;
-        position: relative;
-        display: block;
-        margin: 0 auto; }
-        .members .inner .wrap .profile {
-          margin: 0px;
+              height: 100%;
+              padding: 10px;
+              position: relative; }
+              .department .value .inner .wrap .content > div .title {
+                width: 100%;
+                height: auto;
+                border-top: none;
+                border-left: 4px solid #d1ac8f; }
+                .department .value .inner .wrap .content > div .title h2 {
+                  font-size: 18px;
+                  font-weight: 500;
+                  margin-bottom: 20px; }
+              .department .value .inner .wrap .content > div .circle {
+                width: 100%;
+                height: 300px;
+                transform: scale(1);
+                position: relative;
+                bottom: 20px;
+                left: 0; }
+                .department .value .inner .wrap .content > div .circle i {
+                  font-size: 80px; }
+    .department .members {
+      margin-bottom: 00px;
+      padding: 0; }
+      .department .members .inner {
+        padding: 30px 20px; }
+        .department .members .inner h1 {
+          font-size: 28px;
+          margin-bottom: 20px; }
+        .department .members .inner .wrap {
           width: 100%;
-          min-width: auto;
-          height: auto;
-          position: static; }
-          .members .inner .wrap .profile:nth-of-type(2n-1) {
-            transform: translateY(0px); }
-          .members .inner .wrap .profile:hover {
-            transform: translateY(0px);
-            z-index: 0; }
-            .members .inner .wrap .profile:hover .person img {
-              filter: grayscale(0%);
+          position: relative;
+          display: block;
+          margin: 0 auto; }
+          .department .members .inner .wrap .profile {
+            margin: 0px;
+            width: 100%;
+            min-width: auto;
+            height: auto;
+            position: static; }
+            .department .members .inner .wrap .profile:nth-of-type(2n-1) {
+              transform: translateY(0px); }
+            .department .members .inner .wrap .profile:hover {
+              transform: translateY(0px);
+              z-index: 0; }
+              .department .members .inner .wrap .profile:hover .person img {
+                filter: grayscale(0%);
+                transform: scale(1); }
+              .department .members .inner .wrap .profile:hover .txtWrap {
+                opacity: 1;
+                transform: scale3d(1, 1, 1); }
+            .department .members .inner .wrap .profile .person {
+              width: 100%;
+              height: 300px;
               transform: scale(1); }
-            .members .inner .wrap .profile:hover .txtWrap {
-              opacity: 1;
-              transform: scale3d(1, 1, 1); }
-          .members .inner .wrap .profile .person {
+            .department .members .inner .wrap .profile .txtWrap {
+              width: 100%;
+              height: 100%;
+              position: static;
+              border: none; }
+              .department .members .inner .wrap .profile .txtWrap .txt {
+                margin-top: 0px;
+                margin-bottom: 40px; }
+    .department .business {
+      margin-bottom: 80px;
+      height: auto; }
+      .department .business .inner {
+        padding: 0 20px; }
+        .department .business .inner h1 {
+          font-size: 28px;
+          margin-bottom: 20px; }
+        .department .business .inner .wrap .txt {
+          height: auto;
+          padding: 10px 10px; }
+          .department .business .inner .wrap .txt h2 {
+            font-size: 18px;
+            margin-bottom: 10px; }
+          .department .business .inner .wrap .txt p {
+            font-size: 14px;
+            margin-bottom: 10px; }
+          .department .business .inner .wrap .txt a {
+            margin-bottom: 30px; }
+        .department .business .inner .wrap .pic {
+          width: 100%;
+          height: auto;
+          float: none; }
+          .department .business .inner .wrap .pic div:nth-of-type(1) {
+            width: 100%;
+            float: none;
+            height: 100%; }
+          .department .business .inner .wrap .pic div:nth-of-type(2) {
+            width: 100%;
+            float: none;
+            height: 100%; }
+          .department .business .inner .wrap .pic .bigPhoto {
             width: 100%;
             height: 300px;
-            transform: scale(1); }
-          .members .inner .wrap .profile .txtWrap {
+            height: 300px; }
+          .department .business .inner .wrap .pic .smallPhoto {
+            float: none;
             width: 100%;
-            height: 100%;
-            position: static;
-            border: none; }
-            .members .inner .wrap .profile .txtWrap .txt {
-              margin-top: 0px;
-              margin-bottom: 40px; }
-
-  /*----- section_business --------------------------------------*/
-  .business {
-    margin-bottom: 80px;
-    height: auto; }
-    .business .inner {
-      padding: 0 20px; }
-      .business .inner h1 {
-        font-size: 28px;
-        margin-bottom: 20px; }
-      .business .inner .wrap .txt {
-        height: auto;
-        padding: 10px 10px; }
-        .business .inner .wrap .txt h2 {
-          font-size: 18px;
-          margin-bottom: 10px; }
-        .business .inner .wrap .txt p {
-          font-size: 14px;
-          margin-bottom: 10px; }
-        .business .inner .wrap .txt a {
-          margin-bottom: 30px; }
-      .business .inner .wrap .pic {
-        width: 100%;
-        height: auto;
-        float: none; }
-        .business .inner .wrap .pic div:nth-of-type(1) {
-          width: 100%;
-          float: none;
-          height: 100%; }
-        .business .inner .wrap .pic div:nth-of-type(2) {
-          width: 100%;
-          float: none;
-          height: 100%; }
-        .business .inner .wrap .pic .bigPhoto {
-          width: 100%;
-          height: 300px;
-          height: 300px; }
-        .business .inner .wrap .pic .smallPhoto {
-          float: none;
-          width: 100%;
-          height: 300px;
-          display: block; }
-
-  /*----- section_innovation -----------------------------------*/
-  .innovation {
-    margin-bottom: 80px; }
-    .innovation .inner {
-      padding: 0 20px; }
-      .innovation .inner h1 {
-        font-size: 28px;
-        margin-bottom: 40px; }
-      .innovation .inner .wrap ul {
-        display: block;
-        width: 100%; }
-        .innovation .inner .wrap ul li {
-          margin: 10px 10px;
+            height: 300px;
+            display: block; }
+    .department .innovation {
+      margin-bottom: 80px; }
+      .department .innovation .inner {
+        padding: 0 20px; }
+        .department .innovation .inner h1 {
+          font-size: 28px;
+          margin-bottom: 40px; }
+        .department .innovation .inner .wrap ul {
+          display: block;
           width: 100%; }
-          .innovation .inner .wrap ul li:last-child {
-            margin-right: 10px; }
-          .innovation .inner .wrap ul li .ideas {
-            width: 100%;
-            height: 120px; }
-            .innovation .inner .wrap ul li .ideas .icon {
-              width: 120px;
-              height: 120px;
-              float: left;
-              margin-right: 40px; }
-            .innovation .inner .wrap ul li .ideas span {
-              float: left;
-              display: block;
-              width: 120px;
-              max-width: auto;
-              height: 60px;
-              line-height: 60px;
-              margin: 0px 0;
-              text-align: center; }
-            .innovation .inner .wrap ul li .ideas p {
-              float: left;
-              display: block;
-              width: 120px;
-              max-width: auto;
-              height: 40px;
-              margin: 0px 0;
-              line-height: 1.2;
-              text-align: center; } }
+          .department .innovation .inner .wrap ul li {
+            margin: 10px 10px;
+            width: 100%; }
+            .department .innovation .inner .wrap ul li:last-child {
+              margin-right: 10px; }
+            .department .innovation .inner .wrap ul li .ideas {
+              width: 100%;
+              height: 120px; }
+              .department .innovation .inner .wrap ul li .ideas .icon {
+                width: 120px;
+                height: 120px;
+                float: left;
+                margin-right: 40px; }
+              .department .innovation .inner .wrap ul li .ideas span {
+                float: left;
+                display: block;
+                width: 120px;
+                max-width: auto;
+                height: 60px;
+                line-height: 60px;
+                margin: 0px 0;
+                text-align: center; }
+              .department .innovation .inner .wrap ul li .ideas p {
+                float: left;
+                display: block;
+                width: 120px;
+                max-width: auto;
+                height: 40px;
+                margin: 0px 0;
+                line-height: 1.2;
+                text-align: center; } }
 .community .sub_visual {
   background: url(../img/sub3.jpg) no-repeat center/cover; }
 .community .inner section {
