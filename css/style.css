@@ -1101,47 +1101,47 @@ table {
       .community .inner section > ul li.on a {
         font-weight: 500;
         color: #d1ac8f; }
-  .community .inner section .wrap {
+  .community .inner section > .wrap {
     width: 85%;
     padding-left: 40px; }
-    .community .inner section .wrap article {
+    .community .inner section > .wrap article {
       display: none;
       /*fisrt board-FAQ*/
       /*second board-NOTICE*/
       /*third board-REVIEW*/ }
-      .community .inner section .wrap article.on {
+      .community .inner section > .wrap article.on {
         display: block; }
-      .community .inner section .wrap article#faq {
+      .community .inner section > .wrap article#faq {
         width: 100%;
         position: relative; }
-        .community .inner section .wrap article#faq ::after {
+        .community .inner section > .wrap article#faq ::after {
           content: '';
           display: block;
           clear: both; }
-        .community .inner section .wrap article#faq #searchBox {
+        .community .inner section > .wrap article#faq #searchBox {
           width: 100%;
           margin-bottom: 40px; }
-          .community .inner section .wrap article#faq #searchBox ::after {
+          .community .inner section > .wrap article#faq #searchBox ::after {
             content: '';
             display: block;
             clear: both; }
-          .community .inner section .wrap article#faq #searchBox .qstn {
+          .community .inner section > .wrap article#faq #searchBox .qstn {
             width: 50%;
             float: left;
             padding: 20px 30px;
             background: #eee;
             height: 264px; }
-            .community .inner section .wrap article#faq #searchBox .qstn > h1 {
+            .community .inner section > .wrap article#faq #searchBox .qstn > h1 {
               font: 500 30px/1.2 'roboto';
               color: #101820;
               float: left;
               margin-bottom: 10px; }
-            .community .inner section .wrap article#faq #searchBox .qstn > input {
+            .community .inner section > .wrap article#faq #searchBox .qstn > input {
               width: 90%;
               height: 50px;
               padding: 5px 10px;
               float: left; }
-            .community .inner section .wrap article#faq #searchBox .qstn > button {
+            .community .inner section > .wrap article#faq #searchBox .qstn > button {
               width: 10%;
               height: 50px;
               float: right;
@@ -1149,50 +1149,50 @@ table {
               background: #101820;
               text-align: center;
               cursor: pointer; }
-              .community .inner section .wrap article#faq #searchBox .qstn > button i {
+              .community .inner section > .wrap article#faq #searchBox .qstn > button i {
                 color: #eee;
                 font-size: 20px; }
-            .community .inner section .wrap article#faq #searchBox .qstn > h2 {
+            .community .inner section > .wrap article#faq #searchBox .qstn > h2 {
               margin: 10px 5px 5px;
               float: left;
               width: 100%;
               font: 500 12px/1.2 'roboto'; }
-            .community .inner section .wrap article#faq #searchBox .qstn > span {
+            .community .inner section > .wrap article#faq #searchBox .qstn > span {
               margin-left: 5px;
               float: left;
               font: 300 14px/1.4 'roboto'; }
-              .community .inner section .wrap article#faq #searchBox .qstn > span i {
+              .community .inner section > .wrap article#faq #searchBox .qstn > span i {
                 padding-right: 10px; }
-          .community .inner section .wrap article#faq #searchBox .answersBy {
+          .community .inner section > .wrap article#faq #searchBox .answersBy {
             width: 50%;
             float: right;
             padding: 30px 20px;
             background: #eee;
             margin: 0 auto; }
-            .community .inner section .wrap article#faq #searchBox .answersBy h3 {
+            .community .inner section > .wrap article#faq #searchBox .answersBy h3 {
               font: 500 20px/1.2 'roboto';
               color: #101820;
               margin-bottom: 10px; }
-            .community .inner section .wrap article#faq #searchBox .answersBy > ul li {
+            .community .inner section > .wrap article#faq #searchBox .answersBy > ul li {
               float: left;
               display: block;
               width: 49%;
               padding: 5px 10px;
               border: 1px solid #eee;
               background: #fff; }
-              .community .inner section .wrap article#faq #searchBox .answersBy > ul li:hover a .pic i, .community .inner section .wrap article#faq #searchBox .answersBy > ul li:hover span {
+              .community .inner section > .wrap article#faq #searchBox .answersBy > ul li:hover a .pic i, .community .inner section > .wrap article#faq #searchBox .answersBy > ul li:hover span {
                 color: #d1ac8f; }
-              .community .inner section .wrap article#faq #searchBox .answersBy > ul li a {
+              .community .inner section > .wrap article#faq #searchBox .answersBy > ul li a {
                 display: block; }
-                .community .inner section .wrap article#faq #searchBox .answersBy > ul li a .pic {
+                .community .inner section > .wrap article#faq #searchBox .answersBy > ul li a .pic {
                   width: 100%;
                   height: 50px;
                   text-align: center;
                   padding-top: 20px; }
-                  .community .inner section .wrap article#faq #searchBox .answersBy > ul li a .pic i {
+                  .community .inner section > .wrap article#faq #searchBox .answersBy > ul li a .pic i {
                     font-size: 20px;
                     color: #000; }
-                .community .inner section .wrap article#faq #searchBox .answersBy > ul li a span {
+                .community .inner section > .wrap article#faq #searchBox .answersBy > ul li a span {
                   display: block;
                   width: 100%;
                   font: 500 12px/1 'roboto';
@@ -1200,14 +1200,14 @@ table {
                   float: left;
                   padding: 5px;
                   text-align: center; }
-        .community .inner section .wrap article#faq .answerBoard {
+        .community .inner section > .wrap article#faq .answerBoard {
           position: relative; }
-          .community .inner section .wrap article#faq .answerBoard h1 {
+          .community .inner section > .wrap article#faq .answerBoard h1 {
             font: 500 24px/1 'Roboto';
             letter-spacing: 2px;
             color: #101820;
             margin-bottom: 20px; }
-          .community .inner section .wrap article#faq .answerBoard select {
+          .community .inner section > .wrap article#faq .answerBoard select {
             position: absolute;
             top: 0px;
             right: 0px;
@@ -1216,18 +1216,18 @@ table {
             background: #fff;
             border: none;
             font: 300 14px/1 'roboto'; }
-            .community .inner section .wrap article#faq .answerBoard select option {
+            .community .inner section > .wrap article#faq .answerBoard select option {
               font: 300 14px/1 'roboto';
               color: #52616b; }
-        .community .inner section .wrap article#faq .accordion {
+        .community .inner section > .wrap article#faq .accordion {
           width: 100%;
           position: relative; }
-          .community .inner section .wrap article#faq .accordion > ul {
+          .community .inner section > .wrap article#faq .accordion > ul {
             background: #fff;
             border-radius: 3px; }
-            .community .inner section .wrap article#faq .accordion > ul .item {
+            .community .inner section > .wrap article#faq .accordion > ul .item {
               position: relative; }
-              .community .inner section .wrap article#faq .accordion > ul .item > h2 {
+              .community .inner section > .wrap article#faq .accordion > ul .item > h2 {
                 padding: 20px 20px 20px 150px;
                 position: relative;
                 font: 500 18px/30px 'roboto';
@@ -1235,7 +1235,7 @@ table {
                 transition: ease-in-out 0.2s all;
                 border-top: 1px solid #BFD9EB;
                 cursor: pointer; }
-                .community .inner section .wrap article#faq .accordion > ul .item > h2 strong {
+                .community .inner section > .wrap article#faq .accordion > ul .item > h2 strong {
                   display: inline-block;
                   position: absolute;
                   top: 25px;
@@ -1243,7 +1243,7 @@ table {
                   width: 140px;
                   font: 500 11px/30px 'roboto';
                   color: #101820; }
-                .community .inner section .wrap article#faq .accordion > ul .item > h2 .accIcon {
+                .community .inner section > .wrap article#faq .accordion > ul .item > h2 .accIcon {
                   float: right;
                   width: 30px;
                   height: 30px;
@@ -1251,26 +1251,26 @@ table {
                   justify-content: center;
                   align-items: center;
                   margin-top: -3px; }
-                  .community .inner section .wrap article#faq .accordion > ul .item > h2 .accIcon::before, .community .inner section .wrap article#faq .accordion > ul .item > h2 .accIcon::after {
+                  .community .inner section > .wrap article#faq .accordion > ul .item > h2 .accIcon::before, .community .inner section > .wrap article#faq .accordion > ul .item > h2 .accIcon::after {
                     content: "";
                     display: block;
                     position: absolute;
                     border-radius: 50px;
                     background: #c9d6df;
                     transition: ease 0.3s all; }
-                  .community .inner section .wrap article#faq .accordion > ul .item > h2 .accIcon::before {
+                  .community .inner section > .wrap article#faq .accordion > ul .item > h2 .accIcon::before {
                     width: 2px;
                     height: 20px; }
-                  .community .inner section .wrap article#faq .accordion > ul .item > h2 .accIcon::after {
+                  .community .inner section > .wrap article#faq .accordion > ul .item > h2 .accIcon::after {
                     width: 20px;
                     height: 2px; }
-                  .community .inner section .wrap article#faq .accordion > ul .item > h2 .accIcon.anime.accIcon::before {
+                  .community .inner section > .wrap article#faq .accordion > ul .item > h2 .accIcon.anime.accIcon::before {
                     transform: rotate(90deg); }
-                .community .inner section .wrap article#faq .accordion > ul .item > h2:hover {
+                .community .inner section > .wrap article#faq .accordion > ul .item > h2:hover {
                   padding-left: 175px; }
-                  .community .inner section .wrap article#faq .accordion > ul .item > h2:hover .accIcon::before, .community .inner section .wrap article#faq .accordion > ul .item > h2:hover .accIcon::after {
+                  .community .inner section > .wrap article#faq .accordion > ul .item > h2:hover .accIcon::before, .community .inner section > .wrap article#faq .accordion > ul .item > h2:hover .accIcon::after {
                     background-color: #52616b; }
-              .community .inner section .wrap article#faq .accordion > ul .item .text {
+              .community .inner section > .wrap article#faq .accordion > ul .item .text {
                 font: 300 16px/24px 'roboto';
                 letter-spacing: 0.5px;
                 background-color: #f0f5f9;
@@ -1280,65 +1280,65 @@ table {
                 opacity: 0;
                 height: 0;
                 transition: all 0.6s cubic-bezier(0.42, 0.2, 0.08, 1); }
-                .community .inner section .wrap article#faq .accordion > ul .item .text.show {
+                .community .inner section > .wrap article#faq .accordion > ul .item .text.show {
                   opacity: 1;
                   height: auto;
                   padding: 25px 20px;
                   position: relative;
                   z-index: 0;
                   border-radius: 0px 0px 3px 3px; }
-      .community .inner section .wrap article#notice {
+      .community .inner section > .wrap article#notice {
         width: 100%;
         position: relative; }
-        .community .inner section .wrap article#notice h1 {
+        .community .inner section > .wrap article#notice h1 {
           font: 500 24px/1 'Roboto';
           letter-spacing: 2px;
           color: #101820;
           margin-bottom: 20px; }
-        .community .inner section .wrap article#notice table {
+        .community .inner section > .wrap article#notice table {
           width: 100%;
           margin-bottom: 50px;
           border-collapse: collapse; }
-          .community .inner section .wrap article#notice table tr th {
+          .community .inner section > .wrap article#notice table tr th {
             padding: 10px 15px;
             background: #d1ac8f;
             color: #fff; }
-            .community .inner section .wrap article#notice table tr th:nth-of-type(1) {
+            .community .inner section > .wrap article#notice table tr th:nth-of-type(1) {
               width: 10%; }
-            .community .inner section .wrap article#notice table tr th:nth-of-type(3) {
+            .community .inner section > .wrap article#notice table tr th:nth-of-type(3) {
               width: 15%; }
-            .community .inner section .wrap article#notice table tr th:nth-of-type(4) {
+            .community .inner section > .wrap article#notice table tr th:nth-of-type(4) {
               width: 15%; }
-          .community .inner section .wrap article#notice table tr td {
+          .community .inner section > .wrap article#notice table tr td {
             padding: 20px 15px;
             border-bottom: 1px solid #ddd;
             text-align: center;
             color: #52616b;
             font: 300 14px/1 'roboto'; }
-            .community .inner section .wrap article#notice table tr td:nth-of-type(2) {
+            .community .inner section > .wrap article#notice table tr td:nth-of-type(2) {
               text-align: left; }
-              .community .inner section .wrap article#notice table tr td:nth-of-type(2) a {
+              .community .inner section > .wrap article#notice table tr td:nth-of-type(2) a {
                 text-align: left;
                 color: #52616b; }
-          .community .inner section .wrap article#notice table tr:hover td {
+          .community .inner section > .wrap article#notice table tr:hover td {
             background: rgba(255, 233, 207, 0.5); }
-        .community .inner section .wrap article#notice .paignation {
+        .community .inner section > .wrap article#notice .paignation {
           width: 100%;
           display: flex;
           justify-content: space-between;
           align-items: center; }
-          .community .inner section .wrap article#notice .paignation > a {
+          .community .inner section > .wrap article#notice .paignation > a {
             display: inline-block;
             width: 30px;
             height: 30px;
             font: normal 20px/30px 'Roboto';
             color: #d1ac8f;
             opacity: 0.7; }
-          .community .inner section .wrap article#notice .paignation .numbers {
+          .community .inner section > .wrap article#notice .paignation .numbers {
             display: flex;
             justify-content: space-around;
             align-items: center; }
-            .community .inner section .wrap article#notice .paignation .numbers > a {
+            .community .inner section > .wrap article#notice .paignation .numbers > a {
               display: inline-block;
               width: 30px;
               height: 30px;
@@ -1346,76 +1346,78 @@ table {
               color: #52616b;
               text-align: center;
               opacity: 0.7; }
-              .community .inner section .wrap article#notice .paignation .numbers > a.on {
+              .community .inner section > .wrap article#notice .paignation .numbers > a.on {
                 background: #d1ac8f;
                 color: #fff;
                 opacity: 1; }
-      .community .inner section .wrap article#review {
+      .community .inner section > .wrap article#review {
         width: 100%;
         position: relative; }
-        .community .inner section .wrap article#review h1 {
+        .community .inner section > .wrap article#review h1 {
           font: 500 24px/1 'Roboto';
           letter-spacing: 2px;
           color: #101820;
           margin-bottom: 20px; }
-        .community .inner section .wrap article#review .list {
-          width: 100%;
-          padding: 10px;
-          display: flex;
-          border-top: 1px solid #ddd;
-          border-bottom: 1px solid #ddd; }
-          .community .inner section .wrap article#review .list .writerInfo {
-            flex: 1; }
-            .community .inner section .wrap article#review .list .writerInfo .userIcon {
-              width: 40px;
-              height: 40px;
-              border-radius: 50%;
-              margin: 0 auto; }
-              .community .inner section .wrap article#review .list .writerInfo .userIcon img {
+        .community .inner section > .wrap article#review > .wrap {
+          width: 100%; }
+          .community .inner section > .wrap article#review > .wrap .list {
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd; }
+            .community .inner section > .wrap article#review > .wrap .list .writerInfo {
+              flex: 1; }
+              .community .inner section > .wrap article#review > .wrap .list .writerInfo .userIcon {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin: 0 auto; }
+                .community .inner section > .wrap article#review > .wrap .list .writerInfo .userIcon img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover; }
+              .community .inner section > .wrap article#review > .wrap .list .writerInfo p {
+                font: 400 14px/1 'Roboto';
+                padding: 10px 0;
+                text-align: center;
+                color: #777; }
+            .community .inner section > .wrap article#review > .wrap .list .photo {
+              flex: 3;
+              padding: 0 20px; }
+              .community .inner section > .wrap article#review > .wrap .list .photo img {
                 width: 100%;
-                height: 100%;
                 object-fit: cover; }
-            .community .inner section .wrap article#review .list .writerInfo p {
-              font: 400 14px/1 'Roboto';
-              padding: 10px 0;
-              text-align: center;
-              color: #777; }
-          .community .inner section .wrap article#review .list .photo {
-            flex: 3;
-            padding: 0 20px; }
-            .community .inner section .wrap article#review .list .photo img {
-              width: 100%;
-              object-fit: cover; }
-          .community .inner section .wrap article#review .list .contents {
-            flex: 10;
-            padding: 0 10px; }
-            .community .inner section .wrap article#review .list .contents span {
-              font-size: 20px;
-              color: #821002; }
-            .community .inner section .wrap article#review .list .contents strong {
-              font: 400 16px/1 'Roboto';
-              color: #777; }
-            .community .inner section .wrap article#review .list .contents > p {
-              margin: 20px 0px;
-              font: 300 16px/1 'Roboto'; }
-        .community .inner section .wrap article#review .paignation {
+            .community .inner section > .wrap article#review > .wrap .list .contents {
+              flex: 10;
+              padding: 0 10px; }
+              .community .inner section > .wrap article#review > .wrap .list .contents span {
+                font-size: 20px;
+                color: #821002; }
+              .community .inner section > .wrap article#review > .wrap .list .contents strong {
+                font: 400 16px/1 'Roboto';
+                color: #777; }
+              .community .inner section > .wrap article#review > .wrap .list .contents > p {
+                margin: 20px 0px;
+                font: 300 16px/1 'Roboto'; }
+        .community .inner section > .wrap article#review .paignation {
           margin-top: 20px;
           width: 100%;
           display: flex;
           justify-content: space-between;
           align-items: center; }
-          .community .inner section .wrap article#review .paignation > a {
+          .community .inner section > .wrap article#review .paignation > a {
             display: inline-block;
             width: 30px;
             height: 30px;
             font: normal 20px/30px 'Roboto';
             color: #d1ac8f;
             opacity: 0.7; }
-          .community .inner section .wrap article#review .paignation .numbers {
+          .community .inner section > .wrap article#review .paignation .numbers {
             display: flex;
             justify-content: space-around;
             align-items: center; }
-            .community .inner section .wrap article#review .paignation .numbers > a {
+            .community .inner section > .wrap article#review .paignation .numbers > a {
               display: inline-block;
               width: 30px;
               height: 30px;
@@ -1423,7 +1425,7 @@ table {
               color: #52616b;
               text-align: center;
               opacity: 0.7; }
-              .community .inner section .wrap article#review .paignation .numbers > a.on {
+              .community .inner section > .wrap article#review .paignation .numbers > a.on {
                 background: #d1ac8f;
                 color: #fff;
                 opacity: 1; }
@@ -1504,30 +1506,30 @@ table {
       display: none; }
     .community .inner section .wrap article#notice .paignation .numbers > a:nth-of-type(10) {
       display: none; }
-    .community .inner section .wrap article#review .list {
+    .community .inner section .wrap article#review .wrap .list {
       display: flex;
       flex-wrap: wrap; }
-      .community .inner section .wrap article#review .list .writerInfo {
+      .community .inner section .wrap article#review .wrap .list .writerInfo {
         flex: auto;
         width: 20%; }
-      .community .inner section .wrap article#review .list .photo {
+      .community .inner section .wrap article#review .wrap .list .photo {
         flex: auto;
         width: 80%; }
-        .community .inner section .wrap article#review .list .photo img {
+        .community .inner section .wrap article#review .wrap .list .photo img {
           max-width: 250px; }
-      .community .inner section .wrap article#review .list .contents {
+      .community .inner section .wrap article#review .wrap .list .contents {
         flex: auto;
         width: 100%;
         margin-top: 20px; }
-    .community .inner section .wrap article#review .paignation .numbers > a:nth-of-type(6) {
+    .community .inner section .wrap article#review .wrap .paignation .numbers > a:nth-of-type(6) {
       display: none; }
-    .community .inner section .wrap article#review .paignation .numbers > a:nth-of-type(7) {
+    .community .inner section .wrap article#review .wrap .paignation .numbers > a:nth-of-type(7) {
       display: none; }
-    .community .inner section .wrap article#review .paignation .numbers > a:nth-of-type(8) {
+    .community .inner section .wrap article#review .wrap .paignation .numbers > a:nth-of-type(8) {
       display: none; }
-    .community .inner section .wrap article#review .paignation .numbers > a:nth-of-type(9) {
+    .community .inner section .wrap article#review .wrap .paignation .numbers > a:nth-of-type(9) {
       display: none; }
-    .community .inner section .wrap article#review .paignation .numbers > a:nth-of-type(10) {
+    .community .inner section .wrap article#review .wrap .paignation .numbers > a:nth-of-type(10) {
       display: none; } }
 /*mobile ------*/
 @media screen and (max-width: 539px) {
@@ -1542,70 +1544,70 @@ table {
         padding-left: 0px; }
       .community .inner section ul li.on {
         border-bottom: 4px solid #d1ac8f; }
-  .community .inner section .wrap {
+  .community .inner section > .wrap {
     width: 100%;
     padding: 0px; }
-    .community .inner section .wrap article {
+    .community .inner section > .wrap article {
       /*fisrt board-FAQ*/
       /*second board-NOTICE*/
       /*third board-REVIEW*/ }
-      .community .inner section .wrap article#faq #searchBox .qstn {
+      .community .inner section > .wrap article#faq #searchBox .qstn {
         padding: 20px 10px 10px;
         height: auto; }
-        .community .inner section .wrap article#faq #searchBox .qstn > h1 {
+        .community .inner section > .wrap article#faq #searchBox .qstn > h1 {
           font-size: 18px; }
-        .community .inner section .wrap article#faq #searchBox .qstn input {
+        .community .inner section > .wrap article#faq #searchBox .qstn input {
           width: 80%; }
-        .community .inner section .wrap article#faq #searchBox .qstn button {
+        .community .inner section > .wrap article#faq #searchBox .qstn button {
           width: 20%; }
-      .community .inner section .wrap article#faq #searchBox .answersBy {
+      .community .inner section > .wrap article#faq #searchBox .answersBy {
         padding: 10px 10px 20px; }
-        .community .inner section .wrap article#faq #searchBox .answersBy h3 {
+        .community .inner section > .wrap article#faq #searchBox .answersBy h3 {
           font-size: 16px; }
-        .community .inner section .wrap article#faq #searchBox .answersBy > ul li {
+        .community .inner section > .wrap article#faq #searchBox .answersBy > ul li {
           display: flex;
           justify-content: center;
           align-items: center; }
-          .community .inner section .wrap article#faq #searchBox .answersBy > ul li a .pic {
+          .community .inner section > .wrap article#faq #searchBox .answersBy > ul li a .pic {
             height: auto;
             padding: 0px; }
-          .community .inner section .wrap article#faq #searchBox .answersBy > ul li a span {
+          .community .inner section > .wrap article#faq #searchBox .answersBy > ul li a span {
             display: none; }
-      .community .inner section .wrap article#faq .answerBoard h1 {
+      .community .inner section > .wrap article#faq .answerBoard h1 {
         padding: 0 10px; }
-      .community .inner section .wrap article#faq .accordion {
+      .community .inner section > .wrap article#faq .accordion {
         padding: 0 10px; }
-        .community .inner section .wrap article#faq .accordion > ul {
+        .community .inner section > .wrap article#faq .accordion > ul {
           display: block; }
-          .community .inner section .wrap article#faq .accordion > ul .item {
+          .community .inner section > .wrap article#faq .accordion > ul .item {
             padding: 0px; }
-            .community .inner section .wrap article#faq .accordion > ul .item > h2 {
+            .community .inner section > .wrap article#faq .accordion > ul .item > h2 {
               font-size: 14px;
               padding: 10px; }
-            .community .inner section .wrap article#faq .accordion > ul .item .text {
+            .community .inner section > .wrap article#faq .accordion > ul .item .text {
               font-size: 14px;
               line-height: 14px;
               padding: 0px 10px; }
-      .community .inner section .wrap article#notice h1 {
+      .community .inner section > .wrap article#notice h1 {
         padding: 0 20px;
         font: 500 24px/1 'Roboto'; }
-      .community .inner section .wrap article#notice table tr th:nth-of-type(1) {
+      .community .inner section > .wrap article#notice table tr th:nth-of-type(1) {
         width: 0%;
         display: none; }
-      .community .inner section .wrap article#notice table tr th:nth-of-type(3) {
+      .community .inner section > .wrap article#notice table tr th:nth-of-type(3) {
         width: 27%; }
-      .community .inner section .wrap article#notice table tr th:nth-of-type(4) {
+      .community .inner section > .wrap article#notice table tr th:nth-of-type(4) {
         width: 0%;
         display: none; }
-      .community .inner section .wrap article#notice table tr td:nth-of-type(1) {
+      .community .inner section > .wrap article#notice table tr td:nth-of-type(1) {
         width: 0%;
         display: none; }
-      .community .inner section .wrap article#notice .paignation .numbers {
+      .community .inner section > .wrap article#notice .paignation .numbers {
         display: none; }
-      .community .inner section .wrap article#review h1 {
+      .community .inner section > .wrap article#review h1 {
         padding: 0 20px;
         font: 500 24px/1 'Roboto'; }
-      .community .inner section .wrap article#review .paignation .numbers {
+      .community .inner section > .wrap article#review .paignation .numbers {
         display: none; } }
 /*----- login sub_visual -------------------------------*/
 .login {

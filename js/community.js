@@ -1,6 +1,6 @@
 const firstBoard = document.querySelector(".accordion ul");
 const secondBoard = document.querySelector("#notice tbody");
-const thirdBoard = document.querySelector("#review");
+const thirdBoard = document.querySelector("#review .wrap");
 
 callData();
 //api 데이터 불러오기
@@ -23,9 +23,9 @@ function callData(){
   })
 }
 
-function createFaq(itmes){
+function createFaq(items){
   let board = "";
-  itmes.forEach(item =>{
+  items.forEach(item =>{
     board += `
     <li class="item">
       <h2 class="accordionTitle">
@@ -40,12 +40,12 @@ function createFaq(itmes){
   firstBoard.innerHTML = board;
 }
 
-function createNotice(itmes){
+function createNotice(items){
   let board = "";
-  itmes.forEach((item, index) =>{
+  items.slice(0).reverse().forEach((item, index) =>{
     board += `
     <tr>
-      <td>${item.length - index}</td>
+      <td>${items.length - index}</td>
       <td><a href="#">${item.title}</a></td>
       <td>${item.id}</td>
       <td>${item.date}</td>
@@ -55,9 +55,9 @@ function createNotice(itmes){
   secondBoard.innerHTML = board;
 }
 
-function createReview(itmes){
+function createReview(items){
   let board = "";
-  itmes.forEach((item, index) =>{
+  items.slice(0).reverse().forEach((item, index) =>{
     board += `
     <div class="list">
       <div class="writerInfo">
@@ -78,7 +78,7 @@ function createReview(itmes){
     </div>
     `
   })
-  thirdBoard.append = board;
+  thirdBoard.innerHTML = board
 }
 
 
@@ -117,8 +117,7 @@ const board = document.querySelector(".accordion ul");
 
 board.addEventListener("click", e=>{
   const h2 = e.target.closest(".item").querySelector(".accordionTitle");
-  const accIcon = e.target.closest(".item").querySelector(".accIcon");
-
+  const accIcons = e.currentTarget.querySelectorAll(".anime");
   let targetText = h2.nextElementSibling.classList;
   let targetAccIcon = h2.children[1]; 
 
@@ -127,17 +126,11 @@ board.addEventListener("click", e=>{
     targetAccIcon.classList.remove("anime");
   }
   else{
-    //주석은 하나를 클릭하면 다른 text는 자동으로 닫히게 하는 코드
-    //const shows =  e.currentTarget.querySelectorAll(".show");
-    const accIcons = e.currentTarget.querySelectorAll(".anime");
-    // for(el of shows){
-    //   el.classList.remove("show");
-    // }
-    targetText.add("show");
     for(el of accIcons){
       el.classList.remove("anime");
     }
     targetAccIcon.classList.add("anime");
+    targetText.add("show");
   }
 })
 

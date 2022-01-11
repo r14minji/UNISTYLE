@@ -30,7 +30,7 @@
         }
       }
     
-      .wrap{
+      >.wrap{
         width: 85%; padding-left: 40px;
     
         article{
@@ -311,53 +311,53 @@
               color:$green; 
               margin-bottom:20px; 
             }
-    
-            .list{
-              width: 100%; padding: 10px;
-              display: flex;
-              border-top: 1px solid #ddd;
-              border-bottom: 1px solid #ddd;
-    
-              .writerInfo{
-                flex:1; 
-                .userIcon{
-                  width: 40px; height: 40px; border-radius: 50%;
-                  margin: 0 auto; 
-                  img{width: 100%; height: 100%; object-fit: cover;}
+
+            >.wrap{
+              width: 100%;
+
+              .list{
+                width: 100%; padding: 10px;
+                display: flex;
+                border-top: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+      
+                .writerInfo{
+                  flex:1; 
+                  .userIcon{
+                    width: 40px; height: 40px; border-radius: 50%;
+                    margin: 0 auto; 
+                    img{width: 100%; height: 100%; object-fit: cover;}
+                  }
+                  p{
+                    font: 400 14px/1 'Roboto';
+                    padding: 10px 0;
+                    text-align: center;
+                    color: #777;
+                  }
                 }
-                p{
-                  font: 400 14px/1 'Roboto';
-                  padding: 10px 0;
-                  text-align: center;
-                  color: #777;
+                .photo{
+                  flex:3; 
+                  padding: 0 20px;
+                  img{width: 100%; object-fit: cover;}
+                }
+                .contents{
+                  flex:10;
+                  padding: 0 10px;
+                  span{
+                    font-size: 20px;
+                    color: $red;
+                  }
+                  strong{
+                    font: 400 16px/1 'Roboto';
+                    color: #777;
+                  }
+                  >p{
+                    margin: 20px 0px;
+                    font: 300 16px/1 'Roboto';
+                  }
                 }
               }
-              .photo{
-                flex:3; 
-                padding: 0 20px;
-                img{width: 100%; object-fit: cover;}
-              }
-              .contents{
-                flex:10;
-                padding: 0 10px;
-                span{
-                  font-size: 20px;
-                  color: $red;
-                }
-                strong{
-                  font: 400 16px/1 'Roboto';
-                  color: #777;
-                }
-                >p{
-                  margin: 20px 0px;
-                  font: 300 16px/1 'Roboto';
-                }
-                .plus{
-    
-                }
-              }
-            }
-    
+            } 
             .paignation{
               margin-top: 20px;
               width: 100%;
@@ -487,7 +487,7 @@
         }
 
         /*third board-REVIEW*/
-        &#review{
+        &#review .wrap{
           .list{
             display: flex; flex-wrap: wrap;
 
@@ -536,7 +536,7 @@
       }
     }
 
-    .wrap {
+    >.wrap {
       width: 100%;
       padding: 0px;
       article{
