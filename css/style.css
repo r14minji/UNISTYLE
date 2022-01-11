@@ -483,6 +483,7 @@ table {
               transform: translate(-50%, -50%); }
   .department .members {
     width: 100%;
+    margin-bottom: 100px;
     background: url(../img/texture.jpg) repeat center/contain; }
     .department .members .inner h1 {
       font: 700 36px/1 'Roboto Condensed';
@@ -766,11 +767,11 @@ table {
             .department .members .inner .wrap .profile .txtWrap .txt {
               margin-top: 350px; }
     .department .business {
-      margin-bottom: 150px; }
+      margin-bottom: 100px; }
       .department .business .inner {
         width: 100%;
         height: auto;
-        padding: 0 30px; }
+        padding: 40px 40px 0px; }
         .department .business .inner h1 {
           font-size: 36px;
           margin-bottom: 40px; }
@@ -936,45 +937,30 @@ table {
             min-width: auto;
             height: 540px; }
     .department .business {
-      margin-bottom: 80px;
+      margin-bottom: 50px;
       height: auto; }
       .department .business .inner {
-        padding: 0 20px; }
+        padding: 0 10px; }
         .department .business .inner h1 {
           font-size: 28px;
-          margin-bottom: 20px; }
-        .department .business .inner .wrap .txt {
-          height: auto;
-          padding: 10px 10px; }
-          .department .business .inner .wrap .txt h2 {
-            font-size: 18px;
-            margin-bottom: 10px; }
-          .department .business .inner .wrap .txt p {
-            font-size: 14px;
-            margin-bottom: 10px; }
-          .department .business .inner .wrap .txt a {
-            margin-bottom: 30px; }
-        .department .business .inner .wrap .pic {
-          width: 100%;
-          height: auto;
-          float: none; }
-          .department .business .inner .wrap .pic div:nth-of-type(1) {
-            width: 100%;
-            float: none;
-            height: 100%; }
-          .department .business .inner .wrap .pic div:nth-of-type(2) {
-            width: 100%;
-            float: none;
-            height: 100%; }
-          .department .business .inner .wrap .pic .bigPhoto {
-            width: 100%;
-            height: 300px;
-            height: 300px; }
-          .department .business .inner .wrap .pic .smallPhoto {
-            float: none;
-            width: 100%;
-            height: 300px;
-            display: block; }
+          margin-bottom: 40px;
+          text-align: center; }
+        .department .business .inner .wrap {
+          text-align: center; }
+          .department .business .inner .wrap .txt {
+            height: auto; }
+            .department .business .inner .wrap .txt h2 {
+              font-size: 18px;
+              margin-bottom: 20px; }
+            .department .business .inner .wrap .txt p {
+              font-size: 14px;
+              margin-bottom: 30px; }
+            .department .business .inner .wrap .txt a {
+              margin: 0 auto;
+              font-size: 12px;
+              margin-bottom: 30px; }
+          .department .business .inner .wrap .pic {
+            display: none; }
     .department .innovation {
       margin-bottom: 50px; }
       .department .innovation .inner {
