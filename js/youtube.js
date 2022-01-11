@@ -19,9 +19,6 @@ fetch(url)
 
   items.forEach(item =>{
     let title = item.snippet.title;
-    // if(title.length >32) {
-    //   title = title.substr(0,32) + '...';
-    // }
 
     let con = item.snippet.description;
     if(con.length > 350){
@@ -60,7 +57,7 @@ vidList.addEventListener("click", e => {
   if(e.target.closest("a") == null) return;
   const vidId = e.target.closest("a").getAttribute("href");
   const count = e.target.closest("article").querySelector("strong").innerText;  
-  const title = e.target.closest("article").querySelector("h2").innerText;  
+  const title = e.target.closest("article").querySelector("h1").innerText;  
   const des = e.target.closest("article").querySelector("p").innerText;  
   
   const pop = document.createElement("aside");
@@ -69,15 +66,8 @@ vidList.addEventListener("click", e => {
   body.style.overflow = "hidden";
 
   pop.innerHTML = `
-  <div class="inner">
-    <div class="con">
-      <strong>${count}</strong>
-      <h1>${title}</h1>
-      <p>${des}</p>
-    </div>
-    <iframe src="https://www.youtube.com/embed/${vidId}" frameborder="0" height="100%" allowfullscreen ></iframe>
-    <span>Close</span>
-  </div>
+    <iframe src="https://www.youtube.com/embed/${vidId}" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
+    <span><i class="far fa-window-close"></i></span>
   `;
 
   body.append(pop);
@@ -87,10 +77,13 @@ vidList.addEventListener("click", e => {
 //팝업 닫기
 body.addEventListener("click", e=> {
   const pop = e.currentTarget.querySelector("aside");
+  console.log(pop)
 
   if(pop != null) {
     const close = pop.querySelector("span");
-    if(e.target == close){
+    console.log(e.target)
+
+    if(e.target.parentNode == close){
       pop.remove();
       body.style.overflow = "visible";
     }
