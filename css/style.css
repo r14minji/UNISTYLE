@@ -2432,6 +2432,52 @@ aside.popup_youtube {
       color: orange;
       cursor: pointer; }
 
+/*tablet*/
+@media screen and (max-width: 1179px) {
+  .youtube .inner #vidList .wrap article {
+    padding: 0px 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+    .youtube .inner #vidList .wrap article h1 {
+      font-size: 48px;
+      line-height: 1.1;
+      margin-bottom: 40px;
+      word-break: break-all; }
+    .youtube .inner #vidList .wrap article .txt {
+      width: 100%;
+      padding: 0px; }
+      .youtube .inner #vidList .wrap article .txt strong {
+        position: static;
+        margin-bottom: 20px; }
+      .youtube .inner #vidList .wrap article .txt p {
+        min-height: auto;
+        margin-bottom: 20px; }
+      .youtube .inner #vidList .wrap article .txt span {
+        margin-bottom: 20px; }
+  .youtube .inner #vidList .wrap .pic {
+    width: 100%;
+    min-width: auto;
+    max-width: 450px; } }
+/*mobile*/
+@media screen and (max-width: 539px) {
+  .youtube .inner #vidList .wrap article {
+    padding: 0px 0px; }
+    .youtube .inner #vidList .wrap article h1 {
+      font-size: 7vw;
+      margin-bottom: 20px; }
+    .youtube .inner #vidList .wrap article .txt strong {
+      font-size: 40px; }
+      .youtube .inner #vidList .wrap article .txt strong::after {
+        width: 60px; }
+    .youtube .inner #vidList .wrap article .txt p {
+      font-size: 16px; }
+    .youtube .inner #vidList .wrap article .txt span {
+      font-size: 16px; }
+  .youtube .inner #vidList .wrap .pic {
+    width: 100%;
+    max-width: 100%; } }
 /*----- gallery sub_visual ------------------*/
 .gallery .sub_visual {
   background: url(../img/sub4.jpg) no-repeat center/cover; }
