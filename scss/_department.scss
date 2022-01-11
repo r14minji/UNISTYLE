@@ -67,18 +67,10 @@
 
           >div{
             width: 100%; height: 100%;
-
             position: absolute; bottom: 0; left: 0;
-            
             opacity: 0; 
             transition: opacity 1.5s;
-            // translateY(100px);  transition: opacity 2.5s, transform 2.5s;
-
-
-            &.on{ 
-              opacity: 1; 
-              //transform: translateY(0px);
-            }
+            &.on{  opacity: 1;  }
 
             .title{
               width: 40%;
@@ -112,7 +104,7 @@
       }
     }
   }
-  
+
   /*----- section - members ------------*/
   .members{
     width: 100%;
@@ -430,41 +422,27 @@
       }
     }
 
-    /*----- section_members -----------------------------------*/
+    /*----- section_members -------------*/
     .members{
-      margin-bottom: 0px ;
       .inner{
-        width: 100%; height: auto;
-        padding: 0 30px;
-        h1{
-          font-size: 32px;
-          margin-bottom:80px; 
-        }
+        width: 100%;
+        padding: 80px 40px 0px;
+
+        h1{ font-size: 32px; margin-bottom:80px; }
 
         .wrap{
-          width: 100%;
-          position: relative;
-          display: flex; justify-content: center; flex-wrap: wrap;
+          justify-content: space-around;
 
           .profile{
-            float:none;
-            width: 24%;
-            min-width: 220px; height: 620px;
-            transform: translateY(0px);
-            &:nth-of-type(2n){
-              transform: translateY(0px);
-            }
+            width: 33.33%;  height: 620px; min-width: 250px;
 
             .person{
               width: 100%; height: 340px;
-              img{
-                filter: grayscale(0%);
-              }
             }
             .txtWrap{
-              opacity: 1;
+              opacity: 1; border: none;
               .txt{
-                margin-top: 330px;
+                margin-top: 350px;
               }
             }
           }
@@ -595,7 +573,7 @@
 
           #btns{
             width: 100%; height: 80px;
-            li{
+            li{  
               padding: 10px 5px;
 
               a{
@@ -611,7 +589,7 @@
 
             >div{
               width: 100%; height: 100%;
-              padding: 10px;position: relative;
+              padding: 10px;
 
               .title{
                 width: 100%; height: auto;
@@ -637,18 +615,14 @@
       }
     }
 
-    /*----- section_members -----------------------------------*/
+    /*----- section_members ------------*/
     .members{
-      margin-bottom: 00px;
-      padding: 0;
+      margin-bottom: 80px;
 
       .inner{
-        padding: 30px 20px;
+        padding: 80px 10px;
 
-        h1{
-          font-size: 28px;
-          margin-bottom: 20px; 
-        }
+        h1{ font-size: 28px; margin-bottom: 60px; text-align: center;}
 
         .wrap{
           width: 100%;
@@ -657,39 +631,10 @@
           margin: 0 auto;
 
           .profile{
-            margin: 0px;
-            width: 100%;
-            min-width: auto; height: auto;
-            position: static;
+            width: 320px; margin: 0 auto;
+            min-width: auto; height: 540px;
 
-            &:nth-of-type(2n-1){
-              transform: translateY(0px);
-            }
-    
-            &:hover{
-              transform: translateY(0px); z-index: 0;
-              .person img{filter: grayscale(0%); transform:scale(1)}
-              .txtWrap {
-                opacity: 1;
-                transform: scale3d(1,1,1);
-              }
-            }
 
-            .person{
-              width: 100%;
-              height: 300px;
-              transform: scale(1.0);
-            }
-            .txtWrap{
-              width: 100%; height: 100%;
-              position: static;
-              border: none;
-
-              .txt{
-                margin-top: 0px;
-                margin-bottom: 40px;
-              }
-            }
           }
         }
       }
