@@ -868,7 +868,7 @@ table {
     /*----- section_value -----------------*/
     /*----- section_members ------------*/
     /*----- section_business --------------------------------------*/
-    /*----- section_innovation -----------------------------------*/ }
+    /*----- section_innovation -----------*/ }
     .department .value {
       margin-bottom: 80px; }
       .department .value .inner {
@@ -976,47 +976,46 @@ table {
             height: 300px;
             display: block; }
     .department .innovation {
-      margin-bottom: 80px; }
+      margin-bottom: 50px; }
       .department .innovation .inner {
-        padding: 0 10px; }
+        padding: 0px 10px; }
         .department .innovation .inner h1 {
           font-size: 28px;
-          margin-bottom: 40px; }
+          margin-bottom: 40px;
+          text-align: center; }
         .department .innovation .inner ul {
-          display: block;
-          width: 100%; }
+          width: 300px; }
           .department .innovation .inner ul li {
-            margin: 10px 10px;
             width: 100%; }
-            .department .innovation .inner ul li:last-child {
-              margin-right: 10px; }
             .department .innovation .inner ul li .ideas {
               display: block;
-              width: 540px;
-              height: 80px; }
+              width: 100%;
+              height: 150px; }
               .department .innovation .inner ul li .ideas .icon {
-                width: 30%;
-                height: 80px;
                 float: left;
-                margin-right: 3%; }
+                width: 90px;
+                height: 90px;
+                margin-right: 30px;
+                margin-bottom: 0; }
+                .department .innovation .inner ul li .ideas .icon i {
+                  font-size: 30px; }
               .department .innovation .inner ul li .ideas span {
-                float: left;
-                display: block;
-                width: 33.33%;
-                max-width: auto;
-                height: 60px;
-                line-height: 60px;
-                margin: 0px 0;
-                text-align: center; }
-              .department .innovation .inner ul li .ideas p {
-                float: left;
-                display: block;
-                width: 33.33%;
-                max-width: auto;
+                width: 180px;
                 height: 40px;
-                margin: 0px 0;
-                line-height: 1.2;
-                text-align: center; } }
+                line-height: 40px;
+                font-size: 24px; }
+                .department .innovation .inner ul li .ideas span strong {
+                  margin-left: 10px;
+                  font-size: 18px; }
+              .department .innovation .inner ul li .ideas p {
+                float: right;
+                display: block;
+                width: 180px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 16px;
+                text-align: center;
+                margin: 0px; } }
 .community .sub_visual {
   background: url(../img/sub3.jpg) no-repeat center/cover; }
 .community .inner section {
