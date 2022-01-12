@@ -2786,7 +2786,7 @@ aside.popup_youtube {
         #header .inner .menuMo #gnbMo > li > a > img {
           display: none; }
 
-/* ----- section1/visual -------------------------------------------*/
+/* ----- div - 1visual -------------------------------------------*/
 #visual {
   width: 100%;
   background: #101820; }
@@ -2831,7 +2831,7 @@ aside.popup_youtube {
           font-size: 14px;
           color: #aaa; }
 
-/* ----- section2/history -------------------------------------------*/
+/* ----- div - 2history -------------------------------------------*/
 #history {
   width: 100%;
   background: #101820; }
@@ -2937,7 +2937,7 @@ aside.popup_youtube {
             opacity: 1;
             transform: translateX(10px); }
 
-/* ----- section3/theViews -----------------------------------------*/
+/* ----- section3 - theViews -----------------------------------------*/
 #views {
   width: 100%;
   height: 570px; }
@@ -3000,10 +3000,16 @@ aside.popup_youtube {
             opacity: 1;
             transform: translateX(10px); }
 
-/* ----- section4/vid ------------------------------------------------*/
+/* ----- section4 - vid ------------------------------------------------*/
 #vid {
   width: 100%;
-  height: 700px; }
+  height: 700px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 0.5s; }
+  #vid.on {
+    opacity: 1;
+    transform: translateY(0px); }
   #vid .inner {
     width: 1180px;
     height: 100%;
@@ -3034,7 +3040,7 @@ aside.popup_youtube {
         letter-spacing: 1px;
         padding: 20px 30px 15px; }
 
-/* ----- section5/museum-------------------------------*/
+/* ----- section5 - museum-------------------------------*/
 #museum {
   width: 100%;
   height: 570px; }
@@ -3096,10 +3102,13 @@ aside.popup_youtube {
             opacity: 1;
             transform: translateX(10px); }
 
-/* ----- section6/experience----------------------------------------*/
+/* ----- section6 - experience----------------------------------------*/
 #experience {
   width: 100%;
-  height: 670px; }
+  height: 570px; }
+  #experience.on .bgWrap .inner .wrap article {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px); }
   #experience .bgWrap {
     width: 100%;
     height: 100%;
@@ -3108,7 +3117,7 @@ aside.popup_youtube {
       width: 1180px;
       height: 570px;
       margin: 0 auto;
-      padding-top: 200px; }
+      padding-top: 100px; }
       #experience .bgWrap .inner h1 {
         font: 700 28px/1 'roboto condensed';
         color: #fff;
@@ -3126,9 +3135,18 @@ aside.popup_youtube {
         justify-content: center; }
         #experience .bgWrap .inner .wrap article {
           width: 280px;
-          margin-right: 30px; }
+          margin-right: 30px;
+          opacity: 0;
+          transform: rotateY(200deg) translateY(100px);
+          transition: 0.5s; }
           #experience .bgWrap .inner .wrap article:nth-of-type(3) {
             margin-right: 0; }
+          #experience .bgWrap .inner .wrap article:nth-of-type(1) {
+            transition-delay: 0s; }
+          #experience .bgWrap .inner .wrap article:nth-of-type(2) {
+            transition-delay: 0.2s; }
+          #experience .bgWrap .inner .wrap article:nth-of-type(3) {
+            transition-delay: 0.4s; }
           #experience .bgWrap .inner .wrap article .ExPic {
             width: 100%;
             height: 170px;
@@ -3156,11 +3174,14 @@ aside.popup_youtube {
             #experience .bgWrap .inner .wrap article .ExTxt a i {
               margin-left: 10px; }
 
-/* ----- section7/bathroom--------------------------------------------*/
+/* ----- section7 - bathroom--------------------------------------------*/
 #bathroom {
   width: 100%;
   height: 672px;
   background: #101820; }
+  #bathroom.on .inner .bathPic {
+    opacity: 1;
+    transform: translateY(0px); }
   #bathroom .inner {
     width: 1180px;
     height: 100%;
@@ -3168,7 +3189,10 @@ aside.popup_youtube {
     position: relative; }
     #bathroom .inner .bathPic {
       width: 100%;
-      height: 440px; }
+      height: 440px;
+      opacity: 0;
+      transform: translateY(100px);
+      transition: 0.5s; }
       #bathroom .inner .bathPic img {
         width: 100%;
         height: 100%;
@@ -3191,7 +3215,7 @@ aside.popup_youtube {
         letter-spacing: 1px;
         padding: 20px 30px 15px; }
 
-/* ----- section8/home ------------------------------------------------*/
+/* ----- section8 - home ------------------------------------------------*/
 #home {
   width: 100%;
   height: 570px; }
@@ -3255,9 +3279,15 @@ aside.popup_youtube {
             opacity: 1;
             transform: translateX(10px); }
 
-/* ----- section9/stories  --------------------------------------------*/
+/* ----- section9 - stories  --------------------------------------------*/
 #stories {
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 0.5s; }
+  #stories.on {
+    opacity: 1;
+    transform: translateY(0px); }
   #stories h1 {
     font: 700 28px/1 'roboto condensed';
     color: #333;
@@ -3271,31 +3301,34 @@ aside.popup_youtube {
     margin-bottom: 20px;
     text-align: center; }
   #stories .mySwiper {
-    width: 100%; }
-    #stories .mySwiper figure {
-      height: 223px; }
-      #stories .mySwiper figure img {
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px; }
+    #stories .mySwiper .gallPic {
+      height: 223px;
+      margin-bottom: 40px; }
+      #stories .mySwiper .gallPic img {
         width: 100%;
         height: 100%;
         object-fit: cover; }
-      #stories .mySwiper figure .storyTxt {
+      #stories .mySwiper .gallPic .storyTxt {
         margin: 0 10px;
         position: relative;
         transform: translateY(0px);
         transition: transform 0.35s; }
-        #stories .mySwiper figure .storyTxt h3 {
+        #stories .mySwiper .gallPic .storyTxt h3 {
           font: 300 14px/20px 'roboto condensed';
           color: #fff;
           position: absolute;
           bottom: 30px;
           left: 0; }
-        #stories .mySwiper figure .storyTxt > p {
+        #stories .mySwiper .gallPic .storyTxt > p {
           font: 300 14px/20px 'roboto condensed';
           color: #fff;
           position: absolute;
           bottom: 10px;
           left: 0; }
-      #stories .mySwiper figure figcaption {
+      #stories .mySwiper .gallPic .gallTxt {
         padding: 10px;
         color: #555;
         text-transform: uppercase;
@@ -3307,48 +3340,58 @@ aside.popup_youtube {
         color: #333;
         transition: 0.5s;
         opacity: 0; }
-        #stories .mySwiper figure figcaption > p {
+        #stories .mySwiper .gallPic .gallTxt > p {
           float: left;
           line-height: 30px;
           position: absolute; }
-          #stories .mySwiper figure figcaption > p span {
+          #stories .mySwiper .gallPic .gallTxt > p span {
             font-weight: blod; }
-        #stories .mySwiper figure figcaption > ul {
+        #stories .mySwiper .gallPic .gallTxt > ul {
           display: flex;
           justify-content: flex-end;
           align-items: center; }
-          #stories .mySwiper figure figcaption > ul li {
+          #stories .mySwiper .gallPic .gallTxt > ul li {
             margin: 5px;
             height: auto;
             transition: transform 0.35s;
             transform: translate3d(0, 200%, 0); }
-      #stories .mySwiper figure:hover .storyTxt {
+      #stories .mySwiper .gallPic:hover .storyTxt {
         transform: translateY(-160px); }
-      #stories .mySwiper figure:hover figcaption {
+      #stories .mySwiper .gallPic:hover figcaption {
         color: #fff;
         opacity: 1;
         position: relative;
         bottom: 30%;
         background: rgba(0, 0, 0, 0.8); }
-        #stories .mySwiper figure:hover figcaption li {
+        #stories .mySwiper .gallPic:hover figcaption li {
           transform: translate3d(0, 0, 0);
           color: #ffff; }
-          #stories .mySwiper figure:hover figcaption li:nth-of-type(1) {
+          #stories .mySwiper .gallPic:hover figcaption li:nth-of-type(1) {
             transition-delay: 0.1s; }
-          #stories .mySwiper figure:hover figcaption li:nth-of-type(2) {
+          #stories .mySwiper .gallPic:hover figcaption li:nth-of-type(2) {
             transition-delay: 0.15s; }
-          #stories .mySwiper figure:hover figcaption li:nth-of-type(3) {
+          #stories .mySwiper .gallPic:hover figcaption li:nth-of-type(3) {
             transition-delay: 0.2s; }
+    #stories .mySwiper .swiper-pagination {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
 
-/* ----- section10/area  ---------------------------------------------*/
+/* ----- section10 - area  ---------------------------------------------*/
 #area {
   width: 100%;
   height: 600px; }
+  #area.on .inner {
+    opacity: 1;
+    transform: translateY(0px); }
   #area .inner {
     width: 1180px;
     height: 100%;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.5s; }
     #area .inner .areaPic {
       width: 1100px;
       height: 440px;
@@ -3383,6 +3426,18 @@ aside.popup_youtube {
           #area .inner .desBtn ul li i {
             color: #fff;
             font-size: 10px; }
+
+section figure, section figcaption {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 0.5s; }
+section figure {
+  transition-delay: 0s; }
+section figcaption {
+  transition-delay: 0.2s; }
+section:nth-of-type(2).on figure, section:nth-of-type(2).on figcaption, section#museum.on figure, section#museum.on figcaption, section#home.on figure, section#home.on figcaption {
+  opacity: 1;
+  transform: translateY(0px); }
 
 /*----- footer --------------------------------------------------------*/
 #footer {

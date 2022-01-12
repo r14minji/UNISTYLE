@@ -1,6 +1,17 @@
 const btnCall = document.querySelector(".btnCall");
 const menuMo = document.querySelector(".menuMo");
 const gnb_lis = document.querySelectorAll(".gnbWrap ul>li")
+const sections = document.querySelectorAll("section");
+console.log(sections);
+const len = sections.length;
+const lis = document.querySelectorAll(".btns li");
+const speed = 500;
+const btns_arr = Array.from(lis);
+let posArr = [];
+const baseLine= -500;
+const enableClick = true;
+
+setPos();
 
 //반응형 메뉴버튼
 btnCall.addEventListener("click", e =>{
@@ -50,7 +61,7 @@ gnb_lis.forEach( li=>{
 })
 
 
-
+//스와이퍼 연결
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   spaceBetween: 30,
@@ -65,3 +76,22 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+//스크롤 모션
+window.addEventListener("scroll", e =>{
+  let scroll = window.scrollY || window.pageYOffset;
+
+  sections.forEach((el, index)=>{
+    el.classList.remove("on");
+    if(scroll >= posArr[index] + baseLine ){
+      sections[index].classList.add("on");
+    } 
+  })
+})
+
+function setPos(){
+  posArr = [];
+  for(let el of sections){
+    posArr.push(el.offsetTop);
+  }
+}
