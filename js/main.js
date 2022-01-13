@@ -8,7 +8,7 @@ const lis = document.querySelectorAll(".btns li");
 const speed = 500;
 const btns_arr = Array.from(lis);
 let posArr = [];
-const baseLine= -500;
+const baseLine= -700;
 const enableClick = true;
 
 setPos();
