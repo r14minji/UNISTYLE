@@ -1,6 +1,7 @@
+const different = document.querySelector(".different .wrap");
 const btnCall = document.querySelector(".btnCall");
 const menuMo = document.querySelector(".menuMo");
-const gnb_lis = document.querySelectorAll(".gnbWrap ul>li")
+const gnb_lis = document.querySelectorAll(".gnbWrap ul>li");
 const sections = document.querySelectorAll("section");
 const len = sections.length;
 const lis = document.querySelectorAll(".btns li");
@@ -8,9 +9,9 @@ const swiper_check = document.querySelector(".mySwiper");
 const speed = 500;
 const btns_arr = Array.from(lis);
 let posArr = [];
-const baseLine= -700;
+const baseLine= -400;
 
-setPos();
+//setPos();
 
 //반응형 메뉴버튼
 btnCall.addEventListener("click", e =>{
@@ -60,24 +61,24 @@ gnb_lis.forEach( li=>{
 })
 
   //스와이퍼 연결
-if(swiper_check !== null){
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    loop: true,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-}
+// if(swiper_check !== null){
+//   var swiper = new Swiper(".mySwiper", {
+//     slidesPerView: 4,
+//     spaceBetween: 30,
+//     //loop: true,
+//     //centeredSlides: true,
+//     // autoplay: {
+//     //   delay: 2500,
+//     //   disableOnInteraction: false,
+//     // },
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//   });
+// }
 
-
+/*
 
 //스크롤 모션
 window.addEventListener("scroll", e =>{
@@ -96,4 +97,39 @@ function setPos(){
   for(let el of sections){
     posArr.push(el.offsetTop);
   }
+}
+ */
+
+callData();
+
+//api 데이터 불러오기
+function callData(){
+  const url = "/dbs/aboutus.json";
+
+  fetch(url)
+  .then(data =>{
+    return data.json();
+  })
+  .then(json =>{
+    //console.log(json);
+    let icons = json.different;
+    createDifference(icons);
+  })
+}
+
+
+function createDifference(icons){
+  let contents = "";
+  icons.forEach( icon =>{
+    contents += `
+    <article>
+      <div class="pic">
+        <img src="${icon.imgSrc}" alt="${icon.title}을 상징으로 표현한  ${icon.alt}이미지 입니다.">
+      </div>
+      <h1>${icon.title}</h1>
+      <p>${icon.description}</p>
+    </article>
+    `
+  })
+  different.innerHTML = contents;
 }
