@@ -13,7 +13,7 @@
       "email" : "lene@unistyle.co.kr"
     },
     {
-      "imgSrc" : "/img/person3.jpg",
+      "imgSrc" : "/img/person4.jpg",
       "name" : "Robyn Kanner",
       "position" : "Senior colourist",
       "email" : "mathias@unistyle.co.kr"
@@ -43,6 +43,26 @@
     {
       "title" : "love it with confidence",
       "contents" : "We know you'll love your new sofa, but you'll love it even more knowing it's covered by our exceptional warranty."
+    }
+  ],
+  "different" : [
+    {
+      "imgSrc" : "/img/furniture_sturdy.png",
+      "title" : "Sturdier Construction",
+      "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas cum enim nobis voluptate vero atque, asperiores reiciendis nesciunt consequatur accusamus praesentium.",
+      "alt" : "힘자랑하는 팔 모양"
+    },
+    {
+      "imgSrc" : "/img/furniture_pet.png",
+      "title" : "Pet & Kid Compatible",
+      "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas cum enim nobis voluptate vero atque, asperiores reiciendis nesciunt consequatur accusamus praesentium.",
+      "alt" : "고양이"
+    },
+    {
+      "imgSrc" : "/img/furniture_eco.png",
+      "title" : "Vegan & Eco Options",
+      "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas cum enim nobis voluptate vero atque, asperiores reiciendis nesciunt consequatur accusamus praesentium.",
+      "alt" : "나뭇잎"
     }
   ]
 }
