@@ -2252,11 +2252,15 @@ table {
   .youtube .inner .txtArea {
     margin-bottom: 100px; }
     .youtube .inner .txtArea h1 {
-      font: 700 36px/1.2 'Roboto condensed';
-      margin-bottom: 10px;
+      font: 700 16px/1 'Roboto Condensed';
+      color: #821002;
+      margin-bottom: 20px;
       text-align: center; }
     .youtube .inner .txtArea p {
-      font: 300 24px/1.2 'Roboto condensed';
+      width: 80%;
+      margin: 0 auto;
+      font: 300 16px/1.4 'Roboto';
+      word-break: break-all;
       text-align: center; }
   .youtube .inner #vidList {
     width: 100%;
@@ -2269,10 +2273,9 @@ table {
       flex-wrap: wrap;
       justify-content: space-between; }
       .youtube .inner #vidList .wrap article h1 {
-        width: 100%;
-        font: 700 60px/1.2 'Roboto condensed';
-        margin-bottom: 100px;
-        word-break: break-all; }
+        font: 700 40px/1.2 'Roboto Condensed';
+        letter-spacing: 2px;
+        margin-bottom: 60px; }
       .youtube .inner #vidList .wrap article .txt {
         width: 40%;
         padding: 60px 0px 0px;
@@ -2283,7 +2286,7 @@ table {
         .youtube .inner #vidList .wrap article .txt strong {
           display: block;
           font: 600 54px/1 'Roboto condensed';
-          color: #ddd;
+          color: #821002;
           position: absolute;
           top: 10px;
           left: 0px; }
@@ -2292,12 +2295,11 @@ table {
             display: block;
             width: 80px;
             height: 6px;
-            background: #821002; }
+            background: #d1ac8f; }
         .youtube .inner #vidList .wrap article .txt p {
-          font: 400 18px/1.2 'Roboto condensed';
-          min-height: 150px;
-          margin-bottom: 20px;
-          overflow: hidden; }
+          font: 300 18px/1.4 'Roboto';
+          word-break: break-all;
+          margin-bottom: 20px; }
         .youtube .inner #vidList .wrap article .txt span {
           display: block;
           font: 300 18px/1 'Roboto condensed'; }
@@ -2353,7 +2355,7 @@ aside.popup_youtube {
     align-content: center;
     margin-bottom: 120px; }
     .youtube .inner #vidList .wrap article h1 {
-      font-size: 48px;
+      font-size: 42px;
       line-height: 1.1;
       margin-bottom: 40px;
       word-break: break-all; }
@@ -2375,10 +2377,10 @@ aside.popup_youtube {
 /*mobile*/
 @media screen and (max-width: 539px) {
   .youtube .inner #vidList .wrap article {
-    padding: 0px 0px;
+    padding: 0px 20px;
     margin-bottom: 80px; }
     .youtube .inner #vidList .wrap article h1 {
-      font-size: 7vw;
+      font-size: 28px;
       margin-bottom: 20px; }
     .youtube .inner #vidList .wrap article .txt strong {
       font-size: 40px; }

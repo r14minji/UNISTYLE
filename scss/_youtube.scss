@@ -9,12 +9,14 @@
       margin-bottom: 100px;
 
       h1{
-        font: 700 36px/1.2 'Roboto condensed';
-        margin-bottom: 10px; text-align: center;
+        font:700 16px/1 'Roboto Condensed'; 
+        color:$red; margin-bottom: 20px;
+        text-align: center;
       }
       p{
-        font: 300 24px/1.2 'Roboto condensed';
-        text-align: center;
+        width: 80%; margin:0 auto;
+        font:300 16px/1.4 'Roboto'; 
+        word-break:break-all; text-align: center;
       }
     }
 
@@ -28,9 +30,9 @@
           display: flex; flex-wrap: wrap; justify-content: space-between;
 
           h1{
-            width: 100%;
-            font: 700 60px/1.2 'Roboto condensed';
-            margin-bottom: 100px; word-break:break-all;
+            font: 700 40px/1.2 'Roboto Condensed'; 
+            letter-spacing: 2px;
+            margin-bottom: 60px;// word-break:break-all;
           }
           .txt{
             width: 40%;
@@ -40,20 +42,18 @@
             strong{
               display:block;
               font: 600 54px/1 'Roboto condensed';
-              color:#ddd;
+              color:$red;
               position: absolute; top: 10px; left: 0px;
 
               &::after{
                 content:""; display: block; 
-                width: 80px; height: 6px; background: $red;
-                
+                width: 80px; height: 6px; background: $gold;
               }
             }
             p{
-              font:400 18px/1.2 'Roboto condensed';
-              min-height: 150px;
+              font:300 18px/1.4 'Roboto'; 
+              word-break:break-all;
               margin-bottom: 20px;
-              overflow: hidden;
             }
             span{
               display: block; 
@@ -115,7 +115,7 @@ aside.popup_youtube{
           justify-content: center; align-items: center; align-content: center;
           margin-bottom: 120px;
 
-          h1{ font-size: 48px; line-height:1.1; margin-bottom: 40px; word-break:break-all;}
+          h1{ font-size: 42px; line-height:1.1; margin-bottom: 40px; word-break:break-all;}
           .txt{
             width: 100%; padding: 0px;
             strong{ position: static; margin-bottom: 20px;}
@@ -138,10 +138,10 @@ aside.popup_youtube{
     .inner{
       #vidList .wrap{
         article{
-          padding: 0px 0px;
+          padding: 0px 20px;
           margin-bottom: 80px;
 
-          h1{ font-size: 7vw; margin-bottom: 20px; }
+          h1{ font-size: 28px; margin-bottom: 20px; }
           .txt{
             
             strong{ 

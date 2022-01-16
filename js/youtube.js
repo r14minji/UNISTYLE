@@ -21,9 +21,9 @@ fetch(url)
     let title = item.snippet.title;
 
     let con = item.snippet.description;
-    if(con.length > 350){
-      con =  con.substr(0, 350);
-    }
+    let con_len = con.length;
+
+    (con_len > 350) ? con = con.substr(0,350)+"..." : con;
 
     let date = item.snippet.publishedAt;
     date = date.split("T")[0];
