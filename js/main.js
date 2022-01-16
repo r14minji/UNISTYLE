@@ -2,14 +2,13 @@ const btnCall = document.querySelector(".btnCall");
 const menuMo = document.querySelector(".menuMo");
 const gnb_lis = document.querySelectorAll(".gnbWrap ul>li")
 const sections = document.querySelectorAll("section");
-console.log(sections);
 const len = sections.length;
 const lis = document.querySelectorAll(".btns li");
+const swiper_check = document.querySelector(".mySwiper");
 const speed = 500;
 const btns_arr = Array.from(lis);
 let posArr = [];
 const baseLine= -700;
-const enableClick = true;
 
 setPos();
 
@@ -60,22 +59,25 @@ gnb_lis.forEach( li=>{
   }
 })
 
+  //스와이퍼 연결
+if(swiper_check !== null){
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
 
-//스와이퍼 연결
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
-  spaceBetween: 30,
-  loop: true,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+
 
 //스크롤 모션
 window.addEventListener("scroll", e =>{

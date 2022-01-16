@@ -42,14 +42,14 @@ function convertSpeed(item){
 
 //api 데이터 불러오기
 function callData(){
-  const url = "../js/dbs/member.json";
+  const url = "/dbs/member.json";
 
   fetch(url)
   .then(data =>{
     return data.json();
   })
   .then(json =>{
-    console.log(json);
+    //console.log(json);
     let items = json.members;
 
     createMembers(items);

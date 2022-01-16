@@ -2245,68 +2245,79 @@ table {
               width: 100%; }
               .location .inner #store .wrap article .txt ul li span a {
                 font-size: 14px; } }
-/*----- youtube sub_visual ------------------*/
 .youtube .sub_visual {
   background: url(../img/sub2.jpg) no-repeat center/cover; }
-.youtube .inner #vidList {
-  width: 100%;
-  position: relative; }
-  .youtube .inner #vidList .wrap article {
+.youtube .inner {
+  padding-top: 80px; }
+  .youtube .inner .txtArea {
+    margin-bottom: 100px; }
+    .youtube .inner .txtArea h1 {
+      font: 700 36px/1.2 'Roboto condensed';
+      margin-bottom: 10px;
+      text-align: center; }
+    .youtube .inner .txtArea p {
+      font: 300 24px/1.2 'Roboto condensed';
+      text-align: center; }
+  .youtube .inner #vidList {
     width: 100%;
-    padding: 0px 0px 0px 20px;
-    margin-bottom: 150px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .youtube .inner #vidList .wrap article h1 {
+    position: relative; }
+    .youtube .inner #vidList .wrap article {
       width: 100%;
-      font: 700 60px/1.2 'Roboto condensed';
-      margin-bottom: 100px; }
-    .youtube .inner #vidList .wrap article .txt {
-      width: 40%;
-      padding: 60px 0px 0px;
+      padding: 0px 0px 0px 20px;
+      margin-bottom: 150px;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: relative; }
-      .youtube .inner #vidList .wrap article .txt strong {
-        display: block;
-        font: 600 54px/1 'Roboto condensed';
-        color: #ddd;
-        position: absolute;
-        top: 10px;
-        left: 0px; }
-        .youtube .inner #vidList .wrap article .txt strong::after {
-          content: "";
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .youtube .inner #vidList .wrap article h1 {
+        width: 100%;
+        font: 700 60px/1.2 'Roboto condensed';
+        margin-bottom: 100px;
+        word-break: break-all; }
+      .youtube .inner #vidList .wrap article .txt {
+        width: 40%;
+        padding: 60px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative; }
+        .youtube .inner #vidList .wrap article .txt strong {
           display: block;
-          width: 80px;
-          height: 6px;
-          background: #821002; }
-      .youtube .inner #vidList .wrap article .txt p {
-        font: 400 18px/1.2 'Roboto condensed';
-        min-height: 150px;
-        margin-bottom: 20px;
-        overflow: hidden; }
-      .youtube .inner #vidList .wrap article .txt span {
-        display: block;
-        font: 300 18px/1 'Roboto condensed'; }
-    .youtube .inner #vidList .wrap article .pic {
-      width: 50%;
-      min-width: 524px;
-      background: url(../img/vidlist.png) no-repeat center/cover; }
-      .youtube .inner #vidList .wrap article .pic a {
-        display: block;
-        width: 100%; }
-        .youtube .inner #vidList .wrap article .pic a img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          opacity: 0.5;
-          transition: 0.5s; }
-      .youtube .inner #vidList .wrap article .pic:hover {
-        background: none; }
-        .youtube .inner #vidList .wrap article .pic:hover a img {
-          opacity: 1; }
+          font: 600 54px/1 'Roboto condensed';
+          color: #ddd;
+          position: absolute;
+          top: 10px;
+          left: 0px; }
+          .youtube .inner #vidList .wrap article .txt strong::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 6px;
+            background: #821002; }
+        .youtube .inner #vidList .wrap article .txt p {
+          font: 400 18px/1.2 'Roboto condensed';
+          min-height: 150px;
+          margin-bottom: 20px;
+          overflow: hidden; }
+        .youtube .inner #vidList .wrap article .txt span {
+          display: block;
+          font: 300 18px/1 'Roboto condensed'; }
+      .youtube .inner #vidList .wrap article .pic {
+        width: 50%;
+        min-width: 524px;
+        background: url(../img/vidlist.png) no-repeat center/cover; }
+        .youtube .inner #vidList .wrap article .pic a {
+          display: block;
+          width: 100%; }
+          .youtube .inner #vidList .wrap article .pic a img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+            transition: 0.5s; }
+        .youtube .inner #vidList .wrap article .pic:hover {
+          background: none; }
+          .youtube .inner #vidList .wrap article .pic:hover a img {
+            opacity: 1; }
 
 /* aside_popup */
 aside.popup_youtube {
@@ -2593,6 +2604,9 @@ aside.popup_youtube {
     margin: 0 auto;
     padding: 20px 40px;
     font: 5vw/1 'Do Hyeon'; } }
+.aboutus .sub_visual {
+  background: url(../img/sub1.jpg) no-repeat center/cover; }
+
 /*----- header -----------------------------------------------------*/
 #header {
   width: 100%;
