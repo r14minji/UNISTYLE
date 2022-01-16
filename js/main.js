@@ -17,7 +17,7 @@ callData();
 
 //api 데이터 불러오기
 function callData(){
-  const url = "../dbs/aboutus.json";
+  const url = "/js/dbs/aboutus.json";
 
   fetch(url)
   .then(data =>{
