@@ -5,7 +5,8 @@ const gnb_lis = document.querySelectorAll(".gnbWrap ul>li");
 const sections = document.querySelectorAll("section");
 const len = sections.length;
 const lis = document.querySelectorAll(".btns li");
-const swiper_check = document.querySelector(".mySwiper");
+const story_check = document.querySelector(".myStory");
+const theViews_check = document.querySelector(".cards");
 const speed = 500;
 const btns_arr = Array.from(lis);
 let posArr = [];
@@ -113,8 +114,8 @@ gnb_lis.forEach( li=>{
 })
 
 //스와이퍼 연결
-if(swiper_check !== null){
-  var swiper = new Swiper(".mySwiper", {
+if(story_check !== null){
+  const storySwiper = new Swiper(".myStory", {
     slidesPerView: 4,
     spaceBetween: 30,
     loop: true,
@@ -142,3 +143,10 @@ if(swiper_check !== null){
     }
   });
 };
+
+if(theViews_check !== null){
+  const theViewsSwiper = new Swiper(".cards", {
+    effect: "cards",
+    grabCursor: true,
+  });
+}
