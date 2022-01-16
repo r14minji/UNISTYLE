@@ -2604,8 +2604,187 @@ aside.popup_youtube {
     margin: 0 auto;
     padding: 20px 40px;
     font: 5vw/1 'Do Hyeon'; } }
-.aboutus .sub_visual {
-  background: url(../img/sub1.jpg) no-repeat center/cover; }
+.aboutus {
+  /* section - howWeWork */ }
+  .aboutus .sub_visual {
+    background: url(../img/sub1.jpg) no-repeat center/cover; }
+  .aboutus .inner {
+    /* section - company */
+    /* sesction - counting */
+    /* section - team memeber */ }
+    .aboutus .inner .company {
+      padding: 10px 0;
+      margin-bottom: 140px; }
+      .aboutus .inner .company h1 {
+        font: 700 16px/1 'Roboto Condensed';
+        color: #821002;
+        margin-bottom: 20px; }
+      .aboutus .inner .company h2 {
+        font: 700 48px/1.2 'Roboto Condensed';
+        letter-spacing: 2px;
+        margin-bottom: 60px; }
+      .aboutus .inner .company .wrap {
+        display: flex;
+        justify-content: flex-end; }
+        .aboutus .inner .company .wrap article {
+          margin-left: 80px;
+          width: 400px; }
+          .aboutus .inner .company .wrap article h3 {
+            font: 500 22px/1 'Roboto';
+            margin-bottom: 10px; }
+          .aboutus .inner .company .wrap article p {
+            font: 300 16px/1.4 'Roboto';
+            word-break: break-all; }
+    .aboutus .inner .counting {
+      padding: 10px 0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 100px; }
+      .aboutus .inner .counting .pic {
+        width: 40%;
+        position: relative;
+        z-index: -1; }
+        .aboutus .inner .counting .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .aboutus .inner .counting .txt {
+        width: 60%;
+        padding: 80px 60px;
+        background: #fcf7f2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        z-index: 2; }
+        .aboutus .inner .counting .txt h1 {
+          font: 700 48px/1.2 'Roboto Condensed';
+          letter-spacing: 2px;
+          margin-bottom: 60px; }
+        .aboutus .inner .counting .txt h2 {
+          font: 500 22px/1 'Roboto';
+          margin-bottom: 60px;
+          word-break: break-all; }
+        .aboutus .inner .counting .txt p {
+          font: 300 16px/1.4 'Roboto';
+          word-break: break-all; }
+      .aboutus .inner .counting .count {
+        width: 100%;
+        padding: 120px 20px 100px;
+        background: #d1ac8f;
+        position: relative;
+        bottom: 60px;
+        z-index: 1; }
+        .aboutus .inner .counting .count ul {
+          display: flex;
+          justify-content: space-around; }
+          .aboutus .inner .counting .count ul li {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: #fff; }
+            .aboutus .inner .counting .count ul li span {
+              font: 700 46px/1 'Roboto Condensed';
+              margin: 20px 10px 20px 0px; }
+            .aboutus .inner .counting .count ul li strong {
+              font: 700 46px/1 'Roboto Condensed';
+              margin: 20px 0px; }
+            .aboutus .inner .counting .count ul li p {
+              width: 100%;
+              text-align: center;
+              font: 500 16px/1 'Roboto'; }
+    .aboutus .inner .team {
+      padding: 10px 0;
+      margin-bottom: 140px; }
+      .aboutus .inner .team h1 {
+        font: 700 16px/1 'Roboto Condensed';
+        color: #821002;
+        margin-bottom: 20px;
+        text-align: center; }
+      .aboutus .inner .team h2 {
+        font: 700 48px/1.2 'Roboto Condensed';
+        letter-spacing: 2px;
+        margin-bottom: 60px;
+        text-align: center; }
+      .aboutus .inner .team .wrap {
+        display: flex;
+        justify-content: space-between; }
+        .aboutus .inner .team .wrap > article {
+          width: 360px;
+          position: relative;
+          border: 1px solid #000; }
+          .aboutus .inner .team .wrap > article .pic {
+            width: 100%;
+            height: 540px; }
+            .aboutus .inner .team .wrap > article .pic img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          .aboutus .inner .team .wrap > article .memberInfo {
+            width: 280px;
+            background: #d1ac8f;
+            padding: 20px 40px;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 0; }
+            .aboutus .inner .team .wrap > article .memberInfo strong {
+              display: block;
+              font: 500 30px/1 'Roboto';
+              margin-bottom: 5px; }
+            .aboutus .inner .team .wrap > article .memberInfo p {
+              font: 300 16px/1 'Roboto';
+              margin-bottom: 5px; }
+            .aboutus .inner .team .wrap > article .memberInfo span {
+              display: block;
+              font: 300 16px/1 'Roboto'; }
+  .aboutus .howWeWork {
+    padding: 10px 0;
+    margin-bottom: 140px; }
+    .aboutus .howWeWork .wrap {
+      display: flex;
+      justify-content: space-between; }
+      .aboutus .howWeWork .wrap .pic {
+        width: 40%; }
+        .aboutus .howWeWork .wrap .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .aboutus .howWeWork .wrap .step {
+        width: 60%;
+        padding: 10px 0 10px 60px; }
+        .aboutus .howWeWork .wrap .step h1 {
+          font: 700 16px/1 'Roboto Condensed';
+          color: #821002;
+          margin-bottom: 20px; }
+        .aboutus .howWeWork .wrap .step h2 {
+          font: 700 48px/1.2 'Roboto Condensed';
+          margin-bottom: 60px; }
+        .aboutus .howWeWork .wrap .step ul li {
+          display: flex;
+          flex-wrap: wrap; }
+          .aboutus .howWeWork .wrap .step ul li strong {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #d1ac8f;
+            color: #fff;
+            text-align: center;
+            font: 700 20px/40px 'Roboto Condensed'; }
+          .aboutus .howWeWork .wrap .step ul li p {
+            width: 90%;
+            padding-left: 20px;
+            font: 700 24px/1 'Roboto Condensed';
+            text-transform: uppercase; }
+          .aboutus .howWeWork .wrap .step ul li span {
+            width: 100%;
+            margin-left: 40px;
+            padding-left: 20px;
+            font: 300 16px/1.4 'Roboto';
+            word-break: break-all;
+            margin-bottom: 40px; }
 
 /*----- header -----------------------------------------------------*/
 #header {
@@ -3441,15 +3620,15 @@ aside.popup_youtube {
             color: #fff;
             font-size: 10px; }
 
-section figure, section figcaption {
+section > figure, section > figcaption {
   opacity: 0;
   transform: translateY(100px);
   transition: 0.5s; }
-section figure {
+section > figure {
   transition-delay: 0s; }
-section figcaption {
+section > figcaption {
   transition-delay: 0.2s; }
-section:nth-of-type(2).on figure, section:nth-of-type(2).on figcaption, section#museum.on figure, section#museum.on figcaption, section#home.on figure, section#home.on figcaption {
+section:nth-of-type(2).on > figure, section:nth-of-type(2).on > figcaption, section#museum.on > figure, section#museum.on > figcaption, section#home.on > figure, section#home.on > figcaption {
   opacity: 1;
   transform: translateY(0px); }
 

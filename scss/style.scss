@@ -886,16 +886,16 @@ $sky: #BFD9EB;
 }
 
 section{
-	figure, figcaption{
+	>figure, >figcaption{
 		opacity: 0; transform: translateY(100px);
 		transition: 0.5s;
 	}
-	figure { transition-delay: 0s;}
-	figcaption { transition-delay: 0.2s;}
+	>figure { transition-delay: 0s;}
+	>figcaption { transition-delay: 0.2s;}
 
 	&:nth-of-type(2),	&#museum, &#home {
 		&.on{
-			figure, figcaption{
+			>figure, >figcaption{
 				opacity: 1; transform: translateY(0px);
 			}
 		}
