@@ -43,9 +43,9 @@
 
       .pic{
         width: 40%; 
-        position: relative;z-index: -1;
+        position: relative; z-index: -1;
         img{
-          width: 100%; height: 100%;
+          width: 100%;
           object-fit: cover;
         }
       }
@@ -226,6 +226,7 @@
                 width: 40px; height: 40px; border-radius: 50%;
                 background: $gold; color: #fff; text-align: center;
                 font:700 20px/40px 'Roboto Condensed';
+                margin-bottom: 10px;
               }
               p{
                 width: 90%; padding-left: 20px;
@@ -237,6 +238,236 @@
                 font:300 16px/1.4 'Roboto'; 
                 word-break:break-all;
                 margin-bottom: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* tablet */
+@media screen and (max-width: $tablet){
+  .aboutus{
+    .inner{
+      /* section - different */
+      .different{
+        >h2{width: 80%;}
+        .wrap{
+          article{
+            width: 30%;
+            h1{ font-size: 20px;}
+          }
+        }
+      }
+
+      /* section - team memeber */
+      .team{
+        .wrap{
+          >article{
+            width: 30%;
+
+            .pic{ width: 100%; height: 400px;}
+
+            .memberInfo{
+              width: 100%;
+              padding: 20px 10px;
+              strong{ font-size: 24px;}
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 768px */
+@media screen and (max-width: 768px){
+  .aboutus{
+    .inner{
+      /* section - company */
+      .company{
+        padding: 10px 0;
+        margin-bottom: 100px;
+        h2{
+          width: 100%;
+          font-size: 30px;
+          margin-bottom: 50px;
+        }
+
+        .wrap{
+          display: flex; justify-content: space-around;
+          article{
+            margin-left: 0px; width: 45%;
+          }
+        }
+      }
+
+      /* sesction - counting */
+      .counting{
+        display: block;
+        margin-bottom: 100px;
+
+        .pic{ display: none;}
+
+        .txt{
+          width: 100%; 
+          position: static; z-index: 0;
+          padding: 40px 30px;
+          h1{
+            font-size: 30px;
+            margin-bottom: 50px;
+          }
+        }
+
+        .count{
+          position: static; 
+          padding: 40px 20px;
+          ul{
+            display: flex; justify-content: flex-start; flex-direction: column;
+          }
+        }
+      }
+
+      /* section - different */
+      .different{
+        margin-bottom: 100px;
+        >h2{
+          width: 100%;
+          font-size: 30px;
+          margin-bottom: 50px;
+        }
+        .wrap{
+          article{
+            h1{  text-align: center;}
+          }
+        }
+      }
+
+      /* section - team memeber */
+      .team{
+        padding: 10px 0;
+        margin-bottom: 100px;
+        h2{
+          width: 100%;
+          font-size: 30px;
+          margin-bottom: 50px;
+        }
+
+        .wrap{
+          justify-content: center; flex-direction: column;
+          >article{
+            width: 100%;
+            margin-bottom: 40px;
+
+            .pic{ width: 100%; height: 80vh;}
+          }
+        }
+      }
+
+      /* section - howWeWork */
+      .howWeWork{
+        padding: 10px 0;
+        margin-bottom: 100px;
+
+        .wrap{
+          .pic{ display: none;}
+      
+          .step{
+            width: 100%; padding: 10px 0px;
+
+            h2{
+              width: 100%;
+              font-size: 30px;
+              margin-bottom: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* mobile */
+@media screen and (max-width: $mobile){
+  .aboutus{
+    .inner{
+      /* section - company */
+      .company{
+        padding: 10px 0;
+        margin-bottom: 80px;
+        h2{
+          font-size: 7vw; word-break:break-all;
+          margin-bottom: 40px;
+        }
+      }
+
+      /* sesction - counting */
+      .counting{
+        display: block;
+        margin-bottom: 80px;
+
+        .txt{
+          padding: 40px 30px;
+          h1{
+            font-size: 7vw; word-break:break-all;
+            margin-bottom: 40px;
+          }
+          h2{margin-bottom: 40px;}
+        }
+      }
+
+      /* section - different */
+      .different{
+        margin-bottom: 80px;
+        >h2{
+          font-size: 7vw; word-break:break-all;
+          margin-bottom: 40px;
+        }
+        .wrap{
+          display: flex; justify-content: center; flex-direction: column;
+          article{
+            width: 100%; margin-bottom: 60px;
+            &:nth-of-type(3){margin-bottom: 0;}
+            h1{  text-align: center;}
+          }
+        }
+      }
+
+      /* section - team memeber */
+      .team{
+        margin-bottom: 80px;
+        h2{
+          font-size: 7vw; word-break:break-all;
+          margin-bottom: 40px;
+        }
+      }
+
+      /* section - howWeWork */
+      .howWeWork{
+        margin-bottom: 80px;
+
+        .wrap{
+          .step{
+            width: 100%; padding: 10px 0px;
+
+            h2{
+              font-size: 7vw; word-break:break-all;
+              margin-bottom: 40px;
+            }
+
+            ul li{
+              p{
+                width: 100%; padding-left: 20px;
+                font:700 24px/1 'Roboto Condensed';
+                text-transform: uppercase;
+              }
+              span{
+                width: 100%; margin-left: 0px; padding-left: 20px;
+                font:300 16px/1.4 'Roboto'; 
+                word-break:break-all;
+                margin-bottom: 10px;
               }
             }
           }
