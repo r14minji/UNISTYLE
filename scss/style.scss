@@ -344,7 +344,26 @@ body {
 }
 /*  section2 - the Views  */
 #views{
-  width: 100%; 
+  width: 100%; position: relative;
+  .custom-shape-divider-top-1642346175 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    svg {
+      position: relative;
+      display: block;
+      width: calc(160% + 1.3px);
+      height: 124px;
+      transform: rotateY(180deg);
+
+      .shape-fill {
+        fill: #101820;
+    }
+  }
+}
 
   .inner{
     width: 1180px; 
@@ -475,7 +494,28 @@ body {
 }
 /*  section4 - vid  */
 #vid{
-  padding: 80px 0px 40px;
+  padding: 80px 0px 40px; position: relative;
+  .custom-shape-divider-bottom-1642346555 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 80px;
+      transform: rotateY(180deg);
+
+      .shape-fill {
+        fill: #101820;
+    }
+  }
+}
 
   .inner{
     width: 1180px;
@@ -512,10 +552,32 @@ body {
 }
 /*  section5 - experience  */
 #experience{
-  background: $green; 
+  background: $green; position: relative;
+
+  .custom-shape-divider-top-1642346770 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 75px;
+      transform: rotateY(180deg);
+
+      .shape-fill {
+        fill: #FFFFFF;
+    }
+  }
+}
+
   
   .bgWrap{
-    padding: 120px 0;
+    padding: 180px 0;
 
     .inner{
       width: 1180px; 
@@ -655,7 +717,26 @@ body {
 }
 /* section7 - stories */
 #stories{
-  padding: 80px 0;
+  padding: 80px 0; position: relative;
+  .custom-shape-divider-bottom-1642346913 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 75px;
+
+      .shape-fill {
+        fill: #101820;
+    }
+  }
+}
 
   h1{
     font: 700 32px/1 'roboto condensed';
