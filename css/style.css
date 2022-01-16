@@ -3785,6 +3785,9 @@ body {
     height: auto; }
     #views .inner {
       width: 100%; }
+    #views .inner .wrap .viewPic .swiper {
+      width: 340px;
+      height: 580px; }
 
   /* section - different */
   .different .inner {
@@ -3946,6 +3949,9 @@ body {
   /*  section2 - theViews   */
   #views .inner .wrap {
     padding: 40px 0; }
+    #views .inner .wrap .viewPic .swiper {
+      width: 240px;
+      height: 400px; }
 
   /* section4 - different */
   .different {
