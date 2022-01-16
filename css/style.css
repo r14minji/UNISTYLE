@@ -3306,7 +3306,7 @@ aside.popup_youtube {
           height: 2px;
           background: #eee;
           position: absolute;
-          top: 59%;
+          bottom: 30%;
           left: 46%; }
       #history .inner .wrap .hisTxt {
         width: 50%; }
