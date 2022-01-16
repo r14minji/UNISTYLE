@@ -32,7 +32,7 @@ $sky: #BFD9EB;
 
 
 
-/*----- header -----------------------------------------------------*/
+/*  header  */
 #header{
   width: 100%;
   background: $green;
@@ -216,7 +216,6 @@ $sky: #BFD9EB;
   }
 }
 
-
 /*  section1 - div visual  */
 #visual{
   width: 100%; 
@@ -306,19 +305,6 @@ $sky: #BFD9EB;
           object-fit: cover; 
           //border: 1px solid  $beige;
         }
-      }
-    }
-    .hisBtn{
-      display: flex;
-      position: absolute; top: 8px; left: 41%;
-      .btnPrev{
-        display: inline-block; width: 30px; height: 30px; border-radius: 50%; border: 1px solid #aaa; text-align: center;
-        font-size: 12px; line-height: 30px; color: #aaa; margin-right: 30px;
-
-      }
-      .btnNext{
-        display: inline-block; width: 30px; height: 30px; border-radius: 50%; border: 1px solid #aaa; text-align: center;
-        font-size: 12px; line-height: 30px;  color: #aaa;
       }
     }
     .hisTxt{
@@ -769,7 +755,6 @@ $sky: #BFD9EB;
 }
 
 
-
 /*----- footer --------------------------------------------------------*/
 #footer{
   width: 100%;
@@ -817,10 +802,9 @@ $sky: #BFD9EB;
 
 
 
-
-/* tablet ------------------------------------------------------------*/
+/* tablet  */
 @media screen and (max-width: $tablet){
-  /*----- header -----------------------------------------------------*/
+  /*  header  */
   #header{
     .inner{
       width: 100%; height: 60px;
@@ -839,8 +823,7 @@ $sky: #BFD9EB;
       }
     }
   }
-
-  /* ----- section1/visual -------------------------------------------*/
+  /*  section1/visual   */
   #visual{
     .inner{
       width: 100%;
@@ -856,17 +839,15 @@ $sky: #BFD9EB;
       }
     }
   }
-
-  /* ----- section2/history -------------------------------------------*/
+  /*  section2/history   */
   #history{
     .inner{
-      width: 100%;  height: 730px;
-      padding-left: 0px; padding-top: 50px;
+      width: 100%; 
+      padding-left: 0px; padding: 50px 0px;
 
       h1{
         width: 100%;
-        font: 700 28px/1.4 'roboto condensed';
-        text-align: center; margin: 0px 0px 40px; padding-right: 0px;
+        text-align: center; margin: 60px 0px 40px; padding-right: 0px;
         position: relative;
 
         &::after{
@@ -875,25 +856,22 @@ $sky: #BFD9EB;
         }
       }
       .hisWrap{
-        position:static;
         width: 100%; height: auto; 
-        display: flex; justify-content: center;
+        justify-content: center;
         margin-bottom: 60px;
-      }
-      .hisBtn{
-        display: flex;
-        position: absolute; top: 48%; left: 50%; transform: translate(-50%, -50%);
-        .btnPrev{ width: 20px; height: 20px;  line-height: 18px; font-size: 10px; }
-        .btnNext{ width: 20px; height: 20px;  line-height: 18px; font-size: 10px; }
+        .hisPic{
+          max-width: 160px; width: 33%;
+        }
       }
       .hisTxt{
-        float:auto;
-        display: block; width: 100%; 
+        float:none;
+        display: block; width: 80%; 
         margin: 0 auto;
+        margin-bottom: 60px;
 
         p{ display: block;  width: 100%; padding: 0px 30px;}
         a{
-          display: block;  margin: 0 30px;
+          display: block;  margin: 0 auto;
           border: none;
           padding: 0px 0px; 
           color: #ccc;
@@ -916,30 +894,19 @@ $sky: #BFD9EB;
       }
     }
   }
-  /* ----- section3/theViews -----------------------------------------*/
+  /*  section3/theViews   */
   #views{
-    height: 500px;
-
+    border: 6px solid orange;
+    height: auto;
     .inner{
       width:100%; 
-      padding: 0;
-      position: relative;
+
+      .wrap{
 
 
-      .viewPic{
-        width: 48%; height: 520px;
-        position: absolute; top: -100px; left: 10px; z-index: 2;
-        img{
-          height: 100%; 
-        }
+
       }
-      .desMore{
-        width: 48%; height: 380px;
-        position: absolute; top: 0px; left: 50%; 
-        padding: 50px 20px;
 
-        h2{  letter-spacing: 2px;}
-      }
     }
   }
 
@@ -953,7 +920,7 @@ $sky: #BFD9EB;
       }
     }
   }
-  /* ----- section4/vid ------------------------------------------------*/
+  /* section4/vid  */
   #vid{
     height: 600px;
 
@@ -967,7 +934,7 @@ $sky: #BFD9EB;
       }
     }
   }
-  /* ----- section5/museum -------------------------------*/
+  /* section5/museum  */
   #museum{
     margin-top: 30px;
     height: 500px;
@@ -1131,6 +1098,10 @@ $sky: #BFD9EB;
     }
   }
 }
+
+
+
+
 
 /* 768px */
 @media screen and (max-width: 768px){
