@@ -3023,6 +3023,10 @@ aside.popup_youtube {
           font: 300 16px/1.4 'Roboto';
           word-break: break-all;
           margin-bottom: 10px; } }
+html,
+body {
+  position: relative; }
+
 /*  header  */
 #header {
   width: 100%;
@@ -3624,82 +3628,74 @@ aside.popup_youtube {
     letter-spacing: 3px;
     margin-bottom: 40px;
     text-align: center; }
-  #stories .mySwiper {
-    width: 100%;
-    position: relative;
+  #stories .swiper-slide .gallPic {
+    height: 223px;
     margin-bottom: 40px; }
-    #stories .mySwiper .gallPic {
-      height: 223px;
-      margin-bottom: 40px; }
-      #stories .mySwiper .gallPic img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-      #stories .mySwiper .gallPic .storyTxt {
-        margin: 0 10px;
-        position: relative;
-        transform: translateY(0px);
-        transition: transform 0.35s; }
-        #stories .mySwiper .gallPic .storyTxt h3 {
-          font: 300 14px/20px 'roboto condensed';
-          color: #fff;
-          position: absolute;
-          bottom: 30px;
-          left: 0; }
-        #stories .mySwiper .gallPic .storyTxt > p {
-          font: 300 14px/20px 'roboto condensed';
-          color: #fff;
-          position: absolute;
-          bottom: 10px;
-          left: 0; }
-      #stories .mySwiper .gallPic .gallTxt {
-        padding: 10px;
-        color: #555;
-        text-transform: uppercase;
-        font-size: 12px;
-        top: auto;
-        bottom: 0;
-        height: 30%;
-        background: #fff;
-        color: #333;
-        transition: 0.5s;
-        opacity: 0; }
-        #stories .mySwiper .gallPic .gallTxt > p {
-          float: left;
-          line-height: 30px;
-          position: absolute; }
-          #stories .mySwiper .gallPic .gallTxt > p span {
-            font-weight: blod; }
-        #stories .mySwiper .gallPic .gallTxt > ul {
-          display: flex;
-          justify-content: flex-end;
-          align-items: center; }
-          #stories .mySwiper .gallPic .gallTxt > ul li {
-            margin: 5px;
-            height: auto;
-            transition: transform 0.35s;
-            transform: translate3d(0, 200%, 0); }
-      #stories .mySwiper .gallPic:hover .storyTxt {
-        transform: translateY(-160px); }
-      #stories .mySwiper .gallPic:hover .gallTxt {
+    #stories .swiper-slide .gallPic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    #stories .swiper-slide .gallPic .storyTxt {
+      margin: 0 10px;
+      position: relative;
+      transform: translateY(0px);
+      transition: transform 0.35s; }
+      #stories .swiper-slide .gallPic .storyTxt h3 {
+        font: 300 14px/20px 'roboto condensed';
         color: #fff;
-        opacity: 1;
-        position: relative;
-        bottom: 30%;
-        background: rgba(0, 0, 0, 0.8); }
-        #stories .mySwiper .gallPic:hover .gallTxt li {
-          transform: translate3d(0, 0, 0);
-          color: #ffff; }
-          #stories .mySwiper .gallPic:hover .gallTxt li:nth-of-type(1) {
-            transition-delay: 0.1s; }
-          #stories .mySwiper .gallPic:hover .gallTxt li:nth-of-type(2) {
-            transition-delay: 0.15s; }
-          #stories .mySwiper .gallPic:hover .gallTxt li:nth-of-type(3) {
-            transition-delay: 0.2s; }
-    #stories .mySwiper .swiper-pagination {
-      position: absolute;
+        position: absolute;
+        bottom: 30px;
+        left: 0; }
+      #stories .swiper-slide .gallPic .storyTxt > p {
+        font: 300 14px/20px 'roboto condensed';
+        color: #fff;
+        position: absolute;
+        bottom: 10px;
+        left: 0; }
+    #stories .swiper-slide .gallPic .gallTxt {
+      padding: 10px;
+      color: #555;
+      text-transform: uppercase;
+      font-size: 12px;
+      top: auto;
       bottom: 0;
-      left: 0; }
+      height: 30%;
+      background: #fff;
+      color: #333;
+      transition: 0.5s;
+      opacity: 0; }
+      #stories .swiper-slide .gallPic .gallTxt > p {
+        float: left;
+        line-height: 30px;
+        position: absolute; }
+        #stories .swiper-slide .gallPic .gallTxt > p span {
+          font-weight: blod; }
+      #stories .swiper-slide .gallPic .gallTxt > ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        #stories .swiper-slide .gallPic .gallTxt > ul li {
+          margin: 5px;
+          height: auto;
+          transition: transform 0.35s;
+          transform: translate3d(0, 200%, 0); }
+    #stories .swiper-slide .gallPic:hover .storyTxt {
+      transform: translateY(-160px); }
+    #stories .swiper-slide .gallPic:hover .gallTxt {
+      color: #fff;
+      opacity: 1;
+      position: relative;
+      bottom: 30%;
+      background: rgba(0, 0, 0, 0.8); }
+      #stories .swiper-slide .gallPic:hover .gallTxt li {
+        transform: translate3d(0, 0, 0);
+        color: #ffff; }
+        #stories .swiper-slide .gallPic:hover .gallTxt li:nth-of-type(1) {
+          transition-delay: 0.1s; }
+        #stories .swiper-slide .gallPic:hover .gallTxt li:nth-of-type(2) {
+          transition-delay: 0.15s; }
+        #stories .swiper-slide .gallPic:hover .gallTxt li:nth-of-type(3) {
+          transition-delay: 0.2s; }
 
 /*  footer  */
 #footer {

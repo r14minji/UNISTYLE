@@ -12,6 +12,58 @@ let posArr = [];
 const baseLine= -400;
 
 //setPos();
+callData();
+
+//api 데이터 불러오기
+function callData(){
+  const url = "/dbs/aboutus.json";
+
+  fetch(url)
+  .then(data =>{
+    return data.json();
+  })
+  .then(json =>{
+    //console.log(json);
+    let icons = json.different;
+    createDifference(icons);
+  })
+}
+
+function createDifference(icons){
+  let contents = "";
+  icons.forEach( icon =>{
+    contents += `
+    <article>
+      <div class="pic">
+        <img src="${icon.imgSrc}" alt="${icon.title}을 상징으로 표현한  ${icon.alt}이미지 입니다.">
+      </div>
+      <h1>${icon.title}</h1>
+      <p>${icon.description}</p>
+    </article>
+    `
+  })
+  different.innerHTML = contents;
+}
+
+//스크롤 모션
+// window.addEventListener("scroll", e =>{
+//   let scroll = window.scrollY || window.pageYOffset;
+
+//   sections.forEach((el, index)=>{
+//     el.classList.remove("on");
+//     if(scroll >= posArr[index] + baseLine ){
+//       sections[index].classList.add("on");
+//     } 
+//   })
+// })
+
+// function setPos(){
+//   posArr = [];
+//   for(let el of sections){
+//     posArr.push(el.offsetTop);
+//   }
+// }
+
 
 //반응형 메뉴버튼
 btnCall.addEventListener("click", e =>{
@@ -60,76 +112,33 @@ gnb_lis.forEach( li=>{
   }
 })
 
-  //스와이퍼 연결
-// if(swiper_check !== null){
-//   var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 4,
-//     spaceBetween: 30,
-//     //loop: true,
-//     //centeredSlides: true,
-//     // autoplay: {
-//     //   delay: 2500,
-//     //   disableOnInteraction: false,
-//     // },
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//   });
-// }
-
-/*
-
-//스크롤 모션
-window.addEventListener("scroll", e =>{
-  let scroll = window.scrollY || window.pageYOffset;
-
-  sections.forEach((el, index)=>{
-    el.classList.remove("on");
-    if(scroll >= posArr[index] + baseLine ){
-      sections[index].classList.add("on");
-    } 
-  })
-})
-
-function setPos(){
-  posArr = [];
-  for(let el of sections){
-    posArr.push(el.offsetTop);
-  }
-}
- */
-
-callData();
-
-//api 데이터 불러오기
-function callData(){
-  const url = "/dbs/aboutus.json";
-
-  fetch(url)
-  .then(data =>{
-    return data.json();
-  })
-  .then(json =>{
-    //console.log(json);
-    let icons = json.different;
-    createDifference(icons);
-  })
-}
-
-
-function createDifference(icons){
-  let contents = "";
-  icons.forEach( icon =>{
-    contents += `
-    <article>
-      <div class="pic">
-        <img src="${icon.imgSrc}" alt="${icon.title}을 상징으로 표현한  ${icon.alt}이미지 입니다.">
-      </div>
-      <h1>${icon.title}</h1>
-      <p>${icon.description}</p>
-    </article>
-    `
-  })
-  different.innerHTML = contents;
-}
+//스와이퍼 연결
+if(swiper_check !== null){
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: { 
+      240:{
+        slidesPerView: 1,
+      },
+      540: { 
+        slidesPerView: 2, 
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+    }
+  });
+};
