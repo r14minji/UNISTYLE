@@ -2401,10 +2401,39 @@ aside.popup_youtube {
   .gallery .inner section {
     width: 100%;
     /*----- aside  popup_gallery------------------*/ }
+    .gallery .inner section .check h2 {
+      font: 700 16px/1 'Roboto Condensed';
+      color: #821002;
+      margin-bottom: 20px;
+      text-align: center; }
+    .gallery .inner section .check .txt {
+      text-align: center; }
+      .gallery .inner section .check .txt span {
+        display: block;
+        margin-bottom: 5px; }
+      .gallery .inner section .check .txt .origin {
+        margin-bottom: 5px;
+        cursor: pointer; }
+    .gallery .inner section .check ul {
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .gallery .inner section .check ul p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px; }
+      .gallery .inner section .check ul li {
+        margin-right: 20px;
+        cursor: pointer; }
+        .gallery .inner section .check ul li span {
+          padding: 0px 10px; }
+        .gallery .inner section .check ul li.on {
+          color: #d1ac8f; }
     .gallery .inner section .searchBox {
       display: block;
       width: 100%;
-      padding: 60px 0px;
+      padding: 40px 0px 60px;
       display: flex;
       justify-content: center;
       align-items: center;

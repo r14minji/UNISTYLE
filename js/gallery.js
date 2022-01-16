@@ -1,5 +1,8 @@
 const body = document.querySelector("body");
+const strong = document.querySelector(".check strong");
 const section = document.querySelector("section");
+const check = section.querySelector(".check");
+const words = section.querySelectorAll(".check .keyword li");
 const input = document.getElementById("search");
 const btn = document.querySelector(".btnSearch");
 const loading = document.querySelector(".loading");
@@ -21,6 +24,25 @@ const url1 = `https://www.flickr.com/services/rest/?method=${method1}&api_key=${
 callData(url1);
 window.onload = callData(url1);
 
+//h1 클릭시 유니스타일 갤러리 로딩
+strong.addEventListener("click", e=>{
+  callData(url1);
+})
+
+//단어 클릭시 이미지 로딩
+words.forEach(word=>{
+  word.addEventListener("click", e=>{
+    for(el of words){
+      el.classList.remove("on");
+    }
+    word.classList.add("on");
+
+    let tag = e.currentTarget.querySelector("span").innerText;
+    const url = `https://www.flickr.com/services/rest/?method=${method2}&api_key=${api_key}&per_page=${per_page}&format=${format}&nojsoncallback=1&tags=${tag}`;
+
+    callData(url);
+  })
+})
 
 // 검색어로 이미지 찾기
 btn.addEventListener("click", e=>{

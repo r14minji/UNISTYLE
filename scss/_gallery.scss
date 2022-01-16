@@ -9,10 +9,42 @@
     section{
       width: 100%;
 
+      .check{
+
+        h2{
+          font:700 16px/1 'Roboto Condensed'; 
+          color:$red; margin-bottom: 20px;
+          text-align: center;
+        }
+        .txt{
+          text-align: center;
+          span{ 
+            display: block; margin-bottom: 5px;
+          }
+          .origin{
+            margin-bottom: 5px; cursor: pointer;
+          }
+        }
+        ul{
+          display: flex; margin: 0 auto; justify-content: center; flex-wrap: wrap;
+          p{width: 100%; text-align: center;margin-bottom: 10px;}
+          li{
+            margin-right: 20px; cursor: pointer;
+            span{
+              padding:0px 10px;
+            }
+
+            &.on{
+              color: $gold;
+            }
+          }
+        }
+      }
+
       .searchBox{
         display: block;
         width: 100%;
-        padding: 60px 0px;
+        padding: 40px 0px 60px;
         display: flex; justify-content: center; align-items: center; flex-wrap: nowrap; 
     
         input[type=text]{
