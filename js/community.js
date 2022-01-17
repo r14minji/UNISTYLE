@@ -5,7 +5,7 @@ const thirdBoard = document.querySelector("#review .wrap");
 callData();
 //api 데이터 불러오기
 function callData(){
-  const url = "./dbs/community.json";
+  const url = "../js/dbs/community.json";
 
   fetch(url)
   .then(data =>{
