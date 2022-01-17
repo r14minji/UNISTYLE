@@ -17,14 +17,14 @@ callData();
 
 //api 데이터 불러오기
 function callData(){
-  const url = "/js/dbs/aboutus.json";
+  const url = "./js/dbs/aboutus.json";
 
   fetch(url)
   .then(data =>{
     return data.json();
   })
   .then(json =>{
-    //console.log(json);
+    console.log(json);
     let icons = json.different;
     createDifference(icons);
   })
@@ -116,13 +116,9 @@ gnb_lis.forEach( li=>{
 //스와이퍼 연결
 if(story_check !== null){
   const storySwiper = new Swiper(".myStory", {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -132,7 +128,7 @@ if(story_check !== null){
         slidesPerView: 1,
       },
       540: { 
-        slidesPerView: 2, 
+        slidesPerView:2, 
       },
       768: {
         slidesPerView: 3,
