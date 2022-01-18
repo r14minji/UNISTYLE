@@ -6,23 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UNISTYLE</title>
   <script src="https://kit.fontawesome.com/91c15511c8.js" crossorigin="anonymous"></script>
-
-  <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
-
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/main.js"></script>
-  <script defer src="js/anime.js"></script>
+  <script defer src="js/function/anime.js"></script>
+  <script defer src="js/function/scroll.js"></script>
 
 </head>
 <body>
   <!-- header  -->
-  <header id="header">
+  <header id="header" class="myScroll">
     <div class="inner">
       <nav class="menuWeb">
         <h1><a href="index.html">UNISTYLE</a></h1>
@@ -163,7 +157,7 @@
       </div>
     </section>
     <!--section2 - theViews -->
-    <section id="views">
+    <section id="views" class="myScroll">
       <div class="add_bg_vie">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
@@ -214,7 +208,7 @@
       </div>
     </section>
     <!-- section3 - different  -->
-    <section class="different">
+    <section class="different myScroll">
       <div class="inner">
         <h1>We're different</h1>
         <h2>Our designs are hand-built from scratch in millions of combinations</h2>
@@ -244,7 +238,7 @@
       </div>
     </section>
     <!-- section4 - workStep -->
-    <section id="workStep">
+    <section id="workStep" class="myScroll">
       <div class="inner">
         <div class="step">
           <h1>HOW WE WORK</h1>
@@ -285,7 +279,7 @@
       </div>
     </section>
     <!-- section5 - experience -->
-    <section id="experience">
+    <section id="experience" class="myScroll">
       <div class="add_bg_exp">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
@@ -332,7 +326,7 @@
     </section>
 
     <!-- section6 - solutions -->
-    <section id="solutions">
+    <section id="solutions" class="myScroll">
       <div class="inner">
         <div class="wrap">
           <div class="optimal">
@@ -352,7 +346,7 @@
     </section>
 
     <!-- section7 - stories -->
-    <section id="stories">
+    <section id="stories" class="myScroll">
       <div class="add_bg_sto">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
@@ -507,6 +501,16 @@
     </section>
   </main>
 
+  <ul class="btns">
+    <li data-index="1" class="on"></li>
+    <li data-index="2"></li>
+    <li data-index="3"></li>
+    <li data-index="4"></li>
+    <li data-index="5"></li>
+    <li data-index="6"></li>
+    <li data-index="7"></li>
+
+  </ul>
 
   <!-- footer -->
   <footer id="footer">

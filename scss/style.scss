@@ -600,7 +600,7 @@ body {
         font: 300 20px/1 'roboto condensed';
         color: #ccc;
         letter-spacing: 3px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         text-align: center;
       }
       .wrap{
@@ -611,7 +611,7 @@ body {
           &:nth-of-type(3){margin-right: 0;}
 
           .ExPic{
-            width: 100%; height: 170px; overflow: hidden;
+            width: 100%; height: 320px; overflow: hidden;
             margin-bottom: 40px;
   
             img{
@@ -767,6 +767,7 @@ body {
     margin: 0 auto;
 
     .swiper-slide {
+
       .gallPic{
         height: 280px; margin-bottom: 40px;      
     
@@ -836,6 +837,29 @@ body {
       }
     }
   }
+}
+
+/* 스크롤 btns*/
+.btns {
+	position: fixed; z-index: 5;
+	top: 50%;
+	right: 50px;
+	transform: translateY(-50%);
+
+	li {
+		width: 10px;
+		height: 10px;
+		border-radius: 50px;
+		background: #ccc;
+		margin-bottom: 10px;
+		cursor: pointer;
+		transition: 0.5s;
+
+		&.on {
+			height: 25px;
+			background: $gold;
+		}
+	}
 }
 
 /*  footer  */
