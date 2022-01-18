@@ -50,7 +50,7 @@ table {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-22px, -50%); }
+        transform: translate(-32px, -50%); }
         #header_sub .inner .menuWeb h1 a {
           display: block;
           font: normal 22px/1 'Monoton';
@@ -3047,7 +3047,7 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-22px, -50%); }
+        transform: translate(-32px, -50%); }
         #header .inner .menuWeb h1 a {
           display: block;
           font: normal 22px/1 'Monoton';
