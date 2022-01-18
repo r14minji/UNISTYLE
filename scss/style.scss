@@ -345,6 +345,7 @@ body {
 /*  section2 - the Views  */
 #views{
   width: 100%; position: relative;
+
   .add_bg_vie {
     position: absolute;
     top: 0;
@@ -363,7 +364,7 @@ body {
         fill: #101820;
     }
   }
-}
+  }
 
   .inner{
     width: 1180px; 
@@ -377,7 +378,7 @@ body {
       .viewPic{
         width: 50%; 
         display: flex; justify-content: flex-end;
-        position: relative; bottom: 80px;
+        position: relative;  bottom: 80px;
   
         .swiper{
           width :420px;
@@ -396,16 +397,16 @@ body {
         }
       }
 
-
       .desMore{
         width: 50%; padding: 0 80px;
         display: flex; flex-direction: column; justify-content: center;
   
         h1{
-          font: 700 32px/1 'roboto condensed';
+          font: 700 32px/1 'roboto condensed'; 
           color: #000;
           letter-spacing: 5px;
           margin-bottom: 10px;
+
         }
         h2{
           font: 300 20px/1 'roboto condensed';
@@ -449,6 +450,12 @@ body {
 /* section3 - different */
 .different{
   padding: 100px 0;
+  &.scroll{
+    .inner .wrap article{
+      opacity: 1; transform: rotateY(0deg) translateY(0px);
+    }
+  }
+
   .inner{
     width: 1180px;
     position: relative;
@@ -470,6 +477,11 @@ body {
       article{
         width: 340px;
         display: flex; flex-direction: column; align-items: center;
+        opacity: 0; transform: translateY(100px);
+        transition: 0.5s;
+        &:nth-of-type(1) { transition-delay: 0s;}
+        &:nth-of-type(2) { transition-delay: 0.2s;}
+        &:nth-of-type(3) { transition-delay: 0.4s;}
   
         .pic{
           width: 50px; height: 50px; border-radius: 50%;
@@ -561,6 +573,11 @@ body {
 /*  section5 - experience  */
 #experience{
   background: $green; position: relative;
+  &.scroll{
+    .bgWrap .inner .wrap article{
+      opacity: 1; transform: rotateY(0deg) translateY(0px);
+    }
+  }
 
   .add_bg_exp{
     position: absolute;
@@ -579,7 +596,7 @@ body {
         fill: #FFFFFF;
     }
   }
-}
+  }
 
   .bgWrap{
     padding: 180px 0;
@@ -608,7 +625,11 @@ body {
         
         article{
           width: 280px; margin-right: 30px; 
-          &:nth-of-type(3){margin-right: 0;}
+          opacity: 0; transform: translateY(100px);
+          transition: 0.5s;
+          &:nth-of-type(1) { transition-delay: 0s;}
+          &:nth-of-type(2) { transition-delay: 0.2s;}
+          &:nth-of-type(3) { transition-delay: 0.4s; margin-right: 0;}
 
           .ExPic{
             width: 100%; height: 320px; overflow: hidden;

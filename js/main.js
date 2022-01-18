@@ -63,9 +63,6 @@ if(story_check !== null){
       clickable: true,
     },
     breakpoints: { 
-      240:{
-        slidesPerView: 1,
-      },
       540: { 
         slidesPerView:2, 
       },

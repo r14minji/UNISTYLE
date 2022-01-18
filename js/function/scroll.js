@@ -4,7 +4,7 @@ const lis = document.querySelectorAll(".btns li");
 const speed = 500;
 const btns_arr = Array.from(lis);
 let posArr = [];
-const baseLine = -200;
+const baseLine = -400;
 let enableClick = true;
 
 setPos();
@@ -28,10 +28,10 @@ window.addEventListener("scroll", e => {
     if(scroll >= posArr[index] + baseLine){
       lis.forEach((el, index)=>{
         el.classList.remove("on");
-        //sections[index].classList.remove("scroll");
+        sections[index].classList.remove("scroll");
       })
       lis[index].classList.add("on");
-      //sections[index].classList.add("scroll");
+      sections[index].classList.add("scroll");
     }
   })
 });
