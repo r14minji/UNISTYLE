@@ -883,6 +883,43 @@ body {
 	}
 }
 
+/* 팝업 */
+#popup{
+  width: 360px; z-index: 3;
+  background: $gold;
+  padding: 40px;
+  color: #fff;
+  position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+
+  .contents{
+    width: 100%; margin-bottom: 40px;
+    h1{
+      font: 600 30px/1 'Oswald';
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    ul li{
+      padding: 5px 0px;
+      list-style: square;
+      margin-left: 10px;
+      font-size: 14px; line-height: 1.6;
+    }
+  }
+
+
+  .wrap{
+    float: left; 
+    position: relative; bottom: 7px;
+    label{ font: bold 12px/1 "맑은 고딕"; color: #fff; margin-left: 4px;}
+  }
+  .close{
+    float: right; font: 14px/1 'arial'; color: #fff;
+    cursor: pointer;
+  }
+}
+
 /*  footer  */
 #footer{
   width: 100%;

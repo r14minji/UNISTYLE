@@ -3830,6 +3830,45 @@ body {
       height: 25px;
       background: #d1ac8f; }
 
+/* 팝업 */
+#popup {
+  width: 360px;
+  z-index: 3;
+  background: #d1ac8f;
+  padding: 40px;
+  color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  #popup .contents {
+    width: 100%;
+    margin-bottom: 40px; }
+    #popup .contents h1 {
+      font: 600 30px/1 'Oswald';
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+    #popup .contents ul li {
+      padding: 5px 0px;
+      list-style: square;
+      margin-left: 10px;
+      font-size: 14px;
+      line-height: 1.6; }
+  #popup .wrap {
+    float: left;
+    position: relative;
+    bottom: 7px; }
+    #popup .wrap label {
+      font: bold 12px/1 "맑은 고딕";
+      color: #fff;
+      margin-left: 4px; }
+  #popup .close {
+    float: right;
+    font: 14px/1 'arial';
+    color: #fff;
+    cursor: pointer; }
+
 /*  footer  */
 #footer {
   width: 100%;
