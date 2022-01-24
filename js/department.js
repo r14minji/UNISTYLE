@@ -1,11 +1,9 @@
 const sectionValue = document.querySelector(".value");
 const btns = sectionValue.querySelectorAll("ul li");
 const boxs = sectionValue.querySelectorAll(".content>div");
-const members = document.querySelector(".members .inner .wrap");
 let enableClick = true;
 const delay = convertSpeed(boxs[0]);
 
-callData();
 
 btns.forEach((el, index)=> {
   el.addEventListener("click", e => {
@@ -39,45 +37,3 @@ function convertSpeed(item){
   return speed;
 } 
 
-
-//api 데이터 불러오기
-function callData(){
-  const url = "/dbs/member.json";
-
-  fetch(url)
-  .then(data =>{
-    return data.json();
-  })
-  .then(json =>{
-    //console.log(json);
-    let items = json.members;
-
-    createMembers(items);
-  })
-}
-
-function createMembers(items){
-  let teams = "";
-  items.forEach(item =>{
-    teams += `
-      <div class="profile">
-        <div class="person">
-          <img src="${item.imgSrc}" alt="${item.name}">
-        </div>
-        <div class="txtWrap">
-          <div class="txt">
-            <h2>${item.name}</h2>
-            <p>${item.position}</p>
-            <strong><a href="#">${item.phoneNum}</a></strong>
-            <span><a href="#">${item.email}</a></span>
-            <ul>
-              <li><a href="#"><i class="fab fa-facebook-f"></a></i></li>
-              <li><a href="#"><i class="fab fa-instagram"></a></i></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    `
-  })
-  members.innerHTML = teams;
-}
