@@ -3251,12 +3251,6 @@ body {
         letter-spacing: 5px;
         margin-bottom: 10px;
         text-align: center; }
-      #visual .inner .openVisual a {
-        display: block;
-        text-align: center;
-        font-size: 35px;
-        color: #FFE9CF;
-        opacity: 0.7; }
     #visual .inner .util {
       position: absolute;
       top: 50%;
