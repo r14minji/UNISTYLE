@@ -60,6 +60,10 @@ if(story_check !== null){
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+    grabcursor: true,
+    autoplay: {
+      delay: 3000,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
