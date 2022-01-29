@@ -418,30 +418,6 @@ body {
           color: #555;
           margin-bottom: 20px;
         }
-        a{
-          display: block; width: 120px; height: 30px;
-          padding: 5px 10px; border: 1px solid $green;
-          font: 700 12px/20px 'roboto condensed';
-          background: $green;
-          color: #fff;
-          letter-spacing: 2px;
-          transition: all 0.3s;
-          text-align: center;
-  
-          i{
-            transform: translateX(20px); opacity: 0;
-            transition:  transform 0.3s;
-          }
-  
-          &:hover{
-            background: #fff;
-            color: $green;
-  
-            i{
-              opacity: 1; transform: translateX(10px);
-            }
-          }
-        }
       }
     }
   }

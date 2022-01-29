@@ -3408,28 +3408,6 @@ body {
           font: 300 16px/1.2 'roboto condensed';
           color: #555;
           margin-bottom: 20px; }
-        #views .inner .wrap .desMore a {
-          display: block;
-          width: 120px;
-          height: 30px;
-          padding: 5px 10px;
-          border: 1px solid #101820;
-          font: 700 12px/20px 'roboto condensed';
-          background: #101820;
-          color: #fff;
-          letter-spacing: 2px;
-          transition: all 0.3s;
-          text-align: center; }
-          #views .inner .wrap .desMore a i {
-            transform: translateX(20px);
-            opacity: 0;
-            transition: transform 0.3s; }
-          #views .inner .wrap .desMore a:hover {
-            background: #fff;
-            color: #101820; }
-            #views .inner .wrap .desMore a:hover i {
-              opacity: 1;
-              transform: translateX(10px); }
 
 /* section3 - different */
 .different {
