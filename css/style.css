@@ -1325,35 +1325,6 @@ table {
               .community .inner section > .wrap article#review > .wrap .list .contents > p {
                 margin: 20px 0px;
                 font: 300 16px/1 'Roboto'; }
-        .community .inner section > .wrap article#review .paignation {
-          margin-top: 20px;
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          align-items: center; }
-          .community .inner section > .wrap article#review .paignation > a {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            font: normal 20px/30px 'Roboto';
-            color: #d1ac8f;
-            opacity: 0.7; }
-          .community .inner section > .wrap article#review .paignation .numbers {
-            display: flex;
-            justify-content: space-around;
-            align-items: center; }
-            .community .inner section > .wrap article#review .paignation .numbers > a {
-              display: inline-block;
-              width: 30px;
-              height: 30px;
-              font: normal 20px/30px 'Roboto';
-              color: #52616b;
-              text-align: center;
-              opacity: 0.7; }
-              .community .inner section > .wrap article#review .paignation .numbers > a.on {
-                background: #d1ac8f;
-                color: #fff;
-                opacity: 1; }
 
 /*tablet ------*/
 @media screen and (max-width: 1179px) {
