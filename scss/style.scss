@@ -33,6 +33,8 @@ body {
   position: relative;
 }
 
+//body{ width: calc(100vw - (100vw - 100%));}
+body{ overflow: overlay; }
 
 /*  header  */
 #header{
@@ -119,7 +121,8 @@ body {
           &::before{
             content: "";
             display: block; 
-            width: 100vw; height: 50px;
+            width: 100vw;
+            height: 50px;
             background: $green;
             position: absolute;
             top: 0;
